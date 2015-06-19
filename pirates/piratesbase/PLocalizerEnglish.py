@@ -1,6 +1,4 @@
-# File: P (Python 2.4)
-
-import string
+\import string
 import os
 import datetime
 import time
@@ -1055,7 +1053,7 @@ LODSuperLow = 'S.Low'
 LODLow = 'Low'
 LODMed = 'Med'
 LODHi = 'Hi'
-RandomButton = 'Random Feature'
+RandomButton = 'Random'
 ShuffleButton = 'Random All'
 ShuffleNextButton = 'Next'
 ShufflePrevButton = 'Last'
