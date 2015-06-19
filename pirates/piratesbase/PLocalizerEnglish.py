@@ -1,4 +1,4 @@
-\import string
+import string
 import os
 import datetime
 import time
