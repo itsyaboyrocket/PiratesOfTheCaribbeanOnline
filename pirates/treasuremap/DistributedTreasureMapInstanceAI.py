@@ -1,0 +1,2 @@
+class DistributedTreasureMapInstanceAI:
+    pass

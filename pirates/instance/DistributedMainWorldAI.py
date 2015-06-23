@@ -1,0 +1,2 @@
+class DistributedMainWorldAI:
+    pass

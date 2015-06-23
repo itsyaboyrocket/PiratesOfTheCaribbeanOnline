@@ -1,0 +1,2 @@
+class DistributedFlagShopAI:
+    pass

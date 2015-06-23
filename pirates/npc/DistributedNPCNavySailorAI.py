@@ -1,0 +1,2 @@
+class DistributedNPCNavySailorAI:
+    pass

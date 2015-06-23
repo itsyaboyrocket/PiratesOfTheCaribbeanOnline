@@ -1,0 +1,2 @@
+class DistributedRepairGameAI:
+    pass

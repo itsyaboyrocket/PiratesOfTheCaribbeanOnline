@@ -1,0 +1,2 @@
+class DistributedPVPBattleAI:
+    pass

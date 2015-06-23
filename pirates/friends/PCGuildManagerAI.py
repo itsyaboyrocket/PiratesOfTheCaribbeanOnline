@@ -1,0 +1,2 @@
+class PCGuildManagerAI:
+    pass

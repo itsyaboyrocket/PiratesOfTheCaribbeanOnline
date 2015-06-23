@@ -1,0 +1,2 @@
+class PCGuildManagerUD:
+    pass

@@ -1,0 +1,2 @@
+class DistributedBountyHunterAI:
+    pass

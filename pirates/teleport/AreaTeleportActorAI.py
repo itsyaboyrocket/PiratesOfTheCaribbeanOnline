@@ -1,0 +1,2 @@
+class AreaTeleportActorAI:
+    pass

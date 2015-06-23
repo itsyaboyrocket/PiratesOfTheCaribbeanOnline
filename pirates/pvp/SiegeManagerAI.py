@@ -1,0 +1,2 @@
+class SiegeManagerAI:
+    pass

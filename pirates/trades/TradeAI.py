@@ -1,0 +1,2 @@
+class TradeAI:
+    pass

@@ -1,0 +1,2 @@
+class DistributedGoldReceiptUD:
+    pass

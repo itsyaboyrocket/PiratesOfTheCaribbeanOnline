@@ -1,0 +1,2 @@
+class DoorTeleportActorAI:
+    pass

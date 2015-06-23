@@ -1,0 +1,2 @@
+class InteriorDoorTeleportActorAI:
+    pass

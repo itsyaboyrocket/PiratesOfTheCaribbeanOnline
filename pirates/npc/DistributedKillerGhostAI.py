@@ -1,0 +1,2 @@
+class DistributedKillerGhostAI:
+    pass

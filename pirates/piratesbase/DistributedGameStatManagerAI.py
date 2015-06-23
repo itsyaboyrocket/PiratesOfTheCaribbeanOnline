@@ -1,0 +1,2 @@
+class DistributedGameStatManagerAI:
+    pass

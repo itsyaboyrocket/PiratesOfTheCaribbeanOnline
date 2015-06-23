@@ -1,0 +1,2 @@
+class DistributedPostInvasionObjectAI:
+    pass

@@ -1,0 +1,2 @@
+class DistributedIslandAI:
+    pass

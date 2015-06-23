@@ -1,0 +1,2 @@
+class DistributedBarrelAI:
+    pass

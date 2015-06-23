@@ -1,0 +1,2 @@
+class DistributedPokerTableAI:
+    pass

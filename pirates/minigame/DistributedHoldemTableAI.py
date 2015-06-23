@@ -1,0 +1,2 @@
+class DistributedHoldemTableAI:
+    pass

@@ -1,0 +1,2 @@
+class DistributedInteractivePropAI:
+    pass

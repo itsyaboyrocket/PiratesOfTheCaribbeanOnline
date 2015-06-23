@@ -1,0 +1,2 @@
+class DistributedWreckedFaithfulBrideAI:
+    pass

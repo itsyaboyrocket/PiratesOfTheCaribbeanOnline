@@ -1,0 +1,2 @@
+class HolidayManagerAI:
+    pass

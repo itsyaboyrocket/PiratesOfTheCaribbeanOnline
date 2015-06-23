@@ -1,0 +1,2 @@
+class DistributedPlayerSimpleShipAI:
+    pass

@@ -1,0 +1,2 @@
+class DistributedInventoryAI:
+    pass

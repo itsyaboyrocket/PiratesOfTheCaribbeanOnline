@@ -1,0 +1,2 @@
+class PSnapshotRendererUD:
+    pass

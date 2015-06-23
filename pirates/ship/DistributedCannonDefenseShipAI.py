@@ -1,0 +1,2 @@
+class DistributedCannonDefenseShipAI:
+    pass

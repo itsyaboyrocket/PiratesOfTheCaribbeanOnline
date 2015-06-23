@@ -1,0 +1,2 @@
+class DistributedFortCannonAI:
+    pass

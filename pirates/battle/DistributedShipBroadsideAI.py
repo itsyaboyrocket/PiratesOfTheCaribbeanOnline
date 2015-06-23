@@ -1,0 +1,2 @@
+class DistributedShipBroadsideAI:
+    pass

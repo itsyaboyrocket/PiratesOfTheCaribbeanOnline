@@ -1,0 +1,2 @@
+class DistributedLocationManagerAI:
+    pass

@@ -1,0 +1,2 @@
+class JailTeleportActorAI:
+    pass

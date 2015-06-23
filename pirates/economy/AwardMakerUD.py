@@ -1,0 +1,2 @@
+class AwardMakerUD:
+    pass

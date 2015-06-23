@@ -1,0 +1,2 @@
+class TargetManagerAI:
+    pass

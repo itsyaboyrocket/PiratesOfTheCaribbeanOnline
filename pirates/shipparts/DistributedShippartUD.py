@@ -1,0 +1,2 @@
+class DistributedShippartUD:
+    pass

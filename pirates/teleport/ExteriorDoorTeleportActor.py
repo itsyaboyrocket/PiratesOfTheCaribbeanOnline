@@ -1,0 +1,2 @@
+class ExteriorDoorTeleportActor:
+    pass

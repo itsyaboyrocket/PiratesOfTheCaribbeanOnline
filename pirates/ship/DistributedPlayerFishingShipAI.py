@@ -1,0 +1,2 @@
+class DistributedPlayerFishingShipAI:
+    pass

@@ -1,0 +1,2 @@
+class DistributedTreasureMapAI:
+    pass

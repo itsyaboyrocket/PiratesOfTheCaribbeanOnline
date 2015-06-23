@@ -1,0 +1,2 @@
+class DistributedQuestPropAI:
+    pass

@@ -1,0 +1,2 @@
+class LootableAI:
+    pass

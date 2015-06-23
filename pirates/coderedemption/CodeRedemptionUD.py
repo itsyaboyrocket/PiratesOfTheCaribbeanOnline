@@ -1,0 +1,2 @@
+class CodeRedemptionUD:
+    pass

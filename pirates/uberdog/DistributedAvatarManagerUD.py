@@ -1,0 +1,2 @@
+class DistributedAvatarManagerUD:
+    pass

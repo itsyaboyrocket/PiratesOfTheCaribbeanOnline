@@ -1,0 +1,2 @@
+class WeaponBaseAI:
+    pass

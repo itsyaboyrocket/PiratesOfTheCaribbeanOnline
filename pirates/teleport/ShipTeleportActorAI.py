@@ -1,0 +1,2 @@
+class ShipTeleportActorAI:
+    pass

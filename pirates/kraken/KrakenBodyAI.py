@@ -1,0 +1,2 @@
+class KrakenBodyAI:
+    pass

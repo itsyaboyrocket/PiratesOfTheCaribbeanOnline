@@ -1,0 +1,2 @@
+class DistributedBossNavySailorAI:
+    pass

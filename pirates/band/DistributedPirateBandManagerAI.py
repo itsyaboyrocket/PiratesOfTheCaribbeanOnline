@@ -1,0 +1,2 @@
+class DistributedPirateBandManagerAI:
+    pass

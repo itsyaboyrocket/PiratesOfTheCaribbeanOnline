@@ -1,0 +1,2 @@
+class DoorTeleportActor:
+    pass

@@ -1,0 +1,2 @@
+class DistributedChatManagerUD:
+    pass

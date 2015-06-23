@@ -1,0 +1,2 @@
+class DistributedBandMemberAI:
+    pass

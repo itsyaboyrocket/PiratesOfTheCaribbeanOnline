@@ -1,0 +1,2 @@
+class DistributedFSM:
+    pass

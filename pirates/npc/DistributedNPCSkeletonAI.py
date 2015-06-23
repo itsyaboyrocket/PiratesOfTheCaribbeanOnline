@@ -1,0 +1,2 @@
+class DistributedNPCSkeletonAI:
+    pass

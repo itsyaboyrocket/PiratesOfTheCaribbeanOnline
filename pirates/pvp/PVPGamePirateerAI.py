@@ -1,0 +1,2 @@
+class PVPGamePirateerAI:
+    pass

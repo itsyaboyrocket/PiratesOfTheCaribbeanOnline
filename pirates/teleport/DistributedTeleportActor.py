@@ -1,0 +1,2 @@
+class DistributedTeleportActor:
+    pass

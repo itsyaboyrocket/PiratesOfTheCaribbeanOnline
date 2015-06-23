@@ -1,0 +1,2 @@
+class TreasureMapBlackPearlAI:
+    pass

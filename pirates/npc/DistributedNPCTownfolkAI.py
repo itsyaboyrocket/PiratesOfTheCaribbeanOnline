@@ -1,0 +1,2 @@
+class DistributedNPCTownfolkAI:
+    pass

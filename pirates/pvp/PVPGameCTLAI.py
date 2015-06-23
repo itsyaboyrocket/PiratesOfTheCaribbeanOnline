@@ -1,0 +1,2 @@
+class PVPGameCTLAI:
+    pass

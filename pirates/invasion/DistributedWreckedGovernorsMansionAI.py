@@ -1,0 +1,2 @@
+class DistributedWreckedGovernorsMansionAI:
+    pass

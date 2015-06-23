@@ -1,0 +1,2 @@
+class DistributedOceanGridAI:
+    pass

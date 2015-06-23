@@ -1,0 +1,2 @@
+class DistributedPiratesTutorialWorldAI:
+    pass

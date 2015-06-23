@@ -1,0 +1,2 @@
+class DistributedDoor:
+    pass

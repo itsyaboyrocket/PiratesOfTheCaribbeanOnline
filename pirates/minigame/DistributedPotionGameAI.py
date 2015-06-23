@@ -1,0 +1,2 @@
+class DistributedPotionGameAI:
+    pass

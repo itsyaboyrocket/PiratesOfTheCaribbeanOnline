@@ -1,0 +1,2 @@
+class PlayerAreaTeleportActorOV:
+    pass

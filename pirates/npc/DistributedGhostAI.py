@@ -1,0 +1,2 @@
+class DistributedGhostAI:
+    pass

@@ -1,0 +1,2 @@
+class DistributedCreatureAI:
+    pass

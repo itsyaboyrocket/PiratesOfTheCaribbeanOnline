@@ -1,0 +1,2 @@
+class DistributedSimpleShipAI:
+    pass

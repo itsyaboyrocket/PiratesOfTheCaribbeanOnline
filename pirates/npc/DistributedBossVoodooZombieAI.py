@@ -1,0 +1,2 @@
+class DistributedBossVoodooZombieAI:
+    pass

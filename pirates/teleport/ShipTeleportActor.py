@@ -1,0 +1,2 @@
+class ShipTeleportActor:
+    pass

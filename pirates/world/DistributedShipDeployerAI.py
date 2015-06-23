@@ -1,0 +1,2 @@
+class DistributedShipDeployerAI:
+    pass

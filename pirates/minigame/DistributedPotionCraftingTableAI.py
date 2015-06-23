@@ -1,0 +1,2 @@
+class DistributedPotionCraftingTableAI:
+    pass

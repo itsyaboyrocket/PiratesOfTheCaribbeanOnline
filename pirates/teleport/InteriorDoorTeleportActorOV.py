@@ -1,0 +1,2 @@
+class InteriorDoorTeleportActorOV:
+    pass

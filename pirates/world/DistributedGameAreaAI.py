@@ -1,0 +1,2 @@
+class DistributedGameAreaAI:
+    pass
