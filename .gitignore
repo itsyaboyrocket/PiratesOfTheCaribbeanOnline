@@ -9,3 +9,6 @@ cache/
 # LiClipse
 *.pydevproject
 *.project
+
+#PyCharm
+.idea/
