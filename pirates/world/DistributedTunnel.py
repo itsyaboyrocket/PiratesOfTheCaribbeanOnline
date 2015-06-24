@@ -1,2 +1,0 @@
-class DistributedTunnel:
-    pass

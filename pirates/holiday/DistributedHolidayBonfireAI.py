@@ -1,2 +1,0 @@
-class DistributedHolidayBonfireAI:
-    pass

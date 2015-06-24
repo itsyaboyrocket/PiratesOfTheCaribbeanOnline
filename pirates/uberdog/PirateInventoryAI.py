@@ -1,2 +1,0 @@
-class PirateInventoryAI:
-    pass

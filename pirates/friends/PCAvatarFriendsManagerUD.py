@@ -1,2 +1,0 @@
-class PCAvatarFriendsManagerUD:
-    pass

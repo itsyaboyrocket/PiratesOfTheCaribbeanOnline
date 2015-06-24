@@ -1,2 +1,0 @@
-class DistributedCellDoorAI:
-    pass

@@ -1,2 +1,0 @@
-class DistributedLockDoorAI:
-    pass

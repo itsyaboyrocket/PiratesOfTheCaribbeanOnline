@@ -1,2 +1,0 @@
-class DistributedWreckAI:
-    pass

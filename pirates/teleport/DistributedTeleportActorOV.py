@@ -1,2 +1,0 @@
-class DistributedTeleportActorOV:
-    pass
