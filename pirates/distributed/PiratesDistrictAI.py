@@ -6,7 +6,7 @@ class PiratesDistrictAI(DistributedDistrictAI):
     parentingRules = ('', '')
     avatarCount = 0
     newAvatarCount = 0
-    mainWorld = 'AnvilIsland'
+    mainWorld = 'PortRoyalWorld'
     shardType = PiratesGlobals.SHARD_MAIN
     populationLimits = (1, 50)
 
