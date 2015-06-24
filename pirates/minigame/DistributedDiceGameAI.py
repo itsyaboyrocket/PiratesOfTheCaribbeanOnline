@@ -1,2 +1,0 @@
-class DistributedDiceGameAI:
-    pass

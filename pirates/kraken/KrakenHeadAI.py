@@ -1,2 +1,0 @@
-class KrakenHeadAI:
-    pass

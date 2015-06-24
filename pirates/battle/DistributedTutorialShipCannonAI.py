@@ -1,2 +1,0 @@
-class DistributedTutorialShipCannonAI:
-    pass

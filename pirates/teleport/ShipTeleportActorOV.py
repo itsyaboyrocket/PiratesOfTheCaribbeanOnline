@@ -1,2 +1,0 @@
-class ShipTeleportActorOV:
-    pass

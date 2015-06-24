@@ -1,2 +1,0 @@
-class PiratesSpeedchatRelayUD:
-    pass

@@ -1,2 +1,0 @@
-class PlayerAreaTeleportActor:
-    pass

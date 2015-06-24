@@ -1,2 +1,0 @@
-class DistributedBattleNPCAI:
-    pass
