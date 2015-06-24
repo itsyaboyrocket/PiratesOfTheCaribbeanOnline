@@ -1,2 +1,0 @@
-class DistributedPVPInstanceAI:
-    pass

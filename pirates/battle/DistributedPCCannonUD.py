@@ -1,2 +1,0 @@
-class DistributedPCCannonUD:
-    pass

@@ -1,2 +1,0 @@
-class DistributedMatchMakerUD:
-    pass

@@ -1,2 +1,0 @@
-class DistributedGoldReceiptAI:
-    pass

@@ -1,2 +1,0 @@
-class DistributedPVPTeamBattleAI:
-    pass

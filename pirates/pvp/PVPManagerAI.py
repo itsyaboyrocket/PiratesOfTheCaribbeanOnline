@@ -1,2 +1,0 @@
-class PVPManagerAI:
-    pass

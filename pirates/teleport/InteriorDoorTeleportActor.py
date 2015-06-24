@@ -1,2 +1,0 @@
-class InteriorDoorTeleportActor:
-    pass

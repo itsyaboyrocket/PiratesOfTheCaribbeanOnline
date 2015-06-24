@@ -1,2 +1,0 @@
-class PVPGameBattleAI:
-    pass

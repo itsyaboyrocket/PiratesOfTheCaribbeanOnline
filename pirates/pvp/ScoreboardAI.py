@@ -1,2 +1,0 @@
-class ScoreboardAI:
-    pass

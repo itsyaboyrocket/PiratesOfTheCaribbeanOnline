@@ -1,2 +1,0 @@
-class DistributedQuestGiverAI:
-    pass
