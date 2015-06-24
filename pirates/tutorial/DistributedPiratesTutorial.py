@@ -1,23 +1,17 @@
-# File: D (Python 2.4)
-
-import time
 import random
+
 from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 from direct.fsm import FSM
-from direct.actor import Actor
 from direct.task import Task
 from direct.distributed import DistributedObject
-from direct.showbase.PythonUtil import DelayedCall
+
 import ShipWreck
-from pirates.audio import SoundGlobals
-from pirates.npc import Skeleton
-from pirates.pirate import Pirate
 from pirates.pirate import HumanDNA
 from pirates.quest import QuestParser
 from pirates.battle.Cannon import Cannon, distFireSfxNames
 from pirates.makeapirate import MakeAPirate
-from pirates.piratesbase import PiratesGlobals, PLocalizer, TimeOfDayManager, TODGlobals
+from pirates.piratesbase import PiratesGlobals, PLocalizer, TODGlobals
 from pirates.cutscene import CutsceneData
 from pirates.tutorial import TutorialGlobals
 from pirates.leveleditor import NPCList
@@ -32,6 +26,7 @@ from pirates.piratesbase import UserFunnel
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.inventory import ItemGlobals
+
 CannonDistance = 200
 CannonballHitEvent = 'tutorialCannonballHit'
 

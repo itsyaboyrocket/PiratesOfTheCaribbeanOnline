@@ -1,19 +1,15 @@
-# File: D (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.directnotify import DirectNotifyGlobal
-from direct.interval.IntervalGlobal import *
-import re
 import random
 import types
+
+from direct.directnotify import DirectNotifyGlobal
+from direct.interval.IntervalGlobal import *
+
 from pirates.holiday import DistributedHolidayObject
 from pirates.movement import DistributedMovingObject
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.pirate import BattleNPCGameFSM
 from pirates.pirate import AvatarType
-from pirates.uberdog.UberDogGlobals import InventoryType
-from pirates.battle import WeaponGlobals
 from pirates.piratesgui import HpMeter
 from pirates.invasion import InvasionGlobals
 from pirates.ai import HolidayGlobals
@@ -22,6 +18,7 @@ from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.effects.SmokeBlast import SmokeBlast
 from pirates.effects.ExplosionFlip import ExplosionFlip
+
 
 class DistributedCapturePoint(DistributedHolidayObject.DistributedHolidayObject, DistributedMovingObject.DistributedMovingObject):
     DiskUseColor = (0, 0, 0, 1)

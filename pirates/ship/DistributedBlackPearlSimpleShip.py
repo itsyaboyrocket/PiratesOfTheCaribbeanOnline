@@ -1,7 +1,7 @@
-# File: D (Python 2.4)
-
 from pandac.PandaModules import VBase4
+
 from pirates.ship.DistributedSimpleShip import DistributedSimpleShip, MinimapShip
+
 
 class DistributedBlackPearlSimpleShip(DistributedSimpleShip):
     

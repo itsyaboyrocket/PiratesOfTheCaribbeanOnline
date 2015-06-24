@@ -1,18 +1,17 @@
-# File: D (Python 2.4)
+import random
 
-from pirates.instance.DistributedInstanceWorld import DistributedInstanceWorld
 from direct.fsm.FSM import FSM
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 from direct.distributed.ClockDelta import *
+
+from pirates.instance.DistributedInstanceWorld import DistributedInstanceWorld
 from pirates.piratesbase import PiratesGlobals
 from pirates.pvp import PVPGlobals
 from pirates.piratesbase import PLocalizer
-from pirates.pvp.PVPRulesPanel import PVPRulesPanel
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.StatRowHeadingGui import StatRowHeadingGui
 from pirates.piratesgui.StatRowGui import StatRowGui
-import random
+
 EXITED = 0
 EXPECTED = 1
 JOINED = 2

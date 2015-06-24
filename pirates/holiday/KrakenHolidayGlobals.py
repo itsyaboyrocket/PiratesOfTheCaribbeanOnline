@@ -1,7 +1,3 @@
-# File: K (Python 2.4)
-
-from pirates.ai.HolidayDates import *
-
 class Msgs:
     Launch = 50
     Escaped = 51

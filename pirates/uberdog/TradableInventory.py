@@ -1,8 +1,8 @@
-# File: T (Python 2.4)
+
 
 from pirates.uberdog.TradableInventoryBase import TradableInventoryBase, InvItem
-from pirates.uberdog.UberDogGlobals import prepareSwitchField, receiveSwitchField, InventoryType
-from pirates.inventory.InventoryGlobals import Locations, getEquipRanges, getLocationChangeMsg, getAnyChangeMsg, getCategoryChangeMsg, getCategoryQuantChangeMsg, getOverflowChangeMsg
+from pirates.uberdog.UberDogGlobals import prepareSwitchField, InventoryType
+from pirates.inventory.InventoryGlobals import getEquipRanges, getLocationChangeMsg, getAnyChangeMsg, getCategoryChangeMsg, getCategoryQuantChangeMsg, getOverflowChangeMsg
 
 class TradableInventory(TradableInventoryBase):
     

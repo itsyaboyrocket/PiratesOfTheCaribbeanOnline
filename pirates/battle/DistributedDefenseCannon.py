@@ -1,8 +1,7 @@
-# File: D (Python 2.4)
-
 from direct.distributed.ClockDelta import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.task import Task
+
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.audio import SoundGlobals
 from pirates.battle.DistributedIslandCannon import DistributedIslandCannon
@@ -12,11 +11,11 @@ from pirates.battle import DefenseCannonGUI
 from pirates.effects.RepeaterCannonUpgradeEffect import RepeaterCannonUpgradeEffect
 from pirates.minigame.AmmoPanel import AmmoPanel
 from pirates.minigame import CannonDefenseGlobals
-from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import PiratesGlobals
 from pirates.ship import ShipGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
 import WeaponGlobals
+
 
 class DistributedDefenseCannon(DistributedIslandCannon):
     ignoreGround = True

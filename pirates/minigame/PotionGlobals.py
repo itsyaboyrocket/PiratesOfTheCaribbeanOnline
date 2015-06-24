@@ -1,9 +1,9 @@
-# File: P (Python 2.4)
-
 from direct.directnotify import DirectNotifyGlobal
+
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.inventory import ItemGlobals
 from pirates.battle.WeaponConstants import *
+
 notify = DirectNotifyGlobal.directNotify.newCategory('PotionGlobals')
 FART_EFFECT_DELAY = 15.0
 BURP_EFFECT_DELAY = 15.0

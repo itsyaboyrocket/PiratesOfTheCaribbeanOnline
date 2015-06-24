@@ -1,9 +1,11 @@
-# File: S (Python 2.4)
+
 
 global wheel, shipTextures
-from pandac.PandaModules import NodePath, TextureStage, ModelNode, SceneGraphReducer, TextureAttrib, CullFaceAttrib, GeomNode
+from pandac.PandaModules import NodePath, ModelNode, SceneGraphReducer, TextureAttrib, GeomNode
+
 from pirates.piratesbase import PiratesGlobals
 from pirates.ship import ShipGlobals
+
 BowSpritDict = {
     ShipGlobals.Prows.Skeleton: 'models/shipparts/prow_skeleton_zero',
     ShipGlobals.Prows.Lady: 'models/shipparts/prow_female_zero' }

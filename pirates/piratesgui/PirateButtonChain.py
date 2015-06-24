@@ -1,18 +1,7 @@
-# File: P (Python 2.4)
-
-from direct.showbase.ShowBaseGlobal import *
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
-from direct.fsm import StateData
-from otp.otpbase import OTPGlobals
-from pirates.piratesbase import PLocalizer
-from pirates.piratesgui import SocialPage
+
 from pirates.piratesgui import PiratesGuiGlobals
-from pirates.piratesbase import PiratesGlobals
-from otp.otpbase import OTPGlobals
-from otp.friends.FriendInfo import FriendInfo
-from pirates.piratesbase import Freebooter
-import GuiButton
+
 
 class PirateButtonChain:
     

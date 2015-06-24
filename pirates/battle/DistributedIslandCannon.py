@@ -1,4 +1,4 @@
-# File: D (Python 2.4)
+
 
 from otp.otpbase import OTPGlobals
 from pirates.piratesbase import PiratesGlobals

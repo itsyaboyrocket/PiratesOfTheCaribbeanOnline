@@ -1,15 +1,15 @@
-# File: S (Python 2.4)
-
 import os
-from pandac.PandaModules import *
+
 from direct.gui.DirectGui import *
 from direct.gui.OnscreenImage import OnscreenImage
 from direct.gui.DirectButton import DirectButton
+from direct.interval.IntervalGlobal import *
+from direct.directnotify import DirectNotifyGlobal
+
 from pirates.piratesgui.PDialog import PDialog
 from pirates.piratesgui import PiratesGuiGlobals
-from direct.interval.IntervalGlobal import *
 from pirates.piratesbase import PLocalizer
-from direct.directnotify import DirectNotifyGlobal
+
 
 class ScreenshotViewer:
     notify = DirectNotifyGlobal.directNotify.newCategory('ScreenshotViewer')

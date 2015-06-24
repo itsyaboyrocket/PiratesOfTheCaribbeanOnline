@@ -1,10 +1,7 @@
-# File: D (Python 2.4)
+import random
 
-from pandac.PandaModules import *
-from direct.gui.OnscreenText import OnscreenText
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-from pirates.battle import WeaponGlobals
 from pirates.inventory.Lootable import Lootable
 from pirates.minigame.DistributedMiniGameWorld import DistributedMiniGameWorld
 from pirates.minigame.CannonDefenseFSM import CannonDefenseFSM
@@ -12,7 +9,7 @@ from pirates.minigame import CannonDefenseGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import TODGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
-import random
+
 
 class EndOfWaveData:
     

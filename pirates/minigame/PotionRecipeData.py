@@ -2,7 +2,6 @@ from pirates.battle.WeaponConstants import *
 from pirates.piratesbase import PLocalizer
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.battle import WeaponGlobals
-from pirates.inventory import ItemGlobals
 from pirates.minigame import PotionGlobals
 
 def safeSubstitute(text, dict):

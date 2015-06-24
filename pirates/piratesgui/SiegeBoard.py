@@ -1,11 +1,10 @@
-# File: S (Python 2.4)
+from direct.gui.DirectGui import *
+from direct.showbase.DirectObject import DirectObject
 
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.ScoreFrame import ScoreFrame
-from pandac.PandaModules import *
-from direct.gui.DirectGui import *
 from pirates.piratesgui import BorderFrame
-from direct.showbase.DirectObject import DirectObject
+
 
 class SiegeBoard(DirectObject):
     

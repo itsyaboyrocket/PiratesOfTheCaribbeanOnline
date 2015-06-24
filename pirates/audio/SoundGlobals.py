@@ -1,6 +1,7 @@
+import random
+
 from pirates.world.LocationConstants import LocationIds
 from pirates.uberdog import UberDogGlobals
-import random
 
 
 def loadSfx(audioName):

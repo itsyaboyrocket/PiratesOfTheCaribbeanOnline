@@ -1,17 +1,15 @@
-# File: D (Python 2.4)
+import math
 
-from pandac.PandaModules import *
 from direct.showbase.PythonUtil import clampScalar, report
-from direct.task.Task import Task
 from direct.directnotify.DirectNotifyGlobal import directNotify
+
 from pirates.map.MapBall import MapBall
 from pirates.map.MapDecor import DecorTypes, DecorClasses
-from pirates.piratesgui.DownloadBlockerPanel import DownloadBlockerPanel
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesbase import PiratesGlobals
 from pirates.world.LocationConstants import LocationIds
 from pirates.world import WorldGlobals
-import math
+
 OceanAreaOffsets = {
     'Brigand_Bay': [
         0,

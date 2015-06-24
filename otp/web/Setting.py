@@ -1,4 +1,4 @@
-# File: S (Python 2.4)
+
 
 from direct.fsm.StatePush import StateVar
 

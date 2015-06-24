@@ -1,9 +1,9 @@
-from pandac.PandaModules import *
 from direct.gui.DirectGui import *
+
 from SCObject import SCObject
 from SCElement import SCElement
 from SCMenu import SCMenu
-import types
+
 
 class SCMenuHolder(SCElement):
     N = 0.9

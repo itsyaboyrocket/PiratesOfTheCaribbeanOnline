@@ -1,20 +1,11 @@
-# File: P (Python 2.4)
-
-import copy
 from direct.gui.DirectGui import *
-from direct.task.Task import Task
-from pandac.PandaModules import *
-from direct.interval.IntervalGlobal import *
-from pirates.uberdog.DistributedInventoryBase import DistributedInventoryBase
-from pirates.ship import ShipGlobals
+
 from pirates.piratesbase import PLocalizer
-from pirates.piratesgui import GuiTray
 from pirates.piratesbase import PiratesGlobals
-from pirates.piratesgui import GuiButton
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
-from pirates.pvp import PVPGlobals
 from pirates.pirate import TitleGlobals
+
 SHIP_RENOWN_DISPLAY = 0
 LAND_RENOWN_DISPLAY = 1
 

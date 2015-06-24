@@ -1,10 +1,8 @@
-# File: L (Python 2.4)
-
 from direct.gui.DirectGui import *
 from pandac.PandaModules import *
-from otp.otpgui import OTPDialog
 from direct.task.Task import Task
-from pirates.piratesgui import PiratesGuiGlobals
+
+from otp.otpgui import OTPDialog
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui.ListFrame import ListFrame
 from pirates.piratesgui.ButtonListItem import ButtonListItem
@@ -14,11 +12,11 @@ from pirates.piratesgui.BorderFrame import BorderFrame
 from pirates.piratesbase import PiratesGlobals
 from pirates.world import GameTypeGlobals
 from pirates.ship import ShipGlobals
-from pirates.uberdog import DistributedInventoryBase
 from pirates.band import DistributedBandMember
 from pirates.piratesgui.InventoryPage import InventoryPage
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.uberdog.InventoryRequestGameType import InventoryRequestGameType
+
 
 class LookoutRequestLVL1(InventoryPage, InventoryRequestGameType):
     notify = directNotify.newCategory('LookoutRequestLVL1')

@@ -1,18 +1,17 @@
-# File: I (Python 2.4)
-
-from direct.gui.DirectGui import *
-from pandac.PandaModules import *
-from pirates.piratesgui import PiratesGuiGlobals
-from pirates.makeapirate import TattooGlobals
-from pirates.pirate import HumanDNA
 from math import sin
 from math import cos
 from math import pi
-from pirates.uberdog.UberDogGlobals import InventoryType
+
+from direct.gui.DirectGui import *
+
+from pirates.piratesgui import PiratesGuiGlobals
+from pirates.makeapirate import TattooGlobals
+from pirates.pirate import HumanDNA
 from pirates.inventory import ItemGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import Freebooter
 from pirates.inventory import InventoryUIItem
+
 
 class InventoryUITattooItem(InventoryUIItem.InventoryUIItem):
 

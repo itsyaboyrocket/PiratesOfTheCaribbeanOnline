@@ -1,16 +1,15 @@
-# File: G (Python 2.4)
+import random
 
 from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 from direct.directnotify import DirectNotifyGlobal
+
 from otp.otpbase import OTPRender
 from pirates.creature.Creature import Creature
 from pirates.kraken.TentacleUtils import TentacleUtils
-from pirates.pirate import AvatarTypes
 from pirates.audio import SoundGlobals
 from pirates.piratesbase import PiratesGlobals
-import math
-import random
+
 
 class Grabber(Creature, TentacleUtils):
     ModelInfo = ('models/char/grabberTentacle_high', 'models/char/grabberTentacle_')

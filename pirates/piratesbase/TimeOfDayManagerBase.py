@@ -1,9 +1,5 @@
-# File: T (Python 2.4)
-
-from direct.distributed.ClockDelta import globalClockDelta
 from pirates.piratesbase import PiratesGlobals
-from pirates.piratesbase import TODGlobals
-import time
+
 
 class TimeOfDayManagerBase:
     from direct.directnotify import DirectNotifyGlobal

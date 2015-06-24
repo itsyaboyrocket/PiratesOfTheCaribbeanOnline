@@ -1,7 +1,5 @@
-# File: V (Python 2.4)
+import random
 
-from pandac.PandaModules import *
-from direct.interval.IntervalGlobal import Sequence, Parallel, Func, Wait, SoundInterval
 from pirates.effects.VolcanoSmoke import VolcanoSmoke
 from pirates.effects.EruptionSmoke import EruptionSmoke
 from pirates.effects.LavaEruption import LavaEruption
@@ -9,7 +7,7 @@ from pirates.effects.LavaSplats import LavaSplats
 from pirates.effects.CameraShaker import CameraShaker
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-import random
+
 
 class VolcanoEffect(NodePath):
     eruptionSfx = None

@@ -1,12 +1,12 @@
-# File: D (Python 2.4)
-
 from direct.fsm import FSM
 from direct.showbase.PythonUtil import report
+
 from pirates.instance import DistributedInstanceWorld
 from pirates.quest import QuestHolder
 from pirates.quest import DistributedQuest
 from pirates.quest.MiniQuestItemGui import MiniQuestItemGui
 from pirates.piratesbase import PiratesGlobals
+
 
 class DistributedTreasureMapInstance(DistributedInstanceWorld.DistributedInstanceWorld, QuestHolder.QuestHolder, FSM.FSM):
     notify = directNotify.newCategory('DistributedTreasureMapInstance')

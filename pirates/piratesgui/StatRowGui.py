@@ -1,8 +1,7 @@
-# File: S (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 from pirates.piratesgui import PiratesGuiGlobals
+
 
 class StatRowGui(DirectFrame):
     Width = PiratesGuiGlobals.TMCompletePanelWidth - PiratesGuiGlobals.GridSize

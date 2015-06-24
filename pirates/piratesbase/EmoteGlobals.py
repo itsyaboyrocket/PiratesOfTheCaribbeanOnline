@@ -1,15 +1,13 @@
-# File: E (Python 2.4)
+
 
 from otp.otpbase import OTPLocalizer as OL
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfxString
-from pirates.uberdog.UberDogGlobals import *
 from pirates.piratesgui import PiratesGuiGlobals
-from pirates.inventory import ItemGlobals
 from pirates.ai import HolidayGlobals
 from pirates.quest.QuestPrereq import *
 from pirates.effects.BlackhandCurseSword import BlackhandCurseSword
-from pirates.effects.BlackhandCurse import BlackhandCurse
+
 EMOTE_RECEIVE_DOLL = 60405
 EMOTE_RECEIVE_STAFF = 60406
 EMOTE_RECEIVE_DAGGER = 60407

@@ -1,7 +1,7 @@
-# File: H (Python 2.4)
+import copy
 
 from pirates.pirate import HumanDNA
-import copy
+
 
 class HumanBase:
 

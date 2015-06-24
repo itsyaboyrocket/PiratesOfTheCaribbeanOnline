@@ -1,31 +1,22 @@
-from pandac.PandaModules import *
-from direct.gui.DirectGui import *
-from direct.showbase.PythonUtil import *
+import math
+import random
+
 from direct.interval.IntervalGlobal import *
 from direct.showbase.InputStateGlobal import inputState
-from pandac.PandaModules import *
-import Avatar
 from direct.controls import ControlManager
-import DistributedAvatar
 from direct.task import Task
-import PositionExaminer
-from otp.otpbase import OTPGlobals
-from otp.otpbase import OTPRender
-import math
-import string
-import random
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed import DistributedSmoothNode
-from direct.gui import DirectGuiGlobals
-from otp.otpbase import OTPLocalizer
 from direct.controls.GhostWalker import GhostWalker
 from direct.controls.GravityWalker import GravityWalker
 from direct.controls.ObserverWalker import ObserverWalker
-from direct.controls.PhysicsWalker import PhysicsWalker
 from direct.controls.SwimWalker import SwimWalker
 from direct.controls.TwoDWalker import TwoDWalker
+
+import DistributedAvatar
+from otp.otpbase import OTPGlobals
+from otp.otpbase import OTPLocalizer
 from otp.nametag.Nametag import Nametag
-from otp.ai.MagicWordGlobal import *
 
 
 class LocalAvatar(DistributedAvatar.DistributedAvatar, DistributedSmoothNode.DistributedSmoothNode):

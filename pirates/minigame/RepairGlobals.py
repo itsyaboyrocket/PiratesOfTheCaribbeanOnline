@@ -1,6 +1,7 @@
-# File: R (Python 2.4)
 
-from pandac.PandaModules import Vec3, Vec4, Point3
+
+from pandac.PandaModules import Vec4
+
 
 class VariableContainer:
     

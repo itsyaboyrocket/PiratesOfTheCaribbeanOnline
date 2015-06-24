@@ -1,15 +1,9 @@
-# File: C (Python 2.4)
-
 from direct.fsm.FSM import FSM
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
-from pirates.piratesgui.GuiButton import GuiButton
-from pirates.piratesgui import PiratesGuiGlobals
-from pirates.piratesbase import PiratesGlobals
-from pirates.piratesbase import PLocalizer
-from pirates.piratesgui.CannonDefenseScorePanelBase import RoundCompleteFlags
+
 from pirates.piratesgui.CannonDefenseEndOfWavePanel import CannonDefenseEndOfWavePanel
 from pirates.piratesgui.CannonDefenseGameStatsPanel import CannonDefenseGameStatsPanel
+
 
 class CannonDefenseScoreBoard(FSM, DirectFrame):
     

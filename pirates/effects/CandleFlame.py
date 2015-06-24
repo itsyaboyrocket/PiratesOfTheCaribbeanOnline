@@ -1,11 +1,10 @@
-# File: C (Python 2.4)
+import random
 
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
-from pirates.piratesbase import PiratesGlobals
+
 from pirates.piratesgui.GameOptions import Options
 from EffectController import EffectController
-import random
+
 
 class CandleFlame(EffectController, NodePath):
     

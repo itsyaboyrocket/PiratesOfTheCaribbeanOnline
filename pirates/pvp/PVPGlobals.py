@@ -1,12 +1,12 @@
-# File: P (Python 2.4)
-
 from pandac.PandaModules import Vec4
-from otp.web.Setting import StateVarSetting
 from direct.fsm.StatePush import FunctionCall
+
+from otp.web.Setting import StateVarSetting
 from pirates.piratesbase import PLocalizer
 from pirates.ship import ShipGlobals
 from pirates.battle import WeaponGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
+
 RulesDuration = 12.0
 ReadyTimeout = 120.0
 ReadyBarrierTimeout = RulesDuration + ReadyTimeout

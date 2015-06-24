@@ -1,9 +1,6 @@
-# File: T (Python 2.4)
-
-from direct.distributed.ClockDelta import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.DistributedObject import DistributedObject
-from pirates.uberdog.UberDogGlobals import *
+
 
 class TradeManager(DistributedObject):
     notify = DirectNotifyGlobal.directNotify.newCategory('TradeManager')

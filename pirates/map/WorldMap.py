@@ -1,13 +1,12 @@
-# File: W (Python 2.4)
+import math
 
-from pandac.PandaModules import *
 from direct.showbase.PythonUtil import clampScalar, lerp, report
-from direct.interval.IntervalGlobal import Sequence, Parallel, LerpFunc, Func, Wait
-from direct.gui.DirectGui import DirectFrame, DirectButton, DGG
+from direct.gui.DirectGui import DirectFrame, DGG
+
 from pirates.map.SceneBuffer import SceneBuffer
 from pirates.map.DecoratedMapBall import DecoratedMapBall
 from pirates.map.MapConfig import MapConfig
-import math
+
 
 class WorldMap(DirectFrame):
 

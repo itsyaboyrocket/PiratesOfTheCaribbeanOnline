@@ -1,8 +1,7 @@
 from pandac.PandaModules import *
-from direct.showbase import DirectObject
 from direct.gui.DirectGui import *
-from direct.task.Task import Task
 from direct.interval.IntervalGlobal import *
+
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.piratesbase import PLocalizer
@@ -13,7 +12,6 @@ from pirates.battle import WeaponGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesgui.SkillRing import SkillRing
 from pirates.reputation import RepChart
-from pirates.battle.EnemySkills import *
 from pirates.inventory import ItemGlobals
 from pirates.minigame import PotionGlobals
 from pirates.minigame import PotionRecipeData

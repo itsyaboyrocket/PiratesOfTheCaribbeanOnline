@@ -1,4 +1,4 @@
-# File: C (Python 2.4)
+
 
 from pirates.uberdog.UberDogGlobals import InventoryCategory
 from pirates.inventory import ItemGlobals

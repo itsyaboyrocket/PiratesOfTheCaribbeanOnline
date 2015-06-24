@@ -1,15 +1,12 @@
-# File: D (Python 2.4)
-
 from direct.distributed.DistributedObjectGlobal import DistributedObjectGlobal
 from direct.directnotify.DirectNotifyGlobal import directNotify
-from pirates.piratesgui import PiratesConfirm
-from pirates.piratesgui import PiratesInfo
+
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import CrewMatchInvitee
 from pirates.piratesgui import CrewMatchNewMemberRequest
 from pirates.piratesgui import PiratesGuiGlobals
-from pirates.piratesbase import PiratesGlobals
 from pirates.band import CrewMatchHandle
+
 
 class DistributedCrewMatchManager(DistributedObjectGlobal):
     notify = directNotify.newCategory('DistributedCrewMatchManager')

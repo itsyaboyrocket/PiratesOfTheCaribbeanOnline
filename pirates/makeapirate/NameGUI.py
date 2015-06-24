@@ -1,16 +1,13 @@
-# File: N (Python 2.4)
-
 import random
 import types
 import string
+
 from direct.fsm import StateData
 from direct.fsm import ClassicFSM
 from direct.fsm import State
-from direct.gui import DirectGuiGlobals
 from direct.gui.DirectGui import *
-from direct.task import Task
-from pandac.PandaModules import *
 from pandac.PandaModules import TextEncoder
+
 from otp.namepanel import NameCheck
 from otp.otpbase import OTPLocalizer as OL
 from pirates.piratesbase import PLocalizer as PL
@@ -20,8 +17,7 @@ from pirates.piratesgui import GuiButton
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.leveleditor import NPCList
 from pirates.makeapirate.PCPickANamePattern import PCPickANamePattern
-from direct.distributed.MsgTypes import *
-from direct.distributed import PyDatagram
+
 MAX_NAME_WIDTH = 9
 
 class NameGUI(DirectFrame, StateData.StateData):

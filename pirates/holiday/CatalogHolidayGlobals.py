@@ -1,4 +1,4 @@
-# File: C (Python 2.4)
+
 
 from pirates.ai.HolidayDates import *
 

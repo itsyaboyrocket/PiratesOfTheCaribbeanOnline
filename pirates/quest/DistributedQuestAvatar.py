@@ -1,15 +1,15 @@
-# File: D (Python 2.4)
-
 from direct.directnotify import DirectNotifyGlobal
+from direct.showbase.PythonUtil import report
+
 from pirates.quest import QuestConstants, QuestAvatarBase, QuestHolder
 from pirates.quest.QuestStepIndicator import QuestStepIndicator
 from pirates.quest.QuestPath import QuestStep
 from pirates.quest import QuestLadderDB
-from direct.showbase.PythonUtil import report
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PDialog
 from pirates.piratesgui import PiratesGuiGlobals
 from otp.otpgui import OTPDialog
+
 
 class DistributedQuestAvatar(QuestAvatarBase.QuestAvatarBase, QuestHolder.QuestHolder):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedQuestAvatar')

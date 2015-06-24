@@ -1,20 +1,17 @@
-# File: U (Python 2.4)
-
 import os
 import sys
-import socket
 import random
 import time
 from urllib import quote_plus
+
 from pandac.PandaModules import HTTPClient
 from pandac.PandaModules import HTTPCookie
 from pandac.PandaModules import URLSpec
 from pandac.PandaModules import Ramfile
-from pandac.PandaModules import Ostream
-from pandac.PandaModules import HTTPDate
 from pandac.PandaModules import DocumentSpec
 from direct.task.Task import Task
 from direct.directnotify.DirectNotifyGlobal import directNotify
+
 notify = directNotify.newCategory('UserFunnel')
 
 class UserFunnel:

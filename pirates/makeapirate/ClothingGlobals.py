@@ -1,12 +1,10 @@
-# File: C (Python 2.4)
+import random
 
 from pandac.PandaModules import VBase4
+
 from pirates.piratesbase import PLocalizer
-from pirates.piratesbase import PiratesGlobals
-from pirates.ai import HolidayGlobals
 from pirates.inventory import ItemGlobals
-import random
-from pirates.inventory.ItemConstants import DYE_COLORS
+
 HAT = 0
 SHIRT = 1
 VEST = 2

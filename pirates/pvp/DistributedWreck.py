@@ -1,12 +1,9 @@
-# File: D (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed import DistributedNode
+
 from pirates.piratesbase import PiratesGlobals
-from pirates.piratesbase import PLocalizer
-from pirates.interact import InteractiveBase
+
 
 class DistributedWreck(DistributedNode.DistributedNode):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedWreck')

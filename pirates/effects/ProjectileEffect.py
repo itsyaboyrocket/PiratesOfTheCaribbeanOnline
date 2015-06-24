@@ -1,9 +1,10 @@
-# File: P (Python 2.4)
+
 
 global skillSfxs
-from pandac.PandaModules import *
-from direct.interval.IntervalGlobal import *
+import random
+
 from direct.directnotify import DirectNotifyGlobal
+
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesbase import PiratesGlobals
 from pirates.effects.CannonExplosion import CannonExplosion
@@ -13,45 +14,26 @@ from pirates.effects.DustCloud import DustCloud
 from pirates.effects.SmokeCloud import SmokeCloud
 from pirates.effects.RockShower import RockShower
 from pirates.effects.ShipSplintersA import ShipSplintersA
-from pirates.effects.DustRing import DustRing
-from pirates.effects.BlackSmoke import BlackSmoke
 from pirates.effects.LightSmoke import LightSmoke
 from pirates.effects.ExplosionFlip import ExplosionFlip
 from pirates.effects.ShockwaveRing import ShockwaveRing
 from pirates.effects.CameraShaker import CameraShaker
-from pirates.effects.FireTrail import FireTrail
-from pirates.effects.GreenBlood import GreenBlood
 from pirates.effects.HitFlashA import HitFlashA
-from pirates.effects.ShockwaveHit import ShockwaveHit
-from pirates.effects.WaspCloud import WaspCloud
-from pirates.effects.PoisonHit import PoisonHit
-from pirates.effects.FireballHit import FireballHit
-from pirates.effects.CurseHit import CurseHit
-from pirates.effects.ExplosionCloud import ExplosionCloud
-from pirates.effects.FadingSigil import FadingSigil
-from pirates.effects.FlashStar import FlashStar
-from pirates.effects.VoodooSmoke import VoodooSmoke
-from pirates.effects.SpectralSmoke import SpectralSmoke
-from pirates.effects.DrainLife import DrainLife
 from pirates.effects.Fire import Fire
 from pirates.effects.MuzzleFlash import MuzzleFlash
 from pirates.effects.DustRing import DustRing
-from pirates.effects.Sparks import Sparks
 from pirates.effects.SmokeBomb import SmokeBomb
 from pirates.effects.SmokePillar import SmokePillar
 from pirates.effects.FlamingDebris import FlamingDebris
-from pirates.effects.ShipDebris import ShipDebris
 from pirates.effects.RockDebris import RockDebris
 from pirates.effects.Explosion import Explosion
-from pirates.effects.ExplosionTip import ExplosionTip
 from pirates.effects.LightningStrike import LightningStrike
-from pirates.effects.MuzzleFlame import MuzzleFlame
 from pirates.effects.SmallRockShower import SmallRockShower
 from pirates.effects.SimpleSmokeCloud import SimpleSmokeCloud
 from pirates.effects.FlashEffect import FlashEffect
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-import random
+
 skillSfxs = None
 
 def getSkillSfx():
@@ -75,9 +57,7 @@ class ProjectileEffect:
         self.normal = normal
         getSkillSfx()
         DistributedBattleAvatar = DistributedBattleAvatar
-        import pirates.battle.DistributedBattleAvatar
         DistributedIsland = DistributedIsland
-        import pirates.world.DistributedIsland
         self.projVelocity = ((25, 0), (0, 25), (-25, 0), (0, -25))
         if not objType:
             if isinstance(hitObject, DistributedBattleAvatar):
@@ -127,7 +107,6 @@ class ProjectileEffect:
     
     def basicHitEffect(self, hitObject, pos, skillId, ammoSkillId):
         WeaponGlobals = WeaponGlobals
-        import pirates.battle
         if self.cr:
             attacker = self.cr.doId2do.get(self.attackerId)
             aoeRadius = self.cr.battleMgr.getModifiedAttackAreaRadius(attacker, skillId, ammoSkillId)

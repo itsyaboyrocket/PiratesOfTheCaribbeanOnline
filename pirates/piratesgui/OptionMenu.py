@@ -1,6 +1,3 @@
-# File: O (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.gui.DirectOptionMenu import *
 from direct.gui.DirectFrame import *
 from direct.gui.DirectButton import *

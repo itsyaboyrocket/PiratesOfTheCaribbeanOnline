@@ -1,17 +1,10 @@
-# File: C (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.showbase.InputStateGlobal import inputState
-from direct.fsm import ClassicFSM, State
 from direct.directnotify import DirectNotifyGlobal
-from direct.interval.IntervalGlobal import *
-from direct.showbase.PythonUtil import reduceAngle, fitSrcAngle2Dest
-from direct.showbase.PythonUtil import clampScalar, getSetter
 from direct.showbase.PythonUtil import ParamObj
-from direct.task import Task
-from otp.otpbase import OTPGlobals
+
 from pirates.pirate import CameraMode
 from pirates.piratesbase import PiratesGlobals
+
 
 class CannonCamera(CameraMode.CameraMode, NodePath, ParamObj):
     notify = DirectNotifyGlobal.directNotify.newCategory('CannonCamera')

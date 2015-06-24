@@ -1,10 +1,9 @@
-# File: T (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.gui.DirectGui import *
 from direct.showbase.PythonUtil import GoldenRectangle
+
 from pirates.piratesgui import GuiPanel, PiratesGuiGlobals
 from pirates.piratesbase import PLocalizer, PiratesGlobals
+
 
 class TeleportBlockerPanel(GuiPanel.GuiPanel):
     _Messages = {

@@ -1,14 +1,12 @@
-# File: S (Python 2.4)
-
-from pandac.PandaModules import Point3, Vec3, Vec4, VBase3, CompassEffect, ModelNode, TransformState, NodePath
+from pandac.PandaModules import Point3, Vec3, Vec4, VBase3, CompassEffect, TransformState, NodePath
 from direct.showbase import DirectObject
-from pirates.piratesbase import PiratesGlobals
 from direct.interval.AnimControlInterval import AnimControlInterval
-from direct.interval.IntervalGlobal import Sequence, Func
-from pirates.audio.SoundGlobals import loadSfx
-from pirates.audio import SoundGlobals
 from direct.directnotify.DirectNotifyGlobal import directNotify
 from direct.interval.IntervalGlobal import *
+
+from pirates.piratesbase import PiratesGlobals
+from pirates.audio.SoundGlobals import loadSfx
+from pirates.audio import SoundGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.effects.ShipPowerRecharge import ShipPowerRecharge
 from pirates.effects.ProtectionDome import ProtectionDome
@@ -17,14 +15,7 @@ from pirates.effects.FadingCard import FadingCard
 from pirates.effects.DarkMaelstrom import DarkMaelstrom
 from pirates.effects.Wind import Wind
 from pirates.effects.Wake import Wake
-from pirates.effects.WaterWakes import WaterWakes
-from pirates.effects.WaterMist import WaterMist
-from pirates.effects.ShipFire import ShipFire
-from pirates.effects.ShipSmoke import ShipSmoke
-from pirates.effects.DarkShipFog import DarkShipFog
-from pirates.ship import ShipGlobals
-from pirates.battle import Cannon
-from pirates.shipparts import CannonPort
+
 
 class Ship(DirectObject.DirectObject):
     notify = directNotify.newCategory('Ship')

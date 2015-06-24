@@ -1,4 +1,4 @@
-# File: P (Python 2.4)
+
 
 from otp.launcher.WebLauncherBase import WebLauncherBase
 from pirates.piratesbase import PLocalizer
@@ -16,9 +16,7 @@ class PiratesWebLauncher(WebLauncherBase):
         WebLauncherBase.__init__(self, appRunner)
         self.startDownload()
         PiratesStart = PiratesStart
-        import pirates.piratesbase
 
-    
     def getAccountServer(self):
         pass
 

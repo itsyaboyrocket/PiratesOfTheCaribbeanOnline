@@ -1,13 +1,5 @@
-# File: P (Python 2.4)
-
-from otp.speedchat.SCMenu import SCMenu
-from otp.speedchat.SCTerminal import *
-from otp.speedchat.SCStaticTextTerminal import SCStaticTextTerminal
-from pirates.quest.Quest import Quest
 from pirates.speedchat.PSpeedChatQuestTerminal import *
-from pirates.pirate.LocalPirate import *
-from pirates.quest.QuestStatus import *
-from pirates.quest.QuestDNA import *
+
 
 class PSpeedChatQuestMenu(SCMenu):
     

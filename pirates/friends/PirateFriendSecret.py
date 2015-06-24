@@ -1,16 +1,18 @@
-# File: P (Python 2.4)
+
 
 global globalFriendSecret
-from pandac.PandaModules import *
+import string
+
 from direct.gui.DirectGui import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.fsm import StateData
-import string
+
 from otp.otpbase import OTPLocalizer
 from otp.otpbase import OTPGlobals
 from pirates.piratesgui import GuiPanel
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PLocalizer
+
 globalFriendSecret = None
 AccountSecret = 0
 AvatarSecret = 1

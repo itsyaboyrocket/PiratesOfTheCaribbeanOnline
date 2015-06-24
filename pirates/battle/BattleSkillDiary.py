@@ -1,4 +1,4 @@
-# File: B (Python 2.4)
+
 
 from pirates.battle import WeaponGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType

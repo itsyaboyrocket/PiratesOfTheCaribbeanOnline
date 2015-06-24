@@ -1,9 +1,10 @@
-from pandac.PandaModules import *
-from otp.movement.CMover import CMover
-from direct.directnotify import DirectNotifyGlobal
-from otp.movement.PyVec3 import PyVec3
-from direct.showbase import PythonUtil
 import __builtin__
+
+from direct.directnotify import DirectNotifyGlobal
+from direct.showbase import PythonUtil
+
+from otp.movement.CMover import CMover
+
 
 class Mover(CMover):
     notify = DirectNotifyGlobal.directNotify.newCategory('Mover')

@@ -1,7 +1,7 @@
-# File: S (Python 2.4)
-
-from direct.showbase.PythonUtil import reduceAngle, pivotScalar, rad90, rad270
 import math
+
+from direct.showbase.PythonUtil import rad90, rad270
+
 
 class ShipRockerOffState:
     

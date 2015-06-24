@@ -1,4 +1,4 @@
-# File: D (Python 2.4)
+
 
 from pirates.audio import SoundGlobals
 from pirates.piratesbase import PiratesGlobals

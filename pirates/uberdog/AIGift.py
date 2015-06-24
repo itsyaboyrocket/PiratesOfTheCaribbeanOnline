@@ -1,10 +1,10 @@
-# File: A (Python 2.4)
+from direct.directnotify.DirectNotifyGlobal import directNotify
 
 from AITradeBase import AITradeBase
 from pirates.uberdog.UberDogGlobals import *
 from pirates.reputation import ReputationGlobals
-from direct.directnotify.DirectNotifyGlobal import directNotify
 from pirates.piratesbase import Freebooter
+
 
 class AIGift(AITradeBase):
     notify = directNotify.newCategory('AIGift')

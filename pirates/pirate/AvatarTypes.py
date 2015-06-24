@@ -1,8 +1,8 @@
 import random
+
 from pirates.pirate.AvatarType import AvatarType
 from pirates.pirate.AvatarTypeSet import AvatarTypeSet
 from pirates.piratesbase import PLocalizer as PL
-
 
 AnyAvatar = AvatarType()
 AnyShip = AvatarType()

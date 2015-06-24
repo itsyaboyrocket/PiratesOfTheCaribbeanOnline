@@ -1,10 +1,13 @@
-from direct.showbase.ShowBase import ShowBase
-from pandac.PandaModules import Camera, TPLow, VBase4, ColorWriteAttrib, Filename, getModelPath, NodePath
-import OTPRender
 import time
 import math
 import re
+
+from direct.showbase.ShowBase import ShowBase
+from pandac.PandaModules import Camera, TPLow, VBase4, ColorWriteAttrib, Filename, getModelPath, NodePath
+
+import OTPRender
 from otp.ai.MagicWordGlobal import *
+
 
 class OTPBase(ShowBase):
 

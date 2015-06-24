@@ -1,24 +1,17 @@
-from direct.interval.IntervalGlobal import *
+import random
+
 from direct.gui.OnscreenText import OnscreenText
 from direct.actor import Actor
-from pandac.PandaModules import *
-from otp.otpbase import OTPGlobals
+
 from otp.avatar import Avatar
 from pirates.piratesbase import PiratesGlobals
 from pirates.movement.AnimationMixer import AnimationMixer
 from pirates.movement.UsesAnimationMixer import UsesAnimationMixer
 from pirates.effects.UsesEffectNode import UsesEffectNode
-from pirates.pirate import AvatarTypes
-from pirates.pirate.AvatarType import AvatarType
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from otp.otpbase import OTPRender
-from pirates.effects.JRDeathEffect import JRDeathEffect
-from pirates.effects.ShockwaveRing import ShockwaveRing
-from pirates.effects.JRSpiritEffect import JRSpiritEffect
 from pirates.battle import EnemyGlobals
-import random
-
 
 WALK_CUTOFF = 0.5
 ADVANCE_CUTOFF = 0.5

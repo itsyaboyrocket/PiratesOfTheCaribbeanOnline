@@ -1,15 +1,11 @@
-# File: P (Python 2.4)
+from direct.gui.DirectGui import *
 
 from otp.otpbase import OTPTimer
-from direct.showbase.ShowBaseGlobal import *
-from direct.task import Task
-from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import GuiButton
-import time
+
 
 class PiratesTimerHourglass(OTPTimer.OTPTimer):
     ClockImage = None

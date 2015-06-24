@@ -1,8 +1,7 @@
 from pandac.PandaModules import *
 from direct.directnotify.DirectNotifyGlobal import *
-import random
 from direct.distributed.PyDatagram import PyDatagram
-from direct.distributed.PyDatagramIterator import PyDatagramIterator
+
 notify = directNotify.newCategory('AvatarDNA')
 
 class AvatarDNA:

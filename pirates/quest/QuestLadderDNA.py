@@ -1,13 +1,11 @@
-# File: Q (Python 2.4)
+import random
 
 from direct.directnotify import DirectNotifyGlobal
 from direct.showbase.PythonUtil import POD
+
 from pirates.quest.QuestLadder import QuestLadder, QuestChoice, QuestBranch
-from pirates.quest.QuestDNA import QuestDNA
-from pirates.quest.QuestTaskDNA import VisitTaskDNA
-from pirates.quest import QuestDB
 from pirates.piratesbase import PLocalizer
-import random
+
 
 class QuestContainerDNA(POD):
     notify = DirectNotifyGlobal.directNotify.newCategory('QuestContainerDNA')

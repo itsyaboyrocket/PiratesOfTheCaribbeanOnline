@@ -1,21 +1,21 @@
-# File: T (Python 2.4)
+import random
 
 from pandac.PandaModules import *
 from direct.showbase.PythonUtil import report, DelayedCall, Functor
 from direct.interval.IntervalGlobal import *
+from direct.task import Task
+
 from pirates.audio import SoundGlobals
 from pirates.treasuremap import DistributedTreasureMapInstance, TreasureMapBlackPearlGlobals
-from pirates.ship import ShipGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.cutscene import Cutscene, CutsceneData
 from pirates.world import FortBarricade
 from pirates.piratesbase import PLocalizer
 from pirates.effects.DarkWaterFog import DarkWaterFog
-from pirates.piratesbase import TimeOfDayManager, TODGlobals
+from pirates.piratesbase import TODGlobals
 from pirates.treasuremap import TreasureMapRulesPanel
 from pirates.uberdog import DistributedInventoryBase
-from direct.task import Task
-import random
+
 
 class TreasureMapBlackPearl(DistributedTreasureMapInstance.DistributedTreasureMapInstance):
     notify = directNotify.newCategory('TreasureMapBlackPearl')

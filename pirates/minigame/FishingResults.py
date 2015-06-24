@@ -1,14 +1,8 @@
-# File: F (Python 2.4)
-
-import math
 from pirates.piratesgui.GuiPanel import *
 from pirates.piratesgui.RequestButton import RequestButton
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import CollectionMap
-from pirates.battle import WeaponGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
-from pirates.reputation import ReputationGlobals
-from pirates.ai import HolidayGlobals
 import FishingGlobals
 
 class FishingResults(NodePath):

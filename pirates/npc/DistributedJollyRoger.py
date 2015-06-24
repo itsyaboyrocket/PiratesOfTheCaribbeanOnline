@@ -1,8 +1,8 @@
-# File: D (Python 2.4)
+import random
 
-from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import *
+
 from pirates.battle import DistributedBattleNPC
 from pirates.npc import JollyRoger
 from pirates.npc.Boss import Boss
@@ -13,7 +13,7 @@ from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import PiratesGlobals
 from pirates.effects.JRTeleportEffect import JRTeleportEffect
 import NPCSkeletonGameFSM
-import random
+
 
 class DistributedJollyRoger(DistributedBattleNPC.DistributedBattleNPC, JollyRoger.JollyRoger, Boss):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedJollyRoger')
@@ -274,7 +274,6 @@ class DistributedJollyRoger(DistributedBattleNPC.DistributedBattleNPC, JollyRoge
         
         def startVFX():
             MysticFire = MysticFire
-            import pirates.effects.MysticFire
             effect = MysticFire.getEffect()
             if effect:
                 effect.reparentTo(render)

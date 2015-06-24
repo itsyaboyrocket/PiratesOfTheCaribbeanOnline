@@ -1,21 +1,9 @@
-# File: S (Python 2.4)
-
-from direct.interval.IntervalGlobal import *
-from direct.gui.DirectGui import *
-from direct.actor import Actor
-from pandac.PandaModules import *
 from pirates.piratesbase.PiratesGlobals import *
 from pirates.piratesbase import PiratesGlobals
-from pirates.piratesbase import PLocalizer
 from pirates.effects.ShipSplintersA import ShipSplintersA
 from pirates.effects.SmokeCloud import SmokeCloud
 from pirates.effects.ExplosionFlip import ExplosionFlip
-from pirates.effects.Fire import Fire
-from pirates.effects.BlackSmoke import BlackSmoke
-from pirates.uberdog.UberDogGlobals import InventoryType
-from pirates.battle import CannonGlobals
-from pirates.battle import WeaponGlobals
-from pirates.shipparts import ShipPart
+
 
 class ShipWreck(NodePath):
     notify = directNotify.newCategory('ShipWreck')

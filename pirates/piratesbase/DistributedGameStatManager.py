@@ -1,7 +1,7 @@
-# File: D (Python 2.4)
-
 from direct.distributed.DistributedObject import DistributedObject
+
 from GameStatManagerBase import GameStatManagerBase
+
 
 class DistributedGameStatManager(DistributedObject, GameStatManagerBase):
     from direct.directnotify import DirectNotifyGlobal

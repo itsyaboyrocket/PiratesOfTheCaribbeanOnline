@@ -1,9 +1,9 @@
-# File: P (Python 2.4)
-
 import random
-from direct.directnotify import DirectNotifyGlobal
+
 from direct.interval.IntervalGlobal import *
 from pandac.PandaModules import Vec4
+from direct.distributed.ClockDelta import *
+
 from pirates.battle import WeaponGlobals
 from pirates.minigame import PotionGlobals
 from pirates.effects.VomitEffect import VomitEffect
@@ -12,11 +12,9 @@ from pirates.effects.BurpEffect import BurpEffect
 from pirates.effects.BlueFlame import BlueFlame
 from pirates.effects.HealSparks import HealSparks
 from pirates.effects.HealRays import HealRays
-from pirates.battle.EnemySkills import EnemySkills
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-from direct.showbase.DirectObject import DirectObject
-from direct.distributed.ClockDelta import *
+
 
 class PotionStatusEffectManager:
     notify = DirectNotifyGlobal.directNotify.newCategory('PotionStatusEffectManager')

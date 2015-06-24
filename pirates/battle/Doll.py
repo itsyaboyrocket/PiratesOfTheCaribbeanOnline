@@ -1,15 +1,11 @@
-# File: D (Python 2.4)
-
-import random
-import Weapon
-import WeaponGlobals
 from direct.interval.IntervalGlobal import *
-from pandac.PandaModules import *
+
+import Weapon
 from pirates.battle.EnemySkills import *
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.inventory import ItemGlobals
+
 
 class Doll(Weapon.Weapon):
     modelTypes = [

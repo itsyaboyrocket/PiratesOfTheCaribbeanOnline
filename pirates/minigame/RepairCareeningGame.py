@@ -1,12 +1,12 @@
-# File: R (Python 2.4)
-
 import random
 import math
-from pandac.PandaModules import Point2, Point3, Vec2
-from pandac.PandaModules import NodePath, CardMaker
+
+from pandac.PandaModules import Point2, Point3
+from pandac.PandaModules import NodePath
 from pandac.PandaModules import MouseButton
 from direct.task import Task
 from direct.gui.DirectGui import *
+
 from pirates.piratesbase import PLocalizer
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
@@ -14,6 +14,7 @@ from RepairMincroGame import RepairMincroGame
 from RepairBarnacle import RepairBarnacle
 from pirates.piratesbase import PiratesGlobals
 import RepairGlobals
+
 
 class RepairCareeningGame(RepairMincroGame):
     scrubSounds = None

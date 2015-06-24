@@ -1,17 +1,17 @@
-# File: S (Python 2.4)
+import random
 
 from pandac.PandaModules import *
 from direct.task import Task
-from pirates.audio import SoundGlobals
+
 from pirates.swamp.Swamp import Swamp
 from pirates.effects import EnvironmentEffects
 from pirates.effects.Fireflies import Fireflies
 from pirates.effects.GroundFog import GroundFog
-from pirates.piratesbase import TimeOfDayManager, TODGlobals, PiratesGlobals
+from pirates.piratesbase import PiratesGlobals
 from pirates.seapatch.Reflection import Reflection
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-import random
+
 
 class SwampEffects(EnvironmentEffects.EnvironmentEffects):
     GROUND_FOG_Z = 2.0

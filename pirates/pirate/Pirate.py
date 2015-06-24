@@ -1,4 +1,3 @@
-from pirates.piratesbase import PiratesGlobals
 from Human import Human
 import AvatarTypes
 

@@ -1,26 +1,18 @@
-# File: F (Python 2.4)
+import random
+
+from direct.distributed.ClockDelta import *
+from direct.directnotify import DirectNotifyGlobal
+from direct.task import Task
+from direct.gui.DirectGui import *
+from pandac.PandaModules import HTTPClient
+from pandac.PandaModules import DocumentSpec
 
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
-from pirates.reputation import ReputationGlobals
-from direct.showbase import DirectObject
-from direct.distributed.ClockDelta import *
-from direct.directnotify import DirectNotifyGlobal
-from direct.gui import DirectGuiGlobals as DGG
-from direct.task import Task
-from direct.gui.DirectGui import *
-from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.world.LocationConstants import *
 from otp.otpbase import OTPGlobals
-import random
-from pandac.PandaModules import HTTPClient
-from pandac.PandaModules import HTTPCookie
-from pandac.PandaModules import URLSpec
-from pandac.PandaModules import Ramfile
-from pandac.PandaModules import Ostream
-from pandac.PandaModules import HTTPDate
-from pandac.PandaModules import DocumentSpec
+
 IDEALX = 1280
 IDEALY = 1024
 tutorialShots = [

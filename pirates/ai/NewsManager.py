@@ -1,27 +1,21 @@
-# File: N (Python 2.4)
+import random
+import time
+import re
 
-from pandac.PandaModules import *
 from direct.distributed import DistributedObject
 from direct.directnotify import DirectNotifyGlobal
-from direct.interval.IntervalGlobal import *
-from direct.task import Task
+
 from pirates.ai import HolidayGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
-from pirates.piratesbase import EmoteGlobals
-from pirates.economy import StoreGUI, AccessoriesStoreGUI, TattooStoreGUI, JewelryStoreGUI, BarberStoreGUI, SimpleStoreGUI
-from pirates.chat.PChatInputSpeedChat import PChatInputSpeedChat
-from pirates.chat.PChatInputEmote import PChatInputEmote
+from pirates.economy import AccessoriesStoreGUI, TattooStoreGUI, JewelryStoreGUI, BarberStoreGUI, SimpleStoreGUI
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.makeapirate import TattooGlobals
 from pirates.makeapirate import ClothingGlobals
 from pirates.makeapirate import JewelryGlobals
 from pirates.makeapirate import BarberGlobals
 from pirates.piratesbase import Freebooter
-from pirates.world.LocationConstants import LocationIds
-import random
-import time
-import re
+
 messages = {
     0: PLocalizer.FullMoonWarning1,
     1: PLocalizer.FullMoonWarning2,

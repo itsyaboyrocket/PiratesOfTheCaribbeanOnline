@@ -1,11 +1,9 @@
-# File: E (Python 2.4)
-
 import random
-from pandac.PandaModules import *
+
 from direct.interval.IntervalGlobal import *
 from direct.actor import Actor
 from direct.showbase.DirectObject import DirectObject
-from pirates.piratesbase import PiratesGlobals
+
 from pirates.effects.GypsyBallGlow import GypsyBallGlow
 from pirates.effects.LanternGlow import LanternGlow
 from pirates.effects.CandleFlame import CandleFlame
@@ -36,6 +34,7 @@ from pirates.audio.SoundGlobals import loadSfxString
 from pirates.ai import HolidayGlobals
 from PooledEffect import PooledEffect
 from pirates.piratesgui.GameOptions import Options
+
 
 class EnvironmentEffects(DirectObject):
     effectDict = {

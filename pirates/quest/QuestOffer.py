@@ -1,7 +1,7 @@
-# File: Q (Python 2.4)
-
 from direct.showbase.PythonUtil import POD, makeTuple
+
 from pirates.quest import QuestReward, QuestDB, QuestLadderDB
+
 
 class QuestOffer(POD):
     DataSet = {

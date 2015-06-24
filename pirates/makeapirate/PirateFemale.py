@@ -1,8 +1,6 @@
-# File: P (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.showbase import DirectObject
 from direct.directnotify import DirectNotifyGlobal
+
 from pirates.pirate import HumanDNA
 from pirates.makeapirate import ClothingGlobals
 from pirates.inventory.ItemConstants import DYE_COLORS
@@ -10,7 +8,7 @@ from pirates.pirate import BodyDefs
 from pirates.inventory import ItemGlobals, DropGlobals
 import TattooGlobals
 from otp.otpbase import OTPRender
-import copy
+
 TX = 0
 TY = 1
 TZ = 2

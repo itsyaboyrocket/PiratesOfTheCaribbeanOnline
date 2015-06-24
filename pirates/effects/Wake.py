@@ -1,20 +1,12 @@
-# File: W (Python 2.4)
-
-from pandac.PandaModules import *
-from pirates.seapatch.SeaPatchNode import SeaPatchNode
-from direct.interval.IntervalGlobal import *
 from direct.actor import Actor
-from direct.particles import ParticleEffect
-from direct.particles import Particles
-from direct.particles import ForceGroup
-from PooledEffect import PooledEffect
 from direct.task import Task
-import random
-from otp.otpbase import OTPRender
+
+from pirates.seapatch.SeaPatchNode import SeaPatchNode
+from PooledEffect import PooledEffect
 from pirates.ship import ShipGlobals
 from pirates.effects.WaterShadow import WaterShadow
-from pirates.piratesbase import PiratesGlobals
 from otp.otpbase import OTPRender
+
 
 class Wake(PooledEffect):
     MinWakeVelocity = 6.0

@@ -1,16 +1,14 @@
-import string
-import sys
 from direct.showbase import DirectObject
-from otp.otpbase import OTPGlobals
 from direct.fsm import ClassicFSM
 from direct.fsm import State
+from direct.directnotify import DirectNotifyGlobal
+from direct.gui.DirectGui import *
+
 from otp.login import SecretFriendsInfoPanel
 from otp.login import PrivacyPolicyPanel
 from otp.otpbase import OTPLocalizer
-from direct.directnotify import DirectNotifyGlobal
 from otp.login import LeaveToPayDialog
-from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 ChatEvent = 'ChatEvent'
 NormalChatEvent = 'NormalChatEvent'
 SCChatEvent = 'SCChatEvent'

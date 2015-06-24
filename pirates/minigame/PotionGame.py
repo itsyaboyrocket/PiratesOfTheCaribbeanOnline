@@ -1,20 +1,14 @@
-# File: P (Python 2.4)
+import math
 
-from direct.interval.IntervalGlobal import Sequence, Func
-from direct.showbase.ShowBaseGlobal import *
-from direct.interval.IntervalGlobal import *
-from direct.gui.DirectGui import *
-from pirates.piratesgui.GuiPanel import *
 from direct.showbase import DirectObject
-from direct.task import Task
-from pandac.PandaModules import *
 from pandac.PandaModules import CardMaker
+
+from pirates.piratesgui.GuiPanel import *
 from PotionGameFSM import PotionGameFSM
 from PotionRecipePicker import PotionRecipePicker
 from PotionRecipe import PotionRecipe
 from PotionResults import PotionResults
 from PotionFail import PotionFail
-from PotionBoardPiece import PotionBoardPiece
 from PotionGameBoard import PotionGameBoard
 from PotionHint import PotionHint
 from PotionInfo import PotionInfo
@@ -24,12 +18,10 @@ from pirates.piratesgui import GuiButton
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import PiratesConfirm
 from pirates.piratesgui import ReputationMeter
-from pirates.piratesgui import GuiManager
 from pirates.piratesbase import PLocalizer
 from pirates.audio import SoundGlobals
-from pirates.audio.SoundGlobals import loadSfx
-from pirates.uberdog.UberDogGlobals import InventoryType, InventoryCategory
-import math
+from pirates.uberdog.UberDogGlobals import InventoryType
+
 
 class PotionGame(DirectObject.DirectObject):
     

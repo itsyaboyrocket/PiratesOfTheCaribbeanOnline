@@ -1,14 +1,9 @@
-# File: C (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.directnotify.DirectNotifyGlobal import *
-import random
-from direct.distributed.PyDatagram import PyDatagram
-from direct.distributed.PyDatagramIterator import PyDatagramIterator
+
 from otp.avatar import AvatarDNA
-from otp.speedchat import ColorSpace
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.ship import ShipGlobals
+
 notify = directNotify.newCategory('CannonDNA')
 CannonDict = {
     InventoryType.CannonL1: 'models/shipparts/cannon',

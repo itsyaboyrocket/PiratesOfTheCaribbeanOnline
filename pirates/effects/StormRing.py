@@ -1,10 +1,9 @@
-# File: S (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 from direct.particles import ParticleEffect
 from direct.particles import Particles
+
 from EffectController import EffectController
+
 
 class StormRing(EffectController, NodePath):
     cardScale = 64.0

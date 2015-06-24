@@ -1,9 +1,8 @@
-# File: P (Python 2.4)
+
 
 from direct.showbase.InputStateGlobal import inputState
 from direct.controls.SwimWalker import SwimWalker
-from pandac.PandaModules import *
-from direct.task.Task import Task
+
 
 class PiratesSwimWalker(SwimWalker):
     

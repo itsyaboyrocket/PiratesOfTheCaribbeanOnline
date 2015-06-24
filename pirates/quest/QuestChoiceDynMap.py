@@ -1,9 +1,5 @@
-# File: Q (Python 2.4)
-
-from direct.directnotify import DirectNotifyGlobal
-from pirates.quest import QuestLadder
 from pirates.quest import QuestLadderDB
-from pirates.quest import QuestDB
+
 
 class QuestChoiceDynMap:
     

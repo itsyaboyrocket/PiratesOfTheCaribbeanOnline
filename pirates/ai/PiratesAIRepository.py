@@ -1,5 +1,5 @@
-from pandac.PandaModules import *
 from direct.distributed.PyDatagram import *
+
 from pirates.distributed.PiratesInternalRepository import PiratesInternalRepository
 from pirates.distributed.PiratesDistrictAI import PiratesDistrictAI
 from otp.ai.TimeManagerAI import TimeManagerAI

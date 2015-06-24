@@ -1,35 +1,21 @@
-# File: D (Python 2.4)
-
-import math
-import random
-import copy
 from direct.fsm import ClassicFSM
 from direct.fsm import State
-from direct.showbase.DirectObject import *
-from direct.gui.DirectGui import *
-from pandac.PandaModules import *
-from direct.interval.IntervalGlobal import *
-from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.ClockDelta import *
 from direct.task import Task
-from direct.showutil import Rope
-from otp.otpbase import OTPGlobals
+
 from otp.otpbase import OTPRender
 from pirates.uberdog.UberDogGlobals import InventoryType
-from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.interact import InteractiveBase
 from pirates.battle import CannonGUI
-from pirates.uberdog import UberDogGlobals
-from pirates.ship import ShipGlobals
 from pirates.piratesbase import Freebooter
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.uberdog.DistributedInventoryBase import DistributedInventoryBase
 import DistributedWeapon
 import WeaponGlobals
-import CannonGlobals
 import Cannon
+
 
 class DistributedPCCannon(DistributedWeapon.DistributedWeapon):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedPCCannon')

@@ -1,17 +1,14 @@
-# File: F (Python 2.4)
-
 import math
+
+from pandac.PandaModules import Vec4
+from direct.gui.DirectGui import *
+from direct.task import Task
+from direct.interval.IntervalGlobal import Sequence
+
 from panda3d.core import TextNode
 from panda3d.core import NodePath
-from pandac.PandaModules import Vec4
 from otp.otpgui import OTPDialog
-from direct.gui.DirectGui import *
-from direct.gui.DirectGui import DirectWaitBar, DGG
-from pirates.piratesgui.GuiButton import GuiButton
 from pirates.piratesgui.PDialog import PDialog
-from direct.task import Task
-from direct.interval.IntervalGlobal import Sequence, Parallel, Wait, Func
-import FishingGlobals
 from FishingResults import FishingResults
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.inventory import ItemGlobals
@@ -20,6 +17,7 @@ from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import GuiPanel
 from pirates.piratesgui.TextPrinter import TextPrinter
+
 
 class FishingGameGUI:
     

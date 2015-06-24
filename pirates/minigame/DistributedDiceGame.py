@@ -1,18 +1,14 @@
-# File: D (Python 2.4)
-
 from direct.directnotify import DirectNotifyGlobal
-from direct.interval.IntervalGlobal import *
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 from pirates.piratesbase import PLocalizer
 from pirates.minigame import DistributedGameTable
 from pirates.minigame import PlayingCardGlobals
 from pirates.minigame import DiceGlobals
-from pirates.minigame import PlayingCard
 from pirates.minigame import DiceGameGUI
 from pirates.pirate import HumanDNA
 from pirates.uberdog.UberDogGlobals import *
-from direct.task import Task
+
 
 class DistributedDiceGame(DistributedGameTable.DistributedGameTable):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedDiceGame')

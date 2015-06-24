@@ -1,13 +1,11 @@
-# File: D (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
-from otp.uberdog.RejectCode import RejectCode
+
 from pirates.holiday.DistributedHolidayObject import DistributedHolidayObject
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.effects.SmallFire import SmallFire
 from pirates.ai import HolidayGlobals
+
 
 class DistributedHolidayPig(DistributedHolidayObject):
     

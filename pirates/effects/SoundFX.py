@@ -1,10 +1,8 @@
-# File: S (Python 2.4)
-
 import random
-from pandac.PandaModules import *
+
 from direct.task import Task
 from direct.interval.IntervalGlobal import *
-from direct.showbase import Audio3DManager
+
 
 class SoundFX(NodePath):
 

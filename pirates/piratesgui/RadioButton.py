@@ -1,6 +1,3 @@
-# File: R (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.gui.DirectButton import *
 
 class RadioButton(DirectButton):

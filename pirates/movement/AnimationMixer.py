@@ -1,12 +1,11 @@
-# File: A (Python 2.4)
+import types
 
 from direct.interval.IntervalGlobal import *
 from direct.interval.ActorInterval import ActorInterval
-from direct.directnotify import DirectNotifyGlobal
 from direct.actor.Actor import Actor
 from direct.distributed.ClockDelta import *
 from direct.showbase.PythonUtil import lerp, report
-import types
+
 
 class MixerType(type):
 

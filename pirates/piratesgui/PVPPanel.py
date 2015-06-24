@@ -1,15 +1,12 @@
-# File: P (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 from pirates.piratesgui import PiratesGuiGlobals
-from pirates.piratesgui.GuiPanel import GuiPanel
 from pirates.piratesgui.ListFrame import ListFrame
-from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PVPRankGui
 from pirates.pvp import PVPGlobals
 from pirates.pvp import Beacon
 from pirates.piratesgui import BorderFrame
+
 
 class PVPPanel(BorderFrame.BorderFrame):
     

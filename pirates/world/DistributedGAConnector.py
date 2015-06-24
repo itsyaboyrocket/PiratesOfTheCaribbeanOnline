@@ -1,17 +1,13 @@
-# File: D (Python 2.4)
-
 from pandac.PandaModules import *
 from direct.distributed import DistributedNode
 from direct.distributed import DistributedObject
-from pirates.piratesbase import PiratesGlobals
-from pirates.world import DistributedGameArea
-from pirates.world import DistributedIsland
-from pirates.effects import EnvironmentEffects
-from pirates.tutorial import CrewTutorial
 from direct.showbase.PythonUtil import report
-from pirates.piratesbase import PLocalizer
+
+from pirates.piratesbase import PiratesGlobals
+from pirates.effects import EnvironmentEffects
 from pirates.world import ZoneLOD
 from pirates.map.MinimapObject import MinimapObject
+
 
 class DistributedGAConnector(DistributedNode.DistributedNode):
     notify = directNotify.newCategory('DistributedGAConnector')

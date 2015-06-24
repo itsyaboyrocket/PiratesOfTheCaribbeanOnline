@@ -1,20 +1,14 @@
-# File: P (Python 2.4)
+import random
 
-from direct.interval.IntervalGlobal import Sequence, Func
-from direct.showbase.ShowBaseGlobal import *
 from direct.interval.IntervalGlobal import *
 from direct.gui.DirectGui import *
-from direct.showbase import DirectObject
-from direct.task import Task
-from pandac.PandaModules import *
-from pandac.PandaModules import CardMaker
-from direct.gui.OnscreenText import OnscreenText
+
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from PotionRecipeData import PotionColorSets
 from pirates.battle.WeaponConstants import *
-import random
 import PotionGlobals
+
 LowLevelRecipes = [
     C_PISTOL_DAMAGE_LVL1,
     C_CUTLASS_DAMAGE_LVL1,

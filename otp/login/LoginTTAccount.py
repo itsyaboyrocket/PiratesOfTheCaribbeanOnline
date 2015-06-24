@@ -1,12 +1,13 @@
 # 2013.08.22 22:15:38 Pacific Daylight Time
 # Embedded file name: otp.login.LoginTTAccount
-from pandac.PandaModules import *
 from direct.distributed.MsgTypes import *
 from direct.directnotify import DirectNotifyGlobal
+from direct.distributed.PyDatagram import PyDatagram
+
 import LoginBase
 import TTAccount
 from TTAccount import TTAccountException
-from direct.distributed.PyDatagram import PyDatagram
+
 
 class LoginTTAccount(LoginBase.LoginBase, TTAccount.TTAccount):
     __module__ = __name__

@@ -1,16 +1,11 @@
-# File: D (Python 2.4)
-
 import math
-from pandac.PandaModules import *
-from direct.gui.DirectGui import *
+
 from direct.directnotify import DirectNotifyGlobal
-from direct.interval.IntervalGlobal import *
-from direct.task import Task
-from direct.showbase.PythonUtil import quickProfile
+
 from pirates.distributed import DistributedInteractive
-from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
+
 containerCache = { }
 
 class DistributedSearchableContainer(DistributedInteractive.DistributedInteractive):

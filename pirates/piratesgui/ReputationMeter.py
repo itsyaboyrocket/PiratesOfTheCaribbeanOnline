@@ -1,13 +1,12 @@
-# File: R (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
+
 from pirates.reputation import ReputationGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
-from direct.interval.IntervalGlobal import *
 from pirates.uberdog.UberDogGlobals import InventoryType
+
 
 class ReputationMeter(DirectFrame):
     

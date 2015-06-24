@@ -1,8 +1,3 @@
-# File: P (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.interval.IntervalGlobal import *
-from pirates.destructibles import ShatterableSkeleton
 from pirates.pirate.BattleAvatarGameFSM import BattleAvatarGameFSM
 
 class PlayerPirateGameFSM(BattleAvatarGameFSM):

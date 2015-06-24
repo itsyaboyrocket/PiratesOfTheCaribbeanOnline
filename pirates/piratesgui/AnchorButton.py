@@ -1,11 +1,10 @@
-# File: A (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import BlinkButton
 from pirates.piratesgui import PiratesGuiGlobals
+
 
 class AnchorButton(BlinkButton.BlinkButton):
     

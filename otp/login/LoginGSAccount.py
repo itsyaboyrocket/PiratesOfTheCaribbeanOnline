@@ -1,10 +1,9 @@
 # 2013.08.22 22:15:37 Pacific Daylight Time
 # Embedded file name: otp.login.LoginGSAccount
-from pandac.PandaModules import *
-from direct.distributed.MsgTypes import *
-from direct.directnotify import DirectNotifyGlobal
-import LoginBase
 from direct.distributed.PyDatagram import PyDatagram
+
+import LoginBase
+
 
 class LoginGSAccount(LoginBase.LoginBase):
     __module__ = __name__

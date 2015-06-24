@@ -1,10 +1,3 @@
-# File: N (Python 2.4)
-
-from direct.gui.DirectGui import *
-from pandac.PandaModules import *
-from direct.distributed import DistributedSmoothNode
-from direct.interval.IntervalGlobal import *
-from pirates.piratesbase import PiratesGlobals
 from pirates.pirate import BattleNPCGameFSM
 
 class NPCSkeletonGameFSM(BattleNPCGameFSM.BattleNPCGameFSM):

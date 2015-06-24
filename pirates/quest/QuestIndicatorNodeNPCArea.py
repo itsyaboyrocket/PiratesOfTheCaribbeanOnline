@@ -1,8 +1,8 @@
-# File: Q (Python 2.4)
+
 
 from pirates.piratesgui.RadarGui import *
 from pirates.quest.QuestIndicatorGridNode import QuestIndicatorGridNode
-from direct.showbase.PythonUtil import report, StackTrace
+
 
 class QuestIndicatorNodeNPCArea(QuestIndicatorGridNode):
     

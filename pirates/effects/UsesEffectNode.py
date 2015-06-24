@@ -1,7 +1,3 @@
-# File: U (Python 2.4)
-
-from pandac.PandaModules import *
-
 class UsesEffectNode(NodePath):
     
     def __init__(self, offset = 3.0):

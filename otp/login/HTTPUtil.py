@@ -1,5 +1,3 @@
-from pandac.PandaModules import *
-
 class HTTPUtilException(Exception):
 
     def __init__(self, what):

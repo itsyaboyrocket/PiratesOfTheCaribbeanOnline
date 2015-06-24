@@ -1,13 +1,9 @@
-# File: S (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.interval.IntervalGlobal import *
-from otp.otpbase import OTPRender
-from pirates.piratesbase import PiratesGlobals
-from otp.otpbase import OTPRender
 from direct.showbase import PythonUtil
 from direct.interval.IntervalGlobal import *
+
+from otp.otpbase import OTPRender
 from pirates.piratesbase import TODGlobals
+
 
 class SkyGroup(NodePath):
     

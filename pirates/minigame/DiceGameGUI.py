@@ -1,17 +1,15 @@
-# File: D (Python 2.4)
+import random
+import math
 
-from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import *
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from direct.task import Task
+
 from pirates.minigame import DiceGlobals
-from pirates.minigame import PlayingCard
 from pirates.piratesgui import GuiTray
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PLocalizer
-import random
-import math
+
 
 class DiceGameGUI(DirectFrame):
     HandPos = (Vec3(-4.0, 3.5, DiceGlobals.PIT_HEIGHT), Vec3(-8.0, 0, DiceGlobals.PIT_HEIGHT), Vec3(-4.0, -4.5, DiceGlobals.PIT_HEIGHT), Vec3(0, -4.5, DiceGlobals.PIT_HEIGHT), Vec3(4.0, -4.5, DiceGlobals.PIT_HEIGHT), Vec3(8.0, 0, DiceGlobals.PIT_HEIGHT), Vec3(4.0, 3.5, DiceGlobals.PIT_HEIGHT))

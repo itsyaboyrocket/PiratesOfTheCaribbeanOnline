@@ -1,13 +1,13 @@
-# File: F (Python 2.4)
+import random
 
 from pandac.PandaModules import Vec3, Vec4, Point3
+
 from pirates.inventory import ItemGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.uberdog.UberDogGlobals import InventoryType
-from pirates.world.LocationConstants import LocationIds
 from pirates.piratesbase import PiratesGlobals
 from pirates.inventory import DropGlobals
-import random
+
 fishingRodScreenPosition = (-0.5, 0.0, 0.0)
 struggleDangerThreshold = 5.0
 maxStruggleTime = 15.0

@@ -1,14 +1,9 @@
-# File: D (Python 2.4)
-
 from pandac.PandaModules import *
+
 from pirates.distributed import DistributedInteractive
-from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.shipparts import DistributedShippart
-from pirates.shipparts import Wheel
-from pirates.ship import ShipGlobals
-from pirates.piratesgui import PiratesGuiGlobals
-from direct.showbase.PythonUtil import report, quickProfile
+
 
 class DistributedSteeringWheel(DistributedInteractive.DistributedInteractive, DistributedShippart.DistributedShippart):
     notify = directNotify.newCategory('DistributedSteeringWheel')

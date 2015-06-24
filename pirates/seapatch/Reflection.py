@@ -1,8 +1,7 @@
-# File: R (Python 2.4)
-
 from direct.showbase.DirectObject import DirectObject
-from pandac.PandaModules import *
+
 from otp.otpbase import OTPRender
+
 
 class Reflection(DirectObject):
     global_reflection = None

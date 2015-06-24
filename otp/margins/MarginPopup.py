@@ -1,5 +1,3 @@
-from pandac.PandaModules import *
-
 class MarginPopup:
     def __init__(self):
         self.__manager = None

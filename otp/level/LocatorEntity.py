@@ -1,6 +1,8 @@
-import Entity, BasicEntities
 from pandac.PandaModules import NodePath
 from direct.directnotify import DirectNotifyGlobal
+
+import Entity
+
 
 class LocatorEntity(Entity.Entity, NodePath):
     notify = DirectNotifyGlobal.directNotify.newCategory('LocatorEntity')

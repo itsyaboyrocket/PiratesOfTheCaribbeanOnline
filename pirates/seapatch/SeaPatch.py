@@ -1,23 +1,13 @@
-# File: S (Python 2.4)
-
-import os
 import math
-from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
+from direct.showbase import AppRunnerGlobal
+
 from SeaPatchRoot import SeaPatchRoot
 from SeaPatchNode import SeaPatchNode
-from direct.task import Task
 from pirates.seapatch.LerpSeaPatchInterval import LerpSeaPatchInterval
-from direct.directnotify.DirectNotifyGlobal import directNotify
-from direct.showbase.DirectObject import DirectObject
-from pirates.piratesbase import PiratesGlobals
-from direct.showbase.DirectObject import DirectObject
-from otp.otpbase import OTPRender
 from pirates.seapatch.Reflection import Reflection
-from pirates.seapatch.Water import Water
-from direct.motiontrail.MotionTrail import MotionTrail
-from direct.showbase import AppRunnerGlobal
 from pirates.piratesgui.GameOptions import *
+
 
 class SeaPatch(Water):
     notify = directNotify.newCategory('SeaPatch')
@@ -182,7 +172,6 @@ class SeaPatch(Water):
 
             def showSeaPatchPanel():
                 SeaPatchPanel = SeaPatchPanel
-                import pirates.seapatch
                 self.spp = SeaPatchPanel.SeaPatchPanel()
                 self.spp.setPatch(self)
 

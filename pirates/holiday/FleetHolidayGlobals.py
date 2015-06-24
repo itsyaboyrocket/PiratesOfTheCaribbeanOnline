@@ -1,4 +1,4 @@
-# File: F (Python 2.4)
+
 
 from pirates.ai.HolidayDates import *
 from pirates.ship import ShipGlobals

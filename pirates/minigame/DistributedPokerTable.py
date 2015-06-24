@@ -1,15 +1,12 @@
-# File: D (Python 2.4)
+import random
+import math
 
 from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import *
-from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from direct.task import Task
-import random
-import math
+
 from pirates.minigame import DistributedGameTable
 from pirates.minigame import PlayingCardGlobals
-from pirates.minigame import PlayingCard
 from pirates.minigame import PokerTableGUI
 from pirates.minigame import PokerBase
 from pirates.piratesbase import PLocalizer
@@ -19,6 +16,7 @@ from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesbase import PiratesGlobals
 from pirates.interact.InteractiveBase import END_INTERACT_EVENT
 from pirates.audio import SoundGlobals
+
 
 class DistributedPokerTable(DistributedGameTable.DistributedGameTable, PokerBase.PokerBase):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedPokerTable')

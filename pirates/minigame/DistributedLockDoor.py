@@ -1,7 +1,7 @@
-# File: D (Python 2.4)
+from direct.interval.IntervalGlobal import *
 
 from pirates.minigame import DistributedLock
-from direct.interval.IntervalGlobal import *
+
 
 class DistributedLockDoor(DistributedLock.DistributedLock):
     

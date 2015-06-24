@@ -1,15 +1,9 @@
-# File: W (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
+
 from EffectController import EffectController
 from PooledEffect import PooledEffect
-from direct.particles import ParticleEffect
-from direct.particles import Particles
-from direct.particles import ForceGroup
-from direct.actor import Actor
 from otp.otpbase import OTPRender
-import random
+
 
 class WindCharge(PooledEffect, EffectController):
     

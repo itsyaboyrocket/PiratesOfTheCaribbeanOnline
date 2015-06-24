@@ -1,33 +1,17 @@
-# File: D (Python 2.4)
-
-import math
 import random
-from direct.showbase.DirectObject import *
+
 from direct.distributed.ClockDelta import *
-from direct.gui.DirectGui import *
-from pandac.PandaModules import *
-from direct.showbase.PythonUtil import quickProfile
-from direct.interval.ProjectileInterval import *
 from direct.interval.IntervalGlobal import *
 from direct.directnotify.DirectNotifyGlobal import directNotify
-from direct.task import Task
-from pirates.audio import SoundGlobals
-from pirates.audio.SoundGlobals import loadSfx
-from pirates.piratesbase import PiratesGlobals
+
 from pirates.shipparts import CannonPort
 from pirates.ship.DistributedSimpleShip import DistributedSimpleShip
-from pirates.effects.CannonMuzzleFire import CannonMuzzleFire
 from pirates.effects.CannonBlastSmoke import CannonBlastSmoke
 from pirates.effects.CannonSmokeSimple import CannonSmokeSimple
-from pirates.effects.ExplosionFlip import ExplosionFlip
 from pirates.effects.GrapeshotEffect import GrapeshotEffect
 from pirates.effects.MuzzleFlame import MuzzleFlame
-from pirates.effects.MuzzleFlash import MuzzleFlash
 from pirates.ship import ShipGlobals
-from pirates.ship import ShipBalance
 from pirates.shipparts.DistributedShippart import DistributedShippart
-from pirates.uberdog.UberDogGlobals import InventoryType
-from pirates.shipparts import ShipPart
 from pirates.battle.WeaponGlobals import *
 from pirates.battle.EnemySkills import EnemySkills
 from pirates.audio import SoundGlobals
@@ -36,6 +20,7 @@ from DistributedWeapon import DistributedWeapon
 import WeaponGlobals
 import CannonGlobals
 from CannonballProjectile import CannonballProjectile
+
 localFireSfxNames = [
     loadSfx(SoundGlobals.SFX_WEAPON_CANNON_FIRE_01),
     loadSfx(SoundGlobals.SFX_WEAPON_CANNON_FIRE_02),

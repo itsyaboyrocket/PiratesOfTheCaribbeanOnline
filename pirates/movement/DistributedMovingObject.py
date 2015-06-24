@@ -1,16 +1,9 @@
-# File: D (Python 2.4)
-
-from direct.showbase.DirectObject import *
 from direct.distributed import DistributedSmoothNode
-from direct.task.Task import Task
 from direct.distributed.ClockDelta import *
-from direct.interval.IntervalGlobal import *
-import random
-from otp.movement import Mover
-from pirates.demo import DemoGlobals
-from pirates.piratesbase import PiratesGlobals
+
 from pirates.distributed import DistributedTargetableObject
 from pirates.battle import EnemyGlobals
+
 
 class DistributedMovingObject(DistributedSmoothNode.DistributedSmoothNode, DistributedTargetableObject.DistributedTargetableObject):
     notify = directNotify.newCategory('DistributedMovingObject')

@@ -1,4 +1,4 @@
-# File: C (Python 2.4)
+
 
 from pirates.uberdog.UberDogGlobals import InventoryType
 CANNON_NOT_FIRED = -1

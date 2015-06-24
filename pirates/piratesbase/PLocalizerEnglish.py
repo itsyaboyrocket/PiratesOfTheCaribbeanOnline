@@ -1,24 +1,19 @@
-import string
-import os
 import datetime
-import time
 import copy
+
 from otp.otpbase import OTPGlobals
 from pirates.uberdog.UberDogGlobals import *
 from pirates.economy.EconomyGlobals import *
 from pirates.battle.EnemySkills import *
-from pirates.minigame import PotionGlobals
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.world import OceanZone
 from pirates.world.LocationConstants import LocationIds
 from pirates.quest.QuestConstants import NPCIds, PropIds, QuestItems
 from otp.otpbase import OTPLocalizer as OL
-from pirates.audio import SoundGlobals
-from pirates.audio.SoundGlobals import loadSfxString
 from pirates.ai import HolidayGlobals
 from pirates.inventory import ItemGlobals
 from pirates.piratesbase import EmoteGlobals
-from pirates.audio import SoundGlobals
+
 OL.SpeedChatStaticText = OL.SpeedChatStaticTextPirates.copy()
 for key in OL.SpeedChatStaticTextCommon.iterkeys():
     OL.SpeedChatStaticText[key] = OL.SpeedChatStaticTextCommon[key]
@@ -6490,8 +6485,6 @@ def getFishName(genus, species):
             return name
 
 
-
-from pirates.ship import ShipGlobals
 DeployShip = 'Launch'
 Locked = 'Locked'
 BoardShip = 'Board'
@@ -8941,7 +8934,6 @@ ContextTutSearchableContainers = 'Searchable Containers'
 ContextTutBuriedTreasure = 'Buried Treasure'
 Left = 'Left'
 Right = 'Right'
-from pirates.uberdog import UberDogGlobals
 Reloading = 'Reloading'
 CannonAmmoNames = { }
 StatusTrayHp = 'Health'
@@ -10402,7 +10394,6 @@ InvasionJollyRogerEndPlayerLose1 = 'Victory is mine! Me power grows!'
 InvasionJollyRogerEndPlayerLose2 = "We've won the fray, ye mongrels! Now, set sail for our next conquest."
 InvasionJollyRogerEndPlayerLose3 = "We've won the day, ye dogs! Now, onto our next target!"
 InvasionJollyRogerEndPlayerLose4 = 'What? Sparrow escaped? Curse his vile soul!'
-from pirates.holiday.FleetHolidayGlobals import Configs as FHConfigs
 from pirates.holiday.FleetHolidayGlobals import Msgs as FHMsgs
 FleetHolidayMsgs = {
     FHMsgs.EF_EitcLaunch: "The East India Trading Company has deployed an Expedition Fleet led by a mighty Ship of the Line to Raven Cove!  The Trading Company is after El Patron's Lost Weapons!  Sink the Expedition Fleet to prevent the weapons from falling into the hands of the EITC!",
@@ -10514,7 +10505,8 @@ CatalogHolidayNames = {
         'tabName': 'Sep 2010' } }
 from pirates.holiday.MessageHolidayGlobals import ConfigIds as MHConfigIds
 MHCrewDaysMsg = 'Join us for Crew Days! Every Friday and Saturday from 3pm-8pm PST, meet at the docks of Port Royal, Tortuga and Padres del Fuego to start or join a crew with other pirates!'
-from pirates.ai.HolidayGlobals import MSG_START_ALL, MSG_START_UNLIMITED, MSG_START_BASIC, MSG_ICON, MSG_END_ALL, MSG_END_UNLIMITED, MSG_END_BASIC, MSG_CHAT_STATUS, MSG_CHAT_STATUS_UNLIMITED, MSG_CHAT_STATUS_BASIC, MSG_BONFIRE, MSG_PIG, MSG_BONFIRE_STARTED, MSG_PORK_RECEIVED
+from pirates.ai.HolidayGlobals import MSG_START_ALL, MSG_START_UNLIMITED, MSG_START_BASIC, MSG_ICON, MSG_END_ALL, \
+    MSG_END_BASIC, MSG_CHAT_STATUS, MSG_CHAT_STATUS_BASIC, MSG_BONFIRE, MSG_PIG, MSG_BONFIRE_STARTED, MSG_PORK_RECEIVED
 holidayMessages = {
     HolidayGlobals.DOUBLEGOLDHOLIDAY: {
         MSG_START_ALL: (DoubleGoldStart, DoubleGoldStartChat),

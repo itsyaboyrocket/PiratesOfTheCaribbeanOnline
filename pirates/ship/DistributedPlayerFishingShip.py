@@ -1,8 +1,5 @@
-# File: D (Python 2.4)
-
-from direct.directnotify import DirectNotifyGlobal
 from pirates.ship.DistributedPlayerSimpleShip import DistributedPlayerSimpleShip
-from pirates.minigame.DistributedFishingSpot import DistributedFishingSpot
+
 
 class DistributedPlayerFishingShip(DistributedPlayerSimpleShip):
     notify = directNotify.newCategory('DistributedPlayerFishingShip')

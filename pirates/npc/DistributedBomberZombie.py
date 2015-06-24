@@ -1,17 +1,16 @@
-# File: D (Python 2.4)
+import random
 
-from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import *
+
 from pirates.battle import DistributedBattleNPC
 from pirates.npc import BomberZombie
-from pirates.pirate import AvatarTypes
 from pirates.battle import WeaponGlobals
 from pirates.effects import CombatEffect
 from pirates.effects.AttuneSmoke import AttuneSmoke
 from pirates.effects import ExplodingBarrel
 import NPCSkeletonGameFSM
-import random
+
 
 class DistributedBomberZombie(DistributedBattleNPC.DistributedBattleNPC, BomberZombie.BomberZombie):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedBomberZombie')

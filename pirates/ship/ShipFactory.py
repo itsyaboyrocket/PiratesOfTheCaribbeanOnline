@@ -1,11 +1,11 @@
-# File: S (Python 2.4)
-
 from direct.directnotify import DirectNotifyGlobal
 from pandac.PandaModules import ModelNode, LODNode, NodePath
 from pandac.PandaModules import TextureStage
 from pandac.PandaModules import AnimControlCollection, Character, PartSubset
+
 from pirates.ship import ShipGlobals
 from pirates.ship import ShipBlueprints
+
 MastSubset = PartSubset()
 MastSubset.addExcludeJoint('def_sail*')
 MastSubset.addExcludeJoint('def_ladder*')
@@ -112,7 +112,6 @@ class ShipFactory:
     
     def getShip(self, shipClass, style = ShipGlobals.Styles.Undefined, logo = ShipGlobals.Logos.Undefined, hullDesign = None, detailLevel = 2, wantWheel = True, hullMaterial = None, sailMaterial = None, sailPattern = None, prowType = None):
         Ship = Ship
-        import pirates.ship
         modelClass = ShipGlobals.getModelClass(shipClass)
         shipConfig = ShipGlobals.getShipConfig(shipClass)
         if style == ShipGlobals.Styles.Undefined:
@@ -365,7 +364,6 @@ class ShipFactory:
     
     def getAIShip(self, shipClass):
         ShipAI = ShipAI
-        import pirates.ship
         modelClass = ShipGlobals.getModelClass(shipClass)
         hull = self.getHull(modelClass, 0)
         root = NodePath('Ship')

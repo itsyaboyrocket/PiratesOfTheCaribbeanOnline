@@ -1,4 +1,3 @@
-from pirates.quest.QuestConstants import NPCIds
 from pirates.quest.QuestPrereq import *
 from pirates.ai import HolidayGlobals
 from pirates.piratesbase import EmoteGlobals as EG

@@ -1,7 +1,7 @@
-# File: S (Python 2.4)
+from direct.fsm.StatePush import FunctionCall, StateVar
 
-from direct.fsm.StatePush import AttrSetter, FunctionCall, StateVar
 from pirates.pvp import PVPGlobals
+
 
 class ShipRepairSpotMgrBase:
     

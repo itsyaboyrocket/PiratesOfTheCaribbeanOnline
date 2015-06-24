@@ -1,14 +1,14 @@
-# File: M (Python 2.4)
-
-from pandac.PandaModules import NodePath, Point3
+from pandac.PandaModules import NodePath
 from direct.showbase.DirectObject import DirectObject
+from direct.gui.DirectGui import DGG, OnscreenImage
+from direct.interval.IntervalGlobal import *
+
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui.GuiButton import GuiButton
 from pirates.piratesgui.HpMeter import HpMeter
-from direct.gui.DirectGui import DGG, OnscreenImage
-from direct.interval.IntervalGlobal import *
 from pirates.invasion import InvasionGlobals
 from pirates.piratesgui import PiratesGuiGlobals
+
 
 class MinimapObject(DirectObject):
     SORT = 0

@@ -1,9 +1,9 @@
-# File: D (Python 2.4)
-
 from pandac.PandaModules import *
+
 import DistributedPostInvasionObject
 from pirates.effects.Fire import Fire
 from pirates.effects.MansionSmoke import MansionSmoke
+
 
 class DistributedWreckedFaithfulBride(DistributedPostInvasionObject.DistributedPostInvasionObject):
     notify = directNotify.newCategory('DistributedWreckedFaithfulBride')

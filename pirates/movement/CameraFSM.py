@@ -1,14 +1,11 @@
-# File: C (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.directnotify import DirectNotifyGlobal
 from direct.fsm.FSM import FSM
-from direct.task import Task
 from direct.showbase.InputStateGlobal import inputState
+
 from pirates.pirate import ShipCamera
 from pirates.pirate import FPSCamera
 from pirates.pirate import CannonCamera
 from pirates.pirate import CannonDefenseCamera
+
 
 class CameraFSM(FSM):
     

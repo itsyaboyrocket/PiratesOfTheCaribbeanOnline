@@ -1,16 +1,14 @@
-# File: I (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.makeapirate import JewelryGlobals
 from pirates.pirate import HumanDNA
-from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.inventory import ItemGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import Freebooter
 from pirates.inventory import InventoryUIItem
 from pirates.inventory import ItemConstants
+
 
 class InventoryUIJewelryItem(InventoryUIItem.InventoryUIItem):
 

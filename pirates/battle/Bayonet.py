@@ -1,14 +1,10 @@
-# File: B (Python 2.4)
+from direct.interval.IntervalGlobal import *
 
 import Weapon
-import WeaponGlobals
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.uberdog.UberDogGlobals import InventoryType
-from direct.interval.IntervalGlobal import *
-from pandac.PandaModules import *
-from pirates.inventory import ItemGlobals
-import random
+
 
 def beginInterrupt(av):
     if av.isLocal():

@@ -1,14 +1,13 @@
-# File: C (Python 2.4)
+import math
 
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 from pirates.piratesgui.CannonDefenseScorePanelBase import CannonDefenseScorePanelBase
 from pirates.piratesgui.CannonDefenseScorePanelBase import RoundCompleteFlags
 from pirates.piratesgui.GuiButton import GuiButton
 from pirates.piratesgui import PiratesGuiGlobals
-from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
-import math
+
 
 class CannonDefenseGameStatsPanel(CannonDefenseScorePanelBase):
 

@@ -1,4 +1,4 @@
-# File: P (Python 2.4)
+
 
 from otp.speedchat.SCTerminal import *
 from pirates.quest import QuestDB

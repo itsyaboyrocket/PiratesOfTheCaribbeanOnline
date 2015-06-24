@@ -1,10 +1,9 @@
-# File: Z (Python 2.4)
-
 from pandac.PandaModules import *
 from direct.showbase.DirectObject import DirectObject
 from direct.showbase.PythonUtil import *
-from otp.otpbase import OTPGlobals
+
 from pirates.piratesbase import PiratesGlobals
+
 
 class ZoneLOD(DirectObject):
     notify = directNotify.newCategory('ZoneLOD')

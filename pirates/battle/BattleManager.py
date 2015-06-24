@@ -1,14 +1,11 @@
-# File: B (Python 2.4)
-
-import math
 from pandac.PandaModules import NodePath
+
 import BattleManagerBase
 from pirates.battle import WeaponGlobals
 from pirates.piratesbase import TeamUtils
 from pirates.battle import DistributedBattleNPC
-from pirates.uberdog.UberDogGlobals import InventoryType
-from pandac.PandaModules import *
 from pirates.inventory import ItemGlobals
+
 
 class BattleManager(BattleManagerBase.BattleManagerBase):
     

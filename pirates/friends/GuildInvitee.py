@@ -1,13 +1,12 @@
-# File: G (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
+
 from otp.otpbase import OTPLocalizer
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui.RequestButton import RequestButton
+
 
 class GuildInviteeButton(RequestButton):
 

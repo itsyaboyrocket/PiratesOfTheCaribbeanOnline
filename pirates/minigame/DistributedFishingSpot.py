@@ -1,28 +1,19 @@
-# File: D (Python 2.4)
-
-import sys
-import random
 from pandac.PandaModules import NodePath, Point3
-from direct.showbase import DirectObject
 from direct.interval.IntervalGlobal import Sequence, Func, Wait
-from pirates.piratesbase import PiratesGlobals
-from pirates.npc import Townfolk
+from direct.directnotify import DirectNotifyGlobal
+
 from pirates.distributed import DistributedInteractive
 from pirates.piratesbase import PLocalizer
-from direct.directnotify import DirectNotifyGlobal
-from pirates.pirate import HumanDNA
-from pirates.piratesbase import PLocalizer
 from pirates.world.LocationConstants import LocationIds
-from pirates.world.DistributedIsland import DistributedIsland
 from pirates.piratesgui.PDialog import PDialog
 from pirates.inventory.Lootable import Lootable
 from otp.otpgui import OTPDialog
-from pirates.inventory import ItemGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.audio import SoundGlobals
 from FishingGame import FishingGame
 import FishingGlobals
+
 
 class DistributedFishingSpot(DistributedInteractive.DistributedInteractive, Lootable):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedFishingSpot')

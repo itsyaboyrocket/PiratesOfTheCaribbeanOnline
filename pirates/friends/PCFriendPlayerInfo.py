@@ -1,4 +1,4 @@
-# File: P (Python 2.4)
+
 
 from otp.friends.FriendInfo import FriendInfo
 from pirates.pirate.PAvatarHandle import PAvatarHandle

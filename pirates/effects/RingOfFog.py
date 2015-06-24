@@ -1,9 +1,7 @@
-# File: R (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.showbase.DirectObject import *
 from direct.interval.IntervalGlobal import *
+
 from EffectController import EffectController
+
 
 class RingOfFog(NodePath, EffectController):
     

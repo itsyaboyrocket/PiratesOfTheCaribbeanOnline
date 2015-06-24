@@ -1,4 +1,4 @@
-# File: D (Python 2.4)
+
 
 from otp.uberdog.OtpAvatarManager import OtpAvatarManager
 from otp.otpbase import OTPGlobals

@@ -1,11 +1,9 @@
-# File: P (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.interval.IntervalGlobal import *
 from direct.showbase.DirectObject import *
 from direct.directnotify import DirectNotifyGlobal
+
 from pirates.piratesbase import PiratesGlobals
 from pirates.effects.ProjectileEffect import ProjectileEffect
+
 
 class ProjectileAmmo(DirectObject, NodePath):
     notify = DirectNotifyGlobal.directNotify.newCategory('ProjectileAmmo')

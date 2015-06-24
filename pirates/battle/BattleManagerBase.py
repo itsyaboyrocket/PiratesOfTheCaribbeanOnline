@@ -1,6 +1,5 @@
-# File: B (Python 2.4)
-
 from direct.directnotify import DirectNotifyGlobal
+
 from pirates.battle import WeaponGlobals
 from pirates.minigame import PotionGlobals
 from pirates.inventory import ItemGlobals
@@ -10,6 +9,7 @@ from pirates.battle import EnemyGlobals
 from pirates.battle.EnemySkills import EnemySkills
 from pirates.reputation import ReputationGlobals
 from pirates.piratesbase import PiratesGlobals
+
 
 def isKraken(target):
     return hasattr(target, 'krakenId')

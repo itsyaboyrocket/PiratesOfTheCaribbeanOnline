@@ -1,17 +1,13 @@
-# File: I (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
-from pirates.piratesgui import GuiPanel, PiratesGuiGlobals
-from pirates.piratesbase import PiratesGlobals
+
+from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import Freebooter
-from otp.otpbase import OTPLocalizer
-from pirates.inventory.InventoryUIGlobals import *
 from pirates.battle import WeaponGlobals
 from pirates.inventory import ItemGlobals
 from pirates.minigame import PotionGlobals
 from pirates.inventory import InventoryUIStackItem
+
 
 class InventoryUIConsumableItem(InventoryUIStackItem.InventoryUIStackItem):
 

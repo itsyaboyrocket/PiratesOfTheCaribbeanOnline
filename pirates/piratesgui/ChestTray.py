@@ -1,17 +1,14 @@
-# File: C (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.gui.DirectGui import *
 from direct.interval.IntervalGlobal import *
-from pirates.piratesgui import GuiTray, QuestPage
+
+from pirates.piratesgui import GuiTray
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
-from pirates.reputation import ReputationGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui.GuiButton import GuiButton
-from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
+
 
 class ChestTray(GuiTray.GuiTray):
     WantClothingPage = base.config.GetBool('want-clothing-page', 0)

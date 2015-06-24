@@ -1,26 +1,16 @@
-# File: D (Python 2.4)
-
-import random
-import re
-import imp
 from pandac.PandaModules import *
-from direct.actor import *
 from direct.distributed import DistributedCartesianGrid
 from direct.task import Task
 from direct.showbase.PythonUtil import report
 from direct.interval.IntervalGlobal import *
 from direct.gui.OnscreenText import OnscreenText
-from direct.gui.DirectGui import DGG
+
 from otp.nametag.Nametag import Nametag
 from otp.nametag.NametagGroup import NametagGroup
 from otp.otpbase import OTPGlobals
 from otp.otpbase import OTPRender
-from pirates.ai import HolidayGlobals
-from pirates.audio import SoundGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
-from pirates.effects.LanternGlow import LanternGlow
-from pirates.effects.BlackSmoke import BlackSmoke
 from pirates.effects.VolcanoEffect import VolcanoEffect
 from pirates.effects.FeastFire import FeastFire
 from pirates.effects import FireworkGlobals
@@ -29,17 +19,13 @@ from pirates.world import ZoneLOD
 from pirates.world import WorldGlobals
 from pirates.world import DistributedGameArea
 from pirates.world.LocationConstants import LocationIds
-from pirates.distributed import DistributedInteractive
-from pirates.piratesgui import PiratesGuiGlobals, RadarGui
-from pirates.seapatch.Water import IslandWaterParameters
-from pirates.swamp.Swamp import Swamp
-from pirates.seapatch.Reflection import Reflection
+from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import TODGlobals
 from pirates.pvp import PVPGlobals
 from pirates.map.Minimap import IslandMap
 from pirates.map.Mappable import MappableGrid
-from direct.gui import DirectGuiGlobals
 from pirates.battle.Teamable import Teamable
+
 
 class DistributedIsland(DistributedGameArea.DistributedGameArea, DistributedCartesianGrid.DistributedCartesianGrid, ZoneLOD.ZoneLOD, Teamable, MappableGrid):
     SiegeIcon = None

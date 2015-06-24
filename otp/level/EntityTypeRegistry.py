@@ -1,11 +1,12 @@
-from pandac.PandaModules import *
-from direct.directnotify import DirectNotifyGlobal
 import types
-import AttribDesc
-import EntityTypeDesc
-from direct.showbase.PythonUtil import mostDerivedLast
 import os
 import string
+
+from direct.directnotify import DirectNotifyGlobal
+from direct.showbase.PythonUtil import mostDerivedLast
+
+import EntityTypeDesc
+
 
 class EntityTypeRegistry:
     notify = DirectNotifyGlobal.directNotify.newCategory('EntityTypeRegistry')

@@ -1,16 +1,16 @@
-# File: P (Python 2.4)
+import random
 
 from direct.distributed.ClockDelta import globalClockDelta
 from direct.distributed.DistributedObject import DistributedObject
 from direct.fsm import FSM
+
 from pirates.piratesbase import PLocalizer
 from pirates.pvp import PVPGlobals
-from pirates.piratesgui import PiratesGuiGlobals
 import PVPRulesPanel
-import random
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.StatRowGui import StatRowGui
 from pirates.piratesgui.StatRowHeadingGui import StatRowHeadingGui
+
 
 class ScoreboardHolder:
     

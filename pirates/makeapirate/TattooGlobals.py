@@ -1,11 +1,6 @@
-# File: T (Python 2.4)
+
 
 global _tattoosInitialized
-from pirates.piratesbase import PLocalizer
-from pirates.piratesbase import PiratesGlobals
-from pirates.ai import HolidayGlobals
-from pandac.PandaModules import *
-import random
 from pirates.inventory import ItemGlobals
 tattooNames = [
     'blank',

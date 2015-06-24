@@ -1,23 +1,17 @@
-# File: D (Python 2.4)
-
 import math
-from pandac.PandaModules import *
-from direct.gui.DirectGui import *
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import *
 from direct.actor import Actor
-from direct.task import Task
-from direct.showbase.PythonUtil import quickProfile
+
 from pirates.pirate import AvatarType
 from otp.otpbase import OTPRender
 from pirates.battle import DistributedBattleable
 from pirates.inventory import Lootable
-from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.pirate import BattleNPCGameFSM
 from pirates.treasuremap import TreasureMapRulesPanel
-from pirates.battle.EnemySkills import EnemySkills
 from pirates.effects.SmokeWisps import SmokeWisps
 from pirates.effects.Flame import Flame
 from pirates.effects.FuseSparks import FuseSparks
@@ -31,7 +25,7 @@ from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.quest import QuestLadderDB
 from pirates.uberdog.UberDogGlobals import *
-from pirates.quest.QuestConstants import PropIds
+
 propCache = { }
 SoundFiles = {
     '1274477304.85akelts': [

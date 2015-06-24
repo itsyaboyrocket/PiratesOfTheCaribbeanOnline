@@ -1,11 +1,9 @@
-# File: D (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
+
 from PooledEffect import PooledEffect
 from EffectController import EffectController
 from otp.otpbase import OTPRender
-import random
+
 
 class DarkPortal(PooledEffect, EffectController):
     

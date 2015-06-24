@@ -1,14 +1,11 @@
 from pandac.PandaModules import *
-from direct.interval.IntervalGlobal import *
-from direct.showbase.PythonUtil import DelayedCall, makeList
 from direct.showbase.DirectObject import DirectObject
-from pirates.pirate import AvatarTypes
-from pirates.cutscene import CutsceneData, CutsceneActor, CutsceneIvals
-from pirates.effects.CameraShaker import CameraShaker
 from direct.gui.DirectGui import *
-from pirates.piratesgui import PiratesGuiGlobals
-from pirates.piratesbase import TimeOfDayManager, TODGlobals
 from direct.task import Task
+
+from pirates.cutscene import CutsceneData
+from pirates.effects.CameraShaker import CameraShaker
+from pirates.piratesgui import PiratesGuiGlobals
 
 
 class Cutscene(NodePath, DirectObject):

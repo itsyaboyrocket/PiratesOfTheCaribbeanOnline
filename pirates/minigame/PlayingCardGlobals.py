@@ -1,8 +1,6 @@
-# File: P (Python 2.4)
+
 
 global _cardImagesInitialized
-from pandac.PandaModules import *
-from direct.showbase.ShowBase import *
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesbase import PLocalizer
 SecondsPerHand = 30.0

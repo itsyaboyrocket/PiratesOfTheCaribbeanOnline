@@ -1,13 +1,9 @@
-# File: D (Python 2.4)
-
-from direct.interval.IntervalGlobal import *
 from pandac.PandaModules import *
-from panda3d.core import TextNode
+
 from pirates.distributed.DistributedInteractive import DistributedInteractive
 from pirates.piratesbase import PLocalizer
-import RepairGlobals
-from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
+
 DifficultyText = {
     0: PLocalizer.Minigame_Repair_Table_Interact_Text_Easy,
     5: PLocalizer.Minigame_Repair_Table_Interact_Text_Medium,

@@ -1,8 +1,3 @@
-# File: E (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.showbase.DirectObject import *
-from direct.interval.IntervalGlobal import *
 from pirates.effects.FuseSparks import FuseSparks
 from pirates.effects.SimpleSmokeCloud import SimpleSmokeCloud
 from pirates.effects.ExplosionFlip import ExplosionFlip

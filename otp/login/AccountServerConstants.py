@@ -1,8 +1,8 @@
-from pandac.PandaModules import *
-from RemoteValueSet import *
 from direct.directnotify import DirectNotifyGlobal
+
+from RemoteValueSet import *
 import TTAccount
-import HTTPUtil
+
 
 class AccountServerConstants(RemoteValueSet):
     notify = DirectNotifyGlobal.directNotify.newCategory('AccountServerConstants')

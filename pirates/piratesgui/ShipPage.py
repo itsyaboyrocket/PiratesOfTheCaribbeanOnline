@@ -1,14 +1,8 @@
-# File: S (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.gui.DirectGui import *
-from direct.interval.IntervalGlobal import *
-from pirates.piratesgui import PiratesGuiGlobals
+
 from pirates.piratesgui.InventoryPage import InventoryPage
 from pirates.piratesgui.ShipPanel import ShipPanel
-from pirates.piratesbase import PiratesGlobals
-from pirates.uberdog.UberDogGlobals import InventoryCategory, InventoryType
-from pirates.uberdog import UberDogGlobals
+
 
 class ShipPage(InventoryPage):
     BottleFrame = None

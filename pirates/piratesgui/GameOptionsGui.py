@@ -1,19 +1,13 @@
-# File: G (Python 2.4)
+from direct.directnotify import DirectNotifyGlobal
+from direct.gui import DirectGuiGlobals as DGG
 
-from pirates.piratesgui.BorderFrame import *
-from pirates.piratesbase import PiratesGlobals
-from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.RadioButton import *
 from pirates.piratesgui.CheckButton import *
 from pirates.piratesgui.GuiButton import *
 from pirates.piratesgui.OptionMenu import *
-from pirates.piratesgui.DialogButton import DialogButton
-from direct.directnotify import DirectNotifyGlobal
-from direct.gui import DirectGuiGlobals as DGG
 from otp.otpgui import OTPDialog
 from pirates.piratesgui import PDialog
 from pirates.seapatch.Water import Water
-from pandac.PandaModules import *
 
 try:
     import embedded
@@ -763,7 +757,6 @@ class GameOptionsGui(DirectFrame):
     
     def _GameOptionsGui__loadFeedbackPanel(self):
         FeedbackPanel = FeedbackPanel
-        import pirates.piratesgui
         self.close()
         if self.gameOptions is not None:
             FeedbackPanel.FeedbackPanel()

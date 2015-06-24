@@ -1,6 +1,9 @@
-from direct.interval.IntervalGlobal import *
-import BasicEntities
 import random
+
+from direct.interval.IntervalGlobal import *
+
+import BasicEntities
+
 
 class AmbientSound(BasicEntities.NodePathEntity):
 

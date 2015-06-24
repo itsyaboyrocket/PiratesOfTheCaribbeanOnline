@@ -1,20 +1,15 @@
-# File: L (Python 2.4)
-
 import random
-from direct.directnotify import DirectNotifyGlobal
-from direct.interval.IntervalGlobal import *
+
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 from pirates.piratesbase import PLocalizer
-from pirates.minigame import PlayingCardGlobals
 from pirates.minigame import PlayingCard
-from pirates.piratesgui import GuiTray
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import PiratesTimer
-from pirates.reputation import DistributedReputationAvatar
 from pirates.minigame import LockGlobals
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
+
 
 class LockGUI(DirectFrame):
     

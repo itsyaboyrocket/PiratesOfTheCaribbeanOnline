@@ -1,11 +1,10 @@
-# File: A (Python 2.4)
-
 from direct.distributed.AsyncRequest import AsyncRequest
-from pirates.uberdog.UberDogGlobals import InventoryId, InventoryType, isLocatable, GiftOrigin
-from pirates.uberdog.TradableInventoryBase import InvItem
-import types
 from direct.directnotify.DirectNotifyGlobal import directNotify
+
+from pirates.uberdog.UberDogGlobals import InventoryId, InventoryType, isLocatable
+from pirates.uberdog.TradableInventoryBase import InvItem
 from pirates.inventory.InventoryGlobals import isStackableType
+
 
 class AITradeException(Exception):
     pass

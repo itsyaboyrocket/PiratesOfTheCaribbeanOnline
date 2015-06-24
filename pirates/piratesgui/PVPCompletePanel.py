@@ -1,16 +1,12 @@
-# File: P (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 from pirates.piratesgui.BorderFrame import BorderFrame
 from pirates.piratesgui.GuiButton import GuiButton
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.pvp import PVPGlobals
 from pirates.piratesgui.ScoreFrame import ScoreFrame
-from pirates.treasuremap.RewardItemGui import RewardItemGui
-from pirates.piratesgui.StatRowGui import StatRowGui
-from pirates.piratesgui.StatRowHeadingGui import StatRowHeadingGui
 from pirates.piratesbase import PLocalizer
+
 
 class PVPCompletePanel(BorderFrame):
     SUMMARY_PAGE = 1

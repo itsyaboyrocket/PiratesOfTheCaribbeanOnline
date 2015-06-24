@@ -1,10 +1,10 @@
-# File: E (Python 2.4)
+import random
 
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
+
 from PooledEffect import PooledEffect
 from EffectController import EffectController
-import random
+
 
 class ExplosionTip(PooledEffect, EffectController):
     NUM_PARTS = 10

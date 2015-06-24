@@ -1,25 +1,23 @@
-# File: R (Python 2.4)
-
 import math
-from pandac.PandaModules import *
+
 from direct.gui.DirectGui import *
 from direct.task import Task
+from direct.interval.IntervalGlobal import *
+
 from pirates.battle import WeaponGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesgui.SkillRing import SkillRing
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import Freebooter
-from direct.interval.IntervalGlobal import *
-from pirates.reputation import ReputationGlobals
 from pirates.piratesgui.SkillButton import SkillButton
 from pirates.piratesgui.AmmoSkillButton import AmmoSkillButton
 from pirates.piratesgui.ReputationMeter import ReputationMeter
-from pirates.battle.EnemySkills import *
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.inventory import ItemGlobals
 import PiratesGuiGlobals
+
 Tolerance = 20
 FrameSize = 0.12
 Center = [

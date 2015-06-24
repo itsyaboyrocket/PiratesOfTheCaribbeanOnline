@@ -1,10 +1,12 @@
-# File: H (Python 2.4)
+
 
 global VO_CHOICE, LAST_CLOSED, LAST_OPEN, LAST_PORT_INIT, LAST_WILD_ISLAND, LAST_WRONG_ISLAND, LAST_INBOUD_SIMPLE, LAST_INBOUND_HELP, LAST_INBOUND_HUNTER, LAST_SUNK, LAST_THREAT
+import random
+
 from pirates.piratesbase import PLocalizer
 from pirates.audio import SoundGlobals
 from pirates.battle import EnemyGlobals
-import random
+
 HUNTER_LEVEL_NAME_DICT = {
     EnemyGlobals.SHIP_THREAT_BOUNTY_HUNTERS: PLocalizer.Nametag_BountyHunter,
     EnemyGlobals.SHIP_THREAT_NAVY_HUNTERS: PLocalizer.Nametag_Warship }

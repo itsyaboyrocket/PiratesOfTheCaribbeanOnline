@@ -1,13 +1,12 @@
-# File: G (Python 2.4)
+import math
 
-import os
-import webbrowser
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
-from direct.showbase import DirectObject
 from direct.directnotify import DirectNotifyGlobal
 from direct.fsm import FSM
+from direct.showutil import BuildGeometry
+from direct.distributed.ClockDelta import globalClockDelta
+
 from otp.otpbase import OTPGlobals
 from otp.nametag.Nametag import Nametag
 from otp.nametag import NametagGlobals
@@ -17,7 +16,6 @@ from otp.nametag.NametagFloat2d import NametagFloat2d
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.battle import WeaponGlobals
-from pirates.reputation import ReputationGlobals
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import SkillPage
 from pirates.piratesgui import StatusTray
@@ -61,7 +59,6 @@ from pirates.friends import GuildMember
 from pirates.piratesgui import InventoryBagPage
 from pirates.pvp import PVPInviter
 from pirates.pvp import PVPInvitee
-from pirates.pvp import PVPGlobals
 from pirates.piratesgui import PirateProfilePage
 from pirates.piratesgui.ObjectivesPanel import ObjectivesPanel
 from pirates.piratesgui.TreasureMapCompletePanel import TreasureMapCompletePanel
@@ -70,23 +67,18 @@ from pirates.pvp.PVPRulesPanel import PVPRulesPanel
 from pirates.piratesgui import BarSelectionMenu
 from pirates.piratesgui.AttuneMenu import AttuneMenu
 from pirates.piratesgui import PVPPanel
-from pirates.piratesgui import SheetFrame
 from pirates.piratesgui import HighSeasScoreboard
 from pirates.piratesgui import InvasionScoreboard
 from pirates.piratesgui import HpMeter
 from pirates.piratesgui import PiratesTimer
 from pirates.piratesgui import PiratesTimerHourglass
-from pirates.ship import ShipGlobals
 from pirates.uberdog.UberDogGlobals import *
 from pirates.piratesgui import MessageStackPanel
 from pirates.piratesgui import TrialNonPayerPanel
 from pirates.piratesgui import StayTunedPanel
-from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.uberdog import DistributedInventoryBase
 from pirates.economy.EconomyGlobals import *
-from pirates.economy import EconomyGlobals
 from pirates.piratesgui import LookoutRequestLVL1
-from pirates.npc.Townfolk import *
 from pirates.piratesgui.BorderFrame import BorderFrame
 from pirates.reputation import ReputationGlobals
 from pirates.reputation import RepChart
@@ -96,24 +88,19 @@ from pirates.piratesgui.TeleportBlockerPanel import TeleportBlockerPanel
 from pirates.piratesgui import WorkMeter
 from pirates.piratesbase import Freebooter
 from pirates.band import BandConstance
-from pirates.quest import QuestConstants
 from pirates.quest.QuestTaskDNA import MaroonNPCTaskDNA, DowsingRodTaskDNA
 from pirates.quest import ClubheartsPortrait
 from pirates.friends import ReportAPlayer
-from pirates.piratesgui import FeedbackPanel
 from pirates.piratesgui.SiegeBoard import SiegeBoard
 from pirates.piratesgui.PVPBoard import PVPBoard
 from pirates.inventory import InventoryUIManager
 from pirates.piratesgui import ContextualTutorialPanel
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-from direct.showutil import BuildGeometry
 from pirates.pirate import BodyDefs
-from direct.distributed.ClockDelta import globalClockDelta
 from pirates.piratesgui import MessageGlobals
-from pirates.speedchat.PSCDecoders import *
 from pirates.piratesbase import UserFunnel
-import math
+
 CHEST_FILM_OFFSET_MULT = -0.050000000000000003
 CHEST_FILM_OFFSET_CONST = 0.35999999999999999
 CHEST_FILM_Y = -0.050000000000000003
@@ -959,7 +946,6 @@ class GuiManager(FSM.FSM):
             return None
 
         BodyShapeChanger = BodyShapeChanger
-        import pirates.makeapirate
         if not self.bodyChanger:
             self.bodyChanger = BodyShapeChanger.BodyShapeChanger()
 
@@ -3529,7 +3515,6 @@ class GuiManager(FSM.FSM):
 
     def systemWarning(self, warningText = 'Bad things'):
         ChatWarningBox = ChatWarningBox
-        import pirates.chat
         self.chatWarningBox = ChatWarningBox.ChatWarningBox(warningText)
         self.chatWarningBox.reparentTo(aspect2d)
         self.chatWarningBox.setZ(0.25)

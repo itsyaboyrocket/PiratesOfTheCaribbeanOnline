@@ -1,4 +1,4 @@
-# File: K (Python 2.4)
+
 
 from direct.directnotify import DirectNotifyGlobal
 from direct.fsm.FSM import FSM

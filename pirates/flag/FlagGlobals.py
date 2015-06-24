@@ -1,8 +1,7 @@
-# File: F (Python 2.4)
+import math
 
 from direct.showbase.PythonUtil import *
-from pandac.PandaModules import *
-import math
+
 Shapes = Enum('Default,Square,Cut,TwoCut,                LongTaper,LongTaperCut,ShortTaper,ShortTaperCut')
 ShapeCount = len(Shapes)
 Layouts = Enum('Square,Circle,Hex')

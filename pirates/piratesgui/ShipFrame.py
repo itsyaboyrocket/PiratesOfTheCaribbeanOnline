@@ -1,13 +1,8 @@
-# File: S (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
-from pirates.piratesbase import PLocalizer
-from pirates.piratesgui import PiratesGuiGlobals
-from pirates.piratesgui.BorderFrame import BorderFrame
-from pirates.piratesbase import PiratesGlobals
+
 from pirates.ship.ShipMeter import ShipMeter
 from pirates.pvp import PVPGlobals
+
 
 class ShipFrame(DirectFrame):
     logos = None

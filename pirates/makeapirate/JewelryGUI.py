@@ -1,22 +1,11 @@
-# File: J (Python 2.4)
-
 from direct.directnotify import DirectNotifyGlobal
-from direct.showbase.ShowBaseGlobal import *
-from direct.showbase import DirectObject
 from direct.fsm import StateData
-from direct.gui import DirectGuiGlobals
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 from pirates.piratesbase import PLocalizer
-from CharGuiBase import CharGuiSlider, CharGuiPicker
-import random
+from CharGuiBase import CharGuiPicker
 from pirates.pirate import HumanDNA
-from math import sin
-from math import cos
-from math import pi
-import JewelryGlobals
-import PirateMale
-import PirateFemale
+
 Zone1_Tab = 0
 Zone2_Tab = 1
 Zone3_Tab = 2

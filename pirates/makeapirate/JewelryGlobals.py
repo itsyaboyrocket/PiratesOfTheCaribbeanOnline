@@ -1,8 +1,3 @@
-# File: J (Python 2.4)
-
-from pirates.piratesbase import PLocalizer
-from pirates.piratesbase import PiratesGlobals
-import random
 from pirates.inventory import ItemGlobals
 RBROW = 0
 LBROW = 1

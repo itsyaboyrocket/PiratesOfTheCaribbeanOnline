@@ -1,8 +1,5 @@
-# File: F (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
-from pirates.piratesgui.GameOptions import Options
+
 from pirates.effects.Fire import Fire
 from pirates.effects.FireSparks import FireSparks
 from pirates.effects.FireSplats import FireSplats
@@ -10,6 +7,7 @@ from pirates.effects.HeavySmoke import HeavySmoke
 from pirates.effects.FeastSmoke import FeastSmoke
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
+
 
 class FeastFire(NodePath):
     

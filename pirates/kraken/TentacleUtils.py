@@ -1,8 +1,3 @@
-# File: T (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.task import Task
-from pirates.piratesbase import PiratesGlobals
 from pirates.effects.WaterRipple2 import WaterRipple2
 from pirates.effects.TentacleWaterDrips import TentacleWaterDrips
 from pirates.effects.TentacleFire import TentacleFire

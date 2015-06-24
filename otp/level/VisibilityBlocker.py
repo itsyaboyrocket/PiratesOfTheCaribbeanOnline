@@ -1,5 +1,3 @@
-import Entity
-
 class VisibilityBlocker:
 
     def __init__(self):

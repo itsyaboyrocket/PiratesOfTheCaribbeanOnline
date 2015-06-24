@@ -1,18 +1,13 @@
-# File: W (Python 2.4)
-
-import math
-from pandac.PandaModules import *
 from direct.distributed.ClockDelta import globalClockDelta
+
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
-from pirates.tutorial import TutorialGlobals
-from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.effects.ProjectileEffect import ProjectileEffect
 from pirates.piratesbase import TeamUtils
 from pirates.battle import WeaponBaseBase
 import WeaponGlobals
-import CannonGlobals
+
 
 class WeaponBase(WeaponBaseBase.WeaponBaseBase):
     ignoreGround = False

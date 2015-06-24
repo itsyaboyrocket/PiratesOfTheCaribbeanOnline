@@ -1,16 +1,15 @@
-# File: C (Python 2.4)
+import random
 
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
-from direct.actor import Actor
 from direct.particles import ParticleEffect
 from direct.particles import Particles
 from direct.particles import ForceGroup
+
 from PooledEffect import PooledEffect
 from EffectController import EffectController
-import random
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
+
 
 class CannonSplash(PooledEffect, EffectController):
     cardScale = 64.0

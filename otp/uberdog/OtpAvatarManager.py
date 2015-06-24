@@ -1,6 +1,8 @@
-from cPickle import loads, dumps
+from cPickle import loads
+
 from direct.distributed import DistributedObject
 from direct.directnotify import DirectNotifyGlobal
+
 notify = DirectNotifyGlobal.directNotify.newCategory('AvatarManager')
 
 class OtpAvatarManager(DistributedObject.DistributedObject):

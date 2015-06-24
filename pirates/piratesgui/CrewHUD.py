@@ -1,20 +1,17 @@
-# File: C (Python 2.4)
-
-from direct.showbase.ShowBaseGlobal import *
 from direct.gui.DirectGui import *
 from pandac.PandaModules import *
+
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import SocialPage
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
-from pirates.uberdog.UberDogGlobals import CrewStatus
 from pirates.band import BandConstance
 from pirates.band import DistributedBandMember
 from pirates.piratesgui import PirateMemberList
-from pirates.piratesgui import PirateButtonChain
 from pirates.piratesgui import CrewMatchInviter
 from pirates.piratesgui import GuiButton
 from pirates.piratesgui import BorderFrame
+
 HUD_ICONS = {
     0: 'pir_t_gui_gen_land',
     1: 'pir_t_ico_swd_broadsword_b',

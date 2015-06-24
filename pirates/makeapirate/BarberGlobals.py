@@ -1,4 +1,4 @@
-# File: B (Python 2.4)
+
 
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import PiratesGlobals

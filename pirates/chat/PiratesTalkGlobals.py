@@ -1,7 +1,5 @@
-from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from otp.chat.TalkGlobals import *
-from pirates.piratesgui import GuiPanel, PiratesGuiGlobals
+from pirates.piratesgui import PiratesGuiGlobals
 
 
 tpMgr = TextPropertiesManager.getGlobalPtr()

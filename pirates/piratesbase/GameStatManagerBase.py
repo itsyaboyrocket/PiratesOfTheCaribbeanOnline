@@ -1,6 +1,3 @@
-# File: G (Python 2.4)
-
-from pirates.piratesbase import PiratesGlobals
 from pirates.battle import EnemyGlobals
 
 class GameStatManagerBase:

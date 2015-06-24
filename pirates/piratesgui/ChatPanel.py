@@ -1,20 +1,15 @@
-# File: C (Python 2.4)
+import random
 
 from direct.gui.DirectGui import *
 from direct.interval.IntervalGlobal import *
 from direct.fsm.FSM import FSM
-from pandac.PandaModules import *
-from pirates.piratesgui import GuiPanel, PiratesGuiGlobals
+
 from pirates.piratesgui.ChatBar import ChatBar
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
-from pirates.piratesbase import EmoteGlobals
-from otp.chat.TalkGlobals import *
 from pirates.chat.PiratesTalkGlobals import *
-from otp.speedchat import SCDecoders
 from otp.otpbase import OTPLocalizer
-import string
-import random
+
 
 class ChatPanel(DirectFrame, FSM):
     NumVisible = 10

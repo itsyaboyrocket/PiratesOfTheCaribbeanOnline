@@ -1,8 +1,8 @@
-# File: D (Python 2.4)
-
 from direct.distributed.DistributedObject import DistributedObject
+
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
+
 
 class DistributedLocatableObject(DistributedObject):
     

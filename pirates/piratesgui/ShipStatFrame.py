@@ -1,12 +1,8 @@
-# File: S (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
-from pirates.piratesbase import PLocalizer
-from pirates.piratesbase import PiratesGlobals
+
 from pirates.piratesgui.BorderFrame import BorderFrame
-from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.ShipSnapshot import ShipSnapshot
+
 
 class ShipStatFrame(BorderFrame):
 

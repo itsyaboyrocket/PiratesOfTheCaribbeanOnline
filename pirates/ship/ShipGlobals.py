@@ -1,16 +1,14 @@
-# File: S (Python 2.4)
+
 
 global __maxHullStats
-from pandac.PandaModules import *
-from direct.showbase.PythonUtil import Enum
-from pirates.uberdog.UberDogGlobals import *
-from pirates.uberdog.UberDogGlobals import InventoryType
-from direct.actor import Actor
-from direct.task import Task
-from pirates.inventory import ItemGlobals
 import random
-import copy
 import math
+
+from direct.showbase.PythonUtil import Enum
+
+from pirates.uberdog.UberDogGlobals import InventoryType
+from pirates.inventory import ItemGlobals
+
 FORMATION_ARROW = 0
 FORMATION_CIRCLE = 1
 FORMATION_LINE = 2

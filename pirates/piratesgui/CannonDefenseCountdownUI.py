@@ -1,11 +1,9 @@
-# File: C (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.gui.DirectGui import *
 from direct.interval.IntervalGlobal import *
+
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PLocalizer
+
 
 class CannonDefenseCountdownUI(NodePath):
     

@@ -1,17 +1,14 @@
-# File: A (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.gui.DirectGui import *
+
 from pirates.piratesbase import PLocalizer
-from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import Freebooter
 from pirates.piratesgui.GuiButton import GuiButton
 import SkillButton
-from direct.interval.IntervalGlobal import *
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.BorderFrame import BorderFrame
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.minigame import CannonDefenseGlobals
+
 
 class AmmoSkillButton(SkillButton.SkillButton):
     

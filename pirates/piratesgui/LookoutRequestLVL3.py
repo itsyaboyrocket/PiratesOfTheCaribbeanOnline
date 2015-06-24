@@ -1,11 +1,10 @@
-# File: L (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui.ListFrame import ListFrame
 from pirates.piratesgui.OptionItemGui import OptionItemGui
+
 
 class LookoutRequestLVL3(DirectFrame):
     

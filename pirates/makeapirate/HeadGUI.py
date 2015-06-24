@@ -1,13 +1,12 @@
-# File: H (Python 2.4)
-
 from direct.directnotify import DirectNotifyGlobal
-from direct.showbase.ShowBaseGlobal import *
 from direct.showbase import DirectObject
+
 import Shape
 import Mouth
 import Eyes
 import Nose
 import Ear
+
 
 class HeadGUI(DirectObject.DirectObject):
     notify = DirectNotifyGlobal.directNotify.newCategory('HeadGUI')

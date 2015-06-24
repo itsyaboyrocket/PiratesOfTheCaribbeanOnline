@@ -1,9 +1,9 @@
+import random
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import *
-from pandac.PandaModules import *
+
 from pirates.battle.DistributedBattleNPC import DistributedBattleNPC
-from pirates.piratesbase import PLocalizer
-from pirates.pirate import AvatarTypes
 from pirates.piratesbase import PiratesGlobals
 from pirates.creature.Alligator import Alligator
 from pirates.creature.Bat import Bat
@@ -26,13 +26,9 @@ from pirates.kraken.Head import Head as KrakenHead
 from pirates.pirate import AvatarTypes
 from pirates.battle import EnemyGlobals
 from pirates.effects.Immolate import Immolate
-from pirates.effects.JRDeathBlast import JRDeathBlast
-from pirates.effects.JRDeath import JRDeath
 from pirates.effects.ExplosionFlip import ExplosionFlip
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-import random
-
 
 CreatureTypes = {
     AvatarTypes.Crab: Crab,
@@ -131,7 +127,6 @@ class DistributedCreature(DistributedBattleNPC):
                 geom.setAttrib(ColorBlendAttrib.make(ColorBlendAttrib.MAdd, ColorBlendAttrib.OIncomingAlpha, ColorBlendAttrib.OOne))
                 geom.setColorScale(VBase4(1.0, 0.29999999999999999, 0.29999999999999999, 1))
                 FireBat = FireBat
-                import pirates.effects.FireBat
                 self.creatureTypeEffect = FireBat.getEffect()
                 if self.creatureTypeEffect:
                     self.creatureTypeEffect.reparentTo(geom)
@@ -244,7 +239,6 @@ class DistributedCreature(DistributedBattleNPC):
                 self.accept('weaponChange', self.setMonsterNameTag)
                 self.setMonsterNameTag()
                 EnemyGlobals = EnemyGlobals
-                import pirates.battle
                 color2 = EnemyGlobals.getNametagColor(self.avatarType)
                 if self.isBoss():
                     color2 = (0.94999999999999996, 0.10000000000000001, 0.10000000000000001, 1)
@@ -259,7 +253,6 @@ class DistributedCreature(DistributedBattleNPC):
 
     def setMonsterNameTag(self):
         PLocalizer = PLocalizer
-        import pirates.piratesbase
         if self.isInInvasion():
             name = self.name
         elif self.level:

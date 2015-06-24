@@ -1,15 +1,14 @@
-# File: C (Python 2.4)
+
 
 global hitSfxs, repairSfxs, missSfxs, eatSfxs
-import Weapon
-import WeaponGlobals
-from direct.interval.IntervalGlobal import *
 from direct.directnotify import DirectNotifyGlobal
-from pandac.PandaModules import *
+
+import Weapon
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.inventory import ItemGlobals
+
 __modelTypes = [
     'models/handheld/bottle_high',
     'models/handheld/pir_m_hnd_foo_porktonic']

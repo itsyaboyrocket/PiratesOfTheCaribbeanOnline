@@ -1,9 +1,7 @@
-# File: Q (Python 2.4)
-
 from direct.gui.DirectGui import *
 from pandac.PandaModules import *
+
 from pirates.piratesgui import InventoryPage
-from pirates.piratesgui import QuestItemGui
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import QuestTitleList
 from pirates.piratesgui.BlackPearlCrew import BlackPearlCrew
@@ -17,6 +15,7 @@ from pirates.quest.QuestDetailGUI import QuestDetailGUI
 from pirates.piratesgui import PDialog
 from otp.otpbase import OTPGlobals
 from otp.otpgui import OTPDialog
+
 tpMgr = TextPropertiesManager.getGlobalPtr()
 questTitleMain = TextProperties()
 questTitleMain.setSmallCaps(1)
@@ -331,7 +330,6 @@ class QuestPage(InventoryPage.InventoryPage):
         
         if tm.getIsEnabled() or base.config.GetBool('black-pearl-ready', 0):
             DistributedBandMember = DistributedBandMember
-            import pirates.band.DistributedBandMember
             if not DistributedBandMember.getBandMember(localAvatar.doId) and quick == False:
                 localAvatar.guiMgr.messageStack.addTextMessage(PLocalizer.LookoutInviteNeedCrew, icon = ('lookout', None))
                 return None

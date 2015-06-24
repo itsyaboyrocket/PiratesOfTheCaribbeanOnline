@@ -1,19 +1,18 @@
-# File: D (Python 2.4)
-
 import random
-from pandac.PandaModules import *
-from direct.showbase import DirectObject
+
 from direct.interval.IntervalGlobal import *
+from direct.directnotify import DirectNotifyGlobal
+
 from pirates.piratesbase import PiratesGlobals
 from pirates.npc import Townfolk
 from pirates.npc import Skeleton
 from pirates.distributed import DistributedInteractive
-from direct.directnotify import DirectNotifyGlobal
 from pirates.pirate import HumanDNA
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PDialog
 from otp.otpgui import OTPDialog
 from pirates.pirate import AvatarTypes
+
 
 class DistributedGameTable(DistributedInteractive.DistributedInteractive):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedGameTable')

@@ -1,4 +1,3 @@
-from pandac.PandaModules import AudioSound
 from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import LerpFunc, Sequence
 from direct.showbase.DirectObject import DirectObject

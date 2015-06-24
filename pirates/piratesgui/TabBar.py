@@ -1,9 +1,7 @@
-# File: T (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 from pirates.piratesgui.BorderFrame import BorderFrame
-from pirates.piratesbase import PLocalizer
+
 
 class Tab(BorderFrame):
 

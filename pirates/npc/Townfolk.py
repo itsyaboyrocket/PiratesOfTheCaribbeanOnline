@@ -1,8 +1,3 @@
-# File: T (Python 2.4)
-
-from pandac.PandaModules import *
-from pirates.piratesbase import PiratesGlobals
-from pirates.pirate import Biped
 from pirates.pirate import Human
 from pirates.pirate import AvatarTypes
 AnimDict = { }

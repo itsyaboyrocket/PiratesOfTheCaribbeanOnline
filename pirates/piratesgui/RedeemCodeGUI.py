@@ -1,8 +1,6 @@
-# File: R (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
+
 from pirates.piratesgui import GuiButton
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
@@ -10,6 +8,7 @@ from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PDialog
 from otp.otpgui import OTPDialog
 from pirates.coderedemption import CodeRedemptionGlobals
+
 
 class RedeemCodeGUI(DirectFrame):
     notify = DirectNotifyGlobal.directNotify.newCategory('RedeemCodeGUI')

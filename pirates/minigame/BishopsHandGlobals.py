@@ -1,6 +1,3 @@
-# File: B (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.showbase import PythonUtil
 TARGET_POS = {
     4: Vec3(0.84999999999999998, 0, 0.0),

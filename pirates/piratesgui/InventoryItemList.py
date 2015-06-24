@@ -1,16 +1,9 @@
-# File: I (Python 2.4)
-
-from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import InventoryItemGui
-from pirates.piratesbase import PiratesGlobals
-from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.economy import EconomyGlobals
 from pirates.economy.EconomyGlobals import *
-from pirates.battle import WeaponGlobals
 from pirates.piratesgui.InventoryList import InventoryList
-from pirates.piratesbase import PLocalizer
+
 
 class InventoryItemList(InventoryList):
     

@@ -1,14 +1,12 @@
-# File: S (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
-from pirates.piratesbase import PiratesGlobals
+
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.ShipFrameSelect import ShipFrameSelect
 from pirates.piratesgui.ShipSnapshot import ShipSnapshot
 from pirates.ship import ShipGlobals
 from pirates.piratesbase import Freebooter
+
 
 class ShipFrameDeploy(ShipFrameSelect):
 

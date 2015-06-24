@@ -1,6 +1,8 @@
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.DistributedObjectAI import DistributedObjectAI
+
 from otp.ai.MagicWordGlobal import *
+
 
 class FriendManagerAI(DistributedObjectAI):
     notify = DirectNotifyGlobal.directNotify.newCategory("FriendManagerAI")

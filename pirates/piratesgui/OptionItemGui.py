@@ -1,14 +1,11 @@
-# File: O (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.ListFrame import ListFrame
-from pirates.world import GameTypeGlobals
 from pirates.piratesgui.ButtonListItem import ButtonListItem
-from pirates.piratesgui.LookoutListItem import LookoutListItem
 from pirates.piratesgui.BorderFrame import BorderFrame
 from pirates.piratesgui import GuiButton
+
 
 class OptionItemGui(DirectFrame):
     Width = PiratesGuiGlobals.OptionItemWidth

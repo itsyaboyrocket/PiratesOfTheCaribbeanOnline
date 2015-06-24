@@ -1,9 +1,9 @@
-# File: D (Python 2.4)
-
 from pandac.PandaModules import *
+
 import DistributedPostInvasionObject
 from pirates.effects.Fire import Fire
 from pirates.effects.MansionSmoke import MansionSmoke
+
 OBJ_EFFECT_PARAMS = {
     0: ('1233963904.0akelts', Point3(8, -6, 2.5), 1.0, Point3(8, -6, 7.5), 0.59999999999999998),
     1: ('1233964160.0akelts0', Point3(10, -7, 5), 0.75, Point3(10, -10, 6), 0.34999999999999998),

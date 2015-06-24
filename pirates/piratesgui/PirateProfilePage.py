@@ -1,34 +1,25 @@
-# File: P (Python 2.4)
+import string
 
-from direct.showbase.ShowBaseGlobal import *
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from direct.task import Task
-from otp.avatar import Avatar
+from direct.showbase.PythonUtil import StackTrace
+from direct.interval.LerpInterval import LerpPosInterval
+
 from otp.otpbase import OTPGlobals
-from pirates.friends import PirateFriendSecret
-from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.reputation import ReputationGlobals
 from pirates.piratesgui import SocialPage
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import Freebooter
-from pirates.band import DistributedBandMember
 from pirates.piratesgui import TeleportConfirm
 from pirates.piratesgui import GuiButton
-from pirates.piratesgui import BorderFrame
 from pirates.pirate import MasterHuman
 from pirates.pirate import Human
 from pirates.pirate import HumanDNA
-import DistributedPirateProfileMgr
 from pirates.pirate import DistributedPlayerPirate
 from pirates.band import DistributedBandMember
-from direct.showbase.PythonUtil import StackTrace
-from pirates.world.LocationConstants import LocationIds
-import copy
-import string
-from direct.interval.LerpInterval import LerpPosInterval
+
 GUILDRANK_VETERAN = 4
 GUILDRANK_GM = 3
 GUILDRANK_OFFICER = 2

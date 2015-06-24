@@ -1,15 +1,16 @@
-# File: Q (Python 2.4)
+import types
+import copy
 
 from pandac.PandaModules import TransformState
 from direct.directnotify import DirectNotifyGlobal
 from direct.showbase.PythonUtil import report
-from pirates.pirate import AvatarType, AvatarTypes
+
+from pirates.pirate import AvatarTypes
 from pirates.piratesbase import PiratesGlobals
 from pirates.quest import QuestConstants
 from pirates.piratesbase import TeamUtils
 from pirates.world import LocationConstants
-import types
-import copy
+
 
 class QuestGoal:
     Type_Uid = 0

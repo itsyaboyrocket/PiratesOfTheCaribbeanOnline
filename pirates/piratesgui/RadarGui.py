@@ -1,11 +1,11 @@
-# File: R (Python 2.4)
-
 import math
+
 from pandac.PandaModules import *
 from direct.gui.DirectGui import *
 from direct.task import Task
 from direct.fsm.FSM import FSM
 from direct.interval.IntervalGlobal import *
+
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import TeamUtils
 from pirates.piratesbase import PLocalizer
@@ -13,12 +13,12 @@ from pirates.band.DistributedBandMember import DistributedBandMember
 from pirates.piratesgui.GuiTray import GuiTray
 from pirates.piratesgui.RadarObjDef import *
 from pirates.world import OceanZone
-from pirates.world.LocationConstants import LocationIds
 from pirates.map.MinimapObject import MinimapObject
 from pirates.map import MinimapGlobals
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.piratesgui.GameOptions import Options
+
 
 class RadarZoomFSM(FSM):
     notify = directNotify.newCategory('RadarZoomFSM')

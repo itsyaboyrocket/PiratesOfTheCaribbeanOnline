@@ -1,4 +1,4 @@
-# File: U (Python 2.4)
+
 
 from pirates.world.LocationConstants import LocationIds
 

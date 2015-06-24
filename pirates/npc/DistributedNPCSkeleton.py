@@ -1,14 +1,11 @@
-# File: D (Python 2.4)
+import random
 
-from direct.interval.IntervalGlobal import *
-from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.ClockDelta import *
-from otp.otpbase import OTPGlobals
-from pirates.piratesbase import PiratesGlobals
+
 from pirates.battle import DistributedBattleNPC
 from pirates.npc import Skeleton
-import random
 import NPCSkeletonGameFSM
+
 
 class DistributedNPCSkeleton(DistributedBattleNPC.DistributedBattleNPC, Skeleton.Skeleton):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedNPCSkeleton')

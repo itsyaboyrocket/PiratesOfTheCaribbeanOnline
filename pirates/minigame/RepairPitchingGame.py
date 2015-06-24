@@ -1,18 +1,19 @@
-# File: R (Python 2.4)
-
 import random
 import math
+
 from pandac.PandaModules import NodePath
 from pandac.PandaModules import Point3
 from pandac.PandaModules import AudioSound
 from direct.task import Task
 from direct.interval.IntervalGlobal import *
+
 from RepairMincroGame import RepairMincroGame
 from RepairLeak import RepairLeak
 from pirates.piratesbase import PLocalizer
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 import RepairGlobals
+
 
 class RepairPitchingGame(RepairMincroGame):
     

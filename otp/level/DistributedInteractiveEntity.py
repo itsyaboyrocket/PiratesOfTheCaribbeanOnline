@@ -1,8 +1,9 @@
-from pandac.PandaModules import *
 from direct.distributed.ClockDelta import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.fsm import ClassicFSM
+
 import DistributedEntity
+
 
 class DistributedInteractiveEntity(DistributedEntity.DistributedEntity):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedInteractiveEntity')

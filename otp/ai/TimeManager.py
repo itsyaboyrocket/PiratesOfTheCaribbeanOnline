@@ -1,18 +1,19 @@
-from pandac.PandaModules import *
-from direct.showbase.DirectObject import *
-from direct.distributed.ClockDelta import *
-from direct.task import Task
-from direct.distributed import DistributedObject
-from direct.directnotify import DirectNotifyGlobal
-from otp.otpbase import OTPGlobals
-from otp.nametag.NametagConstants import *
-from direct.showbase import PythonUtil
-from direct.showbase import GarbageReport
 import base64
 import time
 import os
 import sys
 import re
+
+from direct.distributed.ClockDelta import *
+from direct.task import Task
+from direct.distributed import DistributedObject
+from direct.directnotify import DirectNotifyGlobal
+from direct.showbase import PythonUtil
+from direct.showbase import GarbageReport
+
+from otp.otpbase import OTPGlobals
+from otp.nametag.NametagConstants import *
+
 
 class TimeManager(DistributedObject.DistributedObject):
     notify = DirectNotifyGlobal.directNotify.newCategory('TimeManager')

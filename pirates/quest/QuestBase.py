@@ -1,6 +1,3 @@
-# File: Q (Python 2.4)
-
-from pirates.quest import QuestReward
 from pirates.quest import QuestDB, QuestLadderDB
 
 class QuestBase:

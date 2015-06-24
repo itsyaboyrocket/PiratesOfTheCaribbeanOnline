@@ -1,8 +1,8 @@
-# File: D (Python 2.4)
-
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.DistributedObjectOV import DistributedObjectOV
+
 from pirates.quest import Quest, QuestBase
+
 QUEST_TYPE_AVATAR = 0
 QUEST_TYPE_TM = 1
 

@@ -1,16 +1,15 @@
-# File: D (Python 2.4)
-
 from direct.distributed.DistributedCartesianGrid import DistributedCartesianGrid
 from direct.showbase.PythonUtil import report
+
 from pirates.world import WorldGlobals
 from pirates.seapatch.SeaPatch import SeaPatch
 from pirates.seapatch.Reflection import Reflection
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
-from pandac.PandaModules import *
 from OceanGridBase import OceanGridBase
 from pirates.map.Minimap import OceanMap
 from pirates.map.Mappable import MappableGrid
+
 
 class DistributedOceanGrid(DistributedCartesianGrid, OceanGridBase, MappableGrid):
 

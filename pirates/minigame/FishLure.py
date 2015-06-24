@@ -1,17 +1,13 @@
-# File: F (Python 2.4)
-
-import random
 import math
+
 from pandac.PandaModules import NodePath
-from direct.actor.Actor import Actor
-from direct.interval.IntervalGlobal import Sequence, Wait, Func
-from direct.task import Task
+
 from panda3d.core import TextNode
-from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui.GuiPanel import *
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.effects.LureGlow import LureGlow
 import FishingGlobals
+
 _glowColors = {
     InventoryType.FishingRodStall: (1.0, 1.0, 0.59999999999999998, 0.69999999999999996),
     InventoryType.FishingRodPull: (0.69999999999999996, 0.69999999999999996, 1.0, 0.69999999999999996),

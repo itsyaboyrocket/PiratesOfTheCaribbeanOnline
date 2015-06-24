@@ -1,4 +1,4 @@
-# File: W (Python 2.4)
+
 
 AC_COMBAT = 1
 AC_MISSILE = 2

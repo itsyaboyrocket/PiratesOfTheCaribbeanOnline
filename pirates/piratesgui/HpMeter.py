@@ -1,12 +1,10 @@
-# File: H (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
-from pirates.reputation import ReputationGlobals
+
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
+
 
 class HpMeter(DirectFrame):
     FADEOUT_TIME = 8.0

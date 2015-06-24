@@ -1,4 +1,4 @@
-# File: N (Python 2.4)
+
 
 from pirates.pirate.HumanDNA import HumanDNA
 from pirates.piratesbase import PLocalizer

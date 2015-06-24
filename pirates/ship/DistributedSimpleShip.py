@@ -1,12 +1,15 @@
+import random
+import math
+
 from direct.interval.IntervalGlobal import *
-from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from direct.gui.OnscreenText import OnscreenText
-from direct.directnotify.DirectNotifyGlobal import directNotify
-from direct.showbase.PythonUtil import Functor, ScratchPad, report, lerp, quickProfile
+from direct.showbase.PythonUtil import Functor, report, lerp
 from direct.task import Task
 from direct.distributed.ClockDelta import *
 from direct.showutil import Rope
+from direct.controls import ControlManager
+from direct.fsm.StatePush import FunctionCall
+
 from otp.otpbase import OTPRender
 from otp.otpbase import OTPGlobals
 from pirates.movement.DistributedMovingObject import DistributedMovingObject
@@ -14,29 +17,23 @@ from pirates.ship.DistributedFlagship import DistributedFlagship
 from pirates.battle.Teamable import Teamable
 from pirates.map.MinimapObject import GridMinimapObject
 from pirates.battle import WeaponGlobals
-from pirates.battle import DistributedShipCannon
 from pirates.battle import DistributedBattleAvatar
-from pirates.battle import CannonGlobals
 from pirates.battle import EnemyGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import TeamUtils
-from pirates.piratesbase import Freebooter
 from pirates.piratesgui.ShipStatusDisplay import ShipStatusDisplay
 from pirates.piratesgui import ShipTargetPanel
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import ShipFrameBoard
-from pirates.piratesgui import PVPRankGui
 from pirates.pvp import PVPGlobals
 from pirates.ship import ShipCameraParams
 from pirates.ship.GameFSMShip import GameFSMShip
 from pirates.ship import ShipRocker
 from pirates.ship import ShipPilot
 from pirates.ship import ShipGlobals
-from pirates.shipparts.WheelInteractive import WheelInteractive
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesgui.ShipTargets import ShipTargets, Target
-from direct.controls import ControlManager
 from pirates.audio import SoundGlobals
 from pirates.effects.CameraShaker import CameraShaker
 from pirates.effects.ShipSplintersA import ShipSplintersA
@@ -45,14 +42,11 @@ from pirates.effects.ShockwaveHit import ShockwaveHit
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.inventory import ItemGlobals
 from pirates.piratesgui import PVPRankGui
-from direct.fsm.StatePush import FunctionCall
 import ShipBalance
 from pirates.effects import TextEffect
 from pirates.piratesbase import TODGlobals
 from pirates.ship import HighSeasGlobals
-import random
-import re
-import math
+
 STOP = 0
 FWD = 1
 BACK = -1

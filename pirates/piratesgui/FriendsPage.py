@@ -1,22 +1,15 @@
-# File: F (Python 2.4)
-
-from direct.showbase.ShowBaseGlobal import *
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
-from direct.fsm import StateData
-from otp.friends import FriendSecret
-from otp.otpbase import OTPGlobals
+from direct.task import Task
+
 from otp.otpbase import OTPLocalizer
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import SocialPage
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from otp.otpbase import OTPGlobals
-from otp.friends.FriendInfo import FriendInfo
-import GuiButton
 from pirates.piratesgui import PirateMemberList
-from direct.task import Task
 from pirates.uberdog.UberDogGlobals import InventoryType
+
 
 class FriendsPage(SocialPage.SocialPage):
     NumVisible = 6

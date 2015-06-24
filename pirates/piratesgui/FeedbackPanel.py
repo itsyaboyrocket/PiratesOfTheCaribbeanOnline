@@ -1,22 +1,11 @@
-# File: F (Python 2.4)
-
-import sys
-import os
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
-from otp.otpbase import OTPGlobals
-from pirates.piratesgui import PDialog
+
 from pirates.piratesgui import GuiPanel
 from pirates.piratesgui import PiratesGuiGlobals
-from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
-from pirates.band import BandConstance
 from pirates.piratesgui.RequestButton import RequestButton
-from pirates.piratesgui.CheckBox import CheckBox
-from direct.gui.DirectCheckBox import DirectCheckBox
 from pirates.piratesgui import PNameTumbler
-from pirates.piratesgui.BorderFrame import BorderFrame
 from pirates.distributed import InteractGlobals
 
 try:

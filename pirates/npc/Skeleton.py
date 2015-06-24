@@ -1,25 +1,11 @@
-# File: S (Python 2.4)
+import random
 
-from pandac.PandaModules import *
-from direct.showbase.DirectObject import *
-from direct.showbase import ShadowPlacer
-from direct.actor import Actor
-from direct.fsm import ClassicFSM
-from direct.fsm import State
 from direct.distributed.ClockDelta import *
-from otp.otpbase import OTPGlobals
-from pirates.effects.DarkAura import DarkAura
-from pirates.effects.SkeletonGlow import SkeletonGlow
-from pirates.piratesbase import PiratesGlobals
+
 from pirates.pirate import Biped, AvatarTypes
 from pirates.pirate.BipedAnimationMixer import BipedAnimationMixer
-from pirates.battle import EnemyGlobals
-from direct.interval.IntervalGlobal import *
-from pirates.effects.JRDeathEffect import JRDeathEffect
-from pirates.effects.ShockwaveRing import ShockwaveRing
-from pirates.effects.JRSpiritEffect import JRSpiritEffect
 from pirates.makeapirate import NPCPirate
-import random
+
 AvType2style = {
     AvatarTypes.EarthUndead[0]: '1',
     AvatarTypes.EarthUndead[1]: '8',

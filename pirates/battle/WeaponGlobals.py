@@ -1,23 +1,12 @@
-# File: W (Python 2.4)
-
-import copy
-import math
-import cPickle
 import pickle
-from pandac.PandaModules import *
-from direct.interval.IntervalGlobal import *
+
 from direct.showbase.PythonUtil import *
 from direct.showbase import AppRunnerGlobal
+
 from pirates.battle.EnemySkills import *
-from pirates.battle import CannonGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.uberdog.UberDogGlobals import InventoryType
-from pirates.economy import EconomyGlobals
-from pirates.reputation import RepChart
 from pirates.inventory import ItemGlobals
-import random
-import os
-import copy
 import Pistol
 import Sword
 import Doll
@@ -28,7 +17,6 @@ import Wand
 import Bayonet
 import MonsterMelee
 import Consumable
-import Weapon
 import DualCutlass
 import Foil
 import FishingRod
@@ -36,6 +24,7 @@ import Gun
 import Torch
 import PowderKeg
 from WeaponConstants import *
+
 __defensiveBuffs = [
     C_TAKECOVER,
     C_OPENFIRE,

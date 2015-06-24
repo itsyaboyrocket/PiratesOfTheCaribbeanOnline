@@ -1,8 +1,8 @@
-# File: P (Python 2.4)
-
 from direct.showbase.PythonUtil import listToItem2index
+
 from otp.namepanel.PickANamePattern import PickANamePatternTwoPartLastName
 from pirates.piratesbase.PiratesGlobals import maleNames, femaleNames, lastNamePrefixesCapped
+
 
 class PCPickANamePattern(PickANamePatternTwoPartLastName):
     NameParts = None

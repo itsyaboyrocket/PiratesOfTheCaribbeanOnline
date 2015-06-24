@@ -1,11 +1,10 @@
-# File: B (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
+
 from pirates.npc.Skeleton import Skeleton
 from pirates.movement.AnimationMixer import AnimationMixer
 from pirates.pirate.BipedAnimationMixer import BipedAnimationMixer
 from pirates.pirate import AvatarTypes
+
 AnimDict = { }
 
 class BomberZombie(Skeleton):

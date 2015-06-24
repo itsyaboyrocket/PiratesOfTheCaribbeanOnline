@@ -1,7 +1,7 @@
-# File: S (Python 2.4)
-
 from direct.gui.DirectGui import *
 from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
+
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
@@ -9,8 +9,7 @@ from pirates.economy.EconomyGlobals import ItemId
 from pirates.economy import EconomyGlobals
 from pirates.battle import WeaponGlobals
 from pirates.makeapirate import ClothingGlobals
-from direct.interval.IntervalGlobal import *
-from direct.directnotify import DirectNotifyGlobal
+
 
 class ScoreboardItemGui(DirectFrame):
     notify = directNotify.newCategory('ScoreboardItemGui')

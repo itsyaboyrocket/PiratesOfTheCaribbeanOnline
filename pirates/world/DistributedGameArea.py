@@ -1,36 +1,31 @@
-# File: D (Python 2.4)
+import time
 
 from pandac.PandaModules import *
 from direct.distributed import DistributedNode
 from direct.distributed import DistributedObject
-from direct.showbase.PythonUtil import Functor, report
-from direct.actor import Actor
+from direct.showbase.PythonUtil import report
+from pandac.PandaModules import CollisionSphere
+from pandac.PandaModules import CollisionNode
+
 from pirates.audio import SoundGlobals
-from pirates.world import WorldGlobals
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.effects import EnvironmentEffects
 from pirates.effects import SwampEffects
 from pirates.effects import ForestEffects
 from pirates.effects import CaveEffects
-from pirates.piratesbase import TimeOfDayManager, TODGlobals
+from pirates.piratesbase import TODGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import UserFunnel
-from pirates.tutorial import CrewTutorial
 from pirates.tutorial import TutorialGlobals
 from pirates.piratesgui import NewTutorialPanel
-from pirates.uberdog.UberDogGlobals import InventoryType
-from pandac.PandaModules import CollisionSphere
-from pandac.PandaModules import CollisionNode
-from pandac.PandaModules import CollisionHandlerEvent
-from pirates.chat.PiratesChatManager import PiratesChatManager
 from pirates.seapatch.SeaPatch import SeaPatch
 from pirates.seapatch.Reflection import Reflection
 from pirates.seapatch.Water import IslandWaterParameters
 from pirates.swamp.Swamp import Swamp
 from pirates.world.LocationConstants import LocationIds, getLocationList
 from pirates.map.Mappable import MappableArea
-import time
+
 
 class DistributedGameArea(DistributedNode.DistributedNode, MappableArea):
     notify = directNotify.newCategory('DistributedGameArea')

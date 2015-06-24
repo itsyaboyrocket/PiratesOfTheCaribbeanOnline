@@ -1,15 +1,13 @@
-# File: T (Python 2.4)
+import weakref
 
 from direct.interval.IntervalGlobal import *
+
 from pirates.piratesbase import PLocalizer
-from pandac.PandaModules import *
 from otp.otpbase import OTPRender
-from pirates.piratesbase import Freebooter
 from pirates.piratesbase import PiratesGlobals
 from pirates.inventory import ItemGlobals
 from pirates.inventory import ItemConstants
-import random
-import weakref
+
 MOD_TYPE_MULTIPLE = 0
 MOD_TYPE_MULTIPLE_COMPACT = 1
 MOD_TYPE_SEQUENTIAL = 2

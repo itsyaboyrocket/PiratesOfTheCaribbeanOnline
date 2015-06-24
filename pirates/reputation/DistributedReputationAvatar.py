@@ -1,14 +1,11 @@
-# File: D (Python 2.4)
-
 from direct.directnotify import DirectNotifyGlobal
+
 from otp.avatar import DistributedAvatar
 from pirates.distributed import DistributedInteractive
 from pirates.movement import DistributedMovingObject
-from pirates.battle import WeaponGlobals
 from pirates.quest import DistributedQuestGiver
-from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesbase import PiratesGlobals
-import ReputationGlobals
+
 
 class DistributedReputationAvatar(DistributedAvatar.DistributedAvatar, DistributedMovingObject.DistributedMovingObject, DistributedInteractive.DistributedInteractive, DistributedQuestGiver.DistributedQuestGiver):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedReputationAvatar')

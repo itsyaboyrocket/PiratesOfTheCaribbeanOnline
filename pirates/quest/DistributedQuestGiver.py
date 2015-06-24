@@ -1,18 +1,12 @@
-# File: D (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.showbase.ShowBaseGlobal import *
-from direct.directnotify.DirectNotifyGlobal import directNotify
 from direct.distributed.ClockDelta import *
-from direct.interval.IntervalGlobal import *
 from direct.showbase.PythonUtil import getShortestRotation
+
 from otp.avatar import Avatar
 from otp.otpgui import OTPDialog
-from pirates.quest import QuestMenuGUI, QuestConstants, QuestDB, QuestLadderDB
+from pirates.quest import QuestMenuGUI, QuestConstants, QuestDB
 from pirates.quest import QuestParser
 from pirates.distributed import InteractGlobals
 from pirates.quest import QuestLadderDB
-from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import Freebooter
 from pirates.piratesgui import PDialog
 from pirates.quest.QuestDetailGUI import QuestDetailGUI
@@ -21,9 +15,9 @@ from pirates.quest import BranchMenuGUI
 from pirates.quest import QuestTaskDNA
 from pirates.quest import QuestOffer
 from pirates.reputation.ReputationGlobals import getLevelFromTotalReputation
-from pirates.quest.DialogTree import *
 from pirates.quest.DialogProcessMaster import *
 from otp.nametag.NametagConstants import CFSpeech, CFTimeout
+
 
 class DistributedQuestGiver(Avatar.Avatar):
     notify = directNotify.newCategory('DistributedQuestGiver')

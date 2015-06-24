@@ -1,4 +1,4 @@
-# File: P (Python 2.4)
+
 
 from pirates.piratesbase import PLocalizer
 from otp.otpbase import OTPLocalizer

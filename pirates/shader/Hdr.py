@@ -1,8 +1,3 @@
-# File: H (Python 2.4)
-
-from pandac.PandaModules import *
-from otp.otpbase import OTPGlobals
-from otp.otpbase import OTPRender
 from pirates.shader.Blur import *
 
 class Hdr:

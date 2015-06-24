@@ -1,12 +1,8 @@
-# File: I (Python 2.4)
-
 from direct.gui.DirectGui import *
-from direct.interval.IntervalGlobal import *
 from pandac.PandaModules import *
-from pirates.piratesgui import GuiPanel, PiratesGuiGlobals
-from pirates.piratesbase import PiratesGlobals
+
+from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PLocalizer
-from otp.otpbase import OTPLocalizer
 from pirates.inventory import InventoryUIItem
 from pirates.inventory import InventoryUINoTradeItem
 from pirates.inventory import InventoryUIStackItem
@@ -25,27 +21,21 @@ from pirates.inventory import InventoryUIPouchItem
 from pirates.inventory import InventoryStackSplitter
 from pirates.inventory import InventoryRemoveConfirm
 from pirates.inventory import InventoryPlunderPanel
-from pirates.inventory import ItemGlobals
 from pirates.inventory import InventoryExchange
 from pirates.inventory.InventoryUIGlobals import *
 from pirates.inventory.InventoryGlobals import Locations
 from pirates.uberdog.UberDogGlobals import InventoryType, InventoryCategory
-from pirates.economy import EconomyGlobals
 from pirates.battle import WeaponGlobals
 from pirates.uberdog import UberDogGlobals
-from pirates.piratesgui import HighSeasScoreboard
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-from pirates.pirate import MasterHuman
 from pirates.pirate import Human
-from pirates.pirate import HumanDNA
 from pirates.uberdog.TradableInventoryBase import InvItem
 from pirates.inventory import ItemGlobals
 from pirates.inventory import ItemConstants
 from pirates.inventory import InventoryGlobals
-from direct.distributed.ClockDelta import globalClockDelta
 from pirates.piratesbase import Freebooter
-import time
+
 
 class InventoryUIManager(DirectFrame):
     testItemCount = 0

@@ -1,10 +1,8 @@
-# File: Q (Python 2.4)
-
 from pandac.PandaModules import Point3
-from pirates.piratesgui.RadarGui import *
+from direct.showbase.PythonUtil import report
+
 from pirates.quest.QuestIndicatorNode import QuestIndicatorNode
-from pirates.piratesgui.RadarGui import RADAR_OBJ_TYPE_QUEST
-from direct.showbase.PythonUtil import report, StackTrace
+
 
 class QuestIndicatorNodeTunnel(QuestIndicatorNode):
     LOD_CENTER_OFFSET_X = 30

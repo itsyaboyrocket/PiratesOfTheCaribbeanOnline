@@ -1,10 +1,8 @@
-# File: P (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.showbase.DirectObject import *
 from direct.interval.IntervalGlobal import *
+
 from PooledEffect import PooledEffect
 from EffectController import EffectController
+
 
 class PeonyEffect(PooledEffect, EffectController):
     

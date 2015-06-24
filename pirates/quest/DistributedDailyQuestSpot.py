@@ -1,8 +1,5 @@
-from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed import DistributedNode
-from pirates.world import DistributedLocatableObject
-from direct.showbase.PythonUtil import report
 
 
 class DistributedDailyQuestSpot(DistributedNode.DistributedNode):

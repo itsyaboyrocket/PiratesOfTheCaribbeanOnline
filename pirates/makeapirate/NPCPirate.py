@@ -1,8 +1,7 @@
-# File: N (Python 2.4)
+import random
 
 from direct.showbase import DirectObject
-from pandac.PandaModules import *
-import random
+
 
 class NPCPirate(DirectObject.DirectObject):
     

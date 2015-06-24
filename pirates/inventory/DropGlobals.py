@@ -1,17 +1,15 @@
-# File: D (Python 2.4)
-
 import cPickle
-from pandac.PandaModules import *
-from direct.showbase.PythonUtil import *
-from direct.showbase import AppRunnerGlobal
-from pirates.pirate import AvatarTypes
-from pirates.battle import EnemyGlobals
-from pirates.ship import ShipGlobals
-from pirates.piratesbase import PiratesGlobals
-from pirates.battle import EnemyGlobals
 import string
 import random
 import os
+
+from direct.showbase import AppRunnerGlobal
+
+from pirates.pirate import AvatarTypes
+from pirates.ship import ShipGlobals
+from pirates.piratesbase import PiratesGlobals
+from pirates.battle import EnemyGlobals
+
 vfs = VirtualFileSystem.getGlobalPtr()
 filename = Filename('DropGlobals.pkl')
 searchPath = DSearchPath()

@@ -1,14 +1,10 @@
-# File: W (Python 2.4)
-
-from pandac.PandaModules import *
-from pirates.piratesbase import PiratesGlobals
-from pirates.world import WorldGlobals
-from pirates.piratesbase import TODGlobals
 import os
 import re
-import imp
 import types
+
+from pirates.piratesbase import PiratesGlobals
 from pirates.world.WorldGlobals import LevelObject
+
 
 class WorldCreatorBase:
 

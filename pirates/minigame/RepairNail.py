@@ -1,11 +1,11 @@
-# File: R (Python 2.4)
-
 from pandac.PandaModules import NodePath
 from direct.gui.DirectGui import DirectLabel
 from direct.fsm import FSM
+
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import PiratesGlobals
 import RepairGlobals
+
 NAIL_COLLIDE_MASK = 8
 HAMMERED_DEPTH = -0.17000000000000001
 

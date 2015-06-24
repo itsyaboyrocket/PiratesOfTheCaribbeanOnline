@@ -1,12 +1,12 @@
-# File: D (Python 2.4)
-
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed import DistributedObject
+
 from pirates.uberdog.DistributedInventory import DistributedInventory
 from pirates.quest.QuestHolder import QuestHolder
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.world import GameTypeGlobals
+
 
 class DistributedTreasureMap(DistributedObject.DistributedObject, DistributedInventory, QuestHolder):
     notify = DirectNotifyGlobal.directNotify.newCategory('TreasureMapManager')

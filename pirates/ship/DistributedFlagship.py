@@ -1,12 +1,11 @@
-# File: D (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.task import Task
 from direct.gui.DirectGui import *
 from direct.distributed.DistributedObject import DistributedObject
+
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PLocalizer
+
 
 class DistributedFlagship(DistributedObject):
     

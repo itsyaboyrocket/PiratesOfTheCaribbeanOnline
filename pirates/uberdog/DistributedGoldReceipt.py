@@ -1,9 +1,6 @@
-# File: D (Python 2.4)
-
-from direct.distributed.ClockDelta import *
 from direct.directnotify.DirectNotifyGlobal import directNotify
 from direct.distributed.DistributedObject import DistributedObject
-from pirates.uberdog.UberDogGlobals import *
+
 
 class DistributedGoldReceipt(DistributedObject):
     notify = directNotify.newCategory('GoldReceipt')

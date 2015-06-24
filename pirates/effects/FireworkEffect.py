@@ -1,8 +1,7 @@
-# File: F (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.interval.IntervalGlobal import *
 import random
+
+from direct.interval.IntervalGlobal import *
+
 from pirates.effects.FireworkGlobals import *
 from pirates.effects.Glow import Glow
 from pirates.effects.GlowTrail import GlowTrail
@@ -24,6 +23,7 @@ from pirates.effects.SkullFlash import SkullFlash
 from pirates.effects.TrailExplosion import TrailExplosion
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
+
 trailSfxNames = [
     SoundGlobals.SFX_FX_FIREWORK_WHISTLE_01,
     SoundGlobals.SFX_FX_FIREWORK_WHISTLE_02]

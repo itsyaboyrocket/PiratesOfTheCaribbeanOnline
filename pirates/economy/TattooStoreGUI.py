@@ -1,8 +1,11 @@
-# File: T (Python 2.4)
+from math import sin
+from math import cos
+from math import pi
 
-from direct.directnotify.DirectNotifyGlobal import directNotify
 from direct.gui.DirectGui import *
 from pandac.PandaModules import *
+from direct.task import Task
+
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import GuiPanel, RedeemCodeGUI
 from pirates.piratesgui import GuiButton, DialogButton
@@ -10,23 +13,14 @@ from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.pirate import DynamicHuman
 from pirates.piratesgui.TabBar import LeftTab, TabBar
-from direct.interval.IntervalGlobal import *
-from pirates.makeapirate import TattooGlobals
-from pirates.piratesgui.BorderFrame import BorderFrame
-from pirates.uberdog.UberDogGlobals import InventoryType
-from otp.otpbase import OTPGlobals
 from otp.otpgui import OTPDialog
 from pirates.piratesgui import PDialog
-from direct.task import Task
-import random
-from math import sin
-from math import cos
-from math import pi
 from pirates.piratesbase import Freebooter
-from pirates.inventory import ItemGlobals, DropGlobals
+from pirates.inventory import DropGlobals
 from pirates.inventory.InventoryGlobals import *
 from pirates.uberdog.TradableInventoryBase import InvItem
 from pirates.pirate import TitleGlobals
+
 ZONE1 = 0
 ZONE2 = 1
 ZONE3 = 2

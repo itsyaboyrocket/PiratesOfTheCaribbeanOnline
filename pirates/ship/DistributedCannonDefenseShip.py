@@ -1,9 +1,9 @@
-# File: D (Python 2.4)
+import random
 
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 from direct.actor.Actor import Actor
 from direct.gui.DirectGui import DirectWaitBar, DirectLabel, DGG
+
 from otp.otpbase import OTPRender
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
@@ -16,7 +16,7 @@ from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.ship.DistributedNPCSimpleShip import DistributedNPCSimpleShip
 from pirates.uberdog.UberDogGlobals import InventoryType
-import random
+
 
 class DistributedCannonDefenseShip(DistributedNPCSimpleShip):
     specialHitSfx = { }

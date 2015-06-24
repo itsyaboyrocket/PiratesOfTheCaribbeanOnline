@@ -1,20 +1,16 @@
-# File: S (Python 2.4)
+from direct.interval.IntervalGlobal import *
 
 import Weapon
-import WeaponGlobals
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-from direct.interval.IntervalGlobal import *
-from pandac.PandaModules import *
 from pirates.battle.EnemySkills import *
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.inventory import ItemGlobals
-from pirates.piratesbase import PLocalizer
 from pirates.effects import PolyTrail
 from pirates.effects.SwordFlame import SwordFlame
 from pirates.effects.SwordFreeze import SwordFreeze
 from pirates.effects.SwordThunders import SwordThunders
-import random
+
 
 class Sword(Weapon.Weapon):
     modelTypes = [

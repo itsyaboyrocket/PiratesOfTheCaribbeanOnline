@@ -1,22 +1,22 @@
-# File: R (Python 2.4)
-
 import math
 import random
-from pandac.PandaModules import NodePath, Point3, TextNode, Vec3, Vec4
+
+from pandac.PandaModules import NodePath, Point3, TextNode, Vec4
 from direct.interval.IntervalGlobal import Sequence, Parallel, Func, Wait
 from direct.interval.IntervalGlobal import LerpPosInterval, LerpFunc
-from direct.gui.DirectGui import DirectButton, DGG, DirectFrame, DirectLabel
+from direct.gui.DirectGui import DirectLabel
 from direct.directnotify import DirectNotifyGlobal
 from direct.task import Task
+
 from pirates.piratesbase import PLocalizer
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from RepairMincroGame import RepairMincroGame
-from MinigameUtils import getAcuteAngle
 from RepairSawingLine import RepairSawingLine
 from RepairSaw import RepairSaw
 from pirates.piratesbase import PiratesGlobals
 import RepairGlobals
+
 SAW_COLLIDE_MASK = 16
 
 class SawWaypoint(NodePath):

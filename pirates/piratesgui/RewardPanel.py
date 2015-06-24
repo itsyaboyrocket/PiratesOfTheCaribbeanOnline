@@ -1,8 +1,6 @@
-# File: R (Python 2.4)
-
 from direct.gui.DirectGui import *
 from direct.interval.IntervalGlobal import *
-from pandac.PandaModules import *
+
 from pirates.piratesgui.PDialog import PDialog
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
@@ -10,6 +8,7 @@ from pirates.piratesgui import GuiButton
 from pirates.piratesbase import PLocalizer
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.reputation import ReputationGlobals
+
 TextDict = {
     PiratesGuiGlobals.REWARD_PANEL_BLACK_PEARL: {
         'title': PLocalizer.RewardBlackPearlComplete,

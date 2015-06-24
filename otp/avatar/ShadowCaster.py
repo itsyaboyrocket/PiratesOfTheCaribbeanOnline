@@ -1,8 +1,8 @@
-from pandac.PandaModules import *
-from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.showbase.ShadowPlacer import ShadowPlacer
+
 from otp.otpbase import OTPGlobals
+
 globalDropShadowFlag = 1
 
 def setGlobalDropShadowFlag(flag):

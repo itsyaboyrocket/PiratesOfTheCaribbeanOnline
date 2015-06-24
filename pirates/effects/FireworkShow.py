@@ -1,14 +1,13 @@
-# File: F (Python 2.4)
+import random
 
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
+
 from pirates.audio import SoundGlobals
-from pirates.effects import FireworkGlobals
 from pirates.effects.FireworkGlobals import *
 from pirates.effects.Firework import Firework
 from pirates.ai import HolidayGlobals
 from pirates.piratesbase import TODDefs
-import random
+
 colors = [
     Vec4(1, 1, 1, 1),
     Vec4(1, 0.10000000000000001, 0.10000000000000001, 1),

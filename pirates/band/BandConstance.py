@@ -1,4 +1,4 @@
-# File: B (Python 2.4)
+
 
 outcome_ok = 0
 outcome_declined = 9

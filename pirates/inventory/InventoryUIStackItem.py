@@ -1,16 +1,7 @@
-# File: I (Python 2.4)
-
-from direct.gui.DirectGui import *
-from pandac.PandaModules import *
-from pirates.piratesgui import GuiPanel, PiratesGuiGlobals
-from pirates.piratesbase import PiratesGlobals
-from pirates.piratesbase import PLocalizer
-from otp.otpbase import OTPLocalizer
-from pirates.piratesgui.BorderFrame import BorderFrame
 from pirates.inventory.InventoryUIGlobals import *
 from pirates.inventory import ItemGlobals
 from pirates.inventory import InventoryUIItem
-from pirates.inventory import InventoryGlobals
+
 
 class InventoryUIStackItem(InventoryUIItem.InventoryUIItem):
     

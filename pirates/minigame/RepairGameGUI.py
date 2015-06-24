@@ -1,19 +1,20 @@
-# File: R (Python 2.4)
-
 import random
-from pandac.PandaModules import NodePath, TextNode
+
+from pandac.PandaModules import TextNode
 from direct.gui.DirectGui import DirectFrame, DirectLabel
 from direct.interval.IntervalGlobal import Sequence, Func, Parallel, LerpPosInterval, Wait, LerpColorScaleInterval
 from pandac.PandaModules import TextPropertiesManager, TextProperties
+
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.piratesgui.GuiButton import GuiButton
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import GUIFactory
-from pirates.minigame.DistributedRepairGameBase import AT_SEA, ON_LAND
+from pirates.minigame.DistributedRepairGameBase import ON_LAND
 from pirates.piratesbase import PiratesGlobals
 from RepairGamePickerGUI import RepairGamePickerGUI
 import RepairGlobals
+
 
 class RepairGameGUI(DirectFrame):
     completeSound = None

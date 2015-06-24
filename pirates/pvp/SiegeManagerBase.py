@@ -1,7 +1,3 @@
-# File: S (Python 2.4)
-
-from pirates.piratesbase import PLocalizer
-
 class SiegeManagerBase:
     
     def __init__(self):

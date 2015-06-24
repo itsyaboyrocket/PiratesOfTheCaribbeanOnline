@@ -1,11 +1,10 @@
-# File: A (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.task import Task
 from direct.showbase.DirectObject import DirectObject
+
 from otp.otpbase import OTPRender
 from otp.avatar import ShadowCaster
 from pirates.piratesbase import TODGlobals
+
 
 class AvatarShadowCaster(DirectObject):
     

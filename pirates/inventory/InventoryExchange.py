@@ -1,10 +1,5 @@
-# File: I (Python 2.4)
-
-from pandac.PandaModules import *
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.inventory import ItemGlobals
-from pirates.inventory import ItemConstants
-from pandac.PandaModules import VBase4
 from pirates.pirate.HumanDNA import hatColorsOld, clothesTopColorsOld, clothesBotColorsOld
 from pirates.inventory import InventoryGlobals
 from pirates.makeapirate import ClothingGlobals

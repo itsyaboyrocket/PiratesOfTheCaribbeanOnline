@@ -1,7 +1,7 @@
-# File: Q (Python 2.4)
+
 
 from pirates.ship.ShipGlobals import *
-from pirates.world.LocationConstants import LocationIds, getLocationList
+
 CANCEL_QUEST = -1
 MAXIMUM_MERC_WORK = 16
 

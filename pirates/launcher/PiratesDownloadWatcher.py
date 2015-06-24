@@ -1,12 +1,12 @@
-# File: P (Python 2.4)
-
-from otp.launcher import DownloadWatcher
-from otp.otpbase import OTPLocalizer
 from pandac.PandaModules import Point3, TextNode
 from direct.gui.DirectFrame import DirectFrame
 from direct.gui.DirectLabel import DirectLabel
 from direct.gui.DirectWaitBar import DirectWaitBar
 from direct.gui import DirectGuiGlobals as DGG
+
+from otp.launcher import DownloadWatcher
+from otp.otpbase import OTPLocalizer
+
 
 class PiratesDownloadWatcher(DownloadWatcher.DownloadWatcher):
     positions = [

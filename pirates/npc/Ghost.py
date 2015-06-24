@@ -1,8 +1,3 @@
-# File: G (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.interval.IntervalGlobal import *
-from pirates.piratesbase import PiratesGlobals
 from pirates.pirate import Human
 from pirates.pirate import AvatarTypes
 

@@ -1,10 +1,10 @@
-# File: S (Python 2.4)
+import copy
 
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from direct.task import Task
 from direct.distributed.ClockDelta import *
 from direct.interval.IntervalGlobal import *
+
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import RadialMenu
@@ -12,13 +12,12 @@ from pirates.piratesgui import GuiTray
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import StatusEffectsPanel
 from pirates.battle.EnemySkills import *
-from pirates.battle import EnemyGlobals
 from pirates.battle import WeaponGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.pvp import Beacon
 from pirates.pvp import PVPGlobals
 from pirates.pirate import AvatarTypes
-import copy
+
 
 class StatusTray(GuiTray.GuiTray):
     SHOW_SKILL_DURATION = 2.0

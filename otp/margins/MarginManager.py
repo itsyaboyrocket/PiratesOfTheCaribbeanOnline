@@ -1,6 +1,7 @@
-from pandac.PandaModules import *
-from MarginCell import MarginCell
 import random
+
+from MarginCell import MarginCell
+
 
 class MarginManager(PandaNode):
     def __init__(self):

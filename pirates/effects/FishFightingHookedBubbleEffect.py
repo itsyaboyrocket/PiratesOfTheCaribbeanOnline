@@ -1,17 +1,14 @@
-# File: F (Python 2.4)
+import math
 
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
-from direct.actor import Actor
 from direct.particles import ParticleEffect
 from direct.particles import Particles
 from direct.particles import ForceGroup
+
 from PooledEffect import PooledEffect
 from EffectController import EffectController
-from otp.otpbase import OTPRender
-import random
-import math
 from pirates.minigame import FishingGlobals
+
 
 class FishFightingHookedBubbleEffect(PooledEffect, EffectController):
     cardScale = 128.0

@@ -1,9 +1,9 @@
-# File: B (Python 2.4)
+import types
 
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 from pirates.piratesgui import PiratesGuiGlobals
-import types
+
 
 class ButtonListItem(DirectButton):
     

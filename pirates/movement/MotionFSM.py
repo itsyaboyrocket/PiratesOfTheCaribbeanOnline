@@ -1,17 +1,14 @@
-# File: M (Python 2.4)
-
-from direct.fsm.FSM import FSM
-from direct.interval.IntervalGlobal import *
-from direct.showbase.PythonUtil import Enum
-from pirates.piratesbase import PiratesGlobals
-from pirates.pirate import Human
 import random
 import types
+
+from direct.fsm.FSM import FSM
+from direct.showbase.PythonUtil import Enum
 from direct.distributed.ClockDelta import *
-from direct.showbase.InputStateGlobal import inputState
+
+from pirates.piratesbase import PiratesGlobals
 from pirates.battle import EnemyGlobals
-from pirates.effects.WaterRipple import WaterRipple
 from pirates.inventory import ItemGlobals
+
 WALK_CUTOFF = 0.5
 NPC_WALK_CUTOFF = 0.5
 RUN_CUTOFF = PiratesGlobals.ToonForwardSpeed

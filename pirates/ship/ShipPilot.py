@@ -1,11 +1,6 @@
-# File: S (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.directnotify.DirectNotifyGlobal import directNotify
-from direct.showbase.InputStateGlobal import inputState
-from direct.task.Task import Task
 from direct.controls.PhysicsWalker import PhysicsWalker
-import math
+
 
 class ShipPilot(PhysicsWalker):
     notify = directNotify.newCategory('ShipPilot')

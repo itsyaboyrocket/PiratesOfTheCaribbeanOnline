@@ -1,9 +1,11 @@
+from direct.showbase.PythonUtil import Functor
+
 import EntityCreatorBase
 import LogicGate
 import EditMgrAI
 import LevelMgrAI
 import ZoneEntityAI
-from direct.showbase.PythonUtil import Functor
+
 
 def createDistributedEntity(AIclass, level, entId, zoneId):
     ent = AIclass(level, entId)

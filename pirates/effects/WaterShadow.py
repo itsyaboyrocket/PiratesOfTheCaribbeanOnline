@@ -1,6 +1,3 @@
-# File: W (Python 2.4)
-
-from pandac.PandaModules import *
 from pirates.seapatch.SeaPatchNode import SeaPatchNode
 from otp.otpbase import OTPRender
 

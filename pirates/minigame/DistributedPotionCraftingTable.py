@@ -1,15 +1,12 @@
-# File: D (Python 2.4)
+import time
 
-from direct.fsm.StatePush import FunctionCall, StateVar
-from direct.interval.IntervalGlobal import *
 from pandac.PandaModules import *
-from pirates.uberdog.UberDogGlobals import InventoryType
+
 from pirates.distributed.DistributedInteractive import DistributedInteractive
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.effects.PotionTableSmoke import PotionTableSmoke
-import PotionTableMsgPanel
-import time
+
 
 class DistributedPotionCraftingTable(DistributedInteractive):
     notify = directNotify.newCategory('DistributedPotionCraftingTable')

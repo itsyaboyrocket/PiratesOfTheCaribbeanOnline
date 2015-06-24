@@ -1,5 +1,3 @@
-from pandac.PandaModules import *
-
 class ChatBalloon:
     TEXT_SHIFT = (0.1, -0.05, 1.1)
     TEXT_SHIFT_PROP = 0.08

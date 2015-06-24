@@ -1,4 +1,4 @@
-# File: H (Python 2.4)
+
 
 from pirates.ai.HolidayDates import *
 from pirates.holiday.FleetHolidayGlobals import Configs as FHConfigs
@@ -557,7 +557,6 @@ MSG_PORK_RECEIVED = 13
 
 def getHolidayMsgs(holidayId):
     holidayMessages = holidayMessages
-    import pirates.piratesbase.PLocalizer
     holidayClass = getHolidayClass(holidayId)
     holidayConfig = getHolidayConfig(holidayId)
     holidayMsgs = holidayMessages.get(holidayClass)

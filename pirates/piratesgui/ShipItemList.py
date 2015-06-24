@@ -1,11 +1,7 @@
-# File: S (Python 2.4)
-
-from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import InventoryItemList
 from pirates.piratesgui import ShipItemGUI
-from pirates.piratesbase import PiratesGlobals
+
 
 class ShipItemList(InventoryItemList.InventoryItemList):
     

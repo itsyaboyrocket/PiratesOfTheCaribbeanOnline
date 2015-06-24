@@ -1,4 +1,4 @@
-# File: M (Python 2.4)
+
 
 BODYSHOP = 0
 HEADSHOP = 1

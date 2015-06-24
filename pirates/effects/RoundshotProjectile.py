@@ -1,14 +1,8 @@
-# File: R (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.showbase.DirectObject import *
 from direct.interval.IntervalGlobal import *
-from direct.actor import Actor
-from pirates.piratesbase import PiratesGlobals
+
 from pirates.effects import PolyTrail
-from PooledEffect import PooledEffect
 from EffectController import EffectController
-import random
+
 
 class RoundshotProjectile(EffectController, NodePath):
     motion_color = [

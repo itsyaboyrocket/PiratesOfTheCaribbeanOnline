@@ -1,15 +1,14 @@
-# File: H (Python 2.4)
-
 from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
+from direct.actor import Actor
+from direct.interval.IntervalGlobal import *
+
 from pirates.creature.Creature import Creature
 from pirates.kraken.TentacleUtils import TentacleUtils
-from pirates.pirate import AvatarTypes
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.piratesbase import PiratesGlobals
-from direct.actor import Actor
-from direct.interval.IntervalGlobal import *
+
 
 class Holder(Creature, TentacleUtils):
     ModelInfo = ('models/char/holderTentacle_high', 'models/char/holderTentacle_')

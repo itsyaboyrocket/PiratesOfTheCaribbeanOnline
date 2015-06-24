@@ -1,10 +1,9 @@
-# File: W (Python 2.4)
+
 
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from direct.showbase.DirectObject import DirectObject
 from direct.directnotify.DirectNotifyGlobal import directNotify
-from otp.otpbase import OTPRender
+
 
 class Water(DirectObject):
     notify = directNotify.newCategory('water')
@@ -59,7 +58,6 @@ class Water(DirectObject):
         self.clear_color = None
         if self.enable_water_panel:
             WaterPanel = WaterPanel
-            import pirates.seapatch
             self.water_panel = WaterPanel.WaterPanel(self.name)
             if self.water_panel == None:
                 self.enable_water_panel = False
@@ -212,7 +210,6 @@ class Water(DirectObject):
             
             def display_water_panel():
                 WaterPanel = WaterPanel
-                import pirates.seapatch
                 self.enable_water_panel = False
                 self.water_panel = WaterPanel.WaterPanel(self.name)
                 if self.water_panel != None:

@@ -1,4 +1,4 @@
-# File: P (Python 2.4)
+
 
 from pirates.piratesbase import EmoteGlobals as EG
 DialogStringDict = {

@@ -1,7 +1,7 @@
-# File: C (Python 2.4)
+
 
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 
 class CharGuiSlider(DirectSlider):
     

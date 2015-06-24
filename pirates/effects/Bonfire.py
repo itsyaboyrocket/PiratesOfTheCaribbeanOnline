@@ -1,7 +1,3 @@
-# File: B (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.interval.IntervalGlobal import *
 from pirates.effects.Fire import Fire
 from pirates.effects.BlackSmoke import BlackSmoke
 from pirates.piratesgui.GameOptions import Options

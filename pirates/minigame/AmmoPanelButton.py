@@ -1,15 +1,13 @@
-# File: A (Python 2.4)
-
 from direct.gui.DirectGui import *
 from direct.interval.IntervalGlobal import *
-from pandac.PandaModules import *
+
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import Freebooter
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.BorderFrame import BorderFrame
-from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesgui import RadialMenu
 from pirates.minigame import CannonDefenseGlobals
+
 
 class AmmoPanelButton(DirectButton):
     SkillIcons = None

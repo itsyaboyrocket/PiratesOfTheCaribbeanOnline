@@ -1,28 +1,21 @@
-# File: D (Python 2.4)
-
 from direct.gui.DirectGui import *
 from direct.interval.IntervalGlobal import *
 from direct.directnotify import DirectNotifyGlobal
-from pandac.PandaModules import *
+
 from otp.otpgui import OTPDialog
 from pirates.battle.CannonGUI import CannonGUI
-from pirates.battle import CannonGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.PDialog import PDialog
 from pirates.piratesgui.ReputationMeter import ReputationMeter
-from pirates.battle import CannonGlobals
-from pirates.battle import WeaponGlobals
 from pirates.reputation import ReputationGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.minigame.CannonDefenseHUD import CannonDefenseHUD
 from pirates.piratesgui.CannonDefenseHelpManager import CannonDefenseHelpManager
 from pirates.audio import SoundGlobals
-from pirates.audio.SoundGlobals import loadSfx
 import pirates.minigame.AmmoPanel as pirates
-import random
-import math
+
 
 class DefenseCannonGUI(CannonGUI):
     notify = DirectNotifyGlobal.directNotify.newCategory('DefenseCannonGUI')

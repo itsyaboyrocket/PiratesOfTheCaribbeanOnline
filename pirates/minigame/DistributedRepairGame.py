@@ -1,7 +1,6 @@
-# File: D (Python 2.4)
-
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.DistributedObject import DistributedObject
+
 from DistributedRepairGameBase import DistributedRepairGameBase
 from DistributedRepairGameBase import GAME_OPEN, GAME_ORDER, DIFFICULTY_MAX, ON_LAND
 from RepairClock import RepairClock
@@ -10,6 +9,7 @@ from RepairGameFSM import RepairGameFSM
 from RepairMousePicker import RepairMousePicker
 import RepairGlobals
 from pirates.audio import SoundGlobals
+
 
 class DistributedRepairGame(DistributedRepairGameBase, DistributedObject):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedRepairGame')

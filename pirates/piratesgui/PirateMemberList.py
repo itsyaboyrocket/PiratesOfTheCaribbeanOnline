@@ -1,25 +1,14 @@
-# File: P (Python 2.4)
-
-from direct.showbase.ShowBaseGlobal import *
-from direct.gui.DirectGui import *
-from pandac.PandaModules import *
-from direct.fsm import StateData
-from otp.otpbase import OTPGlobals
-from otp.otpbase import OTPLocalizer
 import datetime
-import time
+
+from direct.gui.DirectGui import *
+from direct.showbase.DirectObject import *
+
 from pirates.piratesbase import PLocalizer
-from pirates.piratesgui import SocialPage
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import TeleportConfirm
 from pirates.piratesbase import PiratesGlobals
-from otp.otpbase import OTPGlobals
-from otp.friends.FriendInfo import FriendInfo
-from pirates.piratesbase import Freebooter
-from pirates.band import BandConstance
 import GuiButton
-from direct.showbase.DirectObject import *
-import copy
+
 MODE_FRIEND_AVATAR = 0
 MODE_FRIEND_PLAYER = 1
 MODE_FRIEND_PLAYER_AVATAR = 6

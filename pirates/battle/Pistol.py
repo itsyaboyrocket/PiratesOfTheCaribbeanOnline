@@ -1,16 +1,12 @@
-# File: P (Python 2.4)
+from direct.interval.IntervalGlobal import *
 
 import Weapon
-import WeaponGlobals
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-from direct.interval.IntervalGlobal import *
-from pandac.PandaModules import *
-from pirates.inventory import ItemGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.effects.PulsingGlow import PulsingGlow
 from pirates.battle.EnemySkills import EnemySkills
-import random
+
 
 class Pistol(Weapon.Weapon):
     modelTypes = [

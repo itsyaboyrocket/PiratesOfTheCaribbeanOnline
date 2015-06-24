@@ -1,20 +1,19 @@
-# File: T (Python 2.4)
+import random
 
 from pandac.PandaModules import *
 from direct.fsm import FSM
 from direct.task import Task
-from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.ClockDelta import globalClockDelta
 from direct.interval.IntervalGlobal import *
+
 from pirates.ai import HolidayGlobals
 from pirates.piratesbase import AvatarShadowCaster
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import TODGlobals
 from pirates.piratesbase import TODDefs
 from pirates.piratesbase import SkyGroup
-import time
 from pirates.piratesbase import TimeOfDayManagerBase
-import random
+
 
 class TimeOfDayManager(FSM.FSM, TimeOfDayManagerBase.TimeOfDayManagerBase):
     notify = directNotify.newCategory('TimeOfDayManager')

@@ -1,4 +1,4 @@
-# File: I (Python 2.4)
+
 
 PICKUP_EMPTY = 0
 PICKUP_CLICK = 1

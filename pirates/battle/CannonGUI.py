@@ -1,17 +1,10 @@
-# File: C (Python 2.4)
-
 from direct.gui.DirectGui import *
 from direct.interval.IntervalGlobal import *
-from pandac.PandaModules import *
-from pirates.battle import CannonGlobals
+
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
-from pirates.piratesgui.ReputationMeter import ReputationMeter
-from pirates.battle import CannonGlobals
-from pirates.battle import WeaponGlobals
-import random
-import math
+
 
 class CannonGUI(DirectFrame):
     

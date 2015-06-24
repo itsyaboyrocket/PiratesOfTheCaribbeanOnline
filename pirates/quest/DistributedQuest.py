@@ -1,14 +1,12 @@
-# File: D (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed import DistributedObject
-from pirates.quest import QuestDB, Quest, QuestBase, QuestTaskDNA, QuestConstants
-from pirates.cutscene import Cutscene, CutsceneData
+
+from pirates.quest import Quest, QuestBase, QuestTaskDNA, QuestConstants
+from pirates.cutscene import Cutscene
 from pirates.piratesgui import NewTutorialPanel
 from pirates.piratesbase import PLocalizer, PiratesGlobals
-from pirates.piratesgui import PiratesGuiGlobals
 from pirates.cutscene import CutsceneActor
+
 QuestPopupDict = {
     'c2_visit_will_turner': [
         'leaveJail'],

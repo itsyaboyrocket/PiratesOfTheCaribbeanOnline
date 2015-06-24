@@ -1,19 +1,21 @@
+import random
+
 from direct.distributed.ClockDelta import *
-from pandac.PandaModules import *
-from direct.showbase.PythonUtil import Functor, sameElements, list2dict, uniqueElements
+from direct.showbase.PythonUtil import sameElements, list2dict
 from direct.interval.IntervalGlobal import *
+from direct.distributed import DistributedObject
+from direct.directnotify import DirectNotifyGlobal
+from direct.gui import OnscreenText
+from direct.task import Task
+
 from toontown.distributed.ToontownMsgTypes import *
 from toontown.toonbase import ToontownGlobals
 from otp.otpbase import OTPGlobals
-from direct.distributed import DistributedObject
 import Level
 import LevelConstants
-from direct.directnotify import DirectNotifyGlobal
 import EntityCreator
-from direct.gui import OnscreenText
-from direct.task import Task
 import LevelUtil
-import random
+
 
 class DistributedLevel(DistributedObject.DistributedObject, Level.Level):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedLevel')
@@ -96,7 +98,6 @@ class DistributedLevel(DistributedObject.DistributedObject, Level.Level):
 
             def setSpecBlob(specBlob, blobSender = blobSender, self = self):
                 blobSender.sendAck()
-                from LevelSpec import LevelSpec
                 spec = eval(specBlob)
                 if spec is None:
                     spec = self.candidateSpec

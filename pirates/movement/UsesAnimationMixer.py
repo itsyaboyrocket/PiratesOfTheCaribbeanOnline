@@ -1,10 +1,9 @@
-# File: U (Python 2.4)
-
 from direct.interval.IntervalGlobal import ActorInterval
 from direct.actor.Actor import Actor
-from direct.fsm.FSM import FSM
 from direct.showbase.PythonUtil import report
+
 from pirates.movement.AnimationMixer import ReducedAnimationMixer
+
 
 class UsesAnimationMixer:
 

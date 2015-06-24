@@ -1,4 +1,4 @@
-# File: I (Python 2.4)
+
 
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.makeapirate import ClothingGlobals

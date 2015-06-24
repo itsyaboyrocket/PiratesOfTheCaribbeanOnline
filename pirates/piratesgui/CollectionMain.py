@@ -1,15 +1,12 @@
-# File: C (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import InventoryPage
-from pirates.piratesgui import InventoryItemGui
-from pirates.piratesgui import InventoryItemList
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import CollectionMap
+
 
 class CollectionMain(InventoryPage.InventoryPage):
     

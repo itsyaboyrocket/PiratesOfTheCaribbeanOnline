@@ -1,16 +1,10 @@
-# File: S (Python 2.4)
-
-import os
-import math
-from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from direct.task import Task
-from direct.directnotify.DirectNotifyGlobal import directNotify
-from direct.showbase.DirectObject import DirectObject
+
 from pirates.piratesbase import PiratesGlobals
 from otp.otpbase import OTPRender
 from pirates.seapatch.Reflection import Reflection
 from pirates.seapatch.Water import Water
+
 if base.config.GetBool('want-water-panel', False):
     from pirates.seapatch.WaterPanel import *
 

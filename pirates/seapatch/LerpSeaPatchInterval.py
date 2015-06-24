@@ -1,4 +1,4 @@
-# File: L (Python 2.4)
+
 
 from CLerpSeaPatchInterval import CLerpSeaPatchInterval
 

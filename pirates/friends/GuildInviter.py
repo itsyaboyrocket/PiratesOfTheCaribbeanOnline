@@ -1,11 +1,9 @@
-# File: G (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from direct.task.Task import Task
 from direct.fsm import ClassicFSM
 from direct.fsm import State
 from direct.directnotify import DirectNotifyGlobal
+
 from otp.otpbase import OTPLocalizer
 from otp.otpbase import OTPGlobals
 from otp.uberdog.RejectCode import RejectCode
@@ -14,6 +12,7 @@ from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.battle.DistributedBattleNPC import DistributedBattleNPC
 from pirates.piratesgui.RequestButton import RequestButton
+
 
 class GuildInviterButton(RequestButton):
     

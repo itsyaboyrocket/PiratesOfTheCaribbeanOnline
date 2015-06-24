@@ -1,28 +1,18 @@
-# File: D (Python 2.4)
+import random
 
 from direct.interval.IntervalGlobal import *
-from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.ClockDelta import *
-from pandac.PandaModules import *
-from pirates.effects.GhostAura import GhostAura
-from pirates.pirate import DistributedPirateBase
-from pirates.piratesbase import PiratesGlobals
-from pirates.battle import WeaponGlobals
+
 from pirates.battle import DistributedBattleNPC
 from pirates.piratesbase import PiratesGlobals
-from pirates.piratesbase import PLocalizer
 from pirates.leveleditor import NPCList
 from pirates.pirate import HumanDNA
-from pirates.pirate import AvatarTypes
 from pirates.pirate import Human
-import random
 from pirates.inventory import ItemGlobals
 from pirates.pirate import AvatarTypes
-from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.effects.Drown import Drown
 from pirates.battle import EnemyGlobals
-from pirates.audio import SoundGlobals
-from pirates.audio.SoundGlobals import loadSfx
+
 
 class DistributedVoodooZombie(DistributedBattleNPC.DistributedBattleNPC, Human.Human):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedVoodooZombie')

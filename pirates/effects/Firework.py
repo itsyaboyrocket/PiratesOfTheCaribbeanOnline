@@ -1,11 +1,8 @@
-# File: F (Python 2.4)
-
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
-from pirates.effects import FireworkGlobals
+
 from pirates.effects.FireworkGlobals import *
 from pirates.effects.FireworkEffect import FireworkEffect
-import random
+
 
 class Firework(NodePath):
     

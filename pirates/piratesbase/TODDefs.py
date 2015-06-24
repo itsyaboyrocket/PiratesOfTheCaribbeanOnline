@@ -1,4 +1,4 @@
-# File: T (Python 2.4)
+
 
 SKY_OFF = 0
 SKY_LAST = 1

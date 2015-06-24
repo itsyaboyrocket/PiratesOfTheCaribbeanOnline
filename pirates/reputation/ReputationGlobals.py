@@ -1,7 +1,7 @@
-# File: R (Python 2.4)
 
-from pirates.uberdog.UberDogGlobals import InventoryCategory, InventoryType, InventoryId
-from pirates.battle import WeaponGlobals
+
+from pirates.uberdog.UberDogGlobals import InventoryType
+
 __categories = (InventoryType.GeneralRep, InventoryType.MeleeRep, InventoryType.CutlassRep, InventoryType.PistolRep, InventoryType.MusketRep, InventoryType.DaggerRep, InventoryType.GrenadeRep, InventoryType.DollRep, InventoryType.WandRep, InventoryType.KettleRep, InventoryType.CannonRep, InventoryType.SailingRep, InventoryType.LockpickRep, InventoryType.GamblingRep, InventoryType.FishingRep, InventoryType.PotionsRep, InventoryType.DefenseCannonRep, InventoryType.OverflowRep)
 
 def getReputationCategories():

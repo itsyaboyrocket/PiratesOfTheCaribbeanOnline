@@ -1,18 +1,16 @@
-# File: L (Python 2.4)
-
 from pandac.PandaModules import NodePath
 from direct.interval.IntervalGlobal import Sequence
 from direct.task import Task
-from panda3d.core import TextNode
 from direct.gui.DirectGui import DirectFrame, DirectLabel, DirectWaitBar, DGG
 from direct.gui.OnscreenImage import OnscreenImage
 from pandac.PandaModules import TransparencyAttrib
+
+from panda3d.core import TextNode
 import FishingGlobals
-import MinigameUtils
 from LegendaryFishFSM import LegendaryFishFSM
-from BlendActor import BlendActor
 from Fish import Fish
 from pirates.piratesbase import CollectionMap
+
 
 class LegendaryFish(Fish):
     

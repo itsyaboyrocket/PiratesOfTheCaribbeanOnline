@@ -1,17 +1,14 @@
-# File: M (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.gui.OnscreenText import OnscreenText
-from direct.gui.DirectGui import DirectButton
 from direct.showbase.PythonUtil import Enum
 from direct.showutil.Rope import *
+from direct.interval.IntervalGlobal import *
+from direct.gui.DirectGui import *
+
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
-from direct.interval.IntervalGlobal import *
 from pirates.piratesbase import PLocalizer
-from direct.gui.DirectGui import *
 from pirates.piratesgui.BorderFrame import BorderFrame
 from pirates.ship.ShipMeter import ShipMeter
+
 
 class Item(NodePath):
 

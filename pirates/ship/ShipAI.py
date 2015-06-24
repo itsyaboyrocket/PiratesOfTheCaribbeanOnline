@@ -1,9 +1,9 @@
-# File: S (Python 2.4)
-
 from pandac.PandaModules import *
 from direct.showbase import DirectObject
 from direct.directnotify.DirectNotifyGlobal import directNotify
+
 from pirates.piratesbase import PiratesGlobals
+
 
 class ShipAI(DirectObject.DirectObject):
     notify = directNotify.newCategory('ShipAI')

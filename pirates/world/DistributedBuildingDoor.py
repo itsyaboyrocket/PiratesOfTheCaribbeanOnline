@@ -1,12 +1,9 @@
-# File: D (Python 2.4)
-
 from pandac.PandaModules import *
-from direct.interval.IntervalGlobal import *
+
 from pirates.world import DistributedDoorBase
-from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
-from direct.showbase.PythonUtil import report
+
 
 class DistributedBuildingDoor(DistributedDoorBase.DistributedDoorBase):
     notify = directNotify.newCategory('DistributedBuildingDoor')

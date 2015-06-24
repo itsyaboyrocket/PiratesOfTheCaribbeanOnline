@@ -1,7 +1,7 @@
-# File: D (Python 2.4)
+
 
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 
 class DialMeter(DirectFrame):
     MeterFull = None

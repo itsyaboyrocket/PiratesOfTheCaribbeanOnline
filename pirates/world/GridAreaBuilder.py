@@ -1,28 +1,9 @@
-# File: G (Python 2.4)
-
-import random
-import re
-import types
-from pandac.PandaModules import *
-from direct.task.Task import Task
-from direct.actor import *
-from pirates.world import WorldGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
-from pirates.npc import NavySailor
 from pirates.pirate.HumanDNA import *
-from pirates.npc import Skeleton
-from pirates.npc import Townfolk
-from pirates.battle import Sword
-from direct.interval.IntervalGlobal import *
-from direct.showbase.PythonUtil import report
 from otp.otpbase import OTPRender
-from otp.otpbase import OTPGlobals
-from pirates.leveleditor import CustomAnims
 from pirates.world import AreaBuilderBase
-from pirates.world.AreaBuilderBase import ModelDef
-from pirates.effects import ObjectEffects
-from pirates.effects import SoundFX
+
 AREA_CHILD_TYPE_PROP = 1
 
 class GridLODDef:

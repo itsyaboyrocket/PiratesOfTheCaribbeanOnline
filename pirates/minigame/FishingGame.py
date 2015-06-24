@@ -1,29 +1,21 @@
-# File: F (Python 2.4)
-
 import random
 import math
-from panda3d.core import CullBinManager
-from pandac.PandaModules import NodePath, CardMaker, Point3, LineSegs, Vec3, Vec4, Vec2, GraphicsStateGuardian
-from direct.interval.IntervalGlobal import Sequence, Parallel, Wait, Func
-from direct.interval.MetaInterval import Parallel
-from direct.interval.LerpInterval import LerpPosInterval
-from direct.interval.ProjectileInterval import ProjectileInterval
+
+from pandac.PandaModules import NodePath, Point3, LineSegs, Vec4, Vec2, GraphicsStateGuardian
 from direct.showbase import DirectObject
-from direct.actor.Actor import Actor
 from direct.task import Task
-from otp.otpgui import OTPDialog
-from direct.gui.DirectGui import DirectWaitBar, DGG
-from direct.gui.DirectGui import DirectButton, DirectFrame
 from direct.interval.IntervalGlobal import *
+from pandac.PandaModules import MouseButton
+from direct.fsm.FSM import RequestDenied
+
+from panda3d.core import CullBinManager
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.inventory import ItemGlobals
 from pirates.reputation import ReputationGlobals
 from pirates.piratesbase import PLocalizer
-from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
-from pirates.piratesbase import TODGlobals
 import FishingGlobals
 from FishingGameFSM import FishingGameFSM
 from FishManager import FishManager
@@ -36,11 +28,9 @@ from pirates.effects.SeaBottomBubbleEffect import SeaBottomBubbleEffect
 from pirates.effects.LureHittingWaterBubbleEffect import LureHittingWaterBubbleEffect
 from pirates.effects.PooledEffect import PooledEffect
 from pirates.effects.LightRay import LightRay
-from pandac.PandaModules import MouseButton
-from pirates.minigame.LegendaryTellGUI import LegendaryTellGUI
 from pirates.world.LocationConstants import LocationIds
-from direct.fsm.FSM import RequestDenied
 from pirates.seapatch.Water import Water
+
 
 class FishingGame(DirectObject.DirectObject):
     

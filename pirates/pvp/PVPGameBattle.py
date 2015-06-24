@@ -1,10 +1,8 @@
-# File: P (Python 2.4)
+
 
 from pirates.pvp.PVPGameBase import PVPGameBase
-from pirates.piratesbase import PiratesGlobals
 from pirates.pvp import PVPGlobals
 from pirates.piratesbase import PLocalizer
-from pirates.interact import InteractiveBase
 from pirates.pvp.MiniScoreItemGui import MiniScoreItemGui
 
 class PVPGameBattle(PVPGameBase):

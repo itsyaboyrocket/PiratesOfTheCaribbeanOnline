@@ -1,8 +1,7 @@
-# File: D (Python 2.4)
-
 from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 from direct.gui.DirectGui import *
+
 from pirates.ai import HolidayGlobals
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
@@ -11,8 +10,7 @@ from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.invasion import DistributedInvasionObject
 from pirates.ship import ShipGlobals
-import copy
-import random
+
 
 class DistributedInvasionPortRoyal(DistributedInvasionObject.DistributedInvasionObject):
     notify = directNotify.newCategory('DistributedInvasionTortuga')

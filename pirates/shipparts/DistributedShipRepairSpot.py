@@ -1,12 +1,11 @@
-# File: D (Python 2.4)
-
 from pandac.PandaModules import NodePath, ModelNode
 from direct.directnotify.DirectNotifyGlobal import directNotify
-from direct.fsm.StatePush import FunctionCall, StateVar
+from direct.fsm.StatePush import FunctionCall
+
 from pirates.distributed.DistributedInteractive import DistributedInteractive
 from pirates.piratesbase import PLocalizer
-from pirates.piratesgui import PiratesGuiGlobals
 from pirates.pvp import PVPGlobals
+
 
 class DistributedShipRepairSpot(DistributedInteractive):
     notify = directNotify.newCategory('DistributedShipRepairSpot')

@@ -1,10 +1,11 @@
-# File: R (Python 2.4)
-
 import math
+
 from direct.gui.DirectGui import DirectFrame, DGG
 from direct.task import Task
+
 from pirates.piratesgui import GUIFactory
 from RepairGameButton import RepairGameButton
+
 
 class RepairGamePickerGUI(DirectFrame):
     

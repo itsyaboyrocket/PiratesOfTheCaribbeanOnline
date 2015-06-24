@@ -1,8 +1,7 @@
-# File: D (Python 2.4)
-
 from pandac.PandaModules import *
+
 from pirates.world.DistributedGAInterior import DistributedGAInterior
-from pirates.piratesbase import PiratesGlobals
+
 
 class DistributedJailInterior(DistributedGAInterior):
     notify = directNotify.newCategory('DistributedJailInterior')

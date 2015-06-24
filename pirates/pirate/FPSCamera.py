@@ -1,15 +1,10 @@
-import math
-from pandac.PandaModules import *
 from direct.showbase.InputStateGlobal import inputState
 from direct.directnotify import DirectNotifyGlobal
-from direct.interval.IntervalGlobal import *
-from direct.showbase.PythonUtil import reduceAngle, fitSrcAngle2Dest
-from direct.showbase.PythonUtil import clampScalar, getSetter
 from direct.showbase.PythonUtil import ParamObj
-from direct.task import Task
-from otp.otpbase import OTPGlobals
+
 from pirates.pirate import CameraMode
 from pirates.piratesbase import PiratesGlobals
+
 
 def inputStateHasSet(values):
     for value in values:

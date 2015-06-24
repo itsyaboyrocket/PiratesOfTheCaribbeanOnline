@@ -1,14 +1,11 @@
-# File: Q (Python 2.4)
-
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
-from pirates.distributed import InteractGlobals
+
 from pirates.quest import QuestDB, QuestLadderDB, QuestReward
 from pirates.piratesbase import PLocalizer
-from pirates.piratesgui import GuiPanel
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.inventory import InventoryUIRewardsContainer
+
 
 class QuestDetailBase(DirectFrame):
     

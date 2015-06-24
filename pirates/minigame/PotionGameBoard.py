@@ -1,20 +1,12 @@
-# File: P (Python 2.4)
-
-from direct.interval.IntervalGlobal import Sequence, Func
-from direct.showbase.ShowBaseGlobal import *
-from direct.interval.IntervalGlobal import *
-from direct.gui.DirectGui import *
-from pirates.piratesgui.GuiPanel import *
-from direct.showbase import DirectObject
-from direct.task import Task
-from pandac.PandaModules import *
 from pandac.PandaModules import CardMaker
-from pandac.PandaModules import Vec2
 from direct.task import Task
+
+from pirates.piratesgui.GuiPanel import *
 from pirates.piratesbase import PLocalizer
 from PotionBoardPiece import PotionBoardPiece
 from pirates.piratesgui import PiratesGuiGlobals
 import PotionGlobals
+
 
 class PotionGameBoard(DirectFrame):
     

@@ -1,15 +1,10 @@
-# File: F (Python 2.4)
-
-from pandac.PandaModules import *
-from direct.showbase.DirectObject import *
 from direct.interval.IntervalGlobal import *
-from direct.actor import Actor
 from direct.particles import ParticleEffect
 from direct.particles import Particles
 from direct.particles import ForceGroup
-from pirates.piratesbase import PiratesGlobals
+
 from EffectController import EffectController
-import random
+
 
 class Fireflies(EffectController, NodePath):
     cardScale = 128.0

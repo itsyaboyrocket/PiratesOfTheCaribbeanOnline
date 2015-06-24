@@ -1,16 +1,15 @@
-# File: A (Python 2.4)
-
-from pandac.PandaModules import *
 import math
+
 from direct.directnotify import DirectNotifyGlobal
-from direct.interval.IntervalGlobal import Sequence, PosInterval
-from direct.gui.DirectGui import DirectButton, DirectFrame, DGG
+from direct.gui.DirectGui import DirectFrame
 from direct.interval.IntervalGlobal import *
+from pandac.PandaModules import Point3
+
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.audio import SoundGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import Freebooter
-from pirates.piratesgui import GuiPanel, GuiButton, RadialMenu
+from pirates.piratesgui import GuiButton
 from pirates.minigame import AmmoPanelButton
 from pirates.minigame.AmmoPanelMessageManager import AmmoPanelMessageManager
 from pirates.minigame import CannonDefenseGlobals
@@ -18,7 +17,7 @@ from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.battle import WeaponGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
-from pandac.PandaModules import Point3
+
 CLOSED = 0
 OPENED = 1
 

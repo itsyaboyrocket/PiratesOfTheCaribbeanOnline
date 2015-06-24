@@ -1,5 +1,4 @@
 from pirates.distributed.PiratesInternalRepository import PiratesInternalRepository
-from direct.distributed.PyDatagram import *
 from otp.distributed.DistributedDirectoryAI import DistributedDirectoryAI
 from otp.distributed.OtpDoGlobals import *
 

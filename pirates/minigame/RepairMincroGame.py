@@ -1,16 +1,15 @@
-# File: R (Python 2.4)
-
 from pandac.PandaModules import Vec3
 from direct.gui.DirectGui import DirectFrame, DirectLabel
 from direct.interval.IntervalGlobal import Sequence, Func, Wait, Parallel
 from direct.fsm import FSM
 from direct.interval.LerpInterval import LerpFunc
+
 from pirates.piratesbase import PLocalizer
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 import RepairGlobals
 from pirates.piratesbase import PiratesGlobals
-import random
+
 
 class RepairMincroGame(DirectFrame, FSM.FSM):
     readySound = None

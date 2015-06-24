@@ -1,19 +1,16 @@
-# File: D (Python 2.4)
-
-from direct.showbase.PythonUtil import POD, makeTuple
 from direct.showbase.DirectObject import DirectObject
 from direct.interval.IntervalGlobal import *
 from direct.gui.DirectGui import *
-from pandac.PandaModules import *
+
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import GuiButton
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
-from pirates.quest import QuestOffer
 from pirates.quest.QuestPrereq import *
 from pirates.effects import CombatEffect
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
+
 
 class DialogProcess(POD, DirectObject):
     DataSet = {
@@ -234,7 +231,6 @@ class StepChoice(DialogProcess):
 
     def _StepChoice__getDialogChoiceText(self, stepId, index = 0):
         DialogDict = DialogDict
-        import pirates.quest.DialogTree
         textId = DialogDict.get(self.npc.getUniqueId()).get(self.dialogId).get(stepId)[index].getTextId()
         if PLocalizer.DialogStringDict.get(self.dialogId).get(textId).has_key('choice'):
             return PLocalizer.DialogStringDict.get(self.dialogId).get(textId).get('choice')
@@ -261,7 +257,6 @@ class StepChoice(DialogProcess):
 
     def displayStepChoices(self):
         DialogDict = DialogDict
-        import pirates.quest.DialogTree
         self.choiceLabels = []
         self.choiceButtons = []
         gui = loader.loadModel('models/gui/compass_main')
@@ -525,7 +520,6 @@ class PlayerDrawPistolAndAim(DialogProcess):
         DialogProcess.begin(self, npc, dialogId)
         weaponId = 2001
         Pistol = Pistol
-        import pirates.battle
         localAvatar.dialogProp = Pistol.Pistol(weaponId)
         self.animIval = Sequence(localAvatar.dialogProp.getDrawIval(localAvatar), Func(localAvatar.loop, 'gun_aim_idle'), Func(self.end)).start()
 

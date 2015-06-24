@@ -1,12 +1,9 @@
-# File: C (Python 2.4)
-
-import time
-import random
 from pandac.PandaModules import *
 from direct.showbase import DirectObject
+
 from pirates.piratesbase import PiratesGlobals
-from pirates.tutorial import TutorialGlobals
 from pirates.piratesgui import NewTutorialPanel
+
 
 class ChatTutorialAlt(DirectObject.DirectObject):
     notify = directNotify.newCategory('ChatTutorialAlt')
