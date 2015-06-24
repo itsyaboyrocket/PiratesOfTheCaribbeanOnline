@@ -1,6 +1,4 @@
-POTCO-PS
+Pirates of the Carribean Private Server
 ========
 
-TODO
-========
-Get ingame :(
+This repository can be used for private servers for the late game, _Disney's Pirates of the Carribean Online_.
