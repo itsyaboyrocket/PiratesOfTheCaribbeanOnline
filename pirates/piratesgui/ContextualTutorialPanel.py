@@ -1,12 +1,13 @@
-from direct.gui.DirectGui import *
+# File: C (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PLocalizer, PiratesGlobals
 from pirates.ship import ShipGlobals
 from pirates.piratesgui import GuiButton
 from pirates.piratesgui import CheckButton
 from pirates.uberdog.UberDogGlobals import InventoryType
-
 
 class XButton(GuiButton.GuiButton):
     

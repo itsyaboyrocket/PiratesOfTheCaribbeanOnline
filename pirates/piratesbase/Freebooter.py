@@ -1,4 +1,4 @@
-
+# File: F (Python 2.4)
 
 global AllAccessHoliday
 from pirates.battle import WeaponGlobals

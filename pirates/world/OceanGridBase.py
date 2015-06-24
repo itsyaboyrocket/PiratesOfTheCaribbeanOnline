@@ -1,3 +1,7 @@
+# File: O (Python 2.4)
+
+from pandac.PandaModules import *
+
 class OceanGridBase:
     
     def __init__(self):

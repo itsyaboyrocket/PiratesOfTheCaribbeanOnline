@@ -1,50 +1,87 @@
+import math
+import copy
+import types
 import random
-
+from direct.showbase.ShowBaseGlobal import *
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from direct.showbase.PythonUtil import *
+from direct.directnotify import DirectNotifyGlobal
+from direct.controls import ControlManager
+from direct.interval.IntervalGlobal import *
 from direct.controls import BattleWalker
+from direct.actor import Actor
 from direct.showbase.InputStateGlobal import inputState
 from direct.distributed.ClockDelta import *
+from direct.showbase.ShadowPlacer import ShadowPlacer
 from direct.fsm.StatePush import StateVar
-from direct.controls.GhostWalker import GhostWalker
-from direct.controls.ObserverWalker import ObserverWalker
-from direct.task.Task import Task
-
 from otp.avatar.LocalAvatar import LocalAvatar
 from otp.avatar import PositionExaminer
 from otp.otpbase import OTPGlobals
+from otp.speedchat import SCDecoders
+from otp.otpgui import OTPDialog
+from pirates.audio import SoundGlobals
+from pirates.piratesgui import PDialog
 from pirates.battle import WeaponGlobals
+from pirates.battle import DistributedBattleAvatar
 from pirates.chat.PiratesChatManager import PiratesChatManager
 from pirates.chat.PTalkAssistant import PTalkAssistant
+from pirates.ship import ShipGlobals
 from pirates.piratesgui import GuiManager
+from pirates.piratesgui import PiratesGuiGlobals
 from pirates.tutorial import ChatTutorial
 from pirates.tutorial import ChatTutorialAlt
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import EmoteGlobals
 from pirates.reputation import ReputationGlobals
 from pirates.battle import RangeDetector
 from pirates.battle import BattleSkillDiary
 from pirates.movement.CameraFSM import CameraFSM
+from pirates.economy.EconomyGlobals import *
+from pirates.economy import EconomyGlobals
 from pirates.piratesbase import TeamUtils
+from pirates.piratesbase import UserFunnel
 from pirates.ship import DistributedSimpleShip
+from pirates.instance import DistributedMainWorld
 from pirates.world import DistributedGameArea
+from pirates.world import OceanZone
+from pirates.interact import InteractiveBase
+from pirates.effects.CloudScud import CloudScud
+from pirates.effects.ProtectionSpiral import ProtectionSpiral
 from pirates.battle.EnemySkills import EnemySkills
 from pirates.inventory import InventoryGlobals
+from pirates.inventory.InventoryGlobals import Locations
+from direct.controls.GhostWalker import GhostWalker
+from direct.controls.PhysicsWalker import PhysicsWalker
+from direct.controls.ObserverWalker import ObserverWalker
 from pirates.movement.PiratesGravityWalker import PiratesGravityWalker
 from pirates.movement.PiratesSwimWalker import PiratesSwimWalker
+from pirates.quest import QuestDB
 from pirates.quest import QuestStatus
-from pirates.world.LocationConstants import LocationIds
+from pirates.world.LocationConstants import LocationIds, getParentIsland
+from pirates.world import WorldGlobals
+from pirates.map.MinimapObject import GridMinimapObject
 from pirates.pirate import TitleGlobals
 from pirates.uberdog.UberDogGlobals import InventoryCategory, InventoryType
 from pirates.uberdog.DistributedInventoryBase import DistributedInventoryBase
+import Pirate
 import LocalPirateGameFSM
 from DistributedPlayerPirate import DistributedPlayerPirate
+from pirates.pirate import PlayerStateGlobals
+from pirates.pirate import AvatarTypes
+from pirates.makeapirate import ClothingGlobals
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.inventory import ItemGlobals
-
+from direct.task.Task import Task
+from pirates.effects.PooledEffect import PooledEffect
+from pirates.piratesgui.GameOptions import Options
+from direct.gui import OnscreenText
 globalClock = ClockObject.getGlobalClock()
 if base.config.GetBool('want-pstats', 0):
-    pass
+    import profile
+    import pstats
 
 
 class bp:

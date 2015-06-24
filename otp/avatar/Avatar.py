@@ -1,20 +1,18 @@
-import random
-
 from pandac.PandaModules import *
-from direct.actor.Actor import Actor
-from direct.directnotify import DirectNotifyGlobal
-from direct.distributed import ClockDelta
-
 from otp.nametag.Nametag import Nametag
 from otp.nametag.NametagGroup import NametagGroup
 from otp.nametag.NametagConstants import CFSpeech, CFThought, CFTimeout, CFPageButton, CFNoQuitButton, CFQuitButton
 from otp.otpbase import OTPGlobals
 from otp.otpbase import OTPLocalizer
+from direct.actor.Actor import Actor
+from direct.directnotify import DirectNotifyGlobal
+from direct.distributed import ClockDelta
 from otp.avatar.ShadowCaster import ShadowCaster
+import random
 from otp.otpbase import OTPRender
+from direct.showbase.PythonUtil import recordCreationStack
 from otp.ai.MagicWordGlobal import *
 from otp.ai import MagicWordManager
-
 teleportNotify = DirectNotifyGlobal.directNotify.newCategory('Teleport')
 teleportNotify.showTime = True
 if config.GetBool('want-teleport-debug', 1):

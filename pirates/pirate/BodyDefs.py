@@ -1,3 +1,6 @@
+# File: B (Python 2.4)
+
+from pandac.PandaModules import *
 MaleFat = {
     'headScale': 0.82499999999999996,
     'bodyScale': 1.0,

@@ -1,8 +1,15 @@
+# File: I (Python 2.4)
+
 from direct.gui.DirectGui import *
-
-from pirates.piratesgui import PiratesGuiGlobals
+from direct.interval.IntervalGlobal import *
+from pandac.PandaModules import *
+from pirates.piratesgui import GuiPanel, PiratesGuiGlobals
+from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import PLocalizer
+from otp.otpbase import OTPLocalizer
+from pirates.inventory import InventoryUIItem
+from pirates.inventory import InventoryUIContainer
 from pirates.inventory.InventoryUIGlobals import *
-
 
 class InventoryUIBagbar(DirectFrame):
     

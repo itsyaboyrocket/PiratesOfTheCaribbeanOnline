@@ -1,8 +1,8 @@
-from direct.distributed.DistributedObject import DistributedObject
+# File: S (Python 2.4)
 
+from direct.distributed.DistributedObject import DistributedObject
 from pirates.piratesbase import PLocalizer
 from pirates.pvp import PVPGlobals
-
 
 class SiegeAnnouncer(DistributedObject):
     

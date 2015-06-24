@@ -1,15 +1,18 @@
-import random
+# File: F (Python 2.4)
 
-from direct.interval.IntervalGlobal import Sequence
+import copy
+import random
+import math
+from direct.task import Task
+from direct.interval.IntervalGlobal import Sequence, Wait, Func
 from pandac.PandaModules import NodePath
-from pandac.PandaModules import Fog, FogAttrib
+from pandac.PandaModules import Fog, FogAttrib, Shader
+from pandac.PandaModules import Texture
 from pandac.PandaModules import Vec4
 from direct.directnotify import DirectNotifyGlobal
-
 import FishingGlobals
 from Fish import Fish
 from LegendaryFish import LegendaryFish
-
 
 class FishManager:
     notify = DirectNotifyGlobal.directNotify.newCategory('FishManager')

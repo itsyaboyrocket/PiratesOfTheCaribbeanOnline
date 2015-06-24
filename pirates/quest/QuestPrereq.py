@@ -1,5 +1,4 @@
 from direct.showbase.PythonUtil import POD, makeTuple
-
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.inventory import ItemGlobals
 
@@ -76,6 +75,7 @@ class DidQuest(QuestPrereq):
 
     def avIsReady(self, av):
         QuestLadderDB = QuestLadderDB
+        import pirates.quest
         questHistory = av.getQuestLadderHistory()
         for questId in self.questIds:
             container = QuestLadderDB.getContainer(questId)
@@ -156,6 +156,7 @@ class NotCompleted(QuestPrereq):
 
     def avIsReady(self, av):
         QuestLadderDB = QuestLadderDB
+        import pirates.quest
         questHistory = av.getQuestLadderHistory()
         for questId in self.questIds:
             container = QuestLadderDB.getContainer(questId)
@@ -229,6 +230,7 @@ class RequiresItemEquipped(QuestPrereq):
 
     def avIsReady(self, av):
         Locations = Locations
+        import pirates.inventory.InventoryGlobals
         inv = av.getInventory()
         if not inv:
             return False
@@ -274,6 +276,7 @@ class RequiresItemUnequipped(QuestPrereq):
 
     def avIsReady(self, av):
         Locations = Locations
+        import pirates.inventory.InventoryGlobals
         inv = av.getInventory()
         if not inv:
             return False

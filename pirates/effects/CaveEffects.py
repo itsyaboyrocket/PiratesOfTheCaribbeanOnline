@@ -1,16 +1,16 @@
+# File: C (Python 2.4)
+
 from pandac.PandaModules import *
 from direct.task import Task
-from direct.interval.LerpInterval import LerpScaleInterval
-from direct.interval.MetaInterval import Sequence
-
 from pirates.audio import SoundGlobals
 from pirates.swamp.Swamp import Swamp
 from pirates.effects import EnvironmentEffects
-from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import TimeOfDayManager, TODGlobals, PiratesGlobals
 from pirates.seapatch.Reflection import Reflection
 from pirates.seapatch.Water import Water
 from pirates.world.LocationConstants import LocationIds
-
+from direct.interval.LerpInterval import LerpScaleInterval
+from direct.interval.MetaInterval import Sequence
 
 class CaveEffects(EnvironmentEffects.EnvironmentEffects):
     WaterCaves = [

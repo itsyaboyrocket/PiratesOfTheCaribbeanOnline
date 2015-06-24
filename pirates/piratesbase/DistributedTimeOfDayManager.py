@@ -1,8 +1,10 @@
+# File: D (Python 2.4)
+
 from direct.distributed.DistributedObject import DistributedObject
 from direct.distributed.ClockDelta import globalClockDelta
-
 from TimeOfDayManager import TimeOfDayManager
-
+from pirates.piratesbase import TODGlobals
+import time
 
 class DistributedTimeOfDayManager(DistributedObject, TimeOfDayManager):
     from direct.directnotify import DirectNotifyGlobal

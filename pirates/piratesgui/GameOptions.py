@@ -1,14 +1,26 @@
+# File: G (Python 2.4)
+
 import copy
 import string
 import os
 import sys
 import datetime
-
-from direct.motiontrail.MotionTrail import MotionTrail
-
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from pirates.piratesbase import PiratesGlobals
+from pirates.piratesgui import PiratesGuiGlobals
+from pirates.piratesgui.BorderFrame import BorderFrame
+from pirates.piratesgui.GuiButton import GuiButton
+from pirates.piratesgui.DialogButton import DialogButton
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import Freebooter
+from otp.otpgui import OTPDialog
 from otp.otpbase import OTPGlobals
+from otp.otpbase import OTPRender
+from pirates.piratesgui import PDialog
+from pirates.seapatch.Water import Water
+from direct.motiontrail.MotionTrail import MotionTrail
+from direct.directnotify import DirectNotifyGlobal
 from pirates.piratesgui import GameOptionsMatrix
 from pirates.piratesgui.GameOptionsGui import *
 from pirates.uberdog.UberDogGlobals import InventoryType
@@ -3476,6 +3488,7 @@ class Options(OptionSpace):
         if hasattr(base, 'localAvatar'):
             gamearea = localAvatar.getParentObj()
             DistributedGameArea = DistributedGameArea
+            import pirates.world.DistributedGameArea
             if isinstance(gamearea, DistributedGameArea) and gamearea.envEffects:
                 gamearea.envEffects.unloadEffects()
                 gamearea.envEffects.loadEffects()

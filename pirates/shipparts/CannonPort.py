@@ -1,11 +1,14 @@
-from direct.interval.IntervalGlobal import *
-from direct.interval.AnimControlInterval import AnimControlInterval
-from pandac.PandaModules import *
+# File: C (Python 2.4)
 
 from pirates.piratesbase.PiratesGlobals import *
+from direct.interval.IntervalGlobal import *
+from direct.interval.AnimControlInterval import AnimControlInterval
+from pirates.piratesbase import PiratesGlobals
+from pandac.PandaModules import *
+from direct.actor import Actor
 from pirates.ship import ShipGlobals
+from pirates.effects.Bonfire import Bonfire
 from pirates.battle.EnemySkills import EnemySkills
-
 CannonPortDict = {
     InventoryType.CannonL1: 'plain',
     InventoryType.CannonL2: 'plain',

@@ -1,4 +1,5 @@
 from direct.distributed.DistributedObjectGlobalUD import DistributedObjectGlobalUD
+from direct.directnotify.DirectNotifyGlobal import directNotify
 from direct.distributed.PyDatagram import *
 
 

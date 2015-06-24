@@ -1,9 +1,11 @@
-from direct.interval.IntervalGlobal import *
+# File: D (Python 2.4)
 
+import random
 from pirates.minigame import PlayingCardGlobals
 from pirates.minigame import DistributedPokerTable
+from direct.interval.IntervalGlobal import *
+from pandac.PandaModules import Point3, Vec3
 from pirates.piratesbase import PLocalizer
-
 
 class DistributedHoldemTable(DistributedPokerTable.DistributedPokerTable):
     

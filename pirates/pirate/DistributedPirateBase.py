@@ -1,10 +1,12 @@
+# File: D (Python 2.4)
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed import DistributedObject
-
+from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.pirate import Pirate
+from pirates.piratesbase import PiratesGlobals
 from pirates.pvp import Beacon
 from pirates.pvp import PVPGlobals
-
 
 class DistributedPirateBase(DistributedObject.DistributedObject, Pirate.Pirate):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedPirateBase')

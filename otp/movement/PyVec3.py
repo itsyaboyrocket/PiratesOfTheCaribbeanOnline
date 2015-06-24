@@ -1,3 +1,4 @@
+from pandac.PandaModules import *
 import types
 import math
 

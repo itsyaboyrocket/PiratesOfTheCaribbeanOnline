@@ -1,9 +1,9 @@
-
+# File: P (Python 2.4)
 
 from pirates.piratesgui.InventoryList import InventoryList
 from pirates.piratesgui.PurchaseListItem import PurchaseListItem
 from pirates.piratesgui import PiratesGuiGlobals
-
+from pirates.piratesgui import InventoryItemGui
 
 class PurchaseList(InventoryList):
     

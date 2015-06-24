@@ -1,7 +1,9 @@
-
+# File: D (Python 2.4)
 
 from pirates.pvp.DistributedPVPInstance import DistributedPVPInstance
+from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
+from pirates.interact import InteractiveBase
 from pirates.pvp.MiniScoreItemGui import MiniScoreItemGui
 from pirates.pvp import PVPGlobals
 

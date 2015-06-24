@@ -1,11 +1,9 @@
-import types
-
 from pandac import PandaModules as PM
 from direct.directnotify import DirectNotifyGlobal
-from direct.showbase.PythonUtil import list2dict
-
+from direct.showbase.PythonUtil import list2dict, uniqueElements
+import string
 import LevelConstants
-
+import types
 if __dev__:
     import os
 
@@ -273,6 +271,7 @@ class LevelSpec:
                 return 0
 
         def getPrettyString(self):
+            import pprint
             tabWidth = 4
             tab = ' ' * tabWidth
             globalEntitiesName = 'GlobalEntities'

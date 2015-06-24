@@ -1,6 +1,9 @@
+# File: P (Python 2.4)
+
+from pandac.PandaModules import *
 from direct.showbase import Pool
 from direct.showbase.DirectObject import DirectObject
-
+import re
 
 class PooledEffect(DirectObject, NodePath):
     GlobalCount = 0

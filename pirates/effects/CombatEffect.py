@@ -1,23 +1,44 @@
-import random
+# File: C (Python 2.4)
 
+from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.actor import Actor
-
+from pirates.piratesbase import PiratesGlobals
+from pirates.battle import WeaponGlobals
+from pirates.effects.CannonExplosion import CannonExplosion
+from pirates.effects.CannonSplash import CannonSplash
+from pirates.effects.DirtClod import DirtClod
+from pirates.effects.DustCloud import DustCloud
+from pirates.effects.SmokeCloud import SmokeCloud
+from pirates.effects.RockShower import RockShower
+from pirates.effects.ShipSplintersA import ShipSplintersA
+from pirates.effects.DustRing import DustRing
+from pirates.effects.BlackSmoke import BlackSmoke
+from pirates.effects.ExplosionFlip import ExplosionFlip
+from pirates.effects.ShockwaveRing import ShockwaveRing
 from pirates.effects.CameraShaker import CameraShaker
+from pirates.effects.FireTrail import FireTrail
+from pirates.effects.GreenBlood import GreenBlood
 from pirates.effects.HitFlashA import HitFlashA
 from pirates.effects.ShockwaveHit import ShockwaveHit
 from pirates.effects.WaspCloud import WaspCloud
 from pirates.effects.PoisonHit import PoisonHit
 from pirates.effects.FireballHit import FireballHit
 from pirates.effects.CurseHit import CurseHit
+from pirates.effects.ExplosionCloud import ExplosionCloud
 from pirates.effects.FadingSigil import FadingSigil
 from pirates.effects.FlashStar import FlashStar
+from pirates.effects.VoodooSmoke import VoodooSmoke
 from pirates.effects.SpectralSmoke import SpectralSmoke
+from pirates.effects.DrainLife import DrainLife
+from pirates.effects.Fire import Fire
 from pirates.effects.SparkBurst import SparkBurst
+from pirates.effects.NovaStar import NovaStar
 from pirates.effects.DarkStar import DarkStar
 from pirates.effects.HitStar import HitStar
 from pirates.effects.VoodooPestilence import VoodooPestilence
+from pirates.effects.SoulSpiral import SoulSpiral
 from pirates.effects.VoodooExplosion import VoodooExplosion
 from pirates.effects.MuzzleFlash import MuzzleFlash
 from pirates.effects.DustRingBanish import DustRingBanish
@@ -33,7 +54,7 @@ from pirates.effects.CleanseBlast import CleanseBlast
 from pirates.effects.CleanseRays import CleanseRays
 from pirates.effects.ThunderBolt import ThunderBolt
 from pirates.battle import WeaponGlobals
-
+import random
 
 class CombatEffect(NodePath):
     notify = DirectNotifyGlobal.directNotify.newCategory('CombatEffect')

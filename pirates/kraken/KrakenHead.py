@@ -1,4 +1,4 @@
-
+# File: K (Python 2.4)
 
 from pirates.creature.DistributedCreature import DistributedCreature
 

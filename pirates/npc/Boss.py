@@ -1,11 +1,13 @@
-from direct.interval.IntervalGlobal import *
+# File: B (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
 from pirates.battle import EnemyGlobals
 from pirates.npc.BossBase import BossBase
 from pirates.pirate import AvatarTypes
 from pirates.effects.BossEffect import BossEffect
 from pirates.effects.BossAura import BossAura
-
+from direct.showbase.DirectObject import DirectObject
 
 class Boss(BossBase):
     

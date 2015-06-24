@@ -1,28 +1,30 @@
-import random
-import copy
-import types
+# File: D (Python 2.4)
 
 from direct.interval.IntervalGlobal import *
+from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.ClockDelta import *
 from direct.task import Task
-from direct.showbase.PythonUtil import printStack
-from direct.showbase import PythonUtil
-
 from otp.otpbase import OTPGlobals
 from pirates.uberdog.UberDogGlobals import *
+from pirates.reputation.DistributedReputationAvatar import DistributedReputationAvatar
 from pirates.battle import DistributedBattleAvatar
 from pirates.battle import EnemyGlobals
 from pirates.battle import WeaponGlobals
 from pirates.pirate import BattleNPCGameFSM
 from pirates.piratesbase import PiratesGlobals
 from pirates.inventory import ItemGlobals
+from pirates.piratesbase import PLocalizer
 from pirates.pirate import AvatarTypes
 from pirates.pirate import Biped
 from pirates.leveleditor import CustomAnims
 from pirates.battle import EnemySkills
+from direct.showbase.PythonUtil import printStack
+import random
+import copy
+import types
+from direct.showbase import PythonUtil
 from pirates.quest import QuestBase
 from pirates.creature.Rooster import Rooster
-
 propCache = { }
 
 class DistributedBattleNPC(DistributedBattleAvatar.DistributedBattleAvatar):

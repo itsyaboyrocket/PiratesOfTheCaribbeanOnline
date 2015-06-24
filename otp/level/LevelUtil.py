@@ -1,7 +1,5 @@
 import string
-
 import LevelConstants
-
 
 def getZoneNum2Node(levelModel, logFunc = lambda str: str):
 

@@ -1,5 +1,6 @@
 from direct.distributed.DistributedObjectGlobal import DistributedObjectGlobal
-
+from pandac.PandaModules import *
+from otp.otpbase import OTPGlobals
 
 class ChatAgent(DistributedObjectGlobal):
     def __init__(self, cr):

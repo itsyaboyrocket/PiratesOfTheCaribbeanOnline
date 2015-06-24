@@ -1,9 +1,11 @@
-from direct.gui.DirectGui import DirectFrame, DirectButton, DGG, OnscreenImage
-from direct.interval.IntervalGlobal import *
-from direct.showbase.PythonUtil import Functor
-from pandac.PandaModules import *
+# File: M (Python 2.4)
 
+from direct.gui.DirectGui import DirectFrame, DirectButton, DGG, OnscreenImage
+from direct.gui.OnscreenText import OnscreenText
+from direct.interval.IntervalGlobal import *
+from direct.showbase.PythonUtil import report, Functor
 from otp.otpgui import OTPDialog
+from pandac.PandaModules import *
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui.BorderFrame import BorderFrame
@@ -15,7 +17,6 @@ from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.reputation import ReputationGlobals
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-
 
 class StackMessage(BorderFrame):
     guiLoaded = False
@@ -590,6 +591,7 @@ class MessageStackPanel(DirectFrame):
 
     def showLoot(self, plunder = [], gold = 0, collect = 0, card = 0, cloth = 0, color = 0, jewel = None, tattoo = None, weapon = None, bounty = 0):
         LootPopupPanel = LootPopupPanel
+        import pirates.piratesgui.LootPopupPanel
         msg = LootPopupPanel()
         msg.reparentTo(self)
         msg.showLoot(plunder, gold, collect, card, cloth, color, jewel, tattoo, weapon, bounty)

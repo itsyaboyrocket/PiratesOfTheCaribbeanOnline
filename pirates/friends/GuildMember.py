@@ -1,11 +1,14 @@
-from direct.gui.DirectGui import *
-from direct.directnotify import DirectNotifyGlobal
+# File: G (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.directnotify import DirectNotifyGlobal
 from otp.otpbase import OTPLocalizer
+from otp.otpbase import OTPGlobals
+from pirates.piratesgui import PDialog
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui.RequestButton import RequestButton
-
 GUILDRANK_VETERAN = 4
 GUILDRANK_GM = 3
 GUILDRANK_OFFICER = 2

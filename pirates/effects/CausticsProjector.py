@@ -1,3 +1,6 @@
+# File: C (Python 2.4)
+
+from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 
 class CausticsProjector(NodePath):

@@ -1,9 +1,14 @@
+# File: S (Python 2.4)
+
 from direct.showbase import DirectObject
-from direct.showbase.PythonUtil import clampScalar
+from direct.fsm import ClassicFSM, State
+from direct.interval.IntervalGlobal import *
+from direct.showbase.PythonUtil import reduceAngle, fitSrcAngle2Dest, clampScalar, lerp, Functor
 from direct.showbase.InputStateGlobal import inputState
-
+from pandac.PandaModules import *
+from otp.otpbase import OTPGlobals
 from pirates.pirate.OrbitCamera import OrbitCamera
-
+import math
 
 class ShipCamera(OrbitCamera):
     

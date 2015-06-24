@@ -1,10 +1,13 @@
+# File: H (Python 2.4)
+
+from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 from direct.particles import ParticleEffect
 from direct.particles import Particles
-
+from direct.particles import ForceGroup
 from PooledEffect import PooledEffect
 from EffectController import EffectController
-
+import random
 
 class HellFire(PooledEffect, EffectController):
     cardScale = 128.0

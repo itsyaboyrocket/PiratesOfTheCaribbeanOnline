@@ -1,5 +1,11 @@
-from pirates.piratesgui import GuiButton
+# File: B (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import PLocalizer
+from pirates.piratesgui import GuiButton
+from pirates.piratesgui import PiratesGuiGlobals
 
 class BlinkButton(GuiButton.GuiButton):
 

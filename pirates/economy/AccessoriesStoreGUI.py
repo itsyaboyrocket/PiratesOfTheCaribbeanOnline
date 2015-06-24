@@ -1,26 +1,34 @@
-import random
+# File: A (Python 2.4)
 
+from direct.directnotify.DirectNotifyGlobal import directNotify
 from direct.gui.DirectGui import *
 from pandac.PandaModules import *
-from direct.task import Task
-
+from pirates.ai import HolidayGlobals
+from pirates.holiday import CatalogHoliday
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import GuiPanel, RedeemCodeGUI
-from pirates.piratesgui import DialogButton
+from pirates.piratesgui import GuiButton, DialogButton
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import GuiButton
 from pirates.pirate import DynamicHuman
 from pirates.piratesgui.TabBar import LeftTab, TabBar
+from direct.interval.IntervalGlobal import *
+from pirates.makeapirate import ClothingGlobals
+from pirates.piratesgui.BorderFrame import BorderFrame
+from pirates.uberdog.UberDogGlobals import InventoryType
+from otp.otpbase import OTPGlobals
 from otp.otpgui import OTPDialog
 from pirates.piratesgui import PDialog
+from direct.task import Task
+import random
 from pirates.piratesbase import Freebooter
-from pirates.inventory import DropGlobals
+from pirates.inventory import ItemGlobals, DropGlobals
 from pirates.inventory.InventoryGlobals import *
 from pirates.uberdog.TradableInventoryBase import InvItem
 from pirates.inventory.ItemConstants import DYE_COLORS
+from pirates.pirate import AvatarTypes
 from pirates.pirate import TitleGlobals
-
 BODY_CAMERA = 0
 BUYING = 0
 SELLING = 1

@@ -1,7 +1,7 @@
-import random
+# File: A (Python 2.4)
 
 from pirates.piratesbase import PLocalizer
-
+import random
 
 class AvatarType:
     Unspecified = -1

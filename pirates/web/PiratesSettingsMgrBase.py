@@ -1,4 +1,4 @@
-
+# File: P (Python 2.4)
 
 from pirates.pvp import PVPGlobals
 from pirates.ship import ShipBalance

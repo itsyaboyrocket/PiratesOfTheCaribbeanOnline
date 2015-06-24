@@ -1,12 +1,13 @@
-from direct.gui.DirectGui import *
+# File: S (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.ShipFrame import ShipFrame
 from pirates.piratesgui.GuiButton import GuiButton
 from pirates.piratesgui.ShipSnapshot import ShipSnapshot
-
 
 class ShipFrameSelect(ShipFrame):
     STOwn = 0

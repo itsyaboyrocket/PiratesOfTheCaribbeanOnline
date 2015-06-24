@@ -1,13 +1,14 @@
-import math
+# File: R (Python 2.4)
 
-from direct.interval.IntervalGlobal import LerpPosInterval
+import math
+from direct.interval.IntervalGlobal import LerpFunc, LerpPosInterval
 from direct.task import Task
 from direct.gui.DirectGui import DirectFrame, DirectButton, DGG
 from direct.fsm import FSM
-from pandac.PandaModules import NodePath, VBase3
-
+from pirates.audio.SoundGlobals import loadSfx
+from pandac.PandaModules import MouseButton, Point2, Point3, Vec2, NodePath, VBase3
 import RepairGlobals
-
+from pirates.audio import SoundGlobals
 GOAL_EMPTY = -1
 GOAL_NONE = 0
 GOAL_HORIZ_1 = 1

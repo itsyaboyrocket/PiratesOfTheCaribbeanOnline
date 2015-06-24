@@ -1,13 +1,16 @@
-from direct.task.Task import Task
+# File: T (Python 2.4)
 
-from pirates.uberdog.UberDogGlobals import receiveSwitchField, prepareSwitchField, isLocatable, GiftOrigin
+from pandac.PandaModules import *
+from pirates.uberdog.UberDogGlobals import receiveSwitchField, prepareSwitchField, InventoryType, isLocatable, GiftOrigin
 from pirates.uberdog.DistributedInventoryBase import DistributedInventoryBase
 from pirates.inventory.InventoryGlobals import *
 from pirates.inventory import ItemGlobals
 from pirates.economy import EconomyGlobals
+import copy
+import types
+from direct.task.Task import Task
 from pirates.reputation import ReputationGlobals
 from pirates.piratesbase import Freebooter
-
 TEST_TYPE_LIMITS = 1
 TEST_TYPE_TRADES = 2
 
@@ -641,6 +644,7 @@ class TradableInventoryBase(DistributedInventoryBase):
                 def tradeFail(tradeObj, reason):
                     reasonStr = reason
                     RejectCode = RejectCode
+                    import otp.uberdog.RejectCode
                     for currCode in RejectCode.__dict__.keys():
                         if reason == RejectCode.__dict__[currCode]:
                             reasonStr = currCode
@@ -682,6 +686,7 @@ class TradableInventoryBase(DistributedInventoryBase):
                     self.testPending = False
 
                 AIMagicWordTrade = AIMagicWordTrade
+                import pirates.uberdog.AIMagicWordTrade
                 trade = AIMagicWordTrade(self, self.doId, self.ownerId)
 
                 def removeSetup(tradeObj, removeCat, removeType):
@@ -694,6 +699,7 @@ class TradableInventoryBase(DistributedInventoryBase):
                 trade.setTimeoutCallback(tradeTimeout)
                 self.selfTestTrades.insert(0, (lambda param1 = trade, param2 = itemCat, param3 = testItem.getType(): removeSetup(param1, param2, param3), trade))
                 AIGift = AIGift
+                import pirates.uberdog.AIGift
                 trade = AIGift(self, GiftOrigin.MAGIC_WORD, self.doId, self.ownerId)
                 trade.giveItem(testItem)
                 trade.setSuccessCallback(tradeSuccess)

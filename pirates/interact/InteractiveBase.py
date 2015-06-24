@@ -1,13 +1,13 @@
-import types
+# File: I (Python 2.4)
 
+import types
 from direct.fsm import FSM
 from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
-
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import NewTutorialPanel
 from otp.otpbase import OTPRender
-
 USE_KEY_EVENT = 'shift'
 END_INTERACT_EVENT = 'escape'
 PROXIMITY = 0

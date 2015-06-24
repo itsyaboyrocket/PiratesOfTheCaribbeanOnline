@@ -1,8 +1,7 @@
-import math
-
 from Nametag import *
 from otp.margins.MarginPopup import *
-
+from pandac.PandaModules import *
+import math
 
 class Nametag2d(Nametag, MarginPopup):
     SCALE_2D = 0.25

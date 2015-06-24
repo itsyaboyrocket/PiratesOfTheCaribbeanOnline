@@ -1,11 +1,19 @@
-from direct.task import Task
-from direct.showbase import PythonUtil
-from direct.distributed.ClockDelta import *
-from direct.distributed import DistributedCartesianGrid
+# File: P (Python 2.4)
 
+from direct.showbase.ShowBaseGlobal import *
+from direct.distributed import DistributedObject
+from direct.directnotify import DirectNotifyGlobal
+from direct.task import Task
+from otp.avatar import Avatar
+from otp.chat import ChatManager
+import string
+from direct.showbase import PythonUtil
+from otp.otpbase import OTPGlobals
+from direct.distributed.ClockDelta import *
 from otp.ai import MagicWordManager
 from pirates.pirate import DistributedPlayerPirate
 from pirates.npc import DistributedNPCTownfolk
+from direct.distributed import DistributedCartesianGrid
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui.RadarUtil import RadarUtil
 from pirates.cutscene import Cutscene, CutsceneData
@@ -16,8 +24,10 @@ from pirates.effects.CeilingDust import CeilingDust
 from pirates.effects.CeilingDebris import CeilingDebris
 from pirates.effects.CameraShaker import CameraShaker
 from pirates.effects.DarkWaterFog import DarkWaterFog
+from pirates.ship import DistributedSimpleShip
+from pirates.effects.FireworkGlobals import *
+from pirates.effects.FireworkShowManager import FireworkShowManager
 from pirates.piratesbase import PLocalizer
-
 
 class PiratesMagicWordManager(MagicWordManager.MagicWordManager):
     notify = DirectNotifyGlobal.directNotify.newCategory('PiratesMagicWordManager')
@@ -241,18 +251,22 @@ class PiratesMagicWordManager(MagicWordManager.MagicWordManager):
 
             else:
                 RainDrops = RainDrops
+                import pirates.effects.RainDrops
                 self.rainDrops = RainDrops(base.camera)
                 self.rainDrops.reparentTo(render)
                 self.rainDrops.startLoop()
                 RainMist = RainMist
+                import pirates.effects.RainMist
                 self.rainMist = RainMist(base.camera)
                 self.rainMist.reparentTo(render)
                 self.rainMist.startLoop()
                 RainSplashes = RainSplashes
+                import pirates.effects.RainSplashes
                 self.rainSplashes = RainSplashes(base.camera)
                 self.rainSplashes.reparentTo(render)
                 self.rainSplashes.startLoop()
                 RainSplashes2 = RainSplashes2
+                import pirates.effects.RainSplashes2
                 self.rainSplashes2 = RainSplashes2(base.camera)
                 self.rainSplashes2.reparentTo(render)
                 self.rainSplashes2.startLoop()
@@ -278,10 +292,12 @@ class PiratesMagicWordManager(MagicWordManager.MagicWordManager):
 
                 pos = Vec3(base.cr.doId2do[201100017].getZoneCellOrigin(grid)[0], base.cr.doId2do[201100017].getZoneCellOrigin(grid)[1], base.cr.doId2do[201100017].getZoneCellOrigin(grid)[2])
                 StormEye = StormEye
+                import pirates.effects.StormEye
                 self.stormEye = StormEye()
                 self.stormEye.reparentTo(render)
                 self.stormEye.startLoop()
                 StormRing = StormRing
+                import pirates.effects.StormRing
                 self.stormRing = StormRing()
                 self.stormRing.reparentTo(render)
                 self.stormRing.setZ(100)
@@ -403,6 +419,7 @@ class PiratesMagicWordManager(MagicWordManager.MagicWordManager):
                     fireworkType = int(args[2])
 
                 Firework = Firework
+                import pirates.effects.Firework
                 firework = Firework(fireworkType)
                 firework.reparentTo(render)
                 firework.setPos(Point3(10525, 19000, 245))
@@ -419,6 +436,7 @@ class PiratesMagicWordManager(MagicWordManager.MagicWordManager):
                     trailType = int(args[3])
 
                 FireworkEffect = FireworkEffect
+                import pirates.effects.FireworkEffect
                 firework = FireworkEffect(burstType, trailType)
                 firework.reparentTo(render)
                 firework.setPos(Point3(10525, 19000, 245))
@@ -543,6 +561,7 @@ class PiratesMagicWordManager(MagicWordManager.MagicWordManager):
         elif __dev__ and wordIs('~todpanel'):
             tod = base.cr.timeOfDayManager
             TimeOfDayPanel = TimeOfDayPanel
+            import pirates.leveleditor
             p = TimeOfDayPanel.TimeOfDayPanel(tod)
         elif __dev__ and wordIs('~kraken'):
             args = word.split()[1:]
@@ -1001,6 +1020,7 @@ class PiratesMagicWordManager(MagicWordManager.MagicWordManager):
                 force = int(args[1])
 
             DistributedSimpleShip = DistributedSimpleShip
+            import pirates.ship
             clientShips = []
             cleared = False
             for currShip in clientShips:
@@ -1163,6 +1183,7 @@ class PiratesMagicWordManager(MagicWordManager.MagicWordManager):
 
             base.cr.wantSpecialEffects = base.config.GetBool('want-special-effects', 1)
             DistributedSimpleShip = DistributedSimpleShip
+            import pirates.ship
             clientShips = filter(lambda x: isinstance(x, DistributedSimpleShip.DistributedSimpleShip), base.cr.doId2do.values())
             if base.cr.queryShowEffect('BlackSmoke') or base.cr.queryShowEffect('Fire'):
                 for ship in clientShips:
@@ -1363,10 +1384,12 @@ class PiratesMagicWordManager(MagicWordManager.MagicWordManager):
             base.oobeCamera.setPos(-13.0, 4.0, -6.0)
             base.oobeCamera.setHpr(90.0, 0.0, 0.0)
             CardMaker = CardMaker
+            import pandac.PandaModules
             PosInterval = PosInterval
             ProjectileInterval = ProjectileInterval
             Sequence = Sequence
             Wait = Wait
+            import direct.interval.IntervalGlobal
             cm = CardMaker('fishBackdrop')
             self.fishBackdrop = render.attachNewNode(cm.generate())
             tex = loader.loadTexture('maps/underseaBackdrop.jpg')

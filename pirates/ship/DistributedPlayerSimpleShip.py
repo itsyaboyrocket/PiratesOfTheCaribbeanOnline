@@ -1,7 +1,7 @@
 from pandac.PandaModules import Vec4, VBase4
 import direct.interval.IntervalGlobal as IG
 from direct.fsm.StatePush import StateVar
-
+from direct.task import Task
 from pirates.ship.DistributedSimpleShip import MinimapShip
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
@@ -13,6 +13,7 @@ from pirates.ship import ShipGlobals
 from pirates.battle import EnemyGlobals
 from pirates.ship import HighSeasGlobals
 from pirates.piratesgui import MessageGlobals
+import random
 
 
 class DistributedPlayerSimpleShip(DistributedSimpleShip):
@@ -272,6 +273,7 @@ class DistributedPlayerSimpleShip(DistributedSimpleShip):
 
     def checkAbleDropAnchor(self):
         PiratesGuiGlobals = PiratesGuiGlobals
+        import pirates.piratesgui
         if localAvatar.doId == self.steeringAvId:
             if self.shipStatusDisplay:
                 if localAvatar.getPort():

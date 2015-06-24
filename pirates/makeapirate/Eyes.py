@@ -1,15 +1,17 @@
-
+# File: E (Python 2.4)
 
 global damper
-import random
-
 from direct.directnotify import DirectNotifyGlobal
+from direct.showbase.ShowBaseGlobal import *
 from direct.showbase import DirectObject
+from direct.fsm import StateData
+from direct.gui import DirectGuiGlobals
 from direct.gui.DirectGui import *
-
+from pandac.PandaModules import *
 from pirates.piratesbase import PLocalizer
+from pirates.pirate import HumanDNA
 from CharGuiBase import CharGuiSlider, CharGuiPicker
-
+import random
 damper = 0.5
 sliderRange = (-0.5, 0.5)
 

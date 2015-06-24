@@ -1,7 +1,7 @@
-from pandac.PandaModules import NodePath
+# File: D (Python 2.4)
 
 from pirates.instance import DistributedInstanceBase
-
+from pandac.PandaModules import NodePath
 
 class DistributedTeleportZone(DistributedInstanceBase.DistributedInstanceBase, NodePath):
     

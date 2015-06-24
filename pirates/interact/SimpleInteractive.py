@@ -1,12 +1,14 @@
+# File: S (Python 2.4)
+
 from direct.showbase.DirectObject import DirectObject
 from pandac.PandaModules import CollisionNode, CollisionSphere, TransparencyAttrib, TextNode
 from direct.gui.DirectGui import DirectLabel
 from direct.interval.IntervalGlobal import Func
 from direct.interval.LerpInterval import LerpFunctionInterval
 from direct.interval.MetaInterval import Sequence
-
+from otp.otpbase import OTPRender
+from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import PiratesGlobals
-
 USE_KEY_EVENT = 'shift'
 
 class SimpleInteractive(DirectObject):

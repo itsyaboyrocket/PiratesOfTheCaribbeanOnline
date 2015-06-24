@@ -1,12 +1,17 @@
+# File: D (Python 2.4)
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import *
 from direct.task.Task import Task
-
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from pirates.minigame import LockGUI
 from pirates.minigame import LockGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.distributed import DistributedInteractive
-
+from pirates.interact import InteractiveBase
+from pirates.interact import InteractionManager
+from pirates.pirate import HumanDNA
 
 class DistributedLock(DistributedInteractive.DistributedInteractive):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedLock')

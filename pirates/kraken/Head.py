@@ -1,9 +1,10 @@
+# File: H (Python 2.4)
+
 from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
-
 from pirates.creature.Creature import Creature
+from pirates.pirate import AvatarTypes
 from pirates.audio import SoundGlobals
-
 
 class Head(Creature):
     ModelInfo = ('models/char/krakenHead-high', 'models/char/krakenHead-')

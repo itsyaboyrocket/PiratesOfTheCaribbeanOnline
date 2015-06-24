@@ -1,7 +1,7 @@
-
+# File: A (Python 2.4)
 
 from pirates.leveleditor.LevelEntity import LevelEntity
-
+from pandac.PandaModules import *
 
 class AmbientSoundFX(LevelEntity):
     

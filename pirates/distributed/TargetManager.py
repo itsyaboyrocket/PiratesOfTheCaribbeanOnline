@@ -1,17 +1,20 @@
+# File: T (Python 2.4)
+
 from direct.directtools.DirectSelection import *
 from direct.distributed import DistributedObject
 from direct.task import Task
-
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import TeamUtils
 from pirates.battle import WeaponGlobals
+from pirates.battle import Sword
+from pirates.battle import Wand
 from pirates.battle import Doll
+from pirates.battle import Grenade
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.pirate import AvatarTypes
 from pirates.battle.EnemySkills import EnemySkills
 from pirates.inventory import ItemGlobals
 import TargetManagerBase
-
 
 class TargetManager(DistributedObject.DistributedObject, TargetManagerBase.TargetManagerBase):
     notify = directNotify.newCategory('TargetManager')

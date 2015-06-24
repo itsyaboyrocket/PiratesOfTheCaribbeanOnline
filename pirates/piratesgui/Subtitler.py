@@ -1,13 +1,14 @@
+# File: S (Python 2.4)
+
 from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from direct.showbase import DirectObject
 from direct.interval.IntervalGlobal import *
-
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui.GuiButton import GuiButton
 from pirates.piratesgui.DialogButton import DialogButton
-
 
 class Subtitler(DirectObject.DirectObject):
 

@@ -1,16 +1,24 @@
+# File: A (Python 2.4)
+
 import math
 import time
+import os
+import random
 import sys
-
+from pandac.PandaModules import *
 from direct.gui.DirectGui import *
 from direct.task.Task import Task
 from direct.directnotify.DirectNotifyGlobal import directNotify
 from direct.showbase.DirectObject import DirectObject
 from direct.fsm.StateData import StateData
+from direct.fsm.ClassicFSM import ClassicFSM
+from direct.fsm.State import State
+from direct.gui import DirectGuiGlobals
 from direct.interval.IntervalGlobal import *
-
+from direct.showbase.PythonUtil import quickProfile
 from otp.otpgui import OTPDialog
 from otp.otpbase import OTPGlobals
+from pirates.audio import SoundGlobals
 from pirates.piratesgui.GameOptions import GameOptions
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
@@ -24,11 +32,13 @@ from pirates.pirate import Pirate
 from pirates.seapatch.SeaPatch import SeaPatch
 from pirates.seapatch.Reflection import Reflection
 from pirates.makeapirate import NameGUI
+from pirates.piratesgui import NonPayerPanel
 from pirates.piratesgui import TrialNonPayerPanel
 from pirates.piratesbase import UserFunnel
+from pirates.pirate import Human
+from pirates.pirate import HumanDNA
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-
 APPROVED = 1
 DENIED = 2
 
@@ -230,6 +240,7 @@ class AvatarChooser(DirectObject, StateData):
         self.ship = None
         if False: #base.launcher.getPhaseComplete(3): # Ships are sooooooo broken atm
             ShipGlobals = ShipGlobals
+            import pirates.ship
             self.ship = base.shipFactory.getShip(ShipGlobals.INTERCEPTORL1)
             self.ship.modelRoot.setPosHpr(140.86000000000001, 538.97000000000003, -3.6200000000000001, -133.03999999999999, 0.0, 0.0)
             self.ship.modelRoot.reparentTo(self.scene)

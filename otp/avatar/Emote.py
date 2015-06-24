@@ -1,7 +1,5 @@
-import types
-
 from otp.otpbase import OTPLocalizer
-
+import types
 
 class Emote:
     EmoteClear = -1

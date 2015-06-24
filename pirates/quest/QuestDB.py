@@ -1,3 +1,7 @@
+# File: Q (Python 2.4)
+
+import random
+from direct.directnotify import DirectNotifyGlobal
 from pirates.quest.QuestDNA import QuestDNA
 from pirates.quest.QuestTaskDNA import *
 from pirates.quest.QuestPrereq import *
@@ -6,8 +10,10 @@ from pirates.quest.QuestConstants import QuestItems
 from pirates.quest.QuestConstants import PropIds, NPCIds
 from pirates.quest.QuestConstants import Bribes, PokerPots, ExpRewards
 from pirates.quest.QuestConstants import Probability, Attempts, DoubleRepTime
+from pirates.battle import EnemyGlobals
 from pirates.ship import ShipGlobals
 from pirates.pirate import AvatarTypes
+from pirates.pirate.AvatarType import AvatarType
 from pirates.tutorial import TutorialGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.ai import HolidayGlobals

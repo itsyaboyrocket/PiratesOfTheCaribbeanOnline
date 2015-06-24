@@ -1,8 +1,8 @@
-from direct.fsm.StatePush import FunctionCall, StateVar
+# File: S (Python 2.4)
 
+from direct.fsm.StatePush import FunctionCall, StateVar
 from pirates.pvp import PVPGlobals
 from pirates.ship.ShipRepairSpotMgrBase import ShipRepairSpotMgrBase
-
 
 class ShipRepairSpotMgr(ShipRepairSpotMgrBase):
     

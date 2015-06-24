@@ -1,11 +1,12 @@
+# File: D (Python 2.4)
+
+from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import *
-
 from pirates.distributed import DistributedInteractive
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.interact import InteractiveBase
-
 
 class DistributedSurfaceTreasure(DistributedInteractive.DistributedInteractive):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedSurfaceTreasure')

@@ -1,13 +1,19 @@
-import math
+# File: L (Python 2.4)
 
+import random
+import math
+from pandac.PandaModules import *
+from direct.gui.DirectGui import *
 from direct.interval.IntervalGlobal import *
+from direct.fsm import FSM
+from direct.task import Task
 from direct.showbase.PythonUtil import lerp, report, getShortestRotation
 from direct.directnotify.DirectNotifyGlobal import directNotify
-
 from otp.nametag import NametagGlobals
 from pirates.battle import WeaponGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import EmoteGlobals
+from pirates.reputation import ReputationGlobals
 from pirates.interact import InteractiveBase
 from pirates.inventory import ItemGlobals
 from pirates.effects.TeleportTwister import TeleportTwister
@@ -16,7 +22,6 @@ from pirates.piratesgui.RewardPanel import RewardPanel
 from PlayerPirateGameFSM import PlayerPirateGameFSM
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-
 
 class LocalPirateGameFSM(PlayerPirateGameFSM):
     notify = directNotify.newCategory('LocalPirateGameFSM')
@@ -603,6 +608,7 @@ class LocalPirateGameFSM(PlayerPirateGameFSM):
 
     def cancelHealing(self, task = None):
         InteractiveBase = InteractiveBase
+        import pirates.interact
         self.ignore(self.disableEvent)
         self.av.stopHealing()
         if task:

@@ -1,13 +1,13 @@
-from pandac.PandaModules import *
-from direct.interval.IntervalGlobal import *
-from direct.showbase.PythonUtil import report
+# File: D (Python 2.4)
 
+from pandac.PandaModules import *
 from pirates.audio import SoundGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.world import GridAreaBuilder
+from direct.interval.IntervalGlobal import *
+from direct.showbase.PythonUtil import report
 from otp.otpbase import OTPRender
 import DistributedGAConnector
-
 
 class DistributedGATunnel(DistributedGAConnector.DistributedGAConnector):
     notify = directNotify.newCategory('DistributedGATunnel')

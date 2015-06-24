@@ -1,3 +1,6 @@
+# File: C (Python 2.4)
+
+from pandac.PandaModules import *
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals

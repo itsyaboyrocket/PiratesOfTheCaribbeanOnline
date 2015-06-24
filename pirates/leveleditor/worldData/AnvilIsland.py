@@ -1,4 +1,5 @@
-from pandac.PandaModules import Point3, VBase3
+from pandac.PandaModules import Point3, VBase3, Vec4, Vec3
+
 
 objectStruct = {
     'Interact Links': [

@@ -1,20 +1,26 @@
+# File: L (Python 2.4)
+
 from direct.showbase import DirectObject
 from direct.gui.DirectGui import *
-
+from pandac.PandaModules import *
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import Freebooter
 from pirates.piratesgui import PiratesGuiGlobals
+from pirates.piratesgui import GuiButton
 from pirates.piratesbase import PiratesGlobals
 from pirates.ai import HolidayGlobals
 from pirates.makeapirate import ClothingGlobals
+from direct.interval.IntervalGlobal import *
+from pirates.piratesgui import RadialMenu
+from pirates.battle import WeaponGlobals
 from pirates.piratesbase import CollectionMap
 from pirates.piratesgui.MessageStackPanel import StackMessage
 from pirates.minigame import PlayingCardGlobals
 from pirates.minigame import PotionGlobals
+from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.economy.EconomyGlobals import *
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-
 
 class LootPopupPanel(StackMessage, DirectObject.DirectObject):
     width = 0.80000000000000004

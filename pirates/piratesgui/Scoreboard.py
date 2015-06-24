@@ -1,9 +1,13 @@
-from direct.gui.DirectGui import *
+# File: S (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.ListFrame import ListFrame
 from pirates.piratesgui.ScoreboardItemGui import ScoreboardItemGui
-
+from pirates.piratesgui import GuiPanel
+from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import PLocalizer
 
 class Scoreboard(DirectFrame):
     

@@ -1,8 +1,8 @@
-from direct.showbase.PythonUtil import report
+# File: Q (Python 2.4)
 
 from pirates.effects.RayOfLight import RayOfLight
 from pirates.quest.QuestIndicatorGridNode import QuestIndicatorGridNode
-
+from direct.showbase.PythonUtil import report
 
 class QuestIndicatorNodeQuestProp(QuestIndicatorGridNode):
     

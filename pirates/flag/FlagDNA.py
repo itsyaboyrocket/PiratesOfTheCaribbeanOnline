@@ -1,17 +1,14 @@
-
+# File: F (Python 2.4)
 
 if __name__ == '__main__':
-    pass
-
-import random
+    from direct.showbase import ShowBase
 
 from direct.showbase import PythonUtil
 from direct.distributed.PyDatagram import PyDatagram
 from direct.distributed.PyDatagramIterator import PyDatagramIterator
-
 from otp.avatar import AvatarDNA
 import FlagGlobals
-
+import random
 
 class FlagDNA(AvatarDNA.AvatarDNA):
     DefaultShapeData = 0

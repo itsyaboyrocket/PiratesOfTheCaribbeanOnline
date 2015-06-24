@@ -1,3 +1,7 @@
+# File: C (Python 2.4)
+
+from pirates.uberdog.UberDogGlobals import InventoryType
+from pirates.piratesbase import PiratesGlobals
 from pirates.ship import ShipGlobals
 from pirates.inventory import ItemGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType

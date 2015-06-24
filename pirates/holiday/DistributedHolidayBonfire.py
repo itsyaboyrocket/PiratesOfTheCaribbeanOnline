@@ -1,7 +1,8 @@
-
+# File: D (Python 2.4)
 
 from pirates.holiday.DistributedHolidayObject import DistributedHolidayObject
 from pirates.piratesbase import PLocalizer
+from pirates.effects.FeastFire import FeastFire
 from pirates.ai import HolidayGlobals
 
 class DistributedHolidayBonfire(DistributedHolidayObject):

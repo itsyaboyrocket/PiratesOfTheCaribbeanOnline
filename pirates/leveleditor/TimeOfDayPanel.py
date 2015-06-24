@@ -1,14 +1,22 @@
-import tkColorChooser
-from Tkinter import *
+# File: T (Python 2.4)
 
+import pprint
+from direct.showbase.TkGlobal import *
 from direct.tkwidgets.AppShell import *
+from direct.tkwidgets import Dial
+from direct.tkwidgets import Floater
+from direct.tkwidgets import Slider
+from direct.tkwidgets import VectorWidgets
 from direct.tkwidgets import Valuator
+import tkColorChooser
 from direct.directtools.DirectUtil import getTkColorString
 import Pmw
 from direct.gui import DirectGuiGlobals as DGG
-
+from pirates.piratesbase import PLocalizer as PL
+from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import TODGlobals
-
+from pandac.PandaModules import *
+from Tkinter import *
 
 class TimeOfDayPanel(AppShell):
     appname = 'Time Of Day Panel'

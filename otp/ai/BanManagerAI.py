@@ -1,9 +1,7 @@
 import urllib
 import os
-
 from pandac.PandaModules import HTTPClient, Ramfile
 from direct.directnotify import DirectNotifyGlobal
-
 
 class BanManagerAI:
     notify = DirectNotifyGlobal.directNotify.newCategory('BanManagerAI')

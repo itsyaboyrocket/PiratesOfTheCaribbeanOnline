@@ -1,12 +1,10 @@
 from pandac.PandaModules import TextNode
 from direct.gui.DirectGui import *
 from direct.directnotify import DirectNotifyGlobal
-
 from otp.otpgui import OTPDialog
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import BorderFrame
 from pirates.piratesgui import PiratesGuiGlobals
-
 
 class PDialog(DirectDialog):
     loadedAssets = False

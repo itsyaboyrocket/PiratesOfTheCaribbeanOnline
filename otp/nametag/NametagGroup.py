@@ -1,8 +1,7 @@
 from pandac.PandaModules import *
-
+from NametagConstants import *
 from Nametag3d import *
 from Nametag2d import *
-
 
 class NametagGroup:
     CCNormal = CCNormal

@@ -1,7 +1,5 @@
 from direct.distributed.AstronInternalRepository import AstronInternalRepository
-
 from otp.distributed.OtpDoGlobals import *
-
 
 class PiratesInternalRepository(AstronInternalRepository):
     GameGlobalsId = OTP_DO_ID_PIRATES

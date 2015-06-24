@@ -1,12 +1,11 @@
-import types
-
+from pandac.PandaModules import *
+from direct.gui.DirectGui import *
 from direct.task import Task
-from direct.interval.IntervalGlobal import *
-from direct.showbase.PythonUtil import makeTuple
-
 from SCConstants import *
+from direct.interval.IntervalGlobal import *
 from SCObject import SCObject
-
+from direct.showbase.PythonUtil import makeTuple
+import types
 
 class SCMenu(SCObject, NodePath):
     config = getConfigShowbase()
@@ -96,6 +95,7 @@ class SCMenu(SCObject, NodePath):
 
     def appendFromStructure(self, structure):
         from SpeedChatTypes import SCMenuHolder, SCStaticTextTerminal, SCGMTextTerminal
+        from otp.otpbase import OTPLocalizer
 
         def addChildren(menu, childList):
             for child in childList:

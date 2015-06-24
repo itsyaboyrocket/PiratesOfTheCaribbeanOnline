@@ -1,10 +1,13 @@
+# File: S (Python 2.4)
+
+from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 from direct.particles import ParticleEffect
 from direct.particles import Particles
-
+from direct.particles import ForceGroup
+import random
 from PooledEffect import PooledEffect
 from EffectController import EffectController
-
 
 class SpectralTrail(PooledEffect, EffectController):
     cardScale = 128.0

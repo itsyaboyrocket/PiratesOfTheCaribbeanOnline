@@ -1,7 +1,7 @@
+# File: D (Python 2.4)
+
 from pandac.PandaModules import NodePath
-
 from pirates.distributed.DistributedInteractive import DistributedInteractive
-
 
 class DistributedHolidayObject(DistributedInteractive):
     

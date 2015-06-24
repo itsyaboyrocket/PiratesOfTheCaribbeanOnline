@@ -1,4 +1,4 @@
-
+# File: P (Python 2.4)
 
 from pirates.pvp.PVPGameBase import PVPGameBase
 from pirates.piratesbase import PiratesGlobals

@@ -1,7 +1,6 @@
-import types
-
 from panda3d.core import *
-
+import string
+import types
 try:
     language = getConfigExpress().GetString('language', 'english')
     checkLanguage = getConfigExpress().GetBool('check-language', 0)
@@ -20,6 +19,7 @@ else:
     checkLanguage = 1
     _languageModule = 'otp.otpbase.OTPLocalizer_' + language
 print 'from ' + _languageModule + ' import *'
+from otp.otpbase.OTPLocalizerEnglish import *
 if checkLanguage:
     l = {}
     g = {}

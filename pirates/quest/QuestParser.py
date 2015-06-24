@@ -1,24 +1,29 @@
-
+# File: Q (Python 2.4)
 
 global curId, currFuncId
+import sys
+import os
 import tokenize
-
+import copy
+from direct.showbase.ShowBaseGlobal import *
 from direct.interval.IntervalGlobal import *
 from pandac.PandaModules import *
+from direct.gui.DirectGui import *
 from direct.directnotify import DirectNotifyGlobal
-from direct.showbase import DirectObject
-
+from direct.showbase import PythonUtil, DirectObject
+from direct.showbase import AppRunnerGlobal
+from otp.speedchat import SpeedChatGlobals
 from pirates.piratesgui import NewTutorialPanel
 from pirates.npc import Skeleton
 from pirates.pirate import Pirate
 from pirates.pirate import HumanDNA
+from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import RadarGui
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.inventory import ItemGlobals
 from pirates.inventory.InventoryGlobals import Locations
-
 notify = DirectNotifyGlobal.directNotify.newCategory('QuestParser')
 lineDict = { }
 globalVarDict = { }

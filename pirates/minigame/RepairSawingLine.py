@@ -1,7 +1,7 @@
-
+# File: R (Python 2.4)
 
 from pandac.PandaModules import LineSegs, NodePath
-
+import math
 
 class RepairSawingLine:
     

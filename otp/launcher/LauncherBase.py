@@ -1,15 +1,14 @@
 import sys
 import os
 import time
+import string
 import __builtin__
-
+from panda3d.core import *
 from direct.showbase.MessengerGlobal import *
 from direct.showbase.DirectObject import DirectObject
+from direct.showbase.EventManagerGlobal import *
 from direct.task.MiniTask import MiniTask, MiniTaskManager
 from direct.directnotify.DirectNotifyGlobal import *
-
-from panda3d.core import *
-
 
 class LogAndOutput:
 

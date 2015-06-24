@@ -1,11 +1,12 @@
-from direct.directnotify import DirectNotifyGlobal
+# File: D (Python 2.4)
 
+from pandac.PandaModules import Vec4
+from direct.directnotify import DirectNotifyGlobal
 from pirates.npc.DistributedGhost import DistributedGhost
 from pirates.pirate import AvatarTypes
 from pirates.npc.Boss import Boss
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-
 
 class DistributedBossGhost(DistributedGhost, Boss):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedBossGhost')

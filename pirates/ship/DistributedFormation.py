@@ -1,13 +1,15 @@
+# File: D (Python 2.4)
+
+from direct.directnotify import DirectNotifyGlobal
+from direct.showbase.ShowBaseGlobal import *
 from direct.task.Task import Task
 from pandac.PandaModules import *
 from pandac.PandaModules import NodePath
-
 from pirates.map.MinimapObject import GridMinimapObject
 from pirates.movement import DistributedMovingObject
 from otp.otpbase import OTPGlobals
 from otp.otpbase import OTPRender
 from pirates.ship import ShipGlobals
-
 
 class DistributedFormation(DistributedMovingObject.DistributedMovingObject):
     notify = directNotify.newCategory('Formation')

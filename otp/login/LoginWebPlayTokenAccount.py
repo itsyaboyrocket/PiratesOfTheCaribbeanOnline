@@ -1,9 +1,8 @@
 # 2013.08.22 22:15:39 Pacific Daylight Time
 # Embedded file name: otp.login.LoginWebPlayTokenAccount
+from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
-
 import LoginTTAccount
-
 
 class LoginWebPlayTokenAccount(LoginTTAccount.LoginTTAccount):
     __module__ = __name__

@@ -1,18 +1,17 @@
-from operator import itemgetter
+# File: D (Python 2.4)
 
 from pandac.PandaModules import *
 from direct.showbase.PythonUtil import report
 from direct.interval.IntervalGlobal import *
-
 from otp.otpgui import OTPDialog
 from pirates.distributed.DistributedInteractive import DistributedInteractive
-from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import PLocalizer, PiratesGlobals
 from pirates.piratesgui.ShipDeployPanel import ShipDeployPanel
 from pirates.uberdog.DistributedInventoryBase import DistributedInventoryBase
 from pirates.piratesgui import PDialog
+from operator import itemgetter
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
-
 
 class DistributedDinghy(DistributedInteractive):
     notify = directNotify.newCategory('DistributedDinghy')

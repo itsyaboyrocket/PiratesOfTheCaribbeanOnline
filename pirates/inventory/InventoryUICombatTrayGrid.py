@@ -1,9 +1,10 @@
+# File: I (Python 2.4)
+
+from pandac.PandaModules import *
 from direct.gui.DirectGui import *
 from direct.interval.IntervalGlobal import *
-
 from pirates.inventory import InventoryUISlotDisplayGrid
 from pirates.inventory.InventoryGlobals import Locations
-
 weaponSlots = range(Locations.RANGE_EQUIP_WEAPONS[0] - 1, Locations.RANGE_EQUIP_WEAPONS[1])
 NUMGRIDS = len(weaponSlots)
 GRID_POSITIONS = { }

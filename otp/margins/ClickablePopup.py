@@ -1,8 +1,6 @@
 from pandac.PandaModules import *
 from direct.showbase.DirectObject import DirectObject
-
 from otp.nametag import NametagGlobals
-
 
 class ClickablePopup(PandaNode, DirectObject):
     CS_NORMAL = 0

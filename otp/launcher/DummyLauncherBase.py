@@ -1,4 +1,8 @@
+from pandac.PandaModules import *
+import string
 from direct.showbase.MessengerGlobal import *
+from direct.showbase.DirectObject import DirectObject
+from direct.showbase.EventManagerGlobal import *
 from direct.task.TaskManagerGlobal import *
 from direct.task.Task import Task
 

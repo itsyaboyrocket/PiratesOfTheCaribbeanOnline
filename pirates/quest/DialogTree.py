@@ -1,6 +1,7 @@
-
+# File: D (Python 2.4)
 
 from pirates.quest.QuestConstants import NPCIds
+from pirates.quest.QuestPrereq import *
 from pirates.quest.DialogProcess import *
 from pirates.battle import WeaponGlobals
 from pirates.audio import SoundGlobals

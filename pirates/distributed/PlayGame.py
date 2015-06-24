@@ -1,12 +1,13 @@
-import os
+# File: P (Python 2.4)
 
 from direct.directnotify import DirectNotifyGlobal
 from direct.fsm import StateData
 from direct.fsm import ClassicFSM
 from direct.fsm import State
-
+from direct.task import Task
 from pirates.piratesbase import PiratesGlobals
-
+from pirates.uberdog import UberDogGlobals
+import os
 
 class PlayGame(StateData.StateData):
     notify = DirectNotifyGlobal.directNotify.newCategory('PlayGame')

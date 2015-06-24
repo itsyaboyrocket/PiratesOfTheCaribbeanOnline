@@ -1,9 +1,10 @@
-from direct.gui.DirectGui import *
-from direct.interval.IntervalGlobal import *
+# File: A (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
-
 
 class AmmoPanelMessageManager:
     

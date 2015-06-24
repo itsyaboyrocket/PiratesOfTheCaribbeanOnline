@@ -1,11 +1,15 @@
-
+# File: P (Python 2.4)
 
 global InterfaceOutlineFont, PirateFont, PirateOutlineFont, PirateBoldOutlineFont
+from pandac.PandaModules import *
 import PLocalizer
 from otp.otpbase.OTPGlobals import *
+from direct.gui import DirectFrame
+from direct.gui import DirectButton
 from pirates.uberdog.UberDogGlobals import *
 from pirates.piratesbase import PLocalizer as PL
-
+from otp.otpbase import OTPLocalizer as OL
+from pirates.piratesbase import EmoteGlobals
 searchPath = DSearchPath()
 for i in range(getModelPath().getNumDirectories()):
     searchPath.appendDirectory(getModelPath().getDirectory(i))

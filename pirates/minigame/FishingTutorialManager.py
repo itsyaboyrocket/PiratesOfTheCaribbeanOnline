@@ -1,4 +1,4 @@
-
+# File: F (Python 2.4)
 
 
 class FishingTutorialManager:

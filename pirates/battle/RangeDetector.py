@@ -1,3 +1,6 @@
+# File: R (Python 2.4)
+
+from pandac.PandaModules import *
 from pirates.battle import WeaponGlobals
 
 class RangeDetector(NodePath):

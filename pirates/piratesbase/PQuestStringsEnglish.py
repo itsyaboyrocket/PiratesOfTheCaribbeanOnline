@@ -1,3 +1,7 @@
+from pirates.quest.QuestConstants import NPCIds
+from pirates.piratesbase import EmoteGlobals
+
+
 Reward_Gold = 'Gold'
 Reward_XP = 'Notoriety'
 Reward_Both = 'Gold & Notoriety'

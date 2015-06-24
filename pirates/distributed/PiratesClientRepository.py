@@ -1,55 +1,92 @@
+import types
+import random
+import gc
 import __builtin__
 base.loadingScreen.beginStep('PCR', 20, 15)
+from direct.showbase.ShowBaseGlobal import *
 base.loadingScreen.tick()
+from direct.distributed.ClockDelta import *
 base.loadingScreen.tick()
+from direct.gui.DirectGui import *
 base.loadingScreen.tick()
+from pandac.PandaModules import *
 base.loadingScreen.tick()
 from otp.nametag import NametagGlobals
 base.loadingScreen.tick()
 from direct.interval.IntervalGlobal import *
 base.loadingScreen.tick()
+from direct.showbase.EventGroup import EventGroup
 base.loadingScreen.tick()
 from direct.showbase.PythonUtil import report
 base.loadingScreen.tick()
+from pirates.piratesbase.PiratesGlobals import *
 base.loadingScreen.tick()
+from PiratesMsgTypes import *
 base.loadingScreen.tick()
 from direct.directnotify.DirectNotifyGlobal import directNotify
 base.loadingScreen.tick()
+from direct.fsm import ClassicFSM
 base.loadingScreen.tick()
+from direct.fsm import State
 base.loadingScreen.tick()
+from direct.task import Task
 base.loadingScreen.tick()
+from direct.distributed.PyDatagram import PyDatagram
 base.loadingScreen.tick()
+from direct.distributed.PyDatagramIterator import PyDatagramIterator
 base.loadingScreen.tick()
+from direct.distributed import DistributedSmoothNode
 base.loadingScreen.tick()
+from direct.distributed.InterestWatcher import InterestWatcher
 base.loadingScreen.tick()
+from direct.distributed import DoInterestManager
+from direct.distributed.ClientRepositoryBase import ClientRepositoryBase
 from otp.distributed.OTPClientRepository import OTPClientRepository
+from otp.distributed import PotentialShard
 from otp.distributed.PotentialAvatar import PotentialAvatar
 from otp.distributed import DistributedDistrict
 from otp.distributed import OtpDoGlobals
 from otp.otpbase import OTPGlobals
+from otp.friends import FriendSecret
+from otp.uberdog.AccountDetailRecord import AccountDetailRecord, SubDetailRecord
 from otp.otpgui import OTPDialog
 from pirates.login.AvatarChooser import AvatarChooser
 from pirates.makeapirate.MakeAPirate import MakeAPirate
 from pirates.pirate import HumanDNA
-from pirates.pirate import MasterHuman
+from pirates.pirate import MasterHuman, Human
 from pirates.pirate import AvatarTypes
 from pirates.pirate.LocalPirate import LocalPirate
 from pirates.pirate import DistributedPlayerPirate
+from pirates.piratesbase import PLocalizer
 from pirates.world import WorldGlobals
+from pirates.world.DistributedGameArea import DistributedGameArea
 from pirates.battle import BattleManager
+from pirates.battle import DistributedBattleNPC
 from pirates.battle import CombatAnimations
+from pirates.band import DistributedBandMember
 from pirates.cutscene import Cutscene
 import PlayGame
 from pirates.piratesbase import PiratesGlobals
+from pirates.battle import DistributedBattleNPC
+from pirates.ship import DistributedSimpleShip
 from pirates.interact import InteractionManager
 from pirates.piratesbase import UniqueIdManager
+from pirates.piratesgui.DialMeter import DialMeter
+from pirates.piratesgui import PiratesGuiGlobals
+from pirates.uberdog.UberDogGlobals import InventoryType
+from pirates.reputation import ReputationGlobals
 from pirates.piratesbase import PLocalizer
-
+from pirates.piratesbase import LoadingScreen
+from pirates.ai import NewsManager
+from pirates.makeapirate import PCPickANamePattern
+from pirates.coderedemption.CodeRedemption import CodeRedemption
 base.loadingScreen.endStep('PCR')
 from pirates.quest import QuestLadderDynMap
 from pirates.quest.QuestLadderDependency import QuestLadderDependency
 from pirates.quest.QuestChoiceDynMap import QuestChoiceDynMap
 from pirates.npc import NPCManager
+from pirates.audio import SoundGlobals
+from pirates.audio.SoundGlobals import loadSfx
 from pirates.login.AccountDetailRecord import AccountDetailRecord
 
 

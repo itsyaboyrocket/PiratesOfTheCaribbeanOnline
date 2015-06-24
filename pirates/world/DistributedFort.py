@@ -1,19 +1,25 @@
-from pandac.PandaModules import NodePath, BillboardEffect, Vec3, Point3
-from direct.distributed import DistributedSmoothNode
-from pandac.PandaModules import TextNode
-from direct.interval.IntervalGlobal import *
+# File: D (Python 2.4)
 
+from pandac.PandaModules import NodePath, BillboardEffect, Vec3, Vec4, Point3
+from direct.directnotify import DirectNotifyGlobal
 from pirates.battle import DistributedBattleAvatar
 from pirates.pirate import BattleAvatarGameFSM
+from direct.distributed import DistributedSmoothNode
 from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import Freebooter
 from pirates.piratesbase import PLocalizer
-from pirates.piratesgui import HpMeter
+from pirates.piratesgui import PiratesGuiGlobals, HpMeter
+from direct.gui.DirectGui import DirectWaitBar, DGG
+from pandac.PandaModules import TextNode
 from pirates.treasuremap import TreasureMapBlackPearlGlobals
 from pirates.effects.BlackSmoke import BlackSmoke
 from pirates.effects.ShipDebris import ShipDebris
+from direct.interval.LerpInterval import LerpPosHprInterval
+from direct.interval.LerpInterval import LerpHprInterval
 from pirates.effects.SmokeExplosion import SmokeExplosion
+from direct.interval.IntervalGlobal import *
 from pirates.effects import TextEffect
-
+from otp.otpbase import OTPRender
 
 class DistributedFort(DistributedBattleAvatar.DistributedBattleAvatar):
     notify = directNotify.newCategory('DistributedFort')

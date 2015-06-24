@@ -1,3 +1,7 @@
+# File: D (Python 2.4)
+
+from pandac.PandaModules import *
+from direct.gui.DirectGui import *
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import GuiButton
 

@@ -1,3 +1,6 @@
+# File: F (Python 2.4)
+
+from pandac.PandaModules import *
 from pirates.world.LocationConstants import LocationIds
 ShowPosHpr = {
     LocationIds.PORT_ROYAL_ISLAND: (Point3(-525, 1285, 150), Point3(-20, 0, 0)),

@@ -1,13 +1,13 @@
-
+# File: M (Python 2.4)
 
 global hitSfxs, missSfxs
-from direct.interval.IntervalGlobal import *
-
 import Weapon
+import WeaponGlobals
+from direct.interval.IntervalGlobal import *
+from pandac.PandaModules import *
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-
 hitSfxs = None
 missSfxs = None
 

@@ -1,4 +1,4 @@
-
+# File: N (Python 2.4)
 
 from direct.showbase import DirectObject
 

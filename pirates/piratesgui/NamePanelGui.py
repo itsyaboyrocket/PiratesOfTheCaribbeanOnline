@@ -1,15 +1,19 @@
+# File: N (Python 2.4)
+
+from direct.directnotify.DirectNotifyGlobal import directNotify
 from direct.gui.DirectGui import *
 from pandac.PandaModules import *
-
 from otp.namepanel import NameCheck
 from pirates.piratesgui import PiratesGuiGlobals
+from pirates.piratesgui import InventoryItemList
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import GuiPanel
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import GuiButton
 from pirates.piratesgui import DialogButton
+from pirates.uberdog.UberDogGlobals import *
+from pirates.economy import EconomyGlobals
 from pirates.piratesgui import PNameTumbler
-
 MAX_NAME_WIDTH = 14
 PICK_A_NAME_ENABLED = 0
 

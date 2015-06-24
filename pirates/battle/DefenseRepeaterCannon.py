@@ -1,3 +1,6 @@
+# File: D (Python 2.4)
+
+from pandac.PandaModules import *
 from pirates.battle.DefenseCannon import DefenseCannon
 
 class DefenseRepeaterCannon(DefenseCannon):

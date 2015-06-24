@@ -1,12 +1,14 @@
+# File: A (Python 2.4)
+
+import random
 import re
 import types
 import copy
 import marshal
-
+from pandac.PandaModules import *
 from direct.task.Task import Task
 from direct.showbase import DirectObject
-from direct.interval.IntervalGlobal import *
-
+from direct.actor import *
 from pirates.world import WorldGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
@@ -15,6 +17,7 @@ from pirates.pirate.HumanDNA import *
 from pirates.npc import Skeleton
 from pirates.npc import Townfolk
 from pirates.battle import Sword
+from direct.interval.IntervalGlobal import *
 from otp.otpbase import OTPRender
 from otp.otpbase import OTPGlobals
 from pirates.leveleditor import CustomAnims
@@ -22,8 +25,9 @@ from pirates.leveleditor import EditorGlobals
 from pirates.ai import HolidayGlobals
 from pirates.map.MinimapObject import MinimapShop
 from pirates.effects import ObjectEffects
+from pirates.world.LocationConstants import LocationIds
 from pirates.effects import SoundFX
-
+from pirates.effects import AmbientSoundFX
 AREA_CHILD_TYPE_PROP = 1
 staticLODs = [
     0,

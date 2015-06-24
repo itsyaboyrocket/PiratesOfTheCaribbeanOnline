@@ -1,7 +1,9 @@
+# File: M (Python 2.4)
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.task import Task
-
 from pirates.audio import AmbientManagerBase
+from pirates.uberdog import UberDogGlobals
 from pirates.audio import SoundGlobals
 
 

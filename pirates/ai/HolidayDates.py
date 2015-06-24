@@ -1,4 +1,4 @@
-
+# File: H (Python 2.4)
 
 import time
 Month = Enum('JANUARY, FEBRUARY, MARCH, APRIL,               MAY, JUNE, JULY, AUGUST, SEPTEMBER,               OCTOBER, NOVEMBER, DECEMBER', 1)

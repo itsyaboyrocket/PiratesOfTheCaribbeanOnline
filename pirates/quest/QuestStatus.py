@@ -1,8 +1,9 @@
-from direct.directnotify import DirectNotifyGlobal
+# File: Q (Python 2.4)
 
+from direct.directnotify import DirectNotifyGlobal
 from pirates.quest import QuestLadderDB
 from pirates.uberdog import DistributedInventoryBase
-
+from pirates.piratesbase.PLocalizer import NPCNames
 
 class QuestStatus:
     notify = DirectNotifyGlobal.directNotify.newCategory('QuestStatus')

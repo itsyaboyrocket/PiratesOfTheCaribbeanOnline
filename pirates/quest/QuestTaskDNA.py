@@ -1,24 +1,23 @@
-import string
-import random
+# File: Q (Python 2.4)
 
 from direct.directnotify.DirectNotifyGlobal import directNotify
 from direct.showbase.PythonUtil import POD, invertDict, makeTuple
-
-from pirates.quest import QuestTaskState
+from pirates.quest import QuestEvent, QuestTaskState
 from pirates.piratesbase import PLocalizer
 from pirates.pirate import AvatarTypes
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
+import string
+import random
 from pirates.battle import EnemyGlobals
 from pirates.ship import ShipGlobals
-from pirates.quest.QuestConstants import PropIds, getPropList, getPropType
+from pirates.quest.QuestConstants import NPCIds, PropIds, getPropList, getPropType
 from pirates.quest.QuestConstants import TreasureIds, getTreasureList
-from pirates.quest.QuestConstants import getShipList
+from pirates.quest.QuestConstants import ShipIds, getShipList
 from pirates.quest import QuestReward
 from pirates.quest.QuestPath import QuestGoal
 from pirates.world.LocationConstants import LocationIds, getParentIsland, getLocationList, isInArea
 from pirates.uberdog.UberDogGlobals import InventoryType
-
 
 class QuestTaskDNA(POD):
     notify = directNotify.newCategory('QuestTaskDNA')

@@ -1,12 +1,14 @@
-from direct.directnotify import DirectNotifyGlobal
-from direct.showbase.PythonUtil import POD
+# File: Q (Python 2.4)
 
+import copy
+from direct.directnotify import DirectNotifyGlobal
+from direct.showbase.PythonUtil import POD, makeTuple
+from direct.task.Task import Task
 from pirates.piratesbase import PLocalizer
 from pirates.quest import QuestDB, QuestReward, QuestTaskDNA
 from pirates.quest.QuestDNA import QuestDNA
 from otp.otpbase import OTPGlobals
 from pirates.piratesbase import Freebooter
-
 
 class Quest(POD):
     notify = DirectNotifyGlobal.directNotify.newCategory('Quest')

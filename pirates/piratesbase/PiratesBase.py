@@ -1,16 +1,20 @@
+# File: P (Python 2.4)
+
 import sys
 import time
 import os
-import __builtin__
-
+from pandac.PandaModules import *
+from otp.nametag import NametagGlobals
+from otp.nametag.ChatBalloon import ChatBalloon
+from otp.margins.MarginManager import MarginManager
+from direct.showbase.DirectObject import *
+from direct.showbase.PythonUtil import *
+from direct.showbase.Transitions import Transitions
 from direct.directnotify import DirectNotifyGlobal
 from direct.gui import DirectGuiGlobals
 from direct.gui.DirectGui import *
 from direct.task import Task
-
-from otp.nametag import NametagGlobals
-from otp.nametag.ChatBalloon import ChatBalloon
-from otp.margins.MarginManager import MarginManager
+from otp.otpbase import OTPGlobals
 from otp.otpbase import OTPRender
 from otp.otpbase.OTPBase import OTPBase
 from pirates.audio import MusicManager
@@ -29,6 +33,7 @@ from otp.otpbase import OTPLocalizer
 from pirates.piratesgui import PDialog
 from pirates.chat.PWhiteList import PWhiteList
 import PiratesGlobals
+import __builtin__
 
 try:
     import embedded
@@ -36,6 +41,7 @@ try:
 except ImportError:
     hasEmbedded = 0
 
+from pirates.piratesbase import UserFunnel
 
 class PiratesBase(OTPBase):
     notify = DirectNotifyGlobal.directNotify.newCategory('PiratesBase')
@@ -443,6 +449,7 @@ class PiratesBase(OTPBase):
     def phase3Post(self):
         Sword = Sword
         Dagger = Dagger
+        import pirates.battle
         Sword.Sword.setupAssets()
         Dagger.Dagger.setupAssets()
         self.buildShips()
@@ -455,12 +462,14 @@ class PiratesBase(OTPBase):
 
     def phase5Post(self):
         Raven = Raven
+        import pirates.creature
         Raven.Raven.setupAssets()
         self.buildPhase5Ships()
 
 
     def buildPhase4Assets(self):
         WeaponGlobals = WeaponGlobals
+        import pirates.battle
         Pistol = Pistol
         Sword = Sword
         Dagger = Dagger
@@ -475,6 +484,7 @@ class PiratesBase(OTPBase):
         FishingRod = FishingRod
         Torch = Torch
         PowderKeg = PowderKeg
+        import pirates.battle
         Alligator = Alligator
         Bat = Bat
         Chicken = Chicken
@@ -488,13 +498,16 @@ class PiratesBase(OTPBase):
         Seagull = Seagull
         Stump = Stump
         Wasp = Wasp
+        import pirates.creature
         if config.GetBool('want-kraken', 0):
             Holder = Holder
+            import pirates.kraken
             Holder.Holder.setupAssets()
             self.loadingScreen.tick()
 
         if base.config.GetBool('want-seamonsters', 0):
             SeaSerpent = SeaSerpent
+            import pirates.creature
             SeaSerpent.SeaSerpent.setupAssets()
             self.loadingScreen.tick()
 

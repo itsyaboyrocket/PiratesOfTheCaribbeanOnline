@@ -1,9 +1,9 @@
+# File: G (Python 2.4)
+
 from direct.gui.DirectGui import DirectLabel, DirectButton
 from pandac.PandaModules import NodePath, TextNode
 from direct.directnotify import DirectNotifyGlobal
-
 from pirates.piratesbase import PLocalizer
-
 BUTTON_PREFIX = 'button'
 STATIC_PREFIX = 'static'
 SPRITE_PREFIX = 'sprite'

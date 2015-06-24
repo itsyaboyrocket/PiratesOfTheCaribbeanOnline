@@ -1,7 +1,7 @@
-from pandac.PandaModules import Vec4, Vec3
+# File: T (Python 2.4)
 
+from pandac.PandaModules import Point3, VBase3, Vec4, Vec3
 from pirates.piratesbase.TODDefs import *
-
 ENV_SETTINGS_DEFAULT = {
     'BASE': {
         'Direction': Vec3(0, 30, 245),

@@ -1,10 +1,11 @@
-from direct.gui.DirectGui import *
+# File: M (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.gui.DirectGui import *
 from pirates.piratesbase import PLocalizer, PiratesGlobals
-from pirates.piratesgui import InventoryPage, ShardPanel, PiratesGuiGlobals, GuiButton
+from pirates.piratesgui import InventoryPage, BorderFrame, ShardPanel, PiratesGuiGlobals, GuiButton
 from pirates.piratesgui.DownloadBlockerPanel import DownloadBlockerPanel
 from pirates.map.WorldMap import WorldMap
-
 
 class MapPage(InventoryPage.InventoryPage):
 

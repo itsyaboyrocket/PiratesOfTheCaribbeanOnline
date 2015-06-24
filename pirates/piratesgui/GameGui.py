@@ -1,13 +1,17 @@
-from direct.gui.DirectGui import *
-from direct.interval.IntervalGlobal import *
+# File: G (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from pirates.piratesgui import GuiTray
 from pirates.piratesbase import PLocalizer
+from pirates.piratesgui import PiratesGuiGlobals
+from pirates.reputation import ReputationGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesgui import ReputationMeterDial
 from pirates.piratesgui import StatusTray
+from direct.interval.IntervalGlobal import *
 from pirates.piratesgui import VitaeMeter
-
 
 class GameGui(DirectButton):
 

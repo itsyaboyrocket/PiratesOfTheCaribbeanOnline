@@ -1,8 +1,8 @@
-import random
+# File: D (Python 2.4)
 
+import random
 from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
-
 DYN_LIGHT_AMBIENT = 0
 DYN_LIGHT_DIRECTIONAL = 1
 DYN_LIGHT_POINT = 2

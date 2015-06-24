@@ -1,12 +1,12 @@
-from pandac.PandaModules import *
+# File: D (Python 2.4)
 
+from pandac.PandaModules import *
 from pirates.battle.Cannon import Cannon
 from pirates.battle.DefenseCannonballProjectile import DefenseCannonballProjectile
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.minigame import CannonDefenseGlobals
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-
 ammoFiringSfx = {
     InventoryType.DefenseCannonHotShot: loadSfx(SoundGlobals.SFX_MINIGAME_CANNON_FLAMING) }
 ammoHitSfx = {

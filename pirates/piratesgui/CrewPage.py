@@ -1,13 +1,23 @@
+# File: C (Python 2.4)
+
+from direct.showbase.ShowBaseGlobal import *
 from direct.gui.DirectGui import *
 from pandac.PandaModules import *
-
+from direct.fsm import StateData
+from direct.task import Task
+from otp.otpbase import OTPGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import SocialPage
 from pirates.piratesgui import PiratesGuiGlobals
+from pirates.piratesbase import PiratesGlobals
+from pirates.uberdog.UberDogGlobals import CrewStatus
+from pirates.band import BandConstance
 from pirates.band import DistributedBandMember
 from pirates.piratesgui import PirateMemberList
 from pirates.piratesgui import PirateButtonChain
-
+from pirates.piratesgui import CrewIconSelector
+from pirates.piratesgui import CrewMatchInviter
+from pirates.piratesgui import CrewHUD
 
 class CrewPage(SocialPage.SocialPage):
     notify = directNotify.newCategory('CrewPage')

@@ -1,7 +1,9 @@
-
+# File: D (Python 2.4)
 
 from direct.distributed import DistributedObjectOV
-
+from pirates.piratesbase import PLocalizer
+from pirates.piratesbase import PiratesGlobals
+from otp.otpbase import OTPLocalizer
 
 class DistributedBandMemberOV(DistributedObjectOV.DistributedObjectOV):
     notify = directNotify.newCategory('PirateBand')

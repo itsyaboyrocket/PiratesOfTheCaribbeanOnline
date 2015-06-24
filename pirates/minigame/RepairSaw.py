@@ -1,11 +1,16 @@
+# File: R (Python 2.4)
+
 import math
-
-from pandac.PandaModules import MouseButton, Point3
-
+from direct.task import Task
+from direct.gui.DirectGui import DirectFrame, DirectButton, DGG
+from direct.interval.IntervalGlobal import Sequence, Parallel, Func, Wait
+from direct.interval.IntervalGlobal import LerpPosInterval, LerpFunc
+from pandac.PandaModules import MouseButton, Point2, Point3, Vec2, Vec4
 import RepairGlobals
+from pirates.audio import SoundGlobals
 from MinigameUtils import getAcuteAngle
+from pirates.audio.SoundGlobals import loadSfx
 from pirates.piratesgui.GuiPanel import *
-
 
 class RepairSaw(DirectButton):
 

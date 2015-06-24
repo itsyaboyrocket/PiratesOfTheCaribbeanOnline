@@ -1,16 +1,20 @@
-import time
-
+from pandac.PandaModules import *
 from direct.directnotify.DirectNotifyGlobal import *
 from direct.showbase.MessengerGlobal import *
 from direct.showbase.BulletinBoardGlobal import *
 from direct.task.TaskManagerGlobal import *
 from direct.showbase.JobManagerGlobal import *
 from direct.showbase.EventManagerGlobal import *
+from direct.showbase.PythonUtil import *
 from direct.showbase import PythonUtil
 from direct.interval.IntervalManager import ivalMgr
 from direct.task import Task
+from direct.showbase import EventManager
 from direct.showbase import ExceptionVarDump
-
+import math
+import sys
+import time
+import gc
 
 class AIBase:
     notify = directNotify.newCategory('AIBase')

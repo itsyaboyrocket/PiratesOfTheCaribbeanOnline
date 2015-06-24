@@ -1,12 +1,15 @@
-import random
+# File: M (Python 2.4)
 
+from pandac.PandaModules import *
 from direct.gui.DirectGui import *
+from direct.gui.DirectGuiGlobals import *
 from direct.gui.DirectLabel import *
 from direct.gui import DirectFrame
-from direct.interval.IntervalGlobal import *
-
 from pirates.piratesgui import PiratesGuiGlobals
-
+from pirates.piratesbase import PLocalizer
+from direct.interval.IntervalGlobal import *
+from pirates.piratesbase import PiratesGlobals
+import random
 
 class MiniScoreItemGui(DirectFrame.DirectFrame):
     Width = PiratesGuiGlobals.PVPPanelWidth - PiratesGuiGlobals.GridSize

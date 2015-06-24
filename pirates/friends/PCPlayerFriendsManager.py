@@ -1,8 +1,10 @@
-from direct.directnotify.DirectNotifyGlobal import directNotify
+# File: P (Python 2.4)
 
+from direct.distributed.DistributedObjectGlobal import DistributedObjectGlobal
+from direct.directnotify.DirectNotifyGlobal import directNotify
+from otp.otpbase import OTPGlobals
 from otp.friends.PlayerFriendsManager import PlayerFriendsManager
 from pirates.friends.PCFriendPlayerInfo import PCFriendPlayerInfo
-
 
 class PCPlayerFriendsManager(PlayerFriendsManager):
     notify = directNotify.newCategory('PCPlayerFriendsManager')

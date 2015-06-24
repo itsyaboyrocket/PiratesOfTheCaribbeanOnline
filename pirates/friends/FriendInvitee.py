@@ -1,12 +1,14 @@
-from direct.gui.DirectGui import *
-from direct.directnotify import DirectNotifyGlobal
+# File: F (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.directnotify import DirectNotifyGlobal
 from otp.otpbase import OTPLocalizer
+from otp.otpbase import OTPGlobals
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui.RequestButton import RequestButton
-
 
 class FriendInviteeButton(RequestButton):
 

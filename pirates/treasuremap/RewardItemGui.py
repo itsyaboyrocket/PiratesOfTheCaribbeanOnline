@@ -1,7 +1,8 @@
+# File: R (Python 2.4)
+
 from direct.gui.DirectGui import *
-
+from pandac.PandaModules import *
 from pirates.piratesgui import PiratesGuiGlobals
-
 
 class RewardItemGui(DirectFrame):
     Width = PiratesGuiGlobals.TMCompletePanelWidth - PiratesGuiGlobals.GridSize

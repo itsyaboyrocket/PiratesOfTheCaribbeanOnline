@@ -1,7 +1,10 @@
-
+# File: W (Python 2.4)
 
 from pandac.PandaModules import *
-
+from direct.distributed import DistributedNode
+from pirates.piratesbase import PiratesGlobals
+from pirates.world import WorldGlobals
+from direct.showbase.PythonUtil import HotkeyBreaker
 
 class WorldNode(NodePath):
     notify = directNotify.newCategory('WorldNode')

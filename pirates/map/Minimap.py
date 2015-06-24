@@ -1,12 +1,13 @@
+# File: M (Python 2.4)
+
 from pandac.PandaModules import NodePath, VBase3
 from direct.fsm.FSM import FSM
-
+from pirates.map.Mappable import Mappable, MappableArea, MappableGrid
 from pirates.map.MinimapObject import MinimapFootprint, MinimapShop, MinimapCapturePoint
 from pirates.ai import HolidayGlobals
 from pirates.piratesgui.GameOptions import Options
 from pirates.invasion import InvasionGlobals
 from pirates.world.LocationConstants import LocationIds
-
 
 class MapSentry:
     

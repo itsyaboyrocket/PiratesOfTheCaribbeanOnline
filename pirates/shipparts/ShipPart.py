@@ -1,3 +1,6 @@
+# File: S (Python 2.4)
+
+from pandac.PandaModules import *
 from pirates.piratesbase import PiratesGlobals
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx

@@ -1,11 +1,12 @@
-from pandac.PandaModules import VBase3
+# File: B (Python 2.4)
 
+from pandac.PandaModules import VBase3
+from pirates.piratesbase import PLocalizer
 from pirates.battle import EnemyGlobals
 from pirates.battle.EnemySkills import *
 from pirates.pirate import AvatarTypes
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.inventory import ItemGlobals
-
 BOSS_NPC_LIST = {
     '': {
         'AvatarType': None,

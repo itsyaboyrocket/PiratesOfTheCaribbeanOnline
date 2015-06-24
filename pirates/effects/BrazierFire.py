@@ -1,5 +1,7 @@
-from direct.interval.IntervalGlobal import *
+# File: B (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
 from pirates.piratesgui.GameOptions import Options
 from pirates.effects.LightFire import LightFire
 from pirates.effects.GentleSmoke import GentleSmoke
@@ -7,7 +9,6 @@ from pirates.effects.LightSparks import LightSparks
 from EffectController import EffectController
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-
 
 class BrazierFire(NodePath, EffectController):
     

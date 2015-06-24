@@ -1,4 +1,4 @@
-
+# File: C (Python 2.4)
 
 from otp.avatar.Avatar import Avatar
 from pirates.pirate import AvatarTypes

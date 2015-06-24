@@ -1,19 +1,21 @@
-from math import atan2
+# File: B (Python 2.4)
 
+from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.ClockDelta import *
 from direct.task.Task import Task
 from direct.interval.IntervalGlobal import *
 from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from direct.showbase import PythonUtil
 from direct.fsm import FSM
-
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import GuiTray
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.minigame import BishopsHandGlobals
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfxString
-
+from math import atan2
+from random import randint
 
 class Hand(NodePath):
     

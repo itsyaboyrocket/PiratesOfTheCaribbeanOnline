@@ -1,4 +1,4 @@
-
+# File: S (Python 2.4)
 
 global launcher
 from pirates.launcher.PiratesWebLauncher import PiratesWebLauncher
@@ -10,7 +10,9 @@ def main(appRunner = None):
     if not appRunner:
         print 'Not running in a web environment; using dummyAppRunner.'
         dummyAppRunner = dummyAppRunner
+        import direct.p3d.AppRunner
         PandaSystem = PandaSystem
+        import pandac.PandaModules
         appRunner = dummyAppRunner()
         version = PandaSystem.getPackageVersionString()
         hostUrl = PandaSystem.getPackageHostUrl()

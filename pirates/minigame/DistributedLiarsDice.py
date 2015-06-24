@@ -1,13 +1,15 @@
+# File: D (Python 2.4)
+
 import random
-
 from direct.interval.IntervalGlobal import *
+from direct.task import Task
 from direct.gui.DirectGui import *
-
+from pandac.PandaModules import *
 from pirates.minigame import DistributedDiceGame
 from pirates.minigame import DiceGlobals
+from pirates.piratesgui import GuiTray
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PLocalizer
-
 
 class DistributedLiarsDice(DistributedDiceGame.DistributedDiceGame):
     

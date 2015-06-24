@@ -1,3 +1,9 @@
+# File: F (Python 2.4)
+
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
+from direct.task import Task
+from pirates.effects.FireworkGlobals import *
 from pirates.effects.FireworkShow import FireworkShow
 PortRoyalLocation = Point3(-1350, 180, 220)
 PortRoyalLocation2 = Point3(50, 1500, 0)

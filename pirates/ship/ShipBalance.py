@@ -1,4 +1,4 @@
-
+# File: S (Python 2.4)
 
 from otp.web.Setting import StateVarSetting
 RepairRate = StateVarSetting('ship.repair.rate', 500)

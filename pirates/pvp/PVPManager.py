@@ -1,8 +1,10 @@
+# File: P (Python 2.4)
+
+from direct.distributed.ClockDelta import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.DistributedObject import DistributedObject
-
+from pirates.uberdog.UberDogGlobals import *
 from pirates.piratesbase import PiratesGlobals
-
 
 class PVPManager(DistributedObject):
     notify = DirectNotifyGlobal.directNotify.newCategory('PVPManager')

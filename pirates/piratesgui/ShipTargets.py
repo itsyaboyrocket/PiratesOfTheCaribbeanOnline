@@ -1,3 +1,7 @@
+# File: S (Python 2.4)
+
+from direct.task import Task
+
 class Target:
     
     def __init__(self, ship):

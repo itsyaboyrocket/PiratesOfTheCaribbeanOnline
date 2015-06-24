@@ -1,14 +1,21 @@
-from direct.gui.DirectGui import *
+# File: I (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.distributed.ClockDelta import *
+from direct.interval.IntervalGlobal import *
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import GuiPanel
 from pirates.piratesgui import Scoreboard
+from pirates.piratesgui import DialogButton
 from pirates.piratesgui import GuiButton
+from pirates.uberdog.UberDogGlobals import *
 from pirates.invasion import InvasionGlobals
 from pirates.ai import HolidayGlobals
-
+from pirates.world.LocationConstants import LocationIds
+import time
 
 class InvasionScoreboard(DirectFrame):
     width = PiratesGuiGlobals.PortPanelWidth / 2.0

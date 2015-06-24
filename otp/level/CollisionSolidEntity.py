@@ -1,8 +1,7 @@
-from direct.directnotify import DirectNotifyGlobal
-
+from pandac.PandaModules import *
 from otp.otpbase import OTPGlobals
+from direct.directnotify import DirectNotifyGlobal
 import BasicEntities
-
 
 class CollisionSolidEntity(BasicEntities.NodePathEntity):
     notify = DirectNotifyGlobal.directNotify.newCategory('CollisionSolidEntity')

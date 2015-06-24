@@ -1,4 +1,4 @@
-
+# File: _ (Python 2.4)
 
 package = 'PIRATES'
 import os
@@ -34,6 +34,9 @@ if os.getenv('CTPROJS'):
         (parent, base) = os.path.split(tree)
         if parent not in sys.path:
             sys.path.append(parent)
+        
+    
+    import direct.showbase.FindCtaPaths as direct
 else:
     srcDir = os.path.join(__path__[0], 'src')
     if os.path.isdir(srcDir):

@@ -1,9 +1,9 @@
-import math
+# File: M (Python 2.4)
 
+from pandac.PandaModules import *
 from direct.showbase.PythonUtil import clampScalar
-
 from pirates.map.ArcBall import ArcBall
-
+import math
 
 class MapBall(ArcBall):
 

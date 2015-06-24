@@ -1,11 +1,16 @@
+# File: S (Python 2.4)
+
+from direct.directnotify.DirectNotifyGlobal import directNotify
 from direct.gui.DirectGui import *
 from pandac.PandaModules import *
-
+from pirates.ship import ShipGlobals
 from pirates.piratesgui import PiratesGuiGlobals
+from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui.ShipFrameShopping import ShipFrameShopping
+from pirates.piratesbase import PLocalizer
+from pirates.band.DistributedBandMember import DistributedBandMember
 from pirates.piratesgui.ShipSelectionPanel import ShipSelectionPanel
 from pirates.distributed import InteractGlobals
-
 
 class ShipShoppingPanel(ShipSelectionPanel):
     notify = directNotify.newCategory('ShipShoppingPanel')

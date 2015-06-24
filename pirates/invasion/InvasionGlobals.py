@@ -1,11 +1,13 @@
-from pandac.PandaModules import Point3, Vec4
+# File: I (Python 2.4)
 
 from pirates.ship import ShipGlobals
 from pirates.pirate import AvatarTypes
+from pirates.piratesbase import PiratesGlobals
+from pandac.PandaModules import Point3, Vec4
 from pirates.quest.QuestConstants import NPCIds
 from pirates.ai import HolidayGlobals
 from pirates.world.LocationConstants import LocationIds
-
+from pirates.uberdog.UberDogGlobals import InventoryType
 JOLLY_ROGER_INVASION_SHIP = ShipGlobals.JOLLY_ROGER
 JOLLY_UNIQUE_ID = '1248740229.97robrusso'
 JOLLY_DISENGAGE_LIMIT = 1

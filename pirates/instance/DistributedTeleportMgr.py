@@ -1,17 +1,17 @@
+# File: D (Python 2.4)
+
 from pandac.PandaModules import *
 from direct.task import Task
 from direct.distributed import DistributedObject
-from direct.showbase.PythonUtil import report
-
 from pirates.piratesbase import PiratesGlobals
 from pirates.world import ZoneLOD
+from direct.showbase.PythonUtil import report
 from otp.otpbase import OTPLocalizer
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PDialog
 from otp.otpgui import OTPDialog
 from pirates.piratesgui.DownloadBlockerPanel import DownloadBlockerPanel
-from pirates.quest import QuestLadderDB
-
+from pirates.quest import QuestDB, QuestLadderDB
 
 class DistributedTeleportMgr(DistributedObject.DistributedObject):
     notify = directNotify.newCategory('DistributedTeleportMgr')

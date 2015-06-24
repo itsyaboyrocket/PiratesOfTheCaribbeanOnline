@@ -1,4 +1,8 @@
+# File: D (Python 2.4)
+
+from otp.otpbase import OTPGlobals
 from pirates.piratesbase import PiratesGlobals
+from pirates.effects.Bonfire import Bonfire
 from pirates.battle import DistributedIslandCannon
 
 class DistributedFortCannon(DistributedIslandCannon.DistributedIslandCannon):

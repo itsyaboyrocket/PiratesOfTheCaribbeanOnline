@@ -1,8 +1,9 @@
-from direct.showbase.PythonUtil import report
+# File: Q (Python 2.4)
 
 from pirates.effects.RayOfLight import RayOfLight
 from pirates.quest.QuestIndicatorNode import QuestIndicatorNode
-
+from pirates.piratesgui.RadarGui import RADAR_OBJ_TYPE_QUEST
+from direct.showbase.PythonUtil import report, StackTrace
 
 class QuestIndicatorNodeIntDoor(QuestIndicatorNode):
     

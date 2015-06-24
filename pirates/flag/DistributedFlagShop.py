@@ -1,8 +1,9 @@
-
+# File: D (Python 2.4)
 
 from pandac.PandaModules import *
 from direct.distributed.DistributedObject import DistributedObject
-
+import FlagGlobals
+from Flag import Flag
 
 class DistributedFlagShop(DistributedObject):
     notify = directNotify.newCategory('DistributedFlagShop')

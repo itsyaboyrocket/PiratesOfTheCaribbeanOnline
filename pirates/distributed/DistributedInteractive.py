@@ -1,11 +1,11 @@
+# File: D (Python 2.4)
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed import DistributedNode
-from direct.showbase.PythonUtil import report
-
 from pirates.piratesgui import InteractGUI
 from pirates.interact import InteractiveBase
 from pirates.world import DistributedLocatableObject
-
+from direct.showbase.PythonUtil import report
 
 class DistributedInteractive(DistributedNode.DistributedNode, InteractiveBase.InteractiveBase, DistributedLocatableObject.DistributedLocatableObject):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedInteractive')

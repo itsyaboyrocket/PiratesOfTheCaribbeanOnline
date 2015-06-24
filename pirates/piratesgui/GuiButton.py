@@ -1,6 +1,10 @@
+import copy
+from pandac.PandaModules import *
 from direct.directnotify.DirectNotifyGlobal import directNotify
+from direct.showbase import DirectObject
 from direct.gui.DirectGui import *
-
+from direct.task.Task import Task
+from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui.BorderFrame import BorderFrame

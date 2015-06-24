@@ -1,6 +1,7 @@
-
+# File: B (Python 2.4)
 
 from direct.directnotify import DirectNotifyGlobal
+from pirates.piratesbase import PiratesGlobals
 from direct.showbase import RandomNumGen
 
 class BattleRandom:

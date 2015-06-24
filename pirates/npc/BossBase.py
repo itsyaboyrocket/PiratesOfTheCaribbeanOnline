@@ -1,6 +1,7 @@
-
+# File: B (Python 2.4)
 
 from pirates.piratesbase import PLocalizer
+from pirates.battle import EnemyGlobals
 from pirates.npc.BossNPCList import BOSS_NPC_LIST
 
 class BossBase:

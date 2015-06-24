@@ -1,16 +1,15 @@
-
+# File: Q (Python 2.4)
 
 global REPFACTOR_HOLIDAY, GOLDFACTOR_HOLIDAY
 import random
-
 from direct.showbase.PythonUtil import POD, invertDict, getSetterName
 from direct.directnotify import DirectNotifyGlobal
-
 from pirates.quest import QuestRewardStruct
-from pirates.uberdog.UberDogGlobals import InventoryType
+from pirates.uberdog.UberDogGlobals import InventoryType, InventoryCategory
 from pirates.piratesbase import CollectionMap
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import PiratesGlobals
+from pirates.economy import EconomyGlobals
 from pirates.battle import EnemyGlobals
 from pirates.minigame import PlayingCardDropper
 from pirates.makeapirate import JewelryGlobals, TattooGlobals, ClothingGlobals
@@ -18,7 +17,6 @@ from pirates.economy.EconomyGlobals import ItemId
 from pirates.piratesbase import Freebooter
 from pirates.inventory import ItemGlobals
 from pirates.inventory.InventoryGlobals import Locations
-
 REPFACTOR_HOLIDAY = 1
 GOLDFACTOR_HOLIDAY = 1
 REWARD_TO = 3

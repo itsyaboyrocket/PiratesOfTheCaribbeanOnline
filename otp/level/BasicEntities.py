@@ -1,8 +1,6 @@
-from pandac.PandaModules import NodePath
-
 import Entity
 import DistributedEntity
-
+from pandac.PandaModules import NodePath
 
 class NodePathEntityBase:
 

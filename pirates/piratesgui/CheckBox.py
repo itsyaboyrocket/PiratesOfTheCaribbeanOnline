@@ -1,7 +1,15 @@
-from direct.gui.DirectCheckBox import DirectCheckBox
+# File: C (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.task.Task import Task
+from otp.otpbase import OTPLocalizer
+from otp.otpbase import OTPGlobals
+from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import PLocalizer
+from pirates.piratesgui import GuiPanel
 from pirates.piratesgui import PiratesGuiGlobals
-
+from direct.gui.DirectCheckBox import DirectCheckBox
 
 class CheckBox(DirectCheckBox):
     

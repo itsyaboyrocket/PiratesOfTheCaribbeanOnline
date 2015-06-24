@@ -1,9 +1,13 @@
+# File: R (Python 2.4)
+
+from direct.interval.IntervalGlobal import Sequence, Func
+from direct.interval.IntervalGlobal import *
 from direct.gui.DirectGui import *
 from direct.task import Task
+from pandac.PandaModules import *
+from pandac.PandaModules import CardMaker
 from direct.fsm import FSM
-
 from pirates.piratesbase import PiratesGlobals
-
 
 class RepairClock(DirectFrame, FSM.FSM):
     

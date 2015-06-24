@@ -1,12 +1,20 @@
-from direct.gui.DirectGui import *
-from direct.directnotify import DirectNotifyGlobal
+# File: A (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.directnotify import DirectNotifyGlobal
+from otp.otpbase import OTPGlobals
+from pirates.battle.EnemySkills import *
+from pirates.piratesgui.GuiPanel import GuiPanel
 from pirates.piratesgui.GuiButton import GuiButton
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
+from pirates.reputation import ReputationGlobals
+from pirates.battle import WeaponGlobals
+from pirates.economy import EconomyGlobals
+from pirates.economy.EconomyGlobals import *
 from pirates.pirate import AvatarTypes
-
 
 class AvatarInfoButton(GuiButton):
     memberImageColor = (Vec4(0.31, 0.29999999999999999, 0.29999999999999999, 1), Vec4(0.40999999999999998, 0.40000000000000002, 0.40000000000000002, 1), Vec4(0.40999999999999998, 0.40000000000000002, 0.40000000000000002, 1), Vec4(0.20999999999999999, 0.20000000000000001, 0.20000000000000001, 1))

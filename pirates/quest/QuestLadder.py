@@ -1,9 +1,11 @@
+# File: Q (Python 2.4)
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.showbase import DirectObject
-
+from pirates.quest.QuestTaskDNA import RandomizedDefeatTaskDNA
+from pirates.quest.QuestTaskDNA import RandomizedDefeatShipTaskDNA
 from pirates.quest import QuestLinkDB
 from pirates.quest import QuestEvent
-
 
 class QuestContainer(DirectObject.DirectObject):
     notify = DirectNotifyGlobal.directNotify.newCategory('QuestContainer')

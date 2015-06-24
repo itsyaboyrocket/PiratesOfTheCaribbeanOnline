@@ -1,11 +1,15 @@
+# File: S (Python 2.4)
+
+from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
+from direct.actor import Actor
 from direct.particles import ParticleEffect
 from direct.particles import Particles
-
+from direct.particles import ForceGroup
 from pirates.piratesgui.GameOptions import Options
 from PooledEffect import PooledEffect
 from EffectController import EffectController
-
+import random
 
 class ShipFire(PooledEffect, EffectController):
     cardScale = 64.0

@@ -1,12 +1,12 @@
+# File: L (Python 2.4)
+
 import random
-
 from direct.interval.IntervalGlobal import Sequence, Parallel, Wait, Func
-from direct.fsm import FSM
-
 from pirates.uberdog.UberDogGlobals import InventoryType
+from FishingGameFSM import FishingGameFSM
 import FishingGlobals
 from pirates.audio import SoundGlobals
-
+from direct.fsm import FSM
 
 class LegendaryFishingGameFSM(FSM.FSM):
     

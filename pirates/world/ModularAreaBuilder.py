@@ -1,3 +1,6 @@
+# File: M (Python 2.4)
+
+from pandac.PandaModules import *
 from otp.otpbase import OTPRender
 from pirates.world.SectionAreaBuilder import SectionAreaBuilder
 from pirates.leveleditor import EditorGlobals

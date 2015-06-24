@@ -1,13 +1,16 @@
-from pandac.PandaModules import *
-from direct.fsm.FSM import FSM
-from direct.showbase.PythonUtil import report
+# File: Q (Python 2.4)
 
+from pandac.PandaModules import *
 from pirates.world.ZoneLOD import ZoneLOD
+from direct.fsm.FSM import FSM
+from direct.interval.IntervalGlobal import Parallel
+from direct.showbase.PythonUtil import report
+from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.effects.RayOfLight import RayOfLight
 from pirates.map.MinimapObject import DynamicMinimapObject
 from pirates.world.LocationConstants import LocationIds
-
+from pirates.world.DistributedGameArea import DistributedGameArea
 
 class QuestIndicatorNode(NodePath, FSM, ZoneLOD):
     notify = directNotify.newCategory('QuestIndicatorNode')

@@ -1,9 +1,15 @@
-from direct.gui.DirectGui import *
+# File: G (Python 2.4)
 
+from direct.showbase.ShowBaseGlobal import *
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.fsm import StateData
+from otp.otpbase import OTPGlobals
 from otp.otpbase import OTPLocalizer
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import SocialPage
 from pirates.piratesgui import PiratesGuiGlobals
+from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import Freebooter
 from pirates.piratesgui import PirateMemberList
 from pirates.piratesgui import PirateButtonChain
@@ -11,7 +17,6 @@ from pirates.piratesgui import PiratesConfirm
 from pirates.piratesgui import PiratesInfo
 from pirates.piratesgui import PiratesOffLineRequest
 from pirates.uberdog.UberDogGlobals import InventoryType
-
 GUILDRANK_VETERAN = 4
 GUILDRANK_GM = 3
 GUILDRANK_OFFICER = 2

@@ -1,10 +1,13 @@
+# File: D (Python 2.4)
+
+import re
 import random
-
+import types
 from pandac.PandaModules import *
-from direct.interval.IntervalGlobal import *
-
 from pirates.distributed import DistributedInteractive
-
+from pirates.piratesbase import PiratesGlobals
+from pirates.world import WorldGlobals
+from direct.interval.IntervalGlobal import *
 
 class DistributedNPCToy(DistributedInteractive.DistributedInteractive):
     notify = directNotify.newCategory('DistributedNPCToy')

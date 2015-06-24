@@ -1,5 +1,8 @@
+from pandac.PandaModules import *
+from direct.gui.DirectGui import *
 from direct.showbase import DirectObject
-
+import Avatar
+from direct.distributed import DistributedObject
 
 class AvatarPanel(DirectObject.DirectObject):
     currentAvatarPanel = None

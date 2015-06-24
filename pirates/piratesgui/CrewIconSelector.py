@@ -1,11 +1,16 @@
-from direct.gui.DirectGui import *
-from direct.directnotify import DirectNotifyGlobal
+# File: C (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.directnotify import DirectNotifyGlobal
+from otp.otpbase import OTPGlobals
+from pirates.piratesgui import PDialog
 from pirates.piratesgui import GuiPanel
 from pirates.piratesgui import PiratesGuiGlobals
+from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
+from pirates.band import BandConstance
 from pirates.piratesgui.RequestButton import RequestButton
-
 CREW_ICON_BAM = 'models/gui/gui_main'
 CREW_ICONS = {
     1: 'crew_member/crew_member',

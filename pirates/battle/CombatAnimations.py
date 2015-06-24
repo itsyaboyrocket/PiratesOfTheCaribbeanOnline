@@ -1,12 +1,12 @@
-import random
-import copy
-
-from direct.interval.IntervalGlobal import *
-from pandac.PandaModules import *
-from direct.actor import Actor
+# File: C (Python 2.4)
 
 import WeaponGlobals
+from direct.interval.IntervalGlobal import *
+from direct.directnotify.DirectNotifyGlobal import directNotify
+from pandac.PandaModules import *
+from direct.actor import Actor
 from pirates.uberdog.UberDogGlobals import InventoryType
+from pirates.effects.DaggerProjectile import DaggerProjectile
 from pirates.effects.CameraShaker import CameraShaker
 from pirates.effects.SmokeCloud import SmokeCloud
 from pirates.effects.ThrowDirt import ThrowDirt
@@ -14,16 +14,27 @@ from pirates.effects.ShockwaveRing import ShockwaveRing
 from pirates.effects.DustRing import DustRing
 from pirates.effects.WindBlurCone import WindBlurCone
 from pirates.effects.VenomSpitProjectile import VenomSpitProjectile
+from pirates.effects.HomingMissile import HomingMissile
 from pirates.effects.DaggerProjectile import DaggerProjectile
+from pirates.effects.WispSpiral import WispSpiral
+from pirates.effects.AttuneSmoke import AttuneSmoke
+from pirates.effects.MusketSmoke import MusketSmoke
+from pirates.effects.MusketFlame import MusketFlame
 from pirates.effects.PistolSmoke import PistolSmoke
 from pirates.effects.PistolFlame import PistolFlame
+from pirates.effects.BeamEffect import BeamEffect
 from pirates.effects.SoulHarvest import SoulHarvest
 from pirates.effects.DomeExplosion import DomeExplosion
 from pirates.effects.DarkPortal import DarkPortal
+from pirates.effects.UnholyFlare import UnholyFlare
+from pirates.effects.NovaStar import NovaStar
 from pirates.effects.HomingMissile import HomingMissile
+from pirates.effects.DarkStar import DarkStar
 from pirates.effects.Pestilence import Pestilence
 from pirates.effects.VoodooProjectile import VoodooProjectile
 from pirates.effects.FlamingSkull import FlamingSkull
+from pirates.effects.JollySoulDrain import JollySoulDrain
+from pirates.effects.VoodooFire import VoodooFire
 from pirates.effects.WitherCharge import WitherCharge
 from pirates.effects.EvilRingEffect import EvilRingEffect
 from pirates.effects.VoodooPestilence import VoodooPestilence
@@ -41,6 +52,7 @@ from pirates.effects.WindCharge import WindCharge
 from pirates.effects.DesolationChargeSmoke import DesolationChargeSmoke
 from pirates.effects.SoulHarvest2 import SoulHarvest2
 from pirates.effects.VoodooStaffFire import VoodooStaffFire
+from pirates.effects.MuzzleFlash import MuzzleFlash
 from pirates.effects.SpectralTrail import SpectralTrail
 from pirates.effects.SpectralSmoke import SpectralSmoke
 from pirates.effects.HealSparks import HealSparks
@@ -58,6 +70,7 @@ from pirates.effects.HealBlast import HealBlast
 from pirates.effects.PulsingGlow import PulsingGlow
 from pirates.effects.ConeRays import ConeRays
 from pirates.effects.VoodooAuraHeal import VoodooAuraHeal
+from pirates.effects.VoodooAuraDisc import VoodooAuraDisc
 from pirates.effects.VoodooGroundAura import VoodooGroundAura
 from pirates.effects.HitPulse import HitPulse
 from pirates.effects.SimpleSmokeCloud import SimpleSmokeCloud
@@ -66,7 +79,9 @@ from GrenadeProjectile import GrenadeProjectile
 from pirates.piratesbase import PLocalizer
 from pirates.inventory import ItemGlobals
 from pirates.battle.EnemySkills import *
-
+import random
+import copy
+from direct.showbase.InputStateGlobal import inputState
 MISTIMEDLIST = [
     WeaponGlobals.RESULT_MISTIMED_MISS,
     WeaponGlobals.RESULT_MISTIMED_HIT]

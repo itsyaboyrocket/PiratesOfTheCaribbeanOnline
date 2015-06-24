@@ -1,14 +1,17 @@
-import random
+# File: D (Python 2.4)
 
 from pandac.PandaModules import *
 from direct.showbase.DirectObject import DirectObject
 from direct.distributed import DistributedObject
 from direct.interval.IntervalGlobal import *
-
+from direct.task import Task
+from direct.gui.DirectGui import *
 from pirates.audio import SoundGlobals
+from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import EmoteGlobals
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.ai import HolidayGlobals
+from pirates.world.LocationConstants import LocationIds
 from pirates.piratesbase import PLocalizer
 from pirates.effects.DarkShipFog import DarkShipFog
 from pirates.effects.LightningStrike import LightningStrike
@@ -16,7 +19,8 @@ from pirates.invasion import InvasionGlobals
 from pirates.map.MinimapObject import GridMinimapObject
 from pirates.piratesgui.GameOptions import Options
 from pirates.effects.PooledEffect import PooledEffect
-
+import copy
+import random
 
 class DistributedInvasionObject(DistributedObject.DistributedObject):
     notify = directNotify.newCategory('DistributedInvasionObject')

@@ -1,16 +1,18 @@
-import time
-
-from direct.gui.DirectGui import *
-from direct.interval.IntervalGlobal import *
+# File: P (Python 2.4)
 
 from otp.otpbase import OTPTimer
+from direct.showbase.ShowBaseGlobal import *
+from direct.task import Task
+from direct.gui.DirectGui import *
+from direct.interval.IntervalGlobal import *
+from pandac.PandaModules import *
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import GuiButton
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-
+import time
 
 class PiratesTimer(OTPTimer.OTPTimer):
     BGImage = None

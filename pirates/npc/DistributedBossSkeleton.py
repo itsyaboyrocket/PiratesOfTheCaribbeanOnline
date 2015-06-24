@@ -1,9 +1,10 @@
-from direct.directnotify import DirectNotifyGlobal
+# File: D (Python 2.4)
 
+from pandac.PandaModules import Vec4
+from direct.directnotify import DirectNotifyGlobal
 from pirates.npc.DistributedNPCSkeleton import DistributedNPCSkeleton
 from pirates.pirate import AvatarTypes
 from pirates.npc.Boss import Boss
-
 
 class DistributedBossSkeleton(DistributedNPCSkeleton, Boss):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedBossSkeleton')

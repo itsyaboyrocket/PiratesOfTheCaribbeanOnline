@@ -1,11 +1,24 @@
+# File: S (Python 2.4)
+
 from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
 from direct.directnotify import DirectNotifyGlobal
-
 from pirates.piratesgui import InventoryPage
-from pirates.uberdog.UberDogGlobals import InventoryType
+from pirates.reputation import ReputationGlobals
+from pirates.uberdog.UberDogGlobals import InventoryCategory, InventoryType, InventoryId
 from pirates.piratesbase import PLocalizer
+from pirates.piratesbase import PiratesGlobals
+from pirates.piratesgui import RadialMenu
 from pirates.piratesgui.ReputationMeter import ReputationMeter
-
+from pirates.piratesgui import SkillpageGuiButton
+from pirates.piratesgui import PiratesGuiGlobals
+from pirates.battle import WeaponGlobals
+from pirates.piratesbase import Freebooter
+from pirates.piratesgui.SkillButton import SkillButton
+from pirates.piratesgui import PDialog
+from otp.otpgui import OTPDialog
+from pirates.inventory import ItemGlobals
 MAX_REP = 6
 
 class SkillPage(InventoryPage.InventoryPage):

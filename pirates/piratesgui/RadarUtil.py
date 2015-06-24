@@ -1,7 +1,7 @@
-
+# File: R (Python 2.4)
 
 from direct.gui.DirectGui import *
-
+from pandac.PandaModules import *
 
 class RadarUtil(DirectFrame):
 

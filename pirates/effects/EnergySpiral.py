@@ -1,9 +1,11 @@
-from direct.interval.IntervalGlobal import *
+# File: E (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
 from otp.otpbase import OTPRender
 from EffectController import EffectController
 from PooledEffect import PooledEffect
-
+import random
 
 class EnergySpiral(PooledEffect, EffectController):
     

@@ -1,12 +1,15 @@
-from tkFileDialog import *
+# File: S (Python 2.4)
 
+from pandac.PandaModules import *
 from direct.tkwidgets.AppShell import *
 from direct.showbase.TkGlobal import *
+from tkFileDialog import *
+from tkSimpleDialog import askstring
+import os
 from direct.tkwidgets import Dial
 from direct.tkwidgets import Floater
 from direct.tkwidgets import Slider
 from direct.tkwidgets import VectorWidgets
-
 
 class SeaPatchPanel(AppShell):
     appversion = '1.0'

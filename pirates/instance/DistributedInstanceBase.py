@@ -1,18 +1,20 @@
-import random
+# File: D (Python 2.4)
 
 from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
 from direct.distributed.DistributedObject import DistributedObject
-
 from pirates.world.WorldNode import WorldNode
 from pirates.world.DistributedGameArea import DistributedGameArea
 from pirates.world.DistributedOceanGrid import DistributedOceanGrid
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
+from direct.interval.IntervalGlobal import *
 from pirates.uberdog import DistributedInventoryBase
+from pirates.cutscene import Cutscene
 from pirates.battle import EnemyGlobals
+import random
 from pirates.leveleditor import ObjectList
-
 
 class DistributedInstanceBase(DistributedObject, WorldNode):
     notify = directNotify.newCategory('DistributedInstanceBase')

@@ -1,15 +1,17 @@
-from direct.gui.DirectGui import *
+# File: I (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.makeapirate import ClothingGlobals
 from pirates.pirate import HumanDNA
 from pirates.inventory import ItemGlobals
 from pirates.inventory import ItemConstants
+from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import Freebooter
 from pirates.inventory.ItemConstants import DYE_COLORS
 from pirates.inventory import InventoryUIItem
-
 
 class InventoryUIClothingItem(InventoryUIItem.InventoryUIItem):
 

@@ -1,9 +1,29 @@
-from direct.directnotify import DirectNotifyGlobal
+# File: D (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.showbase.DirectObject import *
+from direct.interval.IntervalGlobal import *
+from direct.distributed import ClockDelta
+from direct.directnotify import DirectNotifyGlobal
 from pirates.distributed import DistributedInteractive
+from pirates.piratesbase import PiratesGlobals
+from pirates.effects.CannonSplash import CannonSplash
+from pirates.effects.DirtClod import DirtClod
+from pirates.effects.CannonExplosion import CannonExplosion
+from pirates.effects.DustCloud import DustCloud
+from pirates.effects.SmokeCloud import SmokeCloud
+from pirates.effects.RockShower import RockShower
+from pirates.effects.ShipSplintersA import ShipSplintersA
+from pirates.effects.DustRing import DustRing
+from pirates.effects.Fire import Fire
+from pirates.effects.BlackSmoke import BlackSmoke
+from pirates.effects.ExplosionFlip import ExplosionFlip
+from pirates.effects.ShockwaveRing import ShockwaveRing
+from pirates.effects.CameraShaker import CameraShaker
+from pirates.ship import ShipGlobals
+from pirates.uberdog.UberDogGlobals import InventoryType
 import WeaponGlobals
 from WeaponBase import WeaponBase
-
 
 class DistributedWeapon(WeaponBase, DistributedInteractive.DistributedInteractive):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedWeapon')

@@ -1,8 +1,9 @@
+# File: D (Python 2.4)
+
 from direct.distributed.DistributedObject import DistributedObject
-from direct.directnotify.DirectNotifyGlobal import directNotify
-
+from pirates.piratesbase import PiratesGlobals
 from pirates.world import WorldGlobals
-
+from direct.directnotify.DirectNotifyGlobal import directNotify
 
 class DistributedLocationManager(DistributedObject):
     notify = directNotify.newCategory('LocationManager')

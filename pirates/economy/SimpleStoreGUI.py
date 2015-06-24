@@ -1,5 +1,46 @@
-from pirates.economy.SimpleStoreItem import *
+# File: S (Python 2.4)
 
+from direct.directnotify.DirectNotifyGlobal import directNotify
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from pirates.ai import HolidayGlobals
+from pirates.battle import WeaponGlobals
+from pirates.economy import EconomyGlobals
+from pirates.economy.EconomyGlobals import ItemType
+from pirates.holiday import CatalogHoliday
+from pirates.piratesgui import PiratesGuiGlobals
+from pirates.piratesgui import GuiPanel, RedeemCodeGUI
+from pirates.piratesgui import GuiButton, DialogButton
+from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import PLocalizer
+from pirates.piratesgui import GuiButton
+from pirates.pirate import DynamicHuman
+from pirates.pirate import Human
+from pirates.pirate import HumanDNA
+from pirates.piratesgui.TabBar import LeftTab, TabBar
+from direct.interval.IntervalGlobal import *
+from pirates.makeapirate import ClothingGlobals
+from pirates.makeapirate import TattooGlobals
+from pirates.piratesgui.BorderFrame import BorderFrame
+from pirates.uberdog.UberDogGlobals import InventoryId, InventoryType
+from otp.otpbase import OTPGlobals
+from otp.otpgui import OTPDialog
+from pirates.piratesgui import PDialog
+from direct.task import Task
+from pirates.piratesbase import Freebooter
+from pirates.piratesgui.InventoryItemGui import InventoryItemGui
+from pirates.inventory.InventoryGlobals import *
+from pirates.uberdog.TradableInventoryBase import InvItem
+from pirates.inventory import ItemGlobals, DropGlobals
+from pirates.inventory import ItemConstants
+from pirates.inventory import InventoryUIStoreContainer
+from pirates.pirate import AvatarTypes
+from pirates.economy.SimpleStoreItem import *
+import random
+from math import sin
+from math import cos
+from math import pi
+import time
 
 class SimpleStoreTab(LeftTab):
 

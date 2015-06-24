@@ -1,8 +1,11 @@
-import random
+# File: D (Python 2.4)
 
+from pandac.PandaModules import *
 from direct.showbase.DirectObject import *
 from direct.interval.IntervalGlobal import *
-
+from direct.actor import Actor
+from pirates.piratesbase import PiratesGlobals
+import random
 
 class DarkMaelstrom(DirectObject, NodePath):
 

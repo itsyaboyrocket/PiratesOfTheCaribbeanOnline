@@ -1,10 +1,12 @@
-import random
-
-from direct.interval.IntervalGlobal import Sequence, Func, Wait, Parallel
+# File: P (Python 2.4)
 
 from MinigameFSM import MinigameFSM
+from direct.interval.IntervalGlobal import Sequence, Func, Wait, Parallel
+from direct.gui.DirectGui import *
 from pirates.audio import SoundGlobals
-
+from pirates.piratesgui import GuiManager
+import time
+import random
 
 class PotionGameFSM(MinigameFSM):
     Sfxs = None

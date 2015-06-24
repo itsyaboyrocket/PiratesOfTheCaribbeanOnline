@@ -1,3 +1,6 @@
+# File: Q (Python 2.4)
+
+from pandac.PandaModules import *
 mainStoryTier = [
     'MainStory',
     'Chapter 1',

@@ -1,11 +1,15 @@
-from direct.interval.IntervalGlobal import *
+# File: F (Python 2.4)
 
 import Weapon
+import WeaponGlobals
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
+from direct.interval.IntervalGlobal import *
+from pandac.PandaModules import *
 from pirates.uberdog.UberDogGlobals import InventoryType
+from pirates.piratesbase import PLocalizer
 from pirates.effects import PolyTrail
-
+import random
 
 class FishingRod(Weapon.Weapon):
     modelTypes = [

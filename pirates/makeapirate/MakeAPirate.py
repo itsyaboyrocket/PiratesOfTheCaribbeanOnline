@@ -1,20 +1,24 @@
-import random
-import copy
+# File: M (Python 2.4)
 
 from direct.showbase.DirectObject import DirectObject
 from direct.directnotify import DirectNotifyGlobal
+from direct.gui import DirectGuiGlobals
 from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from direct.fsm import FSM
 from direct.fsm import StateData
 from direct.fsm.ClassicFSM import ClassicFSM
 from direct.fsm.State import State
 from direct.task import Task
 from direct.interval.IntervalGlobal import *
-
+from direct.distributed import PyDatagram
 from otp.distributed import PotentialAvatar
 from otp.otpgui import OTPDialog
 from otp.otpbase import OTPGlobals
+from pirates.audio import SoundGlobals
 from pirates.piratesgui import PDialog
+from pirates.pirate import Pirate
+from pirates.pirate import LocalPirate
 from pirates.pirate import Human
 from pirates.pirate import HumanDNA
 from pirates.npc import Skeleton
@@ -30,6 +34,9 @@ from pirates.audio.SoundGlobals import loadSfx
 from MakeAPirateGlobals import *
 from pirates.leveleditor import CustomAnims
 from pirates.inventory import ItemGlobals
+import random
+import PirateMale
+import PirateFemale
 import GenderGUI
 import BodyGUI
 import HeadGUI
@@ -41,7 +48,7 @@ import NameGUI
 import NPCGUI
 from CharGuiBase import CharGuiSlider
 from pirates.pirate import BodyDefs
-
+import copy
 MakeAPiratePageIcons = {
     'Body': 'chargui_body',
     'Head': 'chargui_head',

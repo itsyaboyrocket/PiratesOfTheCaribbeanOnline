@@ -1,8 +1,8 @@
-from direct.directnotify.DirectNotifyGlobal import directNotify
+# File: A (Python 2.4)
 
 from AITrade import AITrade
-from pirates.uberdog.UberDogGlobals import GiftOrigin, InventoryId
-
+from pirates.uberdog.UberDogGlobals import GiftOrigin, InventoryCategory, InventoryType, InventoryId
+from direct.directnotify.DirectNotifyGlobal import directNotify
 
 class AIMagicWordTrade(AITrade):
     notify = directNotify.newCategory('AIMagicWordTrade')

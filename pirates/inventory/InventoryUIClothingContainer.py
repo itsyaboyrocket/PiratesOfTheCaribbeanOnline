@@ -1,12 +1,17 @@
-from direct.gui.DirectGui import *
+# File: I (Python 2.4)
 
-from pirates.piratesgui import PiratesGuiGlobals
+from direct.gui.DirectGui import *
+from direct.interval.IntervalGlobal import *
+from pandac.PandaModules import *
+from pirates.piratesgui import GuiPanel, PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
+from otp.otpbase import OTPLocalizer
+from pirates.inventory.InventoryUIGlobals import *
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.inventory.InventoryGlobals import Locations
+from pirates.inventory import ItemGlobals
 from pirates.inventory import InventoryUISlotContainer
-
 
 class InventoryUIClothingContainer(InventoryUISlotContainer.InventoryUISlotContainer):
     

@@ -1,15 +1,20 @@
-from pandac.PandaModules import NodePath
-from direct.gui.OnscreenImage import OnscreenImage
+# File: L (Python 2.4)
 
+import math
+from pandac.PandaModules import NodePath
 from panda3d.core import TextNode
 from pirates.piratesgui.GuiButton import GuiButton
+from direct.gui.DirectGui import *
+from direct.gui.OnscreenImage import OnscreenImage
+from pandac.PandaModules import TransparencyAttrib
 import FishingGlobals
+from pirates.uberdog.UberDogGlobals import InventoryType
+from pirates.piratesgui import PiratesGuiGlobals
 from pirates.world.LocationConstants import LocationIds
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import CollectionMap
 from pirates.piratesgui import GuiPanel
-
 
 class LegendaryTellGUI(GuiPanel.GuiPanel):
     

@@ -1,4 +1,4 @@
-
+# File: R (Python 2.4)
 
 from pirates.uberdog.UberDogGlobals import InventoryType
 __levelUpStats = {

@@ -1,9 +1,9 @@
-from direct.directnotify import DirectNotifyGlobal
+# File: D (Python 2.4)
 
+from direct.directnotify import DirectNotifyGlobal
 from pirates.distributed import DistributedInteractive
 from pirates.distributed import DistributedTargetableObject
 from pirates.battle import WeaponBase
-
 
 class DistributedBattleable(DistributedInteractive.DistributedInteractive, DistributedTargetableObject.DistributedTargetableObject, WeaponBase.WeaponBase):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedInteractive')

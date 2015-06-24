@@ -1,12 +1,16 @@
+# File: T (Python 2.4)
+
+from pandac.PandaModules import *
+from direct.task import Task
 from direct.gui.DirectGui import *
 from direct.interval.IntervalGlobal import *
-
 from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import PLocalizer
+from pirates.piratesgui import GuiTray
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.BorderFrame import BorderFrame
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-
 
 class TreasureMapRulesPanel:
     

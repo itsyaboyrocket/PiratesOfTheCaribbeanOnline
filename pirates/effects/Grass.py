@@ -1,12 +1,18 @@
+# File: G (Python 2.4)
+
+from pandac.PandaModules import *
+from direct.showbase.DirectObject import *
+from direct.task import Task
+from direct.actor import Actor
+from direct.interval.IntervalGlobal import *
+from otp.otpbase import OTPGlobals
+from pirates.pirate import AvatarTypes
+from pirates.creature import Creature
+from pirates.piratesbase import PiratesGlobals
 import pickle
 import random
 import math
 import os
-
-from direct.showbase.DirectObject import *
-from direct.task import Task
-from direct.actor import Actor
-
 TWO_PI = math.pi * 2.0
 GrassProfiles = {
     'models/islands/bilgewater_zero': 'bilgewaterGrass.dat',

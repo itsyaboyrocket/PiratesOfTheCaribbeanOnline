@@ -1,16 +1,39 @@
-import random
+# File: D (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
 from pirates.effects.ProjectileEffect import ProjectileEffect
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesbase import PiratesGlobals
+from pirates.effects.SmokeCloud import SmokeCloud
+from pirates.effects.ShipSplintersA import ShipSplintersA
+from pirates.effects.LightSmoke import LightSmoke
 from pirates.effects.ExplosionFlip import ExplosionFlip
+from pirates.effects.ShockwaveRing import ShockwaveRing
 from pirates.effects.CameraShaker import CameraShaker
+from pirates.effects.Fire import Fire
+from pirates.effects.MuzzleFlash import MuzzleFlash
+from pirates.effects.DustRing import DustRing
+from pirates.effects.Sparks import Sparks
+from pirates.effects.SmokeBomb import SmokeBomb
+from pirates.effects.SmokePillar import SmokePillar
 from pirates.effects.FlamingDebris import FlamingDebris
+from pirates.effects.ShipDebris import ShipDebris
+from pirates.effects.RockDebris import RockDebris
 from pirates.effects.Explosion import Explosion
+from pirates.effects.ExplosionTip import ExplosionTip
+from pirates.effects.LightningStrike import LightningStrike
+from pirates.effects.MuzzleFlame import MuzzleFlame
+from pirates.effects.SmallRockShower import SmallRockShower
 from pirates.effects.SimpleSmokeCloud import SimpleSmokeCloud
+from pirates.effects.FlashEffect import FlashEffect
+from pirates.effects.WaterMist import WaterMist
+from pirates.effects.EruptionSmoke import EruptionSmoke
 from pirates.effects.BulletEffect import BulletEffect
 from pirates.effects.FireStormRingEffect import FireStormRingEffect
-
+from pirates.audio import SoundGlobals
+from pirates.audio.SoundGlobals import loadSfx
+import random
 
 class DefenseCannonballProjectileEffect(ProjectileEffect):
     
@@ -20,6 +43,7 @@ class DefenseCannonballProjectileEffect(ProjectileEffect):
     
     def basicHitEffect(self, hitObject, pos, skillId, ammoSkillId):
         WeaponGlobals = WeaponGlobals
+        import pirates.battle
         if self.cr:
             attacker = self.cr.doId2do.get(self.attackerId)
             aoeRadius = self.cr.battleMgr.getModifiedAttackAreaRadius(attacker, skillId, ammoSkillId)

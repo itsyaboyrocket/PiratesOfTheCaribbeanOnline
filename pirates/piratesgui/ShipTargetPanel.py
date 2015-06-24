@@ -1,13 +1,17 @@
-from direct.gui.DirectGui import *
+# File: S (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from pirates.piratesgui import GuiTray
+from pirates.uberdog import UberDogGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.battle import EnemyGlobals
+from pirates.ship import ShipGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesTimer
+from pirates.piratesgui.GuiButton import GuiButton
 from pirates.piratesgui.ShipArmorGui import ShipArmorGui
-
 
 class ShipTargetPanel(GuiTray.GuiTray):
     Width = PiratesGuiGlobals.ShipTargetPanelWidth

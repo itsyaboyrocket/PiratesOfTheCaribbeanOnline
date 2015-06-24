@@ -1,11 +1,14 @@
-import types
+# File: G (Python 2.4)
 
+from pandac.PandaModules import *
+import types
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
+from pandac.PandaModules import ConfigVariable
 from pirates.uberdog import DistributedInventoryBase
-
+from otp.otpbase import OTPGlobals
 GAME_DURATION_SHORT = 0
 GAME_DURATION_MED = 1
 GAME_DURATION_LONG = 2

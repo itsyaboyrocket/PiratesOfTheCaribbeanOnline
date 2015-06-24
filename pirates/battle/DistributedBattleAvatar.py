@@ -1,35 +1,71 @@
+# File: D (Python 2.4)
+
+import math
 import random
 import types
-
+from direct.showbase.DirectObject import *
+from direct.interval.IntervalGlobal import LerpFunc, Sequence
 from direct.showbase.PythonUtil import lerp, clampScalar
 from direct.interval.IntervalGlobal import *
 from direct.distributed.ClockDelta import *
+from direct.directnotify.DirectNotifyGlobal import directNotify
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.fsm import FSM
+from direct.controls import BattleWalker
 from direct.distributed import DistributedSmoothNode
 from direct.showutil import Rope
 from direct.actor import Actor
 from direct.task import Task
 from direct.showbase.PythonUtil import report
-
 from otp.otpbase import OTPGlobals
 from pirates.piratesbase import TeamUtils
 from pirates.reputation.DistributedReputationAvatar import DistributedReputationAvatar
 from pirates.piratesbase import PiratesGlobals
 from pirates.battle import WeaponGlobals
 from pirates.minigame import PotionGlobals
+from pirates.battle import Pistol
 from pirates.movement import MotionFSM
+from pirates.pirate import Human
 from pirates.pirate import AvatarTypes
+from pirates.reputation import ReputationGlobals
+from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.economy.EconomyGlobals import *
+from pirates.reputation import ReputationGlobals
+from pirates.economy import EconomyGlobals
 from pirates.battle import BattleRandom
 from pirates.battle.WeaponBase import WeaponBase
 from pirates.battle import EnemyGlobals
 from pirates.battle import EnemySkills
 from pirates.effects.AttuneEffect import AttuneEffect
+from pirates.effects.SpectralSmoke import SpectralSmoke
 from pirates.effects.SmokeWisps import SmokeWisps
 from pirates.effects.Flame import Flame
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import Freebooter
 from pirates.inventory import ItemGlobals
 from pirates.piratesbase import EmoteGlobals
+from pirates.piratesgui import PiratesGuiGlobals
+from pirates.effects.CannonExplosion import CannonExplosion
+from pirates.effects.CannonSplash import CannonSplash
+from pirates.effects.DirtClod import DirtClod
+from pirates.effects.DustCloud import DustCloud
+from pirates.effects.SmokeCloud import SmokeCloud
+from pirates.effects.RockShower import RockShower
+from pirates.effects.ShipSplintersA import ShipSplintersA
+from pirates.effects.DustRing import DustRing
+from pirates.effects.BlackSmoke import BlackSmoke
+from pirates.effects.ExplosionFlip import ExplosionFlip
+from pirates.effects.ExplosionCloud import ExplosionCloud
+from pirates.effects.ShockwaveRing import ShockwaveRing
+from pirates.effects.CameraShaker import CameraShaker
+from pirates.effects.FireTrail import FireTrail
+from pirates.effects.Fire import Fire
+from pirates.effects.GreenBlood import GreenBlood
+from pirates.effects.HitFlashA import HitFlashA
+from pirates.effects.ShipDebris import ShipDebris
+from pirates.effects.WoodShards import WoodShards
+from pirates.effects.MuzzleFlash import MuzzleFlash
 from pirates.effects.GraveShackles import GraveShackles
 from pirates.effects.CameraShaker import CameraShaker
 from pirates.effects.PoisonEffect import PoisonEffect
@@ -46,9 +82,11 @@ from pirates.effects.JRDeath import JRDeath
 from pirates.effects.JRDeathBlast import JRDeathBlast
 from pirates.effects.HealRays import HealRays
 from pirates.effects.HealSparks import HealSparks
+from pirates.effects import PolyTrail
 from pirates.effects import TextEffect
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
+from otp.otpbase import OTPRender
 from pirates.map.MinimapObject import GridMinimapObject
 from pirates.battle.Teamable import Teamable
 from pirates.battle.PotionStatusEffectManager import PotionStatusEffectManager
@@ -62,9 +100,9 @@ from pirates.effects.FlashEffect import FlashEffect
 from pirates.effects.PulseEffect import PulseEffect
 from pirates.effects.GhostGlowShadow import GhostGlowShadow
 from pirates.effects.ProtectionDome import ProtectionDome
-
 if base.config.GetBool('want-pstats', 0):
-    pass
+    import profile
+    import pstats
 
 
 class DistributedBattleAvatar(DistributedReputationAvatar, WeaponBase, Teamable):
@@ -1855,6 +1893,7 @@ class DistributedBattleAvatar(DistributedReputationAvatar, WeaponBase, Teamable)
             return Sequence()
 
         Biped = Biped
+        import pirates.pirate.Biped
         if isinstance(self, Biped):
             delay = {
                 'death': 0.80000000000000004,

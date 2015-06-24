@@ -1,3 +1,4 @@
+from pandac.PandaModules import *
 loadPrcFile("config/general.prc")
 import PiratesPreloader
 print 'PiratesStart: Starting the game.'
@@ -8,7 +9,10 @@ class game:
     process = 'client'
 
 __builtin__.game = game()
+import time
+import os
 import sys
+import random
 import __builtin__
 import gc
 gc.disable()
@@ -26,6 +30,7 @@ DirectGuiGlobals.setDefaultFontFunc(PiratesGlobals.getInterfaceFont)
 launcher.setPandaErrorCode(7)
 import PiratesBase
 PiratesBase.PiratesBase()
+from direct.showbase.ShowBaseGlobal import *
 if base.config.GetBool('want-preloader', 0):
     base.preloader = PiratesPreloader.PiratesPreloader()
 
@@ -55,6 +60,7 @@ from pirates.distributed import PiratesClientRepository
 cr = PiratesClientRepository.PiratesClientRepository(serverVersion, launcher)
 base.initNametagGlobals()
 base.startShow(cr)
+from otp.distributed import OtpDoGlobals
 from pirates.piratesbase import UserFunnel
 UserFunnel.logSubmit(1, 'CLIENT_OPENS')
 UserFunnel.logSubmit(0, 'CLIENT_OPENS')

@@ -1,8 +1,7 @@
-import os
-
+from pandac.PandaModules import *
 from direct.directnotify.DirectNotifyGlobal import directNotify
-
 from otp.launcher.LauncherBase import LauncherBase
+import os
 
 
 class PiratesOnlineLauncher(LauncherBase):

@@ -1,9 +1,16 @@
-from direct.gui.DirectGui import *
+# File: B (Python 2.4)
 
+from direct.gui.DirectGui import *
+from direct.interval.IntervalGlobal import *
+from pandac.PandaModules import *
+from pirates.piratesbase import PiratesGlobals
+from pirates.piratesgui import PiratesGuiGlobals
+from pirates.piratesgui.BorderFrame import BorderFrame
 from pirates.piratesgui.GuiButton import GuiButton
+from pirates.piratesbase import PLocalizer
 from pirates.quest.QuestConstants import NPCIds
 from pirates.quest import QuestLadderDB
-
+from direct.directnotify import DirectNotifyGlobal
 
 class BlackPearlCrew(DirectFrame):
     crewData = [

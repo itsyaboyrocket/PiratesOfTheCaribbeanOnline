@@ -1,13 +1,18 @@
-import random
+# File: R (Python 2.4)
 
+import math
 from pandac.PandaModules import MouseButton
+from pandac.PandaModules import ColorBlendAttrib
+from direct.interval.IntervalGlobal import Sequence, Func, LerpScaleInterval
+from direct.gui.DirectGui import DirectButton, DirectLabel, DGG
+from direct.task import Task
 from direct.fsm import FSM
 from pandac.PandaModules import TransformState
 from pandac.PandaModules import Texture
 from pandac.PandaModules import TextureStage
-
+from direct.interval.IntervalGlobal import *
 from pirates.piratesgui.GuiPanel import *
-
+import random
 _activePosition = 0.5
 
 class RepairLeak(DirectButton, FSM.FSM):

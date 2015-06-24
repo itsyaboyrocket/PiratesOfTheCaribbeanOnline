@@ -1,7 +1,9 @@
-from direct.distributed import DistributedNodeAI
-
+from otp.ai.AIBaseGlobal import *
 from otp.otpbase import OTPGlobals
-
+from direct.fsm import ClassicFSM
+from direct.fsm import State
+from direct.distributed import DistributedNodeAI
+from direct.task import Task
 
 class DistributedAvatarAI(DistributedNodeAI.DistributedNodeAI):
 

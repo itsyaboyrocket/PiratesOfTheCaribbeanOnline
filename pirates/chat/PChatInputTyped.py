@@ -1,8 +1,10 @@
 from direct.fsm import FSM
+from otp.otpbase import OTPGlobals
+import sys
 from direct.directnotify import DirectNotifyGlobal
 from direct.gui.DirectGui import *
-
-from otp.otpbase import OTPGlobals
+from pandac.PandaModules import *
+from otp.otpbase import OTPLocalizer
 
 
 class PChatInputTyped(FSM.FSM, DirectEntry):

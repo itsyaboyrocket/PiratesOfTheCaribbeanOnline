@@ -1,8 +1,12 @@
+# File: D (Python 2.4)
+
+from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 from direct.interval.ProjectileInterval import *
-from direct.distributed.DistributedObject import DistributedObject
-
+from direct.directnotify import DirectNotifyGlobal
+from direct.task.Task import Task
 from pirates.piratesbase import PLocalizer
+from pirates.battle.CannonballProjectile import CannonballProjectile
 from pirates.piratesbase import PiratesGlobals
 from pirates.minigame import CannonDefenseGlobals, DistributedDefendWorld
 from pirates.effects.SimpleSmokeCloud import SimpleSmokeCloud
@@ -10,7 +14,8 @@ from pirates.effects.FireTrail import FireTrail
 from pirates.effects.FireballHit import FireballHit
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.audio import SoundGlobals
-
+import random
+from direct.distributed.DistributedObject import DistributedObject
 
 class DistributedFlamingBarrel(DistributedObject):
     

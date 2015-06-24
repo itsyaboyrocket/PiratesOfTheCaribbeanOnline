@@ -1,7 +1,7 @@
+# File: B (Python 2.4)
+
 from direct.directnotify import DirectNotifyGlobal
-
 from pirates.movement.AnimationMixer import AnimationMixer
-
 
 class BipedAnimationMixer(AnimationMixer):
     notify = DirectNotifyGlobal.directNotify.newCategory('BipedAnimationMixer')

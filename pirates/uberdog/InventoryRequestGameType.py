@@ -1,4 +1,4 @@
-
+# File: I (Python 2.4)
 
 from pirates.uberdog.InventoryRequestBase import InventoryRequestBase
 from pirates.uberdog.DistributedInventoryBase import DistributedInventoryBase

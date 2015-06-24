@@ -1,7 +1,11 @@
+# File: S (Python 2.4)
+
 from direct.gui.DirectGui import *
-
+from pandac.PandaModules import *
+from pirates.piratesbase import PiratesGlobals
+from pirates.battle import WeaponGlobals
+from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import BuffIcon
-
 
 class StatusEffectsPanel(DirectFrame):
 

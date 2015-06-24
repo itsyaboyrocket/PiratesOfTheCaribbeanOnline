@@ -1,8 +1,13 @@
-from direct.gui.DirectGui import *
-from direct.interval.IntervalGlobal import *
+# File: Q (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
+from pirates.distributed import InteractGlobals
+from pirates.quest import QuestDB, QuestLadderDB, QuestReward
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import PiratesGlobals
+from pirates.piratesgui import GuiPanel
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.reputation import ReputationGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
@@ -11,7 +16,7 @@ from pirates.piratesgui import GameGui
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.inventory import InventoryUIRewardsContainer
-
+from pirates.inventory import ItemGlobals
 tpMgr = TextPropertiesManager.getGlobalPtr()
 questRewardComplete = TextProperties()
 questRewardComplete.setTextColor(0.29999999999999999, 0.69999999999999996, 0.25, 1)

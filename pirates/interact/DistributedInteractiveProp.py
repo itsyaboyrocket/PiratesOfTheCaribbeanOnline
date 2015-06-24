@@ -1,23 +1,25 @@
-import re
-import random
-import types
+# File: D (Python 2.4)
 
+from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import *
 from direct.actor import Actor
+from direct.interval.IntervalGlobal import ActorInterval
 from direct.distributed.ClockDelta import globalClockDelta
-
+import re
+import random
+import types
 from pirates.distributed import DistributedInteractive
 from pirates.distributed import DistributedTargetableObject
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
+from pirates.interact import InteractiveBase
 from pirates.pirate import BattleNPCGameFSM
 from pirates.pirate import AvatarType
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.battle import WeaponGlobals
 from pirates.leveleditor import CustomAnims
 from pirates.interact import InteractivePropBase
-
 
 class DistributedInteractiveProp(DistributedInteractive.DistributedInteractive, DistributedTargetableObject.DistributedTargetableObject, Actor.Actor, InteractivePropBase.InteractivePropBase):
     DiskUseColor = (1, 0, 0, 1)

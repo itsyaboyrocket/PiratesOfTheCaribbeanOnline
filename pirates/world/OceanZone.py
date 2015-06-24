@@ -1,4 +1,4 @@
-
+# File: O (Python 2.4)
 
 import random
 UNCHARTED_WATERS = 0

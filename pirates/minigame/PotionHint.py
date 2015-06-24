@@ -1,9 +1,9 @@
-
+# File: P (Python 2.4)
 
 from pirates.piratesgui.GuiPanel import *
 from pirates.piratesgui import GuiButton
 from pirates.piratesbase import PLocalizer
-from pirates.uberdog.UberDogGlobals import InventoryType
+from pirates.uberdog.UberDogGlobals import InventoryType, InventoryCategory
 from pirates.piratesgui import CheckButton
 
 class XButton(GuiButton.GuiButton):

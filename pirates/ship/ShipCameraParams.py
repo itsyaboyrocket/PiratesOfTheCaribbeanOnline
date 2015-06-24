@@ -1,8 +1,8 @@
-from pandac.PandaModules import Vec3
+# File: S (Python 2.4)
 
+from pandac.PandaModules import Vec3
 from pirates.pirate import ShipCamera
 from pirates.ship import ShipGlobals
-
 CamParams = ShipCamera.ShipCamera.ParamSet
 ShipModelClass2CameraParams = {
     ShipGlobals.INTERCEPTORL1: CamParams(idealDistance = 270.0, autoFaceForward = True, minDistance = 100.0, maxDistance = 535.0, lookAtOffset = Vec3(0, 0, 40)),

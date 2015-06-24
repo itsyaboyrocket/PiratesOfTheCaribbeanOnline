@@ -1,13 +1,15 @@
-from direct.gui.DirectGui import *
-from direct.distributed.ClockDelta import *
+# File: B (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.distributed.ClockDelta import *
+from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.battle import WeaponGlobals
 from pirates.minigame import PotionGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui.DialMeter import DialMeter
 from pirates.piratesgui.BorderFrame import BorderFrame
-
 buffTable = {
     WeaponGlobals.C_CORRUPTION: ('buff_curse', PLocalizer.BuffCorruption),
     WeaponGlobals.C_POISON: ('buff_poison', PLocalizer.BuffPoison),

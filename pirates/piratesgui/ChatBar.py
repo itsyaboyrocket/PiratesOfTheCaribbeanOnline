@@ -1,12 +1,14 @@
+# File: C (Python 2.4)
+
 from direct.gui.DirectGui import *
 from direct.interval.IntervalGlobal import *
 from direct.fsm.FSM import FSM
-
+from direct.showbase.PythonUtil import Functor
+from pandac.PandaModules import *
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.TabBar import TopTab, TabBar
-
 
 class ChatTab(TopTab):
 

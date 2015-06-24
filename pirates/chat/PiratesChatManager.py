@@ -1,18 +1,26 @@
+import sys
+import string
+from direct.showbase import DirectObject
+from direct.showbase.PythonUtil import traceFunctionCall
 from direct.directnotify import DirectNotifyGlobal
 from direct.gui.DirectGui import *
-
+from pandac.PandaModules import *
 from otp.otpbase import OTPLocalizer
+from otp.chat import ChatManager
 from otp.otpgui import OTPDialog
+from otp.otpbase import OTPGlobals
 from otp.chat import ChatManagerV2
+from otp.chat.ChatGlobals import *
 from pirates.piratesbase import PLocalizer
+from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import PDialog
 from pirates.piratesgui import GuiPanel
 from pirates.piratesgui import ChatPanel
 from PChatInputSpeedChat import PChatInputSpeedChat
 from PChatInputEmote import PChatInputEmote
+from PChatInputTyped import PChatInputTyped
 from PChatInputWhiteList import PChatInputWhiteList
 from pirates.uberdog.UberDogGlobals import InventoryType
-
 
 class PiratesChatManager(ChatManagerV2.ChatManagerV2):
     notify = DirectNotifyGlobal.directNotify.newCategory('PiratesChatManager')

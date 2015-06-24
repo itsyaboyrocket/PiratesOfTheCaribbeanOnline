@@ -1,4 +1,25 @@
+# File: E (Python 2.4)
+
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
+from direct.showbase.DirectObject import *
+from pirates.mockup import PythonNodePath
 from pirates.effects import DynamicLight
+from pirates.creature import Creature
+from pirates.creature.Alligator import Alligator
+from pirates.creature.Bat import Bat
+from pirates.creature.Chicken import Chicken
+from pirates.creature.Crab import Crab
+from pirates.creature.Dog import Dog
+from pirates.creature.FlyTrap import FlyTrap
+from pirates.creature.Monkey import Monkey
+from pirates.creature.Pig import Pig
+from pirates.creature.Rooster import Rooster
+from pirates.creature.Scorpion import Scorpion
+from pirates.creature.Seagull import Seagull
+from pirates.creature.Raven import Raven
+from pirates.creature.Stump import Stump
+from pirates.creature.Wasp import Wasp
 from pirates.npc import BomberZombie
 from pirates.battle import EnemyGlobals
 from pirates.piratesbase import PiratesGlobals

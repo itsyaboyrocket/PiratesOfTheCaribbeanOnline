@@ -1,14 +1,17 @@
-from direct.gui.DirectGui import *
+# File: C (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from pirates.piratesgui import PiratesGuiGlobals
-from pirates.piratesbase import PLocalizer
+from pirates.piratesbase import PLocalizer, PiratesGlobals
+from pirates.piratesgui import GuiButton
+from pirates.piratesgui.CheckButton import *
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.inventory import ItemGlobals, InventoryGlobals
 from pirates.makeapirate import ClothingGlobals
 from pirates.piratesgui.CheckButton import *
 from pirates.inventory.InventoryGlobals import Locations
 from pirates.quest.QuestConstants import NPCIds
-
 
 class ClubheartsPortrait(DirectFrame):
     

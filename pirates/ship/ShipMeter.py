@@ -1,11 +1,21 @@
-import copy
+# File: S (Python 2.4)
 
+import copy
 from direct.interval.IntervalGlobal import *
 from direct.showbase.DirectObject import *
-
+from direct.gui.DirectGui import *
+from direct.task.Task import Task
+from pandac.PandaModules import *
 from pirates.ship import ShipGlobals
 from pirates.ship.DistributedPlayerSimpleShipOV import DistributedPlayerSimpleShipOV
-
+from pirates.piratesbase import PLocalizer
+from pirates.piratesgui import GuiTray
+from pirates.piratesbase import PiratesGlobals
+from pirates.piratesgui import GuiButton
+from pirates.piratesgui import PiratesTimer
+from pirates.piratesgui import StatusEffectsPanel
+from pirates.pvp import PVPGlobals
+from pirates.ship import ShipBlueprints
 HullDict = {
     ShipGlobals.WARSHIPL1: 'models/shipparts/warshipMeter',
     ShipGlobals.WARSHIPL2: 'models/shipparts/warshipMeter',

@@ -1,4 +1,4 @@
-
+# File: R (Python 2.4)
 
 RADAR_OBJ_TYPE_DEFAULT = 0
 RADAR_OBJ_TYPE_LANDMARK = 1

@@ -1,12 +1,14 @@
+# File: L (Python 2.4)
+
 from pandac.PandaModules import NodePath, Point3
+from panda3d.core import TextNode
+from direct.gui.DirectGui import DGG
+from pirates.piratesgui.GuiButton import GuiButton
 from direct.gui.DirectGui import *
 from direct.gui.OnscreenImage import OnscreenImage
 from pandac.PandaModules import TransparencyAttrib
 from direct.interval.IntervalGlobal import Sequence, Parallel, Wait, Func
 from direct.interval.LerpInterval import LerpHprInterval, LerpPosInterval, LerpColorScaleInterval, LerpScaleInterval
-
-from panda3d.core import TextNode
-from pirates.piratesgui.GuiButton import GuiButton
 import FishingGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
@@ -14,7 +16,6 @@ from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesgui import GuiPanel
 from pirates.piratesgui import PiratesGuiGlobals
 from BlendActor import BlendActor
-
 
 class LegendaryFishingGameGUI:
     

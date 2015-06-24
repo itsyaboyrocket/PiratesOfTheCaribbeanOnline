@@ -1,3 +1,8 @@
+# File: E (Python 2.4)
+
+from pandac.PandaModules import *
+from otp.otpbase.OTPGlobals import *
+from pirates.uberdog.UberDogGlobals import *
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.ship import ShipGlobals
 from pirates.world.LocationConstants import LocationIds

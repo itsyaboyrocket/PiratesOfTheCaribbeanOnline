@@ -1,9 +1,10 @@
-from direct.interval.IntervalGlobal import *
+# File: J (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
 from PooledEffect import PooledEffect
 from EffectController import EffectController
 from otp.otpbase import OTPRender
-
 
 class JRDeathBlast(PooledEffect, EffectController):
     

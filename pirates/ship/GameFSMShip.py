@@ -1,9 +1,10 @@
-import random
+# File: G (Python 2.4)
 
+import random
+from pandac.PandaModules import *
 from direct.fsm import FSM
 from direct.interval.IntervalGlobal import *
 from direct.showbase.PythonUtil import report
-
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.piratesbase import PiratesGlobals
@@ -11,7 +12,6 @@ from pirates.piratesbase import PLocalizer
 from pirates.effects.Explosion import Explosion
 from pirates.effects.ShipSplintersA import ShipSplintersA
 from pirates.effects.FlamingDebris import FlamingDebris
-
 
 class GameFSMShip(FSM.FSM):
     

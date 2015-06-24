@@ -1,12 +1,13 @@
+# File: H (Python 2.4)
+
 import random
-
-from direct.interval.IntervalGlobal import *
-
+from pandac.PandaModules import *
 from pirates.creature.DistributedCreature import DistributedCreature
 from pirates.creature.Monstrous import Monstrous
 from pirates.kraken.HolderGameFSM import HolderGameFSM
+from direct.interval.IntervalGlobal import *
+from pirates.piratesbase import PiratesGlobals
 from otp.otpbase import OTPRender
-
 
 class HolderTentacle(DistributedCreature, Monstrous):
     

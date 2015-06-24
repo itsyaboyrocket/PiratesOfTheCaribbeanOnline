@@ -1,22 +1,26 @@
+# File: D (Python 2.4)
+
 from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 from direct.interval.ProjectileInterval import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.task.Task import Task
-
 from pirates.battle.CannonballProjectile import CannonballProjectile
+from pirates.battle import WeaponGlobals
 from pirates.battle import WeaponConstants
 from pirates.piratesbase import PiratesGlobals
-from pirates.minigame import DistributedDefendWorld
+from pirates.minigame import CannonDefenseGlobals, DistributedDefendWorld
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.effects.DefenseCannonballProjectileEffect import DefenseCannonballProjectileEffect
 from pirates.effects.FireTrail import FireTrail
+from pirates.effects.FuryTrail import FuryTrail
+from pirates.effects.ThunderBallGlow import ThunderBallGlow
 from pirates.effects.PowderKegDomeExplosion import PowderKegDomeExplosion
 from pirates.effects.PowderKegWaterSplash import PowderKegWaterSplash
 from pirates.effects.WaterRipple import WaterRipple
 from pirates.effects.SmokePowderEffect import SmokePowderEffect
 from pirates.effects.IceShotEffect import IceShotEffect
-
+import random
 
 class DefenseCannonballProjectile(CannonballProjectile):
     notify = DirectNotifyGlobal.directNotify.newCategory('DefenseCannonballProjectile')

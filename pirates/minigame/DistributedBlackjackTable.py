@@ -1,13 +1,21 @@
-from direct.directnotify import DirectNotifyGlobal
+# File: D (Python 2.4)
 
+from direct.directnotify import DirectNotifyGlobal
+from direct.interval.IntervalGlobal import *
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.task import Task
+import random
+import math
 import DistributedGameTable
 import PlayingCardGlobals
+import PlayingCard
 import BlackjackTableGUI
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.piratesbase import PLocalizer
 from otp.otpgui import OTPDialog
 from pirates.piratesgui import PDialog
-
+from pirates.piratesgui import PiratesGuiGlobals
 
 class DistributedBlackjackTable(DistributedGameTable.DistributedGameTable):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedBlackjackTable')

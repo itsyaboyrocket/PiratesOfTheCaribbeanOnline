@@ -1,7 +1,8 @@
-import time
+# File: H (Python 2.4)
 
 from direct.gui.DirectGui import *
-
+from pandac.PandaModules import *
+from direct.distributed.ClockDelta import *
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import Freebooter
@@ -11,10 +12,13 @@ from pirates.piratesgui import Scoreboard
 from pirates.piratesgui import DialogButton
 from pirates.piratesgui import GuiButton
 from pirates.ai import HolidayGlobals
+from pirates.uberdog.UberDogGlobals import *
 from pirates.economy import EconomyGlobals
 from pirates.ship import ShipGlobals
+from pirates.inventory.InventoryUIGlobals import *
 from pirates.inventory import InventoryUIPlunderGridContainer
-
+from pirates.battle import WeaponGlobals
+import time
 
 class HighSeasScoreboard(GuiPanel.GuiPanel):
     width = PiratesGuiGlobals.PortPanelWidth

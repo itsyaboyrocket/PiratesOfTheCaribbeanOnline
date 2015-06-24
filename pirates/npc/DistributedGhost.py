@@ -1,14 +1,21 @@
-import random
+# File: D (Python 2.4)
 
 from direct.interval.IntervalGlobal import *
+from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.ClockDelta import *
-
+from pandac.PandaModules import *
+from pirates.effects.GhostAura import GhostAura
+from pirates.pirate import DistributedPirateBase
+from pirates.piratesbase import PiratesGlobals
+from pirates.battle import WeaponGlobals
 from pirates.battle import DistributedBattleNPC
 from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import PLocalizer
 from pirates.leveleditor import NPCList
 from pirates.pirate import HumanDNA
+from pirates.pirate import AvatarTypes
 import Ghost
-
+import random
 
 class DistributedGhost(DistributedBattleNPC.DistributedBattleNPC, Ghost.Ghost):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedGhost')

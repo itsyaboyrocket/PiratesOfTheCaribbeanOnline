@@ -1,11 +1,15 @@
+# File: V (Python 2.4)
+
+from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
+from direct.actor import Actor
 from direct.particles import ParticleEffect
 from direct.particles import Particles
-
+from direct.particles import ForceGroup
 from otp.otpbase import OTPRender
+import random
 from PooledEffect import PooledEffect
 from EffectController import EffectController
-
 
 class VoodooPestilence(PooledEffect, EffectController):
     cardScale = 64.0

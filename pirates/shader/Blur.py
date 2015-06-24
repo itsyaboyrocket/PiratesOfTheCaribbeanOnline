@@ -1,5 +1,12 @@
-from direct.showbase.DirectObject import DirectObject
+# File: B (Python 2.4)
 
+import math
+import random
+from pandac.PandaModules import *
+from direct.gui.DirectGui import *
+from direct.task import Task
+from direct.showbase.DirectObject import DirectObject
+from otp.otpbase import OTPRender
 
 class DependencyArray:
     

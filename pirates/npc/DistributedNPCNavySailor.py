@@ -1,13 +1,19 @@
-import random
+# File: D (Python 2.4)
 
+from direct.interval.IntervalGlobal import *
+from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.ClockDelta import *
-
+from pirates.pirate import DistributedPirateBase
+from pirates.piratesbase import PiratesGlobals
+from pirates.battle import WeaponGlobals
 from pirates.battle import DistributedBattleNPC
+from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import PLocalizer
 from pirates.leveleditor import NPCList
 from pirates.pirate import HumanDNA
 from pirates.pirate import AvatarTypes
 import NavySailor
-
+import random
 
 class DistributedNPCNavySailor(DistributedBattleNPC.DistributedBattleNPC, NavySailor.NavySailor):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedNPCNavySailor')

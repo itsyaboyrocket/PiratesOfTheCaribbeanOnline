@@ -1,13 +1,15 @@
-from direct.gui.DirectGui import DGG
+# File: B (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.gui.DirectGui import DGG
 from pirates.piratesgui.BorderFrame import BorderFrame
 from pirates.piratesgui.GuiPanel import GuiPanel
+from pirates.piratesgui.GuiButton import GuiButton
 from pirates.piratesgui.DialogButton import DialogButton
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.CheckButton import CheckButton
 from pirates.piratesbase import PiratesGlobals
-
 
 class BoardingPermissionPanel(GuiPanel):
 

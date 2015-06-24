@@ -1,9 +1,10 @@
+# File: G (Python 2.4)
+
 from direct.gui.DirectGui import *
 from direct.task.Task import Task
+from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
-
 from pirates.piratesgui import PiratesGuiGlobals
-
 
 class GuiTray(DirectFrame):
 

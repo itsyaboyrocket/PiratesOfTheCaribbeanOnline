@@ -1,4 +1,4 @@
-
+# File: S (Python 2.4)
 
 from pirates.piratesgui.SheetFrame import SheetFrame
 

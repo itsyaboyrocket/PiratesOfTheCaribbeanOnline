@@ -1,18 +1,26 @@
-import random
+# File: P (Python 2.4)
 
 from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from otp.speedchat.SpeedChatTypes import *
+from pirates.speedchat.PSpeedChatTypes import *
+from otp.speedchat.SpeedChat import SpeedChat
+from otp.speedchat import SpeedChatGlobals
+from pirates.speedchat import PSpeedChatGlobals
 from direct.showbase import DirectObject
 from direct.fsm import ClassicFSM
 from direct.fsm import State
-
-from otp.speedchat.SpeedChat import SpeedChat
-from otp.speedchat import SpeedChatGlobals
+import string
+import random
+from otp.otpbase import OTPLocalizer
+from otp.otpbase import OTPGlobals
 from otp.chat.ChatGlobals import *
+from pirates.ai import HolidayGlobals
 from otp.otpbase import OTPLocalizer
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import EmoteGlobals
+from pirates.speedchat.PSpeedChatQuestMenu import PSpeedChatQuestMenu
 from otp.speedchat import SpeedChatGMHandler
-
 scStructure = []
 
 class PChatInputEmote(DirectObject.DirectObject):

@@ -1,15 +1,15 @@
-import random
+# File: H (Python 2.4)
 
 from pandac.PandaModules import *
 from direct.directnotify.DirectNotifyGlobal import *
+import random
 from direct.distributed.PyDatagram import PyDatagram
 from direct.distributed.PyDatagramIterator import PyDatagramIterator
-
 from otp.avatar import AvatarDNA
 from pirates.makeapirate import ClothingGlobals
 from pirates.pirate import BodyDefs
 from pirates.inventory.ItemConstants import DYE_COLORS
-
+from otp.speedchat import ColorSpace
 notify = directNotify.newCategory('HumanDNA')
 LAYER1_CLOTHES = 1
 LAYER2_CLOTHES = 2

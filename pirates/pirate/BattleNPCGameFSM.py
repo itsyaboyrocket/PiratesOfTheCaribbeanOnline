@@ -1,9 +1,14 @@
-from direct.interval.IntervalGlobal import *
+# File: B (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
+from direct.fsm import FSM
+from direct.task import Task
+from pirates.battle import WeaponGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 import BattleAvatarGameFSM
-
 
 class BattleNPCGameFSM(BattleAvatarGameFSM.BattleAvatarGameFSM):
     

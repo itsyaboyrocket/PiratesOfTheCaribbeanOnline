@@ -1,13 +1,14 @@
-import random
+# File: R (Python 2.4)
 
 from pandac.PandaModules import *
+from direct.showbase.DirectObject import *
 from direct.interval.IntervalGlobal import *
-
 from pirates.piratesbase import PiratesGlobals
+from direct.distributed import DistributedObject
 from pirates.effects.DustCloud import DustCloud
 from pirates.effects.SmallSplash import SmallSplash
+import random
 from PooledEffect import PooledEffect
-
 DebrisDict = {
     '0': 'models/props/rock_1_floor',
     '1': 'models/props/rock_2_floor',

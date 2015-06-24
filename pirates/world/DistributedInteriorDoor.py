@@ -1,14 +1,17 @@
-from pandac.PandaModules import *
+# File: D (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
 from otp.otpgui import OTPDialog
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
+from pirates.piratesbase import TimeOfDayManager
+from direct.showbase.PythonUtil import report
 from pirates.piratesgui import PDialog
 from pirates.piratesgui import SkipTutorialFrame
 from pirates.world import DistributedDoorBase
 from pirates.world.LocationConstants import LocationIds
 from pirates.tutorial import TutorialGlobals
-
 
 class DistributedInteriorDoor(DistributedDoorBase.DistributedDoorBase):
     notify = directNotify.newCategory('DistributedInteriorDoor')

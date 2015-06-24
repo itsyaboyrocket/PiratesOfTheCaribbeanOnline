@@ -1,10 +1,11 @@
-from direct.directnotify.DirectNotifyGlobal import directNotify
+# File: C (Python 2.4)
 
+from direct.directnotify.DirectNotifyGlobal import directNotify
+from direct.distributed.ClockDelta import globalClockDelta
 from pirates.battle import WeaponGlobals
 from pirates.battle.EnemySkills import EnemySkills
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.inventory import ItemGlobals
-
 
 class ComboDiary:
     notify = directNotify.newCategory('ComboDiary')

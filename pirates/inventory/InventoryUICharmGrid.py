@@ -1,8 +1,10 @@
-from direct.gui.DirectGui import *
+# File: I (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.gui.DirectGui import *
+from direct.interval.IntervalGlobal import *
 from pirates.inventory import InventoryUISlotDisplayGrid
 from pirates.piratesbase import PLocalizer
-
 GRID_POSITIONS = {
     0: {
         0: [

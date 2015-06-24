@@ -1,11 +1,12 @@
-import random
+# File: D (Python 2.4)
 
 from pirates.ship import ShipGlobals
 from pirates.ship.DistributedSimpleShip import DistributedSimpleShip
+import random
+from pirates.piratesbase import PLocalizer
 from pirates.battle import EnemyGlobals
 from pirates.ship import HighSeasGlobals
 from pirates.piratesgui import MessageGlobals
-
 
 class DistributedNPCSimpleShip(DistributedSimpleShip):
     

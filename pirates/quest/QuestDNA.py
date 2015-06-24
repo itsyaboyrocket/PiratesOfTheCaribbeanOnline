@@ -1,9 +1,11 @@
+# File: Q (Python 2.4)
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.showbase.PythonUtil import ParamObj, makeTuple
-
+from direct.showbase.PythonUtil import getSetter, POD
 from pirates.piratesbase import PLocalizer
 from pirates.quest.QuestLadder import QuestStub
-
+import random
 
 class CombineOps:
     OR = 0

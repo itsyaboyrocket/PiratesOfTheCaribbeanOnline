@@ -1,56 +1,78 @@
-import random
-import copy
-import time
-from math import sin
-from math import cos
-from math import pi
+# File: D (Python 2.4)
 
+import string
 from pandac.PandaModules import TextProperties
 from pandac.PandaModules import TextPropertiesManager
+from direct.showbase.PythonUtil import Functor
 from direct.showbase.PythonUtil import report
+from direct.directnotify import DirectNotifyGlobal
+from direct.showbase.DirectObject import *
 from direct.distributed.ClockDelta import *
 from direct.interval.IntervalGlobal import *
+from direct.distributed.MsgTypes import *
+from direct.distributed import DistributedNode
 from direct.task import Task
+from direct.gui import DirectLabel
+from direct.actor import Actor
+from direct.distributed import PyDatagram
+from direct.gui.OnscreenText import OnscreenText
+from direct.gui.DirectGui import DirectWaitBar, DGG
 from direct.gui.DirectGui import *
 from direct.fsm.StatePush import FunctionCall, StateVar
-
 from otp.nametag.NametagGroup import NametagGroup
 from otp.nametag.NametagConstants import CFSpeech, CFQuicktalker, CFTimeout
 from otp.avatar.DistributedPlayer import DistributedPlayer
+from otp.otpbase import OTPLocalizer
 from otp.otpbase import OTPGlobals
 from otp.chat import ChatGlobals
 from otp.otpgui import OTPDialog
 from otp.avatar.Avatar import Avatar
+from pirates.piratesbase import UserFunnel
 from pirates.effects.LevelUpEffect import LevelUpEffect
 from pirates.battle.DistributedBattleAvatar import DistributedBattleAvatar, MinimapBattleAvatar
+from pirates.battle import WeaponGlobals
 from pirates.battle.EnemySkills import *
 from pirates.pirate.DistributedPirateBase import DistributedPirateBase
 from pirates.pirate import Biped
 from pirates.pirate.PAvatarHandle import PAvatarHandle
+from pirates.demo import DemoGlobals
 from pirates.quest.DistributedQuestAvatar import DistributedQuestAvatar
+from pirates.world.LocationConstants import LocationIds
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import PiratesGlobals
-from pirates.piratesgui import PiratesGuiGlobals, PDialog
+from pirates.piratesgui import PiratesGuiGlobals, NamePanelGui, PDialog
 from pirates.piratesbase import TeamUtils
 from pirates.minigame import Fish, FishingGlobals
+from pirates.npc import Skeleton
+from pirates.pirate import AvatarTypes
 from pirates.effects.VoodooAura import VoodooAura
+from pirates.uberdog.UberDogGlobals import InventoryType
+from pirates.reputation import ReputationGlobals
 import PlayerPirateGameFSM
 from pirates.band import BandConstance
 from pirates.band import DistributedBandMember
+from pirates.world.DistributedGameArea import DistributedGameArea
+from pirates.world.DistributedIsland import DistributedIsland
 from pirates.speedchat import PSCDecoders
 from pirates.battle import Consumable
+from pirates.piratesbase import Freebooter
 from pirates.uberdog.UberDogGlobals import *
 from pirates.minigame import PotionGlobals
 from pirates.battle import EnemyGlobals
 from pirates.inventory import ItemGlobals
 from pirates.pirate import AvatarTypes
+from pirates.creature.Alligator import Alligator
+from pirates.creature.Scorpion import Scorpion
+from pirates.creature.Crab import Crab
 from pirates.creature import DistributedCreature
+from pirates.movement.MotionFSM import MotionFSM
 from pirates.effects.WaterRipple import WaterRipple
 from pirates.effects.WaterRippleWake import WaterRippleWake
 from pirates.effects.WaterRippleSplash import WaterRippleSplash
 from pirates.effects.HealSparks import HealSparks
 from pirates.effects.HealRays import HealRays
 from pirates.piratesgui import CrewIconSelector
+from pirates.coderedemption import CodeRedemption
 from pirates.pvp import PVPGlobals
 from pirates.pirate import TitleGlobals
 from pirates.effects.InjuredEffect import InjuredEffect
@@ -58,13 +80,19 @@ from otp.otpbase import OTPRender
 from pirates.audio.SoundGlobals import loadSfx
 from pirates.audio import SoundGlobals
 from pirates.makeapirate import ClothingGlobals
+from pirates.pirate import PlayerStateGlobals
 from pirates.economy.StowawayGUI import StowawayGUI
+import random
+import copy
+import time
 from pirates.ai import HolidayGlobals
+from math import sin
+from math import cos
+from math import pi
 from pirates.piratesgui.DialMeter import DialMeter
 from pirates.quest import QuestDB
 from pirates.piratesbase import Freebooter
 from pirates.inventory import ItemConstants
-
 
 class bp:
     loginCfg = bpdb.bpGroup(iff = False, cfg = 'loginCfg', static = 1)
@@ -2350,6 +2378,7 @@ class DistributedPlayerPirate(DistributedPirateBase, DistributedPlayer, Distribu
 
     def playTransformationToCreature(self, effectId, timeSince = 0):
         JRSpawn = JRSpawn
+        import pirates.effects.JRSpawn
         if self.transformationEffect:
             self.transformationEffect.detachNode()
             self.transformationEffect = None
@@ -2388,6 +2417,7 @@ class DistributedPlayerPirate(DistributedPirateBase, DistributedPlayer, Distribu
 
     def playTransformationToPirate(self, effectId):
         JRSpawn = JRSpawn
+        import pirates.effects.JRSpawn
 
         def startSFX():
             sfx = self.genericTransformation
@@ -2518,6 +2548,7 @@ class DistributedPlayerPirate(DistributedPirateBase, DistributedPlayer, Distribu
 
     def getTransformSequence(self, sfx, func = None, args = [], timeSince = 0):
         JRSpawn = JRSpawn
+        import pirates.effects.JRSpawn
         if timeSince > 1.5 or self.gameFSM.state not in [
             'LandRoam',
             'Battle']:

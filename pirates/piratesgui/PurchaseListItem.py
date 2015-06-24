@@ -1,14 +1,20 @@
-from direct.gui.DirectGui import *
+# File: P (Python 2.4)
 
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.task.Task import Task
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.battle import WeaponGlobals
 from pirates.economy import EconomyGlobals
 from pirates.economy.EconomyGlobals import *
+from pirates.battle import CannonGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
+from pirates.uberdog import UberDogGlobals
+from pirates.piratesgui.BorderFrame import BorderFrame
+from pirates.reputation import ReputationGlobals
 from pirates.piratesgui.InventoryListItem import InventoryListItem
-
 
 class PurchaseListItem(InventoryListItem):
     itemCount = 0

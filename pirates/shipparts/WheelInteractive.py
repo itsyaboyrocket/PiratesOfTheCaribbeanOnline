@@ -1,4 +1,4 @@
-
+# File: W (Python 2.4)
 
 from pirates.interact.SimpleInteractive import SimpleInteractive
 from pirates.piratesbase import PLocalizer

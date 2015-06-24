@@ -1,10 +1,10 @@
-
+# File: Q (Python 2.4)
 
 from pirates.quest.QuestLadderDNA import QuestLadderDNA, QuestChoiceDNA, QuestBranchDNA
 from pirates.quest import QuestDB
 from pirates.quest import QuestLinkDB
 from pirates.quest.QuestDNA import QuestDNA
-from pirates.quest.QuestConstants import NPCIds
+from pirates.quest.QuestConstants import NPCIds, ExpRewards
 from pirates.piratesbase import PLocalizer
 from pirates.quest.QuestStatData import QuestStatData
 FamePathHelperDict = { }

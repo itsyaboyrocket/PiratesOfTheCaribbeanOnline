@@ -1,9 +1,11 @@
-import math
+# File: A (Python 2.4)
 
+from pandac.PandaModules import *
 from direct.showbase.PythonUtil import clampScalar
 from direct.showbase.DirectObject import DirectObject
-from direct.interval.IntervalGlobal import LerpFunc
-
+from direct.interval.IntervalGlobal import Sequence, Parallel, LerpFunc, Func, Wait
+from direct.task.Task import Task
+import math
 
 def getPerpendicularVec(vec):
     if vec[0] == 0.0:

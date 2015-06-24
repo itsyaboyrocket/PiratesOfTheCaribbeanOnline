@@ -1,7 +1,8 @@
+from pandac.PandaModules import *
 from direct.gui.DirectGui import *
 from direct.task.Task import Task
-
 from pirates.piratesgui import PiratesGuiGlobals
+import types
 
 
 class BorderFrame(DirectFrame):
@@ -71,6 +72,7 @@ class BorderFrame(DirectFrame):
                 tex.setWrapV(Texture.WMMirror)
             if self['nameTag'] and self.nameTag:
                 PiratesGlobals = PiratesGlobals
+                import pirates.piratesbase
                 self.nameTagLabel = DirectLabel(parent = self.nameTag, relief = None, pos = (0, 0, 0.050000000000000003), text = self['nameTag'], text_scale = 0.20000000000000001, text_font = PiratesGlobals.getPirateBoldOutlineFont(), text_fg = (1, 1, 1, 1), text_shadow = PiratesGuiGlobals.TextShadow, text_align = TextNode.ACenter, textMayChange = 1)
 
     def copyFlattenedChild(self, node, parent):

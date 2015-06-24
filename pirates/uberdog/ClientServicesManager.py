@@ -1,7 +1,8 @@
 from direct.distributed.DistributedObjectGlobal import DistributedObjectGlobal
-from pandac.PandaModules import *
-
+from direct.directnotify.DirectNotifyGlobal import directNotify
+from otp.distributed.PotentialAvatar import PotentialAvatar
 from pirates.piratesbase import PiratesGlobals
+from pandac.PandaModules import *
 
 
 class ClientServicesManager(DistributedObjectGlobal):

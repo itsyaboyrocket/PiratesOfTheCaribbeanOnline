@@ -1,9 +1,9 @@
-import random
+# File: I (Python 2.4)
 
 from pirates.pirate import AvatarTypes
 from pirates.quest.QuestConstants import NPCIds
 from pirates.piratesbase import PLocalizer
-
+import random
 CANCEL = 0
 TALK = 1
 TRADE = 2

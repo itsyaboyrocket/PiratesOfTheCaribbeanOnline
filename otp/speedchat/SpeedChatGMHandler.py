@@ -1,7 +1,6 @@
+from pandac.PandaModules import *
 from direct.showbase import DirectObject
-
 from otp.otpbase import OTPLocalizer
-
 
 class SpeedChatGMHandler(DirectObject.DirectObject):
     scStructure = None

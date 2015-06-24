@@ -1,3 +1,7 @@
+# File: O (Python 2.4)
+
+from pandac.PandaModules import *
+
 def Defaults(objectNode):
     objectNode.node().setAttrib(ColorBlendAttrib.make(ColorBlendAttrib.MNone))
     objectNode.setColorScale(1.0, 1.0, 1.0, 1.0)

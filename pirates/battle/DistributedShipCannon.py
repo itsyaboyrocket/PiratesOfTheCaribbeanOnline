@@ -1,5 +1,10 @@
+# File: D (Python 2.4)
+
+from direct.showbase.PythonUtil import quickProfile
 from pirates.shipparts import DistributedShippart
 from pirates.shipparts import CannonDNA
+from direct.task import Task
+from pandac.PandaModules import *
 import DistributedPCCannon
 import DistributedWeapon
 import Cannon

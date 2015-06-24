@@ -1,12 +1,13 @@
-import math
+# File: D (Python 2.4)
 
+import math
+from pandac.PandaModules import *
 from direct.distributed.DistributedNode import DistributedNode
 from direct.showbase.PythonUtil import report
-
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
+from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import MessageGlobals
-
 
 class DistributedShipDeployer(DistributedNode):
     

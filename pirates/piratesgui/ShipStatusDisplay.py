@@ -1,11 +1,13 @@
-import copy
+# File: S (Python 2.4)
 
+import copy
 from direct.gui.DirectGui import *
 from direct.task.Task import Task
+from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
-
 from pirates.uberdog.DistributedInventoryBase import DistributedInventoryBase
 from pirates.piratesgui import LootPopupPanel
+from pirates.ship import ShipGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import GuiTray
 from pirates.piratesbase import PiratesGlobals
@@ -13,12 +15,15 @@ from pirates.piratesgui import AnchorButton
 from pirates.piratesgui import GuiButton
 from pirates.piratesgui import StatusEffectsPanel
 from pirates.piratesgui import PiratesGuiGlobals
+from pirates.ship import ShipMeter
 from pirates.piratesgui.ShipArmorGui import ShipArmorGui
 from pirates.piratesgui.BoardingPermissionPanel import BoardingPermissionPanel
 from pirates.battle import EnemyGlobals
+from pirates.piratesgui.BorderFrame import BorderFrame
+from pirates.audio import SoundGlobals
+import random
 from pirates.ship import HighSeasGlobals
 from pirates.piratesgui import MessageGlobals
-
 
 class ShipStatusDisplay(GuiTray.GuiTray):
 

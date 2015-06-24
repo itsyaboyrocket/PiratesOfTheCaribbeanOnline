@@ -1,5 +1,10 @@
-from direct.gui.DirectGui import DGG, DirectFrame, DirectLabel, DirectSlider, DirectEntry, DirectButton
+# File: M (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.showbase.PythonUtil import clampScalar, lerp
+from direct.gui.DirectGui import DGG, DirectFrame, DirectLabel, DirectSlider, DirectEntry, DirectButton
+from direct.gui.OnscreenText import OnscreenText
+import sys
 
 class RangeSlider(DirectFrame):
 

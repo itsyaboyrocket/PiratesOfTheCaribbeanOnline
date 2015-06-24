@@ -1,12 +1,15 @@
-import random
+# File: G (Python 2.4)
 
 from direct.directnotify import DirectNotifyGlobal
+from direct.showbase.ShowBaseGlobal import *
+from direct.showbase import DirectObject
 from direct.fsm import StateData
+from direct.gui import DirectGuiGlobals
 from direct.gui.DirectGui import *
-
+from pandac.PandaModules import *
 from pirates.piratesbase import PLocalizer
 from pirates.pirate import HumanDNA
-
+import random
 
 class GenderGUI(DirectFrame, StateData.StateData):
     notify = DirectNotifyGlobal.directNotify.newCategory('GenderGUI')

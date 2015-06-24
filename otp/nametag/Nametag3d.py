@@ -1,8 +1,8 @@
-import math
-
 from Nametag import *
 import NametagGlobals
-
+from NametagConstants import *
+from pandac.PandaModules import *
+import math
 
 class Nametag3d(Nametag):
     WANT_DYNAMIC_SCALING = True

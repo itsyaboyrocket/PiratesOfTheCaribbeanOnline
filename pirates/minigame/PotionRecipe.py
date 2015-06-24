@@ -1,11 +1,19 @@
-from direct.gui.DirectGui import *
-from pandac.PandaModules import CardMaker
+# File: P (Python 2.4)
 
+from direct.interval.IntervalGlobal import Sequence, Func
+from direct.showbase.ShowBaseGlobal import *
+from direct.interval.IntervalGlobal import *
+from direct.gui.DirectGui import *
+from direct.showbase import DirectObject
+from direct.actor import Actor
+from direct.task import Task
+from pandac.PandaModules import *
+from pandac.PandaModules import CardMaker
 from PotionBoardPiece import PotionBoardPiece
+from pirates.piratesgui import GuiButton
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PLocalizer
 import PotionGlobals
-
 
 class PotionRecipe(DirectFrame):
     

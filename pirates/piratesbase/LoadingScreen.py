@@ -1,17 +1,24 @@
-import random
-
-from direct.distributed.ClockDelta import *
-from direct.task import Task
-from direct.gui.DirectGui import *
-from pandac.PandaModules import HTTPClient
-from pandac.PandaModules import DocumentSpec
+# File: L (Python 2.4)
 
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
+from pirates.reputation import ReputationGlobals
+from direct.showbase import DirectObject
+from direct.distributed.ClockDelta import *
+from direct.task import Task
+from direct.gui.DirectGui import *
+from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.world.LocationConstants import *
 from otp.otpbase import OTPGlobals
-
+import random
+from pandac.PandaModules import HTTPClient
+from pandac.PandaModules import HTTPCookie
+from pandac.PandaModules import URLSpec
+from pandac.PandaModules import Ramfile
+from pandac.PandaModules import Ostream
+from pandac.PandaModules import HTTPDate
+from pandac.PandaModules import DocumentSpec
 tutorialShots = [
     'models/gui/loadingScreen_12',
     'models/gui/loadingScreen_16',

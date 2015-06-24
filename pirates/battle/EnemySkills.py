@@ -1,4 +1,4 @@
-
+# File: E (Python 2.4)
 
 
 class EnemySkills:

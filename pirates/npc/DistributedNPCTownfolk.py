@@ -1,22 +1,27 @@
-import re
-import random
+# File: D (Python 2.4)
 
+import random
+import re
+from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.gui.DirectGui import *
-from direct.showbase.PythonUtil import report
-from direct.showbase import PythonUtil
-
+from otp.otpbase import OTPGlobals
 from otp.otpgui import OTPDialog
+from otp.otpbase import OTPRender
 from pirates.audio import SoundGlobals
+from pirates.audio import MusicManager
 from pirates.uberdog.UberDogGlobals import *
 from pirates.piratesgui import InteractGUI, NamePanelGui
+from otp.otpbase import OTPGlobals
 from pirates.distributed import InteractGlobals
 from pirates.battle import DistributedBattleNPC
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.leveleditor import NPCList
+from pirates.quest import QuestParser
 from pirates.quest import QuestTaskDNA
+from pirates.quest.QuestReward import QuestReward
 from pirates.pirate import HumanDNA, Biped
 from pirates.piratesgui.NewTutorialPanel import NewTutorialPanel
 from pirates.economy import DistributedShopKeeper
@@ -25,18 +30,22 @@ from pirates.piratesgui import PDialog
 import Townfolk
 from pirates.interact import InteractiveBase
 from pirates.leveleditor import CustomAnims
+from direct.showbase.PythonUtil import report
 from pirates.pirate import AvatarTypes
 from pirates.pirate import TitleGlobals
 from pirates.battle import DistributedBattleAvatar
+from pirates.battle import EnemyGlobals
 from pirates.piratesgui import PiratesGuiGlobals
+from pirates.quest.QuestConstants import NPCIds
 from pirates.battle import WeaponGlobals
+import random
+from direct.showbase import PythonUtil
 from pirates.reputation import ReputationGlobals
 from otp.nametag.NametagConstants import CFSpeech, CFTimeout
 import PotionInstructionPanel
 from pirates.minigame.LegendaryTellGUI import LegendaryTellGUI
 from pirates.piratesbase import Freebooter
 from pirates.piratesbase import TeamUtils
-
 
 class DistributedNPCTownfolk(DistributedBattleNPC.DistributedBattleNPC, DistributedShopKeeper.DistributedShopKeeper, Townfolk.Townfolk):
     DiskWaitingColor = (0, 0, 1, 0.5)
@@ -683,6 +692,7 @@ class DistributedNPCTownfolk(DistributedBattleNPC.DistributedBattleNPC, Distribu
         maxHp = localAvatar.getAdjMaxHp()
         hp = localAvatar.getHp()
         EconomyGlobals = EconomyGlobals
+        import pirates.economy
         gold = EconomyGlobals.getAvatarHealHpCost(maxHp - hp)
         if self.confirmDialog:
             self.confirmDialog.destroy()
@@ -1439,6 +1449,7 @@ class DistributedNPCTownfolk(DistributedBattleNPC.DistributedBattleNPC, Distribu
 
     def showUpgradeRodDialog(self):
         FishingGlobals = FishingGlobals
+        import pirates.minigame
         avGold = localAvatar.getMoney()
         inv = localAvatar.getInventory()
         avFishingLevel = ReputationGlobals.getLevelFromTotalReputation(InventoryType.FishingRep, inv.getReputation(InventoryType.FishingRep))[0]

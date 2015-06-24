@@ -1,14 +1,16 @@
+# File: D (Python 2.4)
+
+from direct.directnotify import DirectNotifyGlobal
 from direct.gui.DirectGui import *
 from direct.task.Task import Task
+from pandac.PandaModules import *
 from direct.distributed.ClockDelta import *
 from direct.showbase import PythonUtil
-
 from pirates.pirate import HumanDNA
 from pirates.piratesbase import PiratesGlobals
 from pirates.minigame import DistributedGameTable
 from pirates.minigame import BishopsHandGame
 from pirates.minigame import BishopsHandGlobals
-
 
 class ResultsFrame(DirectFrame):
     

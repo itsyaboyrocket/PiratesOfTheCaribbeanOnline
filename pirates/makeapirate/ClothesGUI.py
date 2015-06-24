@@ -1,18 +1,22 @@
-
+# File: C (Python 2.4)
 
 global genderIdx
-import random
-
 from direct.directnotify import DirectNotifyGlobal
+from direct.showbase.ShowBaseGlobal import *
 from direct.showbase.PythonUtil import Functor
+from direct.showbase import DirectObject
 from direct.fsm import StateData
+from direct.gui import DirectGuiGlobals
 from direct.gui.DirectGui import *
-
+from direct.task import Task
+from pandac.PandaModules import *
+from pirates.makeapirate import ClothingGlobals
 from pirates.piratesbase import PLocalizer
-from CharGuiBase import CharGuiPicker
+from pirates.pirate import HumanDNA
+from CharGuiBase import CharGuiSlider, CharGuiPicker
 from pirates.inventory import ItemGlobals
 from pirates.inventory.ItemConstants import DYE_COLORS
-
+import random
 genderIdx = 0
 TOPNUMCOLOR = 6
 BOTNUMCOLOR = 6

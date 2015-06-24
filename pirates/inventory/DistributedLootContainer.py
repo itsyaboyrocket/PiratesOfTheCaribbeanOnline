@@ -1,14 +1,20 @@
+# File: D (Python 2.4)
+
+from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import *
-
+from direct.gui.DirectGui import *
+from direct.actor import Actor
 from pirates.distributed import DistributedInteractive
 from pirates.piratesbase import PLocalizer
+from pirates.interact import InteractiveBase
 from pirates.inventory.Lootable import Lootable
+from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
+from pirates.piratesgui import GuiButton
 from pirates.effects.LootSparks import LootSparks
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-
 containerCache = { }
 
 class DistributedLootContainer(DistributedInteractive.DistributedInteractive, Lootable):

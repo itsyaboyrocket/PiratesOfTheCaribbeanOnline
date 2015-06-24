@@ -1,11 +1,13 @@
-from direct.showbase.DirectObject import DirectObject
+# File: P (Python 2.4)
 
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.ScoreFrame import ScoreFrame
+from pandac.PandaModules import *
+from direct.gui.DirectGui import *
 from pirates.piratesgui import BorderFrame
+from direct.showbase.DirectObject import DirectObject
 from pirates.piratesbase import PLocalizer
 from pirates.pvp import PVPGlobals
-
 
 class PVPBoard(DirectObject):
     

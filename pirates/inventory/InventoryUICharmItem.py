@@ -1,16 +1,20 @@
+# File: I (Python 2.4)
+
 from direct.gui.DirectGui import *
 from pandac.PandaModules import *
-
-from pirates.piratesgui import PiratesGuiGlobals
+from pirates.piratesgui import GuiPanel, PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesbase import Freebooter
+from otp.otpbase import OTPLocalizer
+from pirates.piratesgui.BorderFrame import BorderFrame
+from pirates.inventory.InventoryUIGlobals import *
 from pirates.inventory import ItemGlobals
 from pirates.battle import WeaponGlobals
+from pirates.uberdog.UberDogGlobals import *
 from pirates.reputation import ReputationGlobals
 from pirates.economy import EconomyGlobals
 from pirates.inventory import InventoryUIItem
-
 
 class InventoryUICharmItem(InventoryUIItem.InventoryUIItem):
     notify = directNotify.newCategory('InventoryUICharmItem')

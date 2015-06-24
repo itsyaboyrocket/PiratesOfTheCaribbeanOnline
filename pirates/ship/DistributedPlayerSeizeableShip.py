@@ -1,11 +1,12 @@
-from direct.distributed.ClockDelta import *
+# File: D (Python 2.4)
 
+from direct.directnotify import DirectNotifyGlobal
 from pirates.ship.DistributedPlayerSimpleShip import DistributedPlayerSimpleShip
 from pirates.ship import ShipGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
+from direct.distributed.ClockDelta import *
 from pirates.piratesgui import PiratesTimer
-
 
 class DistributedPlayerSeizeableShip(DistributedPlayerSimpleShip):
     notify = directNotify.newCategory('DistributedPlayerSeizeableShip')

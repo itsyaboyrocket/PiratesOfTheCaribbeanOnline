@@ -1,18 +1,17 @@
+import string
 import sys
-import time
-
 from direct.showbase import DirectObject
-from direct.directnotify import DirectNotifyGlobal
-
 from otp.otpbase import OTPLocalizer
+from direct.directnotify import DirectNotifyGlobal
 from otp.otpbase import OTPGlobals
 from otp.speedchat import SCDecoders
+from pandac.PandaModules import *
 from otp.chat.TalkMessage import TalkMessage
 from otp.chat.TalkHandle import TalkHandle
+import time
 from otp.chat.TalkGlobals import *
 from otp.chat.ChatGlobals import *
 from otp.nametag.NametagConstants import CFSpeech, CFTimeout, CFThought
-
 ThoughtPrefix = '.'
 
 class TalkAssistant(DirectObject.DirectObject):

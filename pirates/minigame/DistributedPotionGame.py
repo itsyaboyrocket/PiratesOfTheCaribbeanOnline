@@ -1,4 +1,4 @@
-
+# File: D (Python 2.4)
 
 7
 from direct.interval.IntervalGlobal import *
@@ -8,8 +8,11 @@ if __name__ == '__main__':
 else:
     from direct.distributed.DistributedObject import DistributedObject
 from direct.directnotify import DirectNotifyGlobal
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from pirates.uberdog.UberDogGlobals import InventoryType
 import PotionGlobals
+import PotionRecipeData
 from pirates.reputation import ReputationGlobals
 from PotionGame import PotionGame
 from pirates.world.LocationConstants import LocationIds

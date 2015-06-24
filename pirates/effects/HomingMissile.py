@@ -1,11 +1,16 @@
-from direct.interval.IntervalGlobal import *
-from direct.showbase import PythonUtil
-from direct.task import Task
+# File: H (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.showbase.DirectObject import *
+from direct.interval.IntervalGlobal import *
+from direct.showbase.PythonUtil import *
+from pirates.piratesbase import PiratesGlobals
 from pirates.effects import PolyTrail
 from PooledEffect import PooledEffect
 from EffectController import EffectController
-
+from direct.showbase import PythonUtil
+from direct.task import Task
+import random
 
 class HomingMissile(PooledEffect, EffectController):
     

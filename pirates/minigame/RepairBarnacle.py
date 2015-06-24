@@ -1,14 +1,13 @@
-import random
+# File: R (Python 2.4)
 
+import random
 from pandac.PandaModules import Point3
 from direct.gui.DirectGui import DirectFrame, DirectLabel
 from direct.fsm import FSM
 from direct.interval.IntervalGlobal import *
-
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 import RepairGlobals
-
 MIN_SCALE = 1.5
 MAX_SCALE_ADD = 1.0
 MAX_SCRUB_AMT = 20.0

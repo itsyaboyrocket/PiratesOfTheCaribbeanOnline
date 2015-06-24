@@ -1,4 +1,4 @@
-
+# File: T (Python 2.4)
 
 RAMBLESHACK_ISLE_UID = '1115838800a.3jubutler'
 STUMPY_UID = 'tutorial_stumpy'

@@ -1,6 +1,7 @@
-
+# File: M (Python 2.4)
 
 from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PiratesGuiGlobals
 MSG_CAT_DEFAULT = 0
 MSG_CAT_THREAT_LEVEL = 1

@@ -1,16 +1,20 @@
-import math
-import time
+# File: K (Python 2.4)
 
-from direct.distributed.ClockDelta import *
-
+from pandac.PandaModules import *
+from direct.directnotify import DirectNotifyGlobal
 from pirates.movement.DistributedMovingObject import DistributedMovingObject
 from pirates.creature.DistributedCreature import DistributedCreature
 from pirates.creature.Monstrous import Monstrous
 from pirates.kraken.KrakenGameFSM import KrakenGameFSM
+from direct.distributed.ClockDelta import *
+from direct.interval.IntervalGlobal import *
 from pirates.ship import ShipGlobals
 from otp.otpbase import OTPGlobals
+from pirates.piratesbase import PiratesGlobals
+import math
+import time
+import random
 from otp.otpbase import OTPRender
-
 
 class bp:
     startup = bpdb.bpPreset(cfg = 'kraken', grp = 'startup', static = 1)

@@ -1,6 +1,10 @@
+# File: T (Python 2.4)
+
+from pandac.PandaModules import *
+from pirates.piratesbase.TODDefs import *
 from pirates.piratesbase.TODData import *
 from pirates.piratesbase import PiratesGlobals
-
+import copy
 StateDict = {
     PiratesGlobals.TOD_BASE: 'BASE',
     PiratesGlobals.TOD_DAWN: 'Dawn',

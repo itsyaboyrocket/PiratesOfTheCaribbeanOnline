@@ -1,8 +1,14 @@
+# File: W (Python 2.4)
+
+from pandac.PandaModules import *
 from direct.gui.DirectGui import *
+from direct.directnotify import DirectNotifyGlobal
+from direct.interval.IntervalGlobal import *
 from direct.task import Task
-
+from pirates.distributed import DistributedInteractive
 from pirates.piratesgui import PiratesGuiGlobals
-
+from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import PLocalizer
 
 class WorkMeter(DirectFrame):
     Card = None

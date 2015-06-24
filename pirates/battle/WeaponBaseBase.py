@@ -1,10 +1,11 @@
-import math
+# File: W (Python 2.4)
 
+import math
+from pandac.PandaModules import *
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import TeamUtils
 import WeaponGlobals
 from pirates.inventory import ItemGlobals
-
 
 class WeaponBaseBase:
     areaCollisionsCreated = 0

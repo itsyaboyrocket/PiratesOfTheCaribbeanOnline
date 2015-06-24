@@ -1,9 +1,9 @@
-import random
+# File: Q (Python 2.4)
 
 from direct.showbase.PythonUtil import POD
-
+from direct.task.Task import Task
 from pirates.piratesbase import PiratesGlobals
-
+import random
 
 class QuestEvent(POD):
     DataSet = {

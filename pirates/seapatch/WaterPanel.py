@@ -1,13 +1,14 @@
+# File: W (Python 2.4)
+
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.tkwidgets.AppShell import *
+from direct.tkwidgets import Slider
 from tkFileDialog import askopenfilename
 import math
 import string
-from Tkinter import *
-
-from direct.gui.DirectGui import *
-from direct.tkwidgets.AppShell import *
-from direct.tkwidgets import Slider
 import Pmw
-
+from Tkinter import *
 
 class WaterPanel(AppShell):
     appversion = '1.0'

@@ -1,7 +1,11 @@
+# File: D (Python 2.4)
+
+from direct.distributed.ClockDelta import *
 from direct.distributed import DistributedNode
-
+from direct.interval.IntervalGlobal import *
 from pirates.piratesbase.PiratesGlobals import *
-
+from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import PLocalizer
 
 class DistributedShippart(DistributedNode.DistributedNode):
     notify = directNotify.newCategory('DistributedShippart')

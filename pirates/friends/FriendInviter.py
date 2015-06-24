@@ -1,19 +1,21 @@
+# File: F (Python 2.4)
+
 from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from direct.task.Task import Task
 from direct.fsm import ClassicFSM
 from direct.fsm import State
 from direct.directnotify import DirectNotifyGlobal
-
 from otp.otpbase import OTPLocalizer
 from otp.otpbase import OTPGlobals
 from otp.uberdog.RejectCode import RejectCode
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui.RequestButton import RequestButton
+from pirates.piratesgui.CheckBox import CheckBox
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.battle.DistributedBattleNPC import DistributedBattleNPC
 from otp.friends import FriendResponseCodes
-
 
 class FriendInviterButton(RequestButton):
     

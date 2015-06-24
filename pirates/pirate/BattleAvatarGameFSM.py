@@ -1,12 +1,17 @@
-import random
+# File: B (Python 2.4)
 
+from direct.gui.DirectGui import *
 from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 from direct.fsm import FSM
+from direct.task import Task
 from direct.showbase.PythonUtil import lerp
-
+from pirates.battle import WeaponGlobals
 from pirates.battle import Consumable
 from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import PLocalizer
+from pirates.reputation import ReputationGlobals
+from pirates.destructibles import ShatterableSkeleton
 from pirates.ship import ShipGlobals
 from pirates.effects.SmallSplash import SmallSplash
 from pirates.effects.TeleportTwister import TeleportTwister
@@ -15,7 +20,7 @@ from pirates.effects.ThrowDirt2 import ThrowDirt2
 from pirates.effects.HealPotion import HealPotion
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-
+import random
 
 class BattleAvatarGameFSM(FSM.FSM):
     notify = directNotify.newCategory('BattleAvatarGameFSM')
@@ -1084,6 +1089,7 @@ class BattleAvatarGameFSM(FSM.FSM):
         self.torch.setHpr(0, -110, 0)
         self.torch.setScale(0.59999999999999998)
         SmallFire = SmallFire
+        import pirates.effects.SmallFire
         self.fireEffect = SmallFire()
         if self.fireEffect:
             self.fireEffect.reparentTo(self.torch.find('**/torch_effect_*'))

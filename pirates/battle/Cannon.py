@@ -1,13 +1,26 @@
-import random
-import math
+# File: C (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
+from direct.interval.ProjectileInterval import *
 from direct.distributed.ClockDelta import *
+from direct.gui.DirectGui import *
 from direct.showutil import Rope
-
+from direct.actor import Actor
+from otp.otpbase import OTPGlobals
+from pirates.uberdog.UberDogGlobals import InventoryType
+from pirates.piratesbase.PiratesGlobals import *
+from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import PLocalizer
+from pirates.shipparts import CannonDNA
+from pirates.effects.CannonMuzzleFire import CannonMuzzleFire
 from pirates.effects.CannonBlastSmoke import CannonBlastSmoke
 from pirates.effects.CannonSmokeSimple import CannonSmokeSimple
+from pirates.effects.BlackSmoke import BlackSmoke
+from pirates.effects.ExplosionFlip import ExplosionFlip
 from pirates.effects.MuzzleFlame import MuzzleFlame
 from pirates.effects.CameraShaker import CameraShaker
+from pirates.effects.GrapeshotEffect import GrapeshotEffect
 from pirates.battle.CannonballProjectile import CannonballProjectile
 from pirates.battle import WeaponConstants
 from pirates.battle import WeaponGlobals
@@ -16,7 +29,8 @@ from pirates.ship import ShipGlobals
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 import CannonGlobals
-
+import random
+import math
 cannonTypes = {
     ShipGlobals.Cannons.L1: 'plain',
     ShipGlobals.Cannons.L2: 'plain',

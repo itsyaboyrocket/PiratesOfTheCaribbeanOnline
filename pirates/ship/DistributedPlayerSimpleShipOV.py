@@ -1,9 +1,9 @@
+# File: D (Python 2.4)
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed import DistributedObjectOV
-
 from pirates.ship import ShipGlobals
 from pirates.battle.Teamable import Teamable
-
 
 class DistributedPlayerSimpleShipOV(DistributedObjectOV.DistributedObjectOV, Teamable):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedPlayerSimpleShipOV')

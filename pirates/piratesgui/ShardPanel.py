@@ -1,11 +1,12 @@
+# File: S (Python 2.4)
+
 from direct.gui.DirectGui import *
 from direct.interval.IntervalGlobal import *
-
+from pandac.PandaModules import *
 from otp.distributed import OtpDoGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesbase import PLocalizer
-
 POP_COLORS = (Vec4(0.40000000000000002, 0.40000000000000002, 1.0, 1.0), Vec4(0.40000000000000002, 1.0, 0.40000000000000002, 1.0), Vec4(1.0, 0.40000000000000002, 0.40000000000000002, 1.0))
 
 class ShardPanel(DirectFrame):

@@ -1,8 +1,11 @@
-from direct.directnotify.DirectNotifyGlobal import directNotify
-from direct.interval.IntervalGlobal import *
+# File: D (Python 2.4)
 
+from direct.showbase.ShowBaseGlobal import *
+from direct.directnotify.DirectNotifyGlobal import directNotify
 from otp.uberdog.RejectCode import RejectCode
+from otp.otpbase import OTPGlobals
 from otp.otpgui import OTPDialog
+from pirates.economy.EconomyGlobals import *
 from pirates.distributed import InteractGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
@@ -10,6 +13,7 @@ from pirates.economy import StoreGUI, AccessoriesStoreGUI, TattooStoreGUI, Jewel
 from pirates.economy import ShipStoreGUI
 from pirates.uberdog.UberDogGlobals import *
 from pirates.uberdog.DistributedInventoryBase import DistributedInventoryBase
+from direct.interval.IntervalGlobal import *
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import PDialog
 from pirates.pirate import AvatarTypes
@@ -17,10 +21,12 @@ from pirates.piratesgui.ShipShoppingPanel import ShipShoppingPanel
 from pirates.economy.EconomyGlobals import *
 from pirates.economy import EconomyGlobals
 from pirates.ship.ShipGlobals import *
+from pirates.leveleditor import NPCList
+from pirates.makeapirate import ClothingGlobals
 from pirates.inventory import InventorySellConfirm
 from pirates.inventory import DropGlobals
 from pirates.inventory import InventoryGlobals
-
+from pirates.world.DistributedIsland import DistributedIsland
 
 class DistributedShopKeeper:
     notify = directNotify.newCategory('DistributedShopKeeper')

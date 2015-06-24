@@ -1,4 +1,4 @@
-
+# File: G (Python 2.4)
 
 GameOptionsMatrix = {
     ('0x0000', '0x0000', 'nt.2.5.1'): ('r1s0s0t1c0e0c2t2m0', 10.80522, 3.21062, 230),

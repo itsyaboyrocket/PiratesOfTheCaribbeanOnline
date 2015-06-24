@@ -1,9 +1,8 @@
-import random
+# File: H (Python 2.4)
 
 from direct.interval.IntervalGlobal import *
-
 from pirates.pirate.BattleAvatarGameFSM import BattleAvatarGameFSM
-
+import random
 
 class HolderGameFSM(BattleAvatarGameFSM):
     

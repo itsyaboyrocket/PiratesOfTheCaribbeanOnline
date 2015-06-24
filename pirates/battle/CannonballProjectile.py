@@ -1,16 +1,19 @@
-import random
+# File: C (Python 2.4)
 
+from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
-
+from direct.directnotify import DirectNotifyGlobal
 from pirates.battle import WeaponGlobals
 from pirates.battle import WeaponConstants
+from pirates.piratesbase import PiratesGlobals
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.battle.ProjectileAmmo import ProjectileAmmo
 from pirates.effects.PolyTrail import PolyTrail
 from pirates.effects.FireTrail import FireTrail
 from pirates.effects.FuryTrail import FuryTrail
 from pirates.effects.ThunderBallGlow import ThunderBallGlow
-
+from pirates.effects.FlamingSkull import FlamingSkull
+import random
 
 class CannonballProjectile(ProjectileAmmo):
     default_motion_color = [

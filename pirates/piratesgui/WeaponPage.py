@@ -1,17 +1,25 @@
-from direct.gui.DirectGui import *
+# File: W (Python 2.4)
 
+from direct.gui.DirectGui import *
+from direct.task import Task
+from pandac.PandaModules import *
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import InventoryPage
 from pirates.piratesgui import WeaponPanel
 from pirates.piratesgui.SkillButton import SkillButton
+from pirates.piratesgui import InventoryItemGui
+from pirates.piratesgui import InventoryItemList
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
+from pirates.piratesgui.CombatTray import WeaponButton
+from pirates.economy import EconomyGlobals
 from pirates.economy.EconomyGlobals import *
 from pirates.battle import WeaponGlobals
+from pirates.reputation import ReputationGlobals
 from pirates.piratesgui.ReputationMeter import ReputationMeter
+import copy
 from pirates.inventory import ItemGlobals, InventoryGlobals
 from GuiButton import GuiButton
-
 TOKEN_LIST = [
     InventoryType.CutlassToken,
     InventoryType.PistolToken,

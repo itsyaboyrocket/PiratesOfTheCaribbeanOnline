@@ -1,8 +1,11 @@
+# File: D (Python 2.4)
+
+from direct.interval.IntervalGlobal import *
+from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.ClockDelta import *
-
 from pirates.pirate import DistributedPirateBase
+from pirates.piratesbase import PiratesGlobals
 from pirates.battle import DistributedBattleNPC
-
 
 class DistributedNPCPirate(DistributedBattleNPC.DistributedBattleNPC, DistributedPirateBase.DistributedPirateBase):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedNPCPirate')

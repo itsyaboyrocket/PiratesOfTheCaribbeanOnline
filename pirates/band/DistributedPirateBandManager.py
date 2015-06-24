@@ -1,8 +1,8 @@
-from direct.distributed.DistributedObject import DistributedObject
+# File: D (Python 2.4)
 
+from direct.distributed.DistributedObject import DistributedObject
 from pirates.band import BandConstance
 from pirates.piratesbase import PLocalizer
-
 
 class DistributedPirateBandManager(DistributedObject):
     notify = directNotify.newCategory('PirateBandManager')

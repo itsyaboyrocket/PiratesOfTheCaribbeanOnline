@@ -1,4 +1,4 @@
-
+# File: S (Python 2.4)
 
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfxString

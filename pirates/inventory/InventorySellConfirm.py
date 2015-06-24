@@ -1,9 +1,15 @@
-from direct.gui.DirectGui import *
+# File: I (Python 2.4)
 
-from pirates.piratesgui import PiratesGuiGlobals
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from pirates.piratesgui import GuiPanel, PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
+from otp.otpbase import OTPLocalizer
 from pirates.piratesgui.BorderFrame import BorderFrame
+from pirates.inventory.InventoryUIGlobals import *
+from pirates.economy import EconomyGlobals
+from pirates.makeapirate import ClothingGlobals
 from pirates.inventory import InventoryUISellContainer
 from pirates.inventory import ItemGlobals
 from pirates.piratesgui import GuiButton
@@ -12,7 +18,7 @@ from pirates.piratesgui import PDialog
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.inventory import InventoryStackSeller
 from pirates.inventory import InventoryGlobals
-
+from pirates.inventory.ItemGlobals import DYE_COLORS, COLOR_VALUES
 
 class InventorySellConfirm(BorderFrame):
     

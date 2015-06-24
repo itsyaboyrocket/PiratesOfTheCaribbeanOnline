@@ -1,12 +1,14 @@
+# File: D (Python 2.4)
+
+from pandac.PandaModules import *
 from direct.distributed.ClockDelta import *
 from direct.interval.IntervalGlobal import *
-
 from pirates.distributed import DistributedInteractive
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-
+from direct.showbase.PythonUtil import *
 
 class DistributedCellDoor(DistributedInteractive.DistributedInteractive):
     notify = directNotify.newCategory('DistributedCellDoor')

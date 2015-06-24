@@ -1,13 +1,14 @@
-
+# File: F (Python 2.4)
 
 if __name__ == '__main__':
-    pass
+    from direct.directbase import DirectStart
 
+from direct.interval.IntervalGlobal import *
+from direct.gui.DirectGui import *
 from pandac.PandaModules import *
-
+from direct.showbase.PythonUtil import *
 import FlagGlobals
 from FlagDNA import FlagDNA
-
 
 class Flag(NodePath):
     notify = directNotify.newCategory('Flag')

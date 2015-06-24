@@ -1,9 +1,10 @@
+# File: D (Python 2.4)
+
 import random
 import types
-
+from pandac.PandaModules import *
 from direct.distributed import DistributedNode
 from direct.interval.IntervalGlobal import *
-
 from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.battle import ClientComboDiary
 from pirates.battle import WeaponGlobals
@@ -11,7 +12,6 @@ from pirates.effects import CombatEffect
 from pirates.pirate import AvatarTypes
 from pirates.effects.AttuneSmoke import AttuneSmoke
 from pirates.inventory import ItemGlobals
-
 
 class DistributedTargetableObject(DistributedNode.DistributedNode):
     NoPain = base.config.GetBool('no-pain', 0)

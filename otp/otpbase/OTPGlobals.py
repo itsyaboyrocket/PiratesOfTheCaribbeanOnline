@@ -1,3 +1,4 @@
+from pandac.PandaModules import *
 QuietZone = 1
 UberZone = 2
 WallBitmask = BitMask32(1)

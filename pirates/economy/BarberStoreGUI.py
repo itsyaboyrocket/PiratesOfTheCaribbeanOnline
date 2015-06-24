@@ -1,22 +1,29 @@
+# File: B (Python 2.4)
+
+from direct.directnotify.DirectNotifyGlobal import directNotify
 from direct.gui.DirectGui import *
 from pandac.PandaModules import *
-from direct.task import Task
-
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import GuiPanel
-from pirates.piratesgui import DialogButton
+from pirates.piratesgui import GuiButton, DialogButton
+from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import GuiButton
 from pirates.pirate import DynamicHuman
 from pirates.piratesgui.TabBar import LeftTab, TabBar
+from direct.interval.IntervalGlobal import *
 from pirates.makeapirate import BarberGlobals
+from pirates.piratesgui.BorderFrame import BorderFrame
+from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.pirate.HumanDNA import hairColors, availableHairColors
 from pirates.piratesgui import PiratesConfirm
 from pirates.ai import HolidayGlobals
+from otp.otpbase import OTPGlobals
 from otp.otpgui import OTPDialog
 from pirates.piratesgui import PDialog
+from direct.task import Task
+import random
 from pirates.piratesbase import Freebooter
-
 FACE_CAMERA = 0
 
 class BarberStoreTab(LeftTab):

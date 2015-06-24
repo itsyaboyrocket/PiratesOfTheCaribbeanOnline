@@ -1,8 +1,16 @@
-from direct.gui.DirectGui import *
+# File: P (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.showbase.ShowBaseGlobal import *
+from direct.showbase import DirectObject
+from direct.task import Task
+from direct.gui.DirectGui import *
+from direct.gui import OnscreenText
 from otp.namepanel import NameTumbler
 from pirates.piratesgui import PiratesGuiGlobals
-
+from pirates.piratesbase import PLocalizer
+import random
+import string
 
 class PNameTumbler(NameTumbler.NameTumbler):
     

@@ -1,13 +1,17 @@
+# File: R (Python 2.4)
+
+from pandac.PandaModules import *
 from direct.gui.DirectGui import *
 from direct.fsm import FSM
 from direct.directnotify import DirectNotifyGlobal
-
+from otp.otpbase import OTPLocalizer
+from otp.otpbase import OTPGlobals
 from otp.distributed import CentralLogger
+from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
 from pirates.piratesgui import GuiPanel
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui import GuiButton
-
 
 class ReportAPlayer(GuiPanel.GuiPanel, FSM.FSM):
     notify = DirectNotifyGlobal.directNotify.newCategory('ReportAPlayer')

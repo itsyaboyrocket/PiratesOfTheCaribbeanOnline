@@ -1,8 +1,11 @@
+# File: P (Python 2.4)
+
 from direct.directnotify import DirectNotifyGlobal
-
+from direct.distributed import DistributedObject
 from otp.distributed.DistributedDistrict import DistributedDistrict
+from pirates.world import WorldGlobals
+from pirates.world import WorldCreator
 from pirates.piratesbase import PiratesGlobals
-
 
 class PiratesDistrict(DistributedDistrict):
     notify = DirectNotifyGlobal.directNotify.newCategory('PiratesDistrict')

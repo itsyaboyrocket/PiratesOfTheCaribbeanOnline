@@ -1,5 +1,4 @@
 from direct.directnotify import DirectNotifyGlobal
-
 from pirates.audio import AmbientManagerBase
 from pirates.audio import SoundGlobals
 

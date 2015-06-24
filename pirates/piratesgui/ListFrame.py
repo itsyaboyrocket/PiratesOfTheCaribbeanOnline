@@ -1,9 +1,12 @@
+# File: L (Python 2.4)
+
 from direct.gui.DirectGui import *
-from direct.showbase.DirectObject import DirectObject
-
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
 from pirates.piratesgui import PiratesGuiGlobals
+from direct.showbase.DirectObject import DirectObject
 from pirates.piratesbase import PLocalizer
-
+from pirates.piratesbase import Freebooter
 
 class ListFrame(DirectFrame, DirectObject):
     revealSpeed = PiratesGuiGlobals.ItemRevealTime

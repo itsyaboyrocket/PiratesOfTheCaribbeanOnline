@@ -1,8 +1,12 @@
-from direct.interval.IntervalGlobal import *
+# File: W (Python 2.4)
 
+import random
 import Weapon
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
+from pirates.uberdog.UberDogGlobals import InventoryType
 from pirates.effects.RayGlow import RayGlow
 from pirates.inventory import ItemGlobals
 from pirates.effects.VoodooGroundAura import VoodooGroundAura
@@ -17,7 +21,6 @@ from pirates.effects.VoodooSmokeBlast import VoodooSmokeBlast
 from pirates.effects.VoodooShieldBlast import VoodooShieldBlast
 from pirates.effects.VoodooHealBlast import VoodooHealBlast
 from pirates.effects.FlashEffect import FlashEffect
-
 
 class Wand(Weapon.Weapon):
     modelTypes = [

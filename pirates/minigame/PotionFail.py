@@ -1,9 +1,9 @@
-import math
+# File: P (Python 2.4)
 
 from pirates.piratesgui.GuiPanel import *
 from pirates.piratesgui.RequestButton import RequestButton
 from pirates.piratesbase import PLocalizer
-
+import math
 
 class PotionFail(GuiPanel):
     

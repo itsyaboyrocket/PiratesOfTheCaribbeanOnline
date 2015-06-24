@@ -1,12 +1,13 @@
-import math
+# File: D (Python 2.4)
 
+import math
+from pandac.PandaModules import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import *
-
 from otp.otpbase import OTPRender
 from pirates.distributed import DistributedInteractive
+from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
-
 
 class DistributedBuriedTreasure(DistributedInteractive.DistributedInteractive):
     notify = DirectNotifyGlobal.directNotify.newCategory('DistributedBuriedTreasure')

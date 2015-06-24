@@ -1,8 +1,10 @@
+# File: P (Python 2.4)
+
 from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from direct.task import Task
-
+from pirates.piratesbase import PLocalizer
 import PlayingCardGlobals
-
 
 class PlayingCardBase:
     

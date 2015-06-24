@@ -1,4 +1,4 @@
-
+# File: I (Python 2.4)
 
 from pandac.PandaModules import VBase4
 WEAPON_RANGE = 10000

@@ -1,14 +1,18 @@
-import time
-import os
+# File: P (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.distributed.ClockDelta import *
+from otp.avatar.Avatar import Avatar
 from otp.ai.TimeManager import TimeManager
 from pirates.ship.DistributedSimpleShip import DistributedSimpleShip
-
+import time
+import os
 
 class PiratesTimeManager(TimeManager):
     
     def frameRateMonitor(self, task):
         Avatar = Avatar
+        import otp.avatar.Avatar
         vendorId = 0
         deviceId = 0
         processMemory = 0

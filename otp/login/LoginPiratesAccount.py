@@ -1,5 +1,6 @@
+from pandac.PandaModules import *
+from direct.distributed.MsgTypes import *
 from direct.directnotify.DirectNotifyGlobal import directNotify
-
 from LoginBase import LoginBase
 
 

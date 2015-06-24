@@ -1,9 +1,9 @@
-
+# File: P (Python 2.4)
 
 from direct.controls.GravityWalker import GravityWalker
 from direct.showbase.InputStateGlobal import inputState
 from pandac.PandaModules import *
-
+from direct.task.Task import Task
 
 class PiratesGravityWalker(GravityWalker):
     notify = directNotify.newCategory('PiratesGravityWalker')

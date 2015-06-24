@@ -1,10 +1,12 @@
-import types
+# File: M (Python 2.4)
 
+import types
+from direct.interval.IntervalGlobal import *
+from pirates.battle import Weapon
 from pirates.battle.WeaponGlobals import *
 from pirates.effects import PolyTrail
 from pirates.pirate import AvatarTypes
 from pirates.audio import SoundGlobals
-
 _sfxDict = { }
 
 def cacheSfx(name, file):

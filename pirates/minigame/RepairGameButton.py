@@ -1,12 +1,12 @@
+# File: R (Python 2.4)
+
 from pandac.PandaModules import Vec4, TextNode
 from direct.gui.DirectGui import DirectLabel, DGG
-
 from pirates.piratesgui.DialMeter import DialMeter
 from pirates.piratesgui.GuiButton import GuiButton
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.BorderFrame import BorderFrame
 from pirates.piratesgui.GuiPanel import OnscreenImage
-
 
 class RepairGameButton(GuiButton):
     

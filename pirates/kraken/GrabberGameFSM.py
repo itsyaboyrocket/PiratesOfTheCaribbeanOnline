@@ -1,9 +1,8 @@
-import random
+# File: G (Python 2.4)
 
 from direct.interval.IntervalGlobal import *
-
 from pirates.pirate.BattleAvatarGameFSM import BattleAvatarGameFSM
-
+import random
 
 class bp:
     off = bpdb.bpPreset(cfg = 'krakengrabberfsm', grp = 'off', static = 1)

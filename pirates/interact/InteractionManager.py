@@ -1,9 +1,12 @@
-from direct.directnotify import DirectNotifyGlobal
-from direct.showbase import DirectObject
+# File: I (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.directnotify import DirectNotifyGlobal
+from direct.interval.IntervalGlobal import *
+from direct.showbase import DirectObject
+from direct.task import Task
 from pirates.piratesbase import PiratesGlobals
 import InteractiveBase
-
 
 class InteractionManager(DirectObject.DirectObject):
     notify = DirectNotifyGlobal.directNotify.newCategory('InteractionManager')

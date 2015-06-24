@@ -1,14 +1,17 @@
+# File: P (Python 2.4)
+
 from direct.gui.DirectGui import *
 from pandac.PandaModules import *
-
+from direct.interval.IntervalGlobal import *
 from pirates.pvp.PVPGameBase import PVPGameBase
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
+from pirates.interact import InteractiveBase
 from pirates.ship import DistributedSimpleShip
 from pirates.pvp.MiniScoreItemGui import MiniScoreItemGui
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-
+import random
 
 class PVPGamePirateer(PVPGameBase):
     notify = directNotify.newCategory('PVPGamePirateer')

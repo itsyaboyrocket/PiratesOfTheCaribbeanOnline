@@ -1,4 +1,11 @@
+# File: W (Python 2.4)
+
+from direct.interval.IntervalGlobal import *
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
 from pirates.piratesbase.PiratesGlobals import *
+from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import PLocalizer
 from pirates.shipparts import ShipPart
 from pirates.ship import ShipGlobals
 

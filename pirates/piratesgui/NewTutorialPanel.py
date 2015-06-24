@@ -1,14 +1,15 @@
-import string
+# File: N (Python 2.4)
 
 from direct.gui.DirectGui import *
-from direct.interval.IntervalGlobal import *
-
+from pandac.PandaModules import *
 from pirates.piratesgui import GuiPanel, PiratesGuiGlobals
 from pirates.piratesbase import PLocalizer, PiratesGlobals
+from direct.interval.IntervalGlobal import *
+from pirates.battle import CannonGlobals
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
 import DialogButton
-
+import string
 
 class NewTutorialPanel(GuiPanel.GuiPanel):
     STAGE_TO_EVENTS = {

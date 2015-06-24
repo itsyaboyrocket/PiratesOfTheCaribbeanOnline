@@ -1,17 +1,21 @@
+# File: P (Python 2.4)
+
 import sys
 import os
+import time
 import string
 import bz2
 import random
-
 from direct.showbase.MessengerGlobal import *
+from direct.showbase.DirectObject import DirectObject
 from direct.showbase.EventManagerGlobal import *
+from direct.task.TaskManagerGlobal import *
 from direct.task.Task import Task
-from direct.task.MiniTask import MiniTask
-
+from direct.task.MiniTask import MiniTask, MiniTaskManager
+from direct.directnotify.DirectNotifyGlobal import *
+from pandac.PandaModules import *
 from otp.launcher.LauncherBase import LauncherBase
 from pirates.piratesbase import PLocalizer
-
 
 class PiratesQuickLauncher(LauncherBase):
     GameName = 'Pirates'
@@ -339,5 +343,6 @@ class PiratesQuickLauncher(LauncherBase):
         self.newTaskManager()
         eventMgr.restart()
         PiratesStart = PiratesStart
+        import pirates.piratesbase
 
 

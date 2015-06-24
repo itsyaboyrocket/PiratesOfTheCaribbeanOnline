@@ -1,14 +1,16 @@
-from direct.gui.DirectGui import *
+# File: B (Python 2.4)
 
-from pirates.piratesgui import PiratesGuiGlobals
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from pirates.piratesgui import GuiPanel, PiratesGuiGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.piratesbase import PLocalizer
+from otp.otpbase import OTPLocalizer
 from pirates.piratesgui.BorderFrame import BorderFrame
 from pirates.piratesgui import GuiButton
 from pirates.pirate import BodyDefs
 from pirates.piratesgui import PDialog
 from otp.otpgui import OTPDialog
-
 
 class BodyShapeChanger(BorderFrame):
     

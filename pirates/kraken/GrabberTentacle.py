@@ -1,13 +1,15 @@
-import math
-import random
+# File: G (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.ClockDelta import *
-
 from otp.otpbase import OTPRender
 from pirates.creature.DistributedCreature import DistributedCreature
 from pirates.creature.Monstrous import Monstrous
 from pirates.kraken.GrabberGameFSM import GrabberGameFSM
-
+from pirates.piratesbase import PiratesGlobals
+import math
+import random
 bp = bpdb.bpPreset('Kraken')
 
 class GrabberTentacle(DistributedCreature, Monstrous):
@@ -435,6 +437,7 @@ class GrabberTentacle(DistributedCreature, Monstrous):
             self.creature.update()
             range = self.creature.getGrabTargetNode().getPos().length()
             PiratesGlobals = PiratesGlobals
+            import pirates.piratesbase
             cNode = CollisionNode(self.uniqueName('Range'))
             cNode.setFromCollideMask(BitMask32.allOff())
             cNode.setIntoCollideMask(PiratesGlobals.WallBitmask)

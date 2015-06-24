@@ -1,4 +1,4 @@
-
+# File: D (Python 2.4)
 
 from pandac.PandaModules import *
 from direct.distributed import DistributedObject

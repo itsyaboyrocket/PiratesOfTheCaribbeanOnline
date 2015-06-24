@@ -1,16 +1,23 @@
-from direct.gui.DirectGui import *
-from direct.interval.IntervalGlobal import *
-from direct.directnotify import DirectNotifyGlobal
+# File: M (Python 2.4)
 
+import copy
+import string
+import os
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
+from pirates.piratesbase import PiratesGlobals
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.piratesgui.GuiButton import GuiButton
 from pirates.piratesbase import PLocalizer
+from direct.directnotify import DirectNotifyGlobal
+from pirates.piratesgui import PDialog
 from pirates.piratesgui import FeedbackPanel
 from pirates.piratesgui import MainMenuConfirm
 from pirates.piratesgui.GameOptions import GameOptions
 from pirates.audio import SoundGlobals
 from pirates.audio.SoundGlobals import loadSfx
-
+from otp.otpgui import OTPDialog
 
 class MainMenu(DirectFrame):
     notify = DirectNotifyGlobal.directNotify.newCategory('MainMenu')

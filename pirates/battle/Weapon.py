@@ -1,8 +1,14 @@
-from direct.directnotify import DirectNotifyGlobal
+# File: W (Python 2.4)
 
+from direct.showbase.DirectObject import *
+from direct.gui.DirectGui import *
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
+from direct.directnotify import DirectNotifyGlobal
+from pirates.effects.SmokeCloud import SmokeCloud
 import WeaponGlobals
 from pirates.inventory import ItemGlobals
-
+from pirates.uberdog.UberDogGlobals import *
 
 class Weapon(NodePath):
     notify = DirectNotifyGlobal.directNotify.newCategory('Weapon')

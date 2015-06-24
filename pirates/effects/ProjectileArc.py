@@ -1,14 +1,13 @@
-import random
+# File: P (Python 2.4)
 
 from pandac.PandaModules import *
 from direct.interval.IntervalGlobal import *
 from direct.showbase.DirectObject import *
-
 from pirates.piratesbase import PiratesGlobals
 from pirates.effects.DustRing import DustRing
 from pirates.effects.SmallSplash import SmallSplash
 from pirates.effects.CannonSplash import CannonSplash
-
+import random
 
 class ProjectileArc(DirectObject, NodePath):
     

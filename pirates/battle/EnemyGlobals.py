@@ -1,8 +1,14 @@
+# File: E (Python 2.4)
+
+import random
+import copy
+from pandac.PandaModules import *
 from pirates.battle import WeaponGlobals
 from pirates.battle.EnemySkills import *
 from pirates.pirate import AvatarTypes
 from pirates.pirate.AvatarType import *
 from pirates.uberdog.UberDogGlobals import InventoryType
+from pirates.reputation import ReputationGlobals
 from pirates.piratesbase import PiratesGlobals
 from pirates.inventory import ItemGlobals
 SpawnPositions = [

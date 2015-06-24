@@ -1,16 +1,25 @@
-import random
+# File: H (Python 2.4)
 
+from pandac.PandaModules import *
+from direct.interval.IntervalGlobal import *
+from direct.actor import Actor
 from direct.task import Task
+from direct.showbase import ShadowPlacer
 from direct.fsm.ClassicFSM import ClassicFSM
 from direct.fsm.State import State
+from direct.fsm import FSM
 from direct.directnotify import DirectNotifyGlobal
-
+from direct.showbase.PythonUtil import quickProfile
 from pirates.piratesbase import PiratesGlobals
+from pirates.battle import WeaponGlobals
 from pirates.pirate import Biped, HumanBase
 from pirates.pirate import HumanDNA
+from pirates.makeapirate import PirateMale
+from pirates.makeapirate import PirateFemale
 from pirates.pirate.HumanAnimationMixer import HumanAnimationMixer
 from pirates.pirate import BodyDefs
-
+import random
+import cPickle
 TX = 0
 TY = 1
 TZ = 2

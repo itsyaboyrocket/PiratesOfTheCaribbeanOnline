@@ -1,10 +1,10 @@
-from direct.distributed.DistributedObject import DistributedObject
-from direct.directnotify.DirectNotifyGlobal import directNotify
+# File: D (Python 2.4)
 
+from direct.distributed.DistributedObject import DistributedObject
 from pirates.uberdog.TradableInventory import TradableInventory
 from pirates.uberdog.UberDogGlobals import InventoryId, InventoryType
 from pirates.inventory import InventoryGlobals
-
+from direct.directnotify.DirectNotifyGlobal import directNotify
 
 class DistributedInventory(TradableInventory, DistributedObject):
     notify = directNotify.newCategory('Inventory')

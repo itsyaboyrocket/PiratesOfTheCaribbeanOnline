@@ -1,11 +1,14 @@
+# File: D (Python 2.4)
+
 from direct.directnotify.DirectNotifyGlobal import directNotify
 from direct.showbase.PythonUtil import report
-
 from pirates.instance import DistributedInstanceBase
+from pirates.piratesbase import PiratesGlobals
+from pirates.piratesbase import TODGlobals
 from pirates.battle import EnemyGlobals
 from pirates.pvp import PVPGlobals
+from pirates.effects.FireworkGlobals import *
 from pirates.effects.FireworkShowManager import FireworkShowManager
-
 
 class DistributedMainWorld(DistributedInstanceBase.DistributedInstanceBase):
     notify = directNotify.newCategory('DistributedMainWorld')

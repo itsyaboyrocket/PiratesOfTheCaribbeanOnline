@@ -1,11 +1,13 @@
+# File: C (Python 2.4)
+
 from direct.gui.DirectGui import *
 from direct.interval.IntervalGlobal import *
-
+from pandac.PandaModules import *
 from pirates.piratesbase import PiratesGlobals
-from pirates.piratesgui import PiratesGuiGlobals
+from pirates.piratesgui import GuiPanel, PiratesGuiGlobals
+from pirates.piratesgui.BorderFrame import BorderFrame
 from pirates.piratesgui.TabBar import LeftTab, TabBar
 from pirates.piratesbase import PLocalizer
-
 
 class ChestTab(LeftTab):
 

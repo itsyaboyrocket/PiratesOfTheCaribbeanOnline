@@ -1,10 +1,11 @@
-from direct.distributed.DistributedObject import DistributedObject
-from direct.fsm.StatePush import FunctionCall
+# File: S (Python 2.4)
 
+from direct.distributed.DistributedObject import DistributedObject
 from pirates.pvp.SiegeManagerBase import SiegeManagerBase
 from otp.speedchat import SCDecoders
+from pirates.speedchat import PSCDecoders
 from pirates.piratesbase import PLocalizer
-
+from direct.fsm.StatePush import FunctionCall
 
 class SiegeManager(DistributedObject, SiegeManagerBase):
     TeamJoinableChangedEvent = 'PVPTeamJoinableChanged'

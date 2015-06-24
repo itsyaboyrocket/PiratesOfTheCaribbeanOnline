@@ -1,4 +1,4 @@
-
+# File: P (Python 2.4)
 
 global defaultRolloverSound, defaultClickSound
 from pirates.audio import SoundGlobals
