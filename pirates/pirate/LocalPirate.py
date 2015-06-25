@@ -85,7 +85,7 @@ if base.config.GetBool('want-pstats', 0):
 
 
 class bp:
-    loginCfg = bpdb.bpGroup(iff = False, cfg = 'loginCfg', static = 1)
+    loginCfg = bpdb.bpPreset(iff = False, cfg = 'loginCfg', static = 1)
 
 from direct.controls.ControlManager import ControlManager
 if base.config.GetBool('want-custom-keys', 0):

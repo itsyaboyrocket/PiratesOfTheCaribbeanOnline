@@ -95,7 +95,7 @@ from pirates.piratesbase import Freebooter
 from pirates.inventory import ItemConstants
 
 class bp:
-    loginCfg = bpdb.bpGroup(iff = False, cfg = 'loginCfg', static = 1)
+    loginCfg = bpdb.bpPreset(iff = False, cfg = 'loginCfg', static = 1)
 
 
 class DistributedPlayerPirate(DistributedPirateBase, DistributedPlayer, DistributedBattleAvatar, DistributedQuestAvatar, PAvatarHandle):
