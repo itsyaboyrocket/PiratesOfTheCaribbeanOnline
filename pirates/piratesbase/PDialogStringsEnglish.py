@@ -170,7 +170,7 @@ DialogStringDict = {
                 EG.EMOTE_BLOWKISS] } },
     'rc.ghosts.fantifico.visitTiaDalma.intro': {
         0: {
-            'dialog': "S\xc3\xad, I see you are a worthy Pirate. So you help Se\xc3\xb1or Fantifico, yes?\nWe help each other, yes? I have something you want. You can help me get something I need, S\xc3\xad? My need is simple - I merely want to... LIVE AGAIN! You get me potion to live again, I help you with Ned's key. We have a deal, yes?",
+            'dialog': "Scad, I see you are a worthy Pirate. So you help Sec or Fantifico, yes?\nWe help each other, yes? I have something you want. You can help me get something I need, Scad? My need is simple - I merely want to... LIVE AGAIN! You get me potion to live again, I help you with Ned's key. We have a deal, yes?",
             'emotes': [
                 EG.EMOTE_YES,
                 EG.EMOTE_SMILE,

@@ -78,8 +78,7 @@ class DistributedBlackjackTable(DistributedGameTable.DistributedGameTable):
                     hands = hands + [
                         handArray[k]]
                     break
-                    continue
-            
+
         
         return hands
 

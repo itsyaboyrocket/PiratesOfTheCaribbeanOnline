@@ -78,8 +78,7 @@ class PotionRecipePicker(DirectFrame):
                                     if (PotionGlobals.getPotionItemID(recipe.potionID) == currTask.potionType or not primaryComplete or PotionGlobals.getPotionItemID(recipe.potionID) == currTask.potionTypeBonus) and not bonusComplete:
                                         raise brewable
                                         continue
-                            
-                continue
+
                 except brewable:
                     pass
                 

@@ -201,8 +201,9 @@ class DistributedShipDeployer(DistributedNode):
         
         padding = 3
         numSpheres = len(self.deploySpheres)
-        for sphere in lambda [outmost-iterable]: for s in [outmost-iterable]:
-s % numSpheres(xrange(sphereId - padding, sphereId + padding + 1)):
+        for sphere in self.deploySpheres:
+            for s in sphere:
+                s % numSpheres(xrange(sphereId - padding, sphereId + padding + 1))
             self.deploySpheres[sphere].unstash()
         
 

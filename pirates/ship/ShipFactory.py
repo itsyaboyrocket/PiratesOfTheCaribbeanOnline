@@ -111,8 +111,6 @@ class ShipFactory:
 
     
     def getShip(self, shipClass, style = ShipGlobals.Styles.Undefined, logo = ShipGlobals.Logos.Undefined, hullDesign = None, detailLevel = 2, wantWheel = True, hullMaterial = None, sailMaterial = None, sailPattern = None, prowType = None):
-        Ship = Ship
-        import pirates.ship
         modelClass = ShipGlobals.getModelClass(shipClass)
         shipConfig = ShipGlobals.getShipConfig(shipClass)
         if style == ShipGlobals.Styles.Undefined:

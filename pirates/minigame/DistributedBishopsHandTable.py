@@ -31,7 +31,6 @@ class DistributedBishopsHandTable(DistributedGameTable.DistributedGameTable):
         self.pendingStakes = 0
         self.activeStakes = 0
         self.runningStakes = 0
-        continue
         self.seatStatus = [ [
             0,
             -1] for x in range(self.NumSeats) ]

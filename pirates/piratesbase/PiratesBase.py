@@ -1,5 +1,3 @@
-# File: P (Python 2.4)
-
 import sys
 import time
 import os
@@ -24,6 +22,7 @@ from pirates.piratesbase import PLocalizer
 from pirates.piratesgui.GameOptions import Options
 from pirates.piratesgui import PiratesGuiGlobals
 from pirates.ship import ShipFactory
+from pirates.ship import ShipGlobals
 from pirates.piratesgui import ScreenshotViewer
 from pirates.piratesbase import FancyLoadingScreen
 from pirates.piratesbase import LoadingScreen
@@ -66,7 +65,7 @@ class PiratesBase(OTPBase):
         OTPBase.__init__(self, windowType = 'none')
 
         self.hasEmbedded = hasEmbedded
-        self.shipFactory = None
+        self.shipFactory = ShipFactory.ShipFactory(phasedLoading = True)
         self.isMainWindowOpen = False
         if __dev__:
             launcher.setValue('GAME_SHOW_ADDS', 'NO')
@@ -193,7 +192,6 @@ class PiratesBase(OTPBase):
             self.loadingScreen = FancyLoadingScreen.FancyLoadingScreen(None)
         self.loadingScreen.showTarget(pickapirate = True)
         self.loadingScreen.show()
-        self.loadingScreen.beginStep('PiratesBase', 34, 25)
         if not self.isMainWindowOpen:
 
             try:
@@ -203,7 +201,6 @@ class PiratesBase(OTPBase):
 
             sys.exit(1)
 
-        self.loadingScreen.tick()
         options.options_to_config()
         options.setRuntimeOptions()
         if base.wantEnviroDR:
@@ -212,7 +209,7 @@ class PiratesBase(OTPBase):
             self.setupAutoPixelZoom()
         else:
             base.cam.node().setCameraMask(OTPRender.MainCameraBitmask | OTPRender.EnviroCameraBitmask)
-        self.loadingScreen.tick()
+
         self._PiratesBase__alreadyExiting = False
         self.exitFunc = self.userExit
         TextureStage.getDefault().setPriority(10)
@@ -251,12 +248,12 @@ class PiratesBase(OTPBase):
         self.positionFarCull()
         globalClockMaxDt = base.config.GetFloat('pirates-max-dt', 0.20000000000000001)
         globalClock.setMaxDt(globalClockMaxDt)
-        self.loadingScreen.tick()
+
         if self.config.GetBool('want-particles', 1):
             self.notify.debug('Enabling particles')
             self.enableParticles()
 
-        self.loadingScreen.tick()
+        
         self.notify.debug('Enabling new ship controls')
         self.avatarPhysicsMgr = PhysicsManager()
         integrator = LinearEulerIntegrator()
@@ -272,7 +269,7 @@ class PiratesBase(OTPBase):
         viscosity.setAmplitude(2)
         fn.addForce(viscosity)
         self.avatarPhysicsMgr.addLinearForce(viscosity)
-        self.loadingScreen.tick()
+        
         fn = ForceNode('avatarControls')
         fnp = NodePath(fn)
         fnp.reparentTo(render)
@@ -281,12 +278,12 @@ class PiratesBase(OTPBase):
         controlForce.setAmplitude(5)
         fn.addForce(controlForce)
         self.avatarPhysicsMgr.addLinearForce(controlForce)
-        self.loadingScreen.tick()
+        
         self.accept('PandaPaused', self.disableAllAudio)
         self.accept('PandaRestarted', self.enableAllAudio)
         self.emoteGender = None
         shadow = loader.loadModel('models/misc/drop_shadow.bam')
-        self.loadingScreen.tick()
+        
         taskMgr.setupTaskChain('phasePost', numThreads = 0, threadPriority = TPHigh)
         #launcher.addPhasePostProcess(3, self.phase3Post, taskChain = 'phasePost')
         #launcher.addPhasePostProcess(4, self.phase4Post, taskChain = 'phasePost')
@@ -329,7 +326,6 @@ class PiratesBase(OTPBase):
         self.zoneLODTarget = None
         self.transitions.loadLetterbox()
         self.transitions.letterbox.setColorScale(0, 0, 0, 1)
-        self.loadingScreen.endStep('PiratesBase')
 
 
     def setNoticeSystem(self, on):
@@ -503,64 +499,64 @@ class PiratesBase(OTPBase):
             Holder = Holder
             import pirates.kraken
             Holder.Holder.setupAssets()
-            self.loadingScreen.tick()
+            
 
         if base.config.GetBool('want-seamonsters', 0):
             SeaSerpent = SeaSerpent
             import pirates.creature
             SeaSerpent.SeaSerpent.setupAssets()
-            self.loadingScreen.tick()
+            
 
         PowderKeg.PowderKeg.setupAssets()
-        self.loadingScreen.tick()
+        
         Torch.Torch.setupAssets()
-        self.loadingScreen.tick()
+        
         FishingRod.FishingRod.setupAssets()
-        self.loadingScreen.tick()
+        
         Bayonet.Bayonet.setupAssets()
-        self.loadingScreen.tick()
+        
         Pistol.Pistol.setupAssets()
-        self.loadingScreen.tick()
+        
         Doll.Doll.setupAssets()
-        self.loadingScreen.tick()
+        
         Grenade.Grenade.setupAssets()
-        self.loadingScreen.tick()
+        
         Wand.Wand.setupAssets()
-        self.loadingScreen.tick()
+        
         Melee.Melee.setupSounds()
-        self.loadingScreen.tick()
+        
         DualCutlass.DualCutlass.setupAssets()
-        self.loadingScreen.tick()
+        
         Foil.Foil.setupAssets()
-        self.loadingScreen.tick()
+        
         Gun.Gun.setupAssets()
-        self.loadingScreen.tick()
+        
         Alligator.Alligator.setupAssets()
-        self.loadingScreen.tick()
+        
         Bat.Bat.setupAssets()
-        self.loadingScreen.tick()
+        
         Chicken.Chicken.setupAssets()
-        self.loadingScreen.tick()
+        
         Crab.Crab.setupAssets()
-        self.loadingScreen.tick()
+        
         Dog.Dog.setupAssets()
-        self.loadingScreen.tick()
+        
         FlyTrap.FlyTrap.setupAssets()
-        self.loadingScreen.tick()
+        
         Monkey.Monkey.setupAssets()
-        self.loadingScreen.tick()
+        
         Pig.Pig.setupAssets()
-        self.loadingScreen.tick()
+        
         Rooster.Rooster.setupAssets()
-        self.loadingScreen.tick()
+        
         Scorpion.Scorpion.setupAssets()
-        self.loadingScreen.tick()
+        
         Seagull.Seagull.setupAssets()
-        self.loadingScreen.tick()
+        
         Stump.Stump.setupAssets()
-        self.loadingScreen.tick()
+        
         Wasp.Wasp.setupAssets()
-        self.loadingScreen.tick()
+        
 
 
     def buildAssets(self):
@@ -571,7 +567,7 @@ class PiratesBase(OTPBase):
         if not self.shipFactory:
             self.shipFactory = ShipFactory.ShipFactory(phasedLoading = True)
 
-        self.loadingScreen.tick()
+        
 
 
     def buildPhase4Ships(self):
@@ -579,7 +575,7 @@ class PiratesBase(OTPBase):
             self.buildShips()
 
         self.shipFactory.handlePhase4()
-        self.loadingScreen.tick()
+        
 
 
     def buildPhase5Ships(self):
@@ -587,7 +583,7 @@ class PiratesBase(OTPBase):
             self.buildShips()
 
         self.shipFactory.handlePhase5()
-        self.loadingScreen.tick()
+        
 
 
     def openMainWindow(self, *args, **kw):

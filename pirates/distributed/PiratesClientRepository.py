@@ -2,43 +2,39 @@ import types
 import random
 import gc
 import __builtin__
-base.loadingScreen.beginStep('PCR', 20, 15)
 from direct.showbase.ShowBaseGlobal import *
-base.loadingScreen.tick()
 from direct.distributed.ClockDelta import *
-base.loadingScreen.tick()
 from direct.gui.DirectGui import *
-base.loadingScreen.tick()
 from pandac.PandaModules import *
-base.loadingScreen.tick()
+
 from otp.nametag import NametagGlobals
-base.loadingScreen.tick()
+
 from direct.interval.IntervalGlobal import *
-base.loadingScreen.tick()
+
 from direct.showbase.EventGroup import EventGroup
-base.loadingScreen.tick()
+
 from direct.showbase.PythonUtil import report
-base.loadingScreen.tick()
+
 from pirates.piratesbase.PiratesGlobals import *
-base.loadingScreen.tick()
+
 from PiratesMsgTypes import *
-base.loadingScreen.tick()
+
 from direct.directnotify.DirectNotifyGlobal import directNotify
-base.loadingScreen.tick()
+
 from direct.fsm import ClassicFSM
-base.loadingScreen.tick()
+
 from direct.fsm import State
-base.loadingScreen.tick()
+
 from direct.task import Task
-base.loadingScreen.tick()
+
 from direct.distributed.PyDatagram import PyDatagram
-base.loadingScreen.tick()
+
 from direct.distributed.PyDatagramIterator import PyDatagramIterator
-base.loadingScreen.tick()
+
 from direct.distributed import DistributedSmoothNode
-base.loadingScreen.tick()
+
 from direct.distributed.InterestWatcher import InterestWatcher
-base.loadingScreen.tick()
+
 from direct.distributed import DoInterestManager
 from direct.distributed.ClientRepositoryBase import ClientRepositoryBase
 from otp.distributed.OTPClientRepository import OTPClientRepository
@@ -80,7 +76,7 @@ from pirates.piratesbase import LoadingScreen
 from pirates.ai import NewsManager
 from pirates.makeapirate import PCPickANamePattern
 from pirates.coderedemption.CodeRedemption import CodeRedemption
-base.loadingScreen.endStep('PCR')
+
 from pirates.quest import QuestLadderDynMap
 from pirates.quest.QuestLadderDependency import QuestLadderDependency
 from pirates.quest.QuestChoiceDynMap import QuestChoiceDynMap
@@ -91,7 +87,7 @@ from pirates.login.AccountDetailRecord import AccountDetailRecord
 
 
 class bp:
-    loginCfg = bpdb.bpGroup(iff = True, cfg = 'loginCfg', static = 1)
+    loginCfg = bpdb.bpPreset(iff = True, cfg = 'loginCfg', static = 1)
 
 
 class PiratesClientRepository(OTPClientRepository):
@@ -133,6 +129,7 @@ class PiratesClientRepository(OTPClientRepository):
         self.avChoiceDoneEvent = None
         self.avChoice = None
         self.avCreate = None
+        self.playToken = None
         self.currentCutscene = None
         self.activeWorld = None
         self.oldWorld = None
