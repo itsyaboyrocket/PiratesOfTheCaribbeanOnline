@@ -1,0 +1,5 @@
+from pirates.distributed.DistributedInteractiveAI import DistributedInteractiveAI
+from pirates.distributed.DistributedTargetableObjectAI import DistributedTargetableObjectAI
+
+class DistributedInteractivePropAI(DistributedInteractiveAI, DistributedTargetableObjectAI):
+    pass

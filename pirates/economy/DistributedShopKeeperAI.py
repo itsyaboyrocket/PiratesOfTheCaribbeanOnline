@@ -1,0 +1,3 @@
+
+class DistributedShopKeeperAI():
+    pass

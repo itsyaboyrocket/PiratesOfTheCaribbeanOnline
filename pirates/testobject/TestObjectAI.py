@@ -1,0 +1,3 @@
+
+class TestObjectAI():
+    pass

@@ -1,0 +1,3 @@
+
+class DistributedHolidayBonfireAI():
+    pass

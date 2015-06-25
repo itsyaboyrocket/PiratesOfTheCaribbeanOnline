@@ -1,0 +1,4 @@
+from pirates.invasion.DistributedPostInvasionObjectAI import DistributedPostInvasionObjectAI
+
+class DistributedWreckedDelFuegoTownAI(DistributedPostInvasionObjectAI):
+    pass

@@ -1,0 +1,5 @@
+from pirates.distributed.DistributedInteractiveUD import DistributedInteractiveUD
+from pirates.shipparts.DistributedShippartUD import DistributedShippartUD
+
+class DistributedSteeringWheelUD(DistributedInteractiveUD, DistributedShippartUD):
+    pass

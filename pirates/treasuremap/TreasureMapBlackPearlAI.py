@@ -1,0 +1,4 @@
+from pirates.treasuremap.DistributedTreasureMapInstanceAI import DistributedTreasureMapInstanceAI
+
+class TreasureMapBlackPearlAI(DistributedTreasureMapInstanceAI):
+    pass
