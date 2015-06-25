@@ -55,7 +55,7 @@ hdr = Hdr()
 from pirates.seapatch.Reflection import Reflection
 Reflection.initialize(render)
 serverVersion = base.config.GetString('server-version', 'no_version_set')
-print 'serverVersion: ', serverVersion
+print 'serverVersion:', serverVersion
 from pirates.distributed import PiratesClientRepository
 cr = PiratesClientRepository.PiratesClientRepository(serverVersion, launcher)
 base.initNametagGlobals()
