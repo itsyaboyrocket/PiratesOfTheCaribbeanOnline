@@ -1212,7 +1212,7 @@ class MakeAPirate(DirectObject, StateData.StateData, FSM.FSM):
         if self.guiConfirmDoneBox:
             self.guiConfirmDoneBox.destroy()
 
-        self.guiConfirmDoneBox = PDialog.PDialog(text = PLocalizer.MakeAPirateConfirm, style = OTPDialog.YesNo, command = self.handleConfirmDone)
+        self.guiConfirmDoneBox = PDialog.PDialog(parent=aspect2dp, text = PLocalizer.MakeAPirateConfirm, style = OTPDialog.YesNo, command = self.handleConfirmDone)
 
 
     def handleConfirmDone(self, done):
