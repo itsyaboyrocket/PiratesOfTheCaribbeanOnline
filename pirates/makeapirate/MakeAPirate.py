@@ -390,12 +390,6 @@ class MakeAPirate(DirectObject, StateData.StateData, FSM.FSM):
         self.bookModel.show()
         self.lowBookModel.show()
         self.guiBottomBar.show()
-        if self.skipTutorial and not (self.isNPCEditor):
-            self.jail = loader.loadModel('models/buildings/navy_jail_interior_stairless')
-            self.jail.flattenMedium()
-            self.jail.reparentTo(render)
-            self.jail.setLightOff()
-
         if not self.noJailLight:
             self.pirate.setH(self.initH)
             self.pirate.setZ(-1.5)
@@ -834,6 +828,11 @@ class MakeAPirate(DirectObject, StateData.StateData, FSM.FSM):
 
 
     def load(self):
+        self.jail = loader.loadModel('models/buildings/navy_jail_interior_stairless')
+        self.jail.flattenMedium()
+        self.jail.reparentTo(render)
+        self.jail.setLightOff()
+
         self.charGui = loader.loadModel('models/gui/char_gui')
         self.triangleGui = loader.loadModel('models/gui/triangle')
         self.bookModel = DirectFrame(parent = base.a2dTopRightNs, image = self.charGui.find('**/chargui_base'), image_pos = (-0.13, 0, 0), relief = None, pos = (-0.65000000000000002, 0, -0.80000000000000004), scale = 0.41999999999999998)
