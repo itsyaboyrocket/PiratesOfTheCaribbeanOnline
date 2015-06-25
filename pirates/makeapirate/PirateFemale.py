@@ -1,5 +1,3 @@
-# File: P (Python 2.4)
-
 from pandac.PandaModules import *
 from direct.showbase import DirectObject
 from direct.directnotify import DirectNotifyGlobal
@@ -2908,8 +2906,8 @@ class PirateFemale(DirectObject.DirectObject):
                         if not isFromPromo or ItemGlobals.isFromPromo(hatId):
                             if (isFromPVP or ItemGlobals.isFromPVP(hatId)) and isFromNPC:
                                 pass
-            toBeAdded &= ItemGlobals.isFromNPC(hatId)
-            if toBeAdded:
+
+            if toBeAdded != ItemGlobals.isFromNPC(hatId):
                 choiceHats[hatId] = [
                     modelId,
                     texId,
@@ -2943,8 +2941,8 @@ class PirateFemale(DirectObject.DirectObject):
                         if not isFromPromo or ItemGlobals.isFromPromo(shirtId):
                             if (isFromPVP or ItemGlobals.isFromPVP(shirtId)) and isFromNPC:
                                 pass
-            toBeAdded &= ItemGlobals.isFromNPC(shirtId)
-            if toBeAdded:
+
+            if toBeAdded != ItemGlobals.isFromNPC(shirtId):
                 choiceShirts[shirtId] = [
                     modelId,
                     texId,
@@ -2980,8 +2978,8 @@ class PirateFemale(DirectObject.DirectObject):
                         if not isFromPromo or ItemGlobals.isFromPromo(vestId):
                             if (isFromPVP or ItemGlobals.isFromPVP(vestId)) and isFromNPC:
                                 pass
-            toBeAdded &= ItemGlobals.isFromNPC(vestId)
-            if toBeAdded:
+
+            if toBeAdded != ItemGlobals.isFromNPC(vestId):
                 choiceVests[vestId] = [
                     modelId,
                     texId,
@@ -3015,8 +3013,8 @@ class PirateFemale(DirectObject.DirectObject):
                         if not isFromPromo or ItemGlobals.isFromPromo(coatId):
                             if (isFromPVP or ItemGlobals.isFromPVP(coatId)) and isFromNPC:
                                 pass
-            toBeAdded &= ItemGlobals.isFromNPC(coatId)
-            if toBeAdded:
+
+            if toBeAdded != ItemGlobals.isFromNPC(coatId):
                 choiceCoats[coatId] = [
                     modelId,
                     texId,
@@ -3050,8 +3048,8 @@ class PirateFemale(DirectObject.DirectObject):
                         if not isFromPromo or ItemGlobals.isFromPromo(pantId):
                             if (isFromPVP or ItemGlobals.isFromPVP(pantId)) and isFromNPC:
                                 pass
-            toBeAdded &= ItemGlobals.isFromNPC(pantId)
-            if toBeAdded:
+
+            if toBeAdded != ItemGlobals.isFromNPC(pantId):
                 choicePants[pantId] = [
                     modelId,
                     texId,
@@ -3087,8 +3085,8 @@ class PirateFemale(DirectObject.DirectObject):
                         if not isFromPromo or ItemGlobals.isFromPromo(beltId):
                             if (isFromPVP or ItemGlobals.isFromPVP(beltId)) and isFromNPC:
                                 pass
-            toBeAdded &= ItemGlobals.isFromNPC(beltId)
-            if toBeAdded:
+
+            if toBeAdded != ItemGlobals.isFromNPC(beltId):
                 choiceBelts[beltId] = [
                     modelId,
                     texId,
@@ -3122,8 +3120,8 @@ class PirateFemale(DirectObject.DirectObject):
                         if not isFromPromo or ItemGlobals.isFromPromo(shoeId):
                             if (isFromPVP or ItemGlobals.isFromPVP(shoeId)) and isFromNPC:
                                 pass
-            toBeAdded &= ItemGlobals.isFromNPC(shoeId)
-            if toBeAdded:
+
+            if toBeAdded != ItemGlobals.isFromNPC(shoeId):
                 choiceShoes[shoeId] = [
                     modelId,
                     texId,

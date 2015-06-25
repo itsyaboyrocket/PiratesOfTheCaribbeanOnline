@@ -580,13 +580,7 @@ class ClothesGUI(DirectFrame, StateData.StateData):
 
     def randomPick(self):
         self.avatar.clothing.stash()
-        for type in [
-            'SHIRT',
-            'VEST',
-            'COAT',
-            'PANT',
-            'BELT',
-            'SHOE']:
+        for type in ['SHIRT', 'VEST', 'COAT', 'PANT', 'BELT', 'SHOE']:
             id = random.choice(self.avatar.choices[type].keys())
             itemId = self.avatar.choices[type][id][0]
             texId = self.avatar.choices[type][id][1]
