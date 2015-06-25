@@ -1,5 +1,3 @@
-# File: M (Python 2.4)
-
 from direct.showbase.DirectObject import DirectObject
 from direct.directnotify import DirectNotifyGlobal
 from direct.gui import DirectGuiGlobals
@@ -281,8 +279,6 @@ class MakeAPirate(DirectObject, StateData.StateData, FSM.FSM):
         self.skipTutorial = base.config.GetBool('skip-tutorial', 0)
         self.chooseFemale = base.config.GetBool('choose-female', 0)
         self.noJailLight = base.config.GetBool('no-jail-light', 0)
-        if hasattr(base, 'pe') and base.pe:
-            self.noJailLight = True
 
         if self.skipTutorial and isNPCEditor and self.avList[self.index] == None or self.avList[self.index] == OTPGlobals.AvatarSlotAvailable:
             self.isTutorial = 0
@@ -660,7 +656,6 @@ class MakeAPirate(DirectObject, StateData.StateData, FSM.FSM):
 
 
     def setupCamera(self, character):
-
         try:
             id = character.style.getBodyShape()
         except:
@@ -694,7 +689,6 @@ class MakeAPirate(DirectObject, StateData.StateData, FSM.FSM):
         camera.setPos(self.camInitPos)
         self.lastRot = lastRot
         self.rotatePirate()
-
 
     def placePirate(self, wantClothingChange):
         if self.pirate.style.gender == 'f':
