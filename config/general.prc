@@ -15,3 +15,4 @@ dc-file astron/dclass/otp.dc
 game-server 127.0.0.1
 server-port 7199
 server-version pirates-dev
+account-bridge-filename astron/databases/account-bridge.db
