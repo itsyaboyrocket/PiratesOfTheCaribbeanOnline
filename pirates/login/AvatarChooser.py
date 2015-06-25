@@ -210,7 +210,7 @@ class AvatarChooser(DirectObject, StateData):
         if not base.config.GetBool('disable-pirates-options', 0):
             pass
         self.disableOptions = base.config.GetBool('location-kiosk', 0)
-        base.musicMgr.load('avchooser-theme')
+        base.musicMgr.load(SoundGlobals.MUSIC_AVATAR_CHOOSER)
         self.model = loader.loadModel('models/gui/avatar_chooser_rope')
         charGui = loader.loadModel('models/gui/char_gui')
         self.oceanSfx = loadSfx(SoundGlobals.SFX_FX_OCEAN_LOOP)
