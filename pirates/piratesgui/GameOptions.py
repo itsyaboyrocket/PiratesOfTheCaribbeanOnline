@@ -601,7 +601,7 @@ class Options(OptionSpace):
         self.shader = base.config.GetBool('want-shaders', 1)
         self.shadow = base.config.GetBool('want-avatar-shadows', 0)
         self.texture = base.config.GetInt('max-texture-dimension', Options.default_max_texture_dimension)
-        self.textureCompression = base.config.GetInt('compressed-textures', 0)
+        self.textureCompression = base.config.GetBool('compressed-textures', 0)
         self.texture_scale = base.config.GetFloat('texture-scale', 1.0)
         self.sound = base.config.GetBool('audio-sfx-active', 1)
         self.sound_volume = base.config.GetFloat('audio-sfx-volume', 1.0)
