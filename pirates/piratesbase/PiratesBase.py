@@ -64,7 +64,7 @@ class PiratesBase(OTPBase):
 
     def __init__(self):
         OTPBase.__init__(self, windowType = 'none')
-        print cpMgr
+
         self.hasEmbedded = hasEmbedded
         self.shipFactory = None
         self.isMainWindowOpen = False
