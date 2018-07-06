@@ -1,0 +1,6 @@
+# uncompyle6 version 3.2.3
+# Python bytecode 2.4 (62061)
+# Decompiled from: Python 2.7.15 (v2.7.15:ca079a3ea3, Apr 30 2018, 16:30:26) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: C:\Cygwin\home\piratepub\player_pirates_1_0_33QA\pirates\src\leveleditor\worldData\pirateerFortress.py
+from pandac.PandaModules import Point3, VBase3
+objectStruct = {'Objects': {'1151689257.39hreister': {'Type': 'Island', 'Name': 'pirateerFortress', 'File': '', 'Objects': {'1151690118.21hreister': {'Type': 'Event Sphere', 'Collide Type': 'Object', 'Event Type': 'Port', 'Extra Param': 'Team 3', 'Hpr': Point3(0.0, 0.0, 0.0), 'Pos': Point3(0.0, 0.0, 0.0), 'Scale': VBase3(160, 160, 160)}, '1151690222.53hreister': {'Type': 'Event Sphere', 'Collide Type': 'Object', 'Event Type': 'Port', 'Extra Param': 'Dock', 'Hpr': Point3(0.0, 0.0, 0.0), 'Pos': Point3(378.013, -249.799, -7.845), 'Scale': VBase3(160, 160, 160)}}, 'Visual': {'Model': 'models/islands/pvpFortress'}}}, 'Node Links': [], 'Layers': {}, 'ObjectIds': {'1151689257.39hreister': '["Objects"]["1151689257.39hreister"]', '1151690118.21hreister': '["Objects"]["1151689257.39hreister"]["Objects"]["1151690118.21hreister"]', '1151690222.53hreister': '["Objects"]["1151689257.39hreister"]["Objects"]["1151690222.53hreister"]'}}

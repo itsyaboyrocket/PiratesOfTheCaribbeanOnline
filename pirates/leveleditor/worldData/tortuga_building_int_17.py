@@ -1,0 +1,6 @@
+# uncompyle6 version 3.2.3
+# Python bytecode 2.4 (62061)
+# Decompiled from: Python 2.7.15 (v2.7.15:ca079a3ea3, Apr 30 2018, 16:30:26) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: C:\Cygwin\home\piratepub\player_pirates_1_0_33QA\pirates\src\leveleditor\worldData\tortuga_building_int_17.py
+from pandac.PandaModules import Point3, VBase3, Vec4
+objectStruct = {'Objects': {'1231881958.14caoconno0': {'Type': 'Building Interior', 'Name': 'tortuga_building_int_17', 'AdditionalData': ['interior_shanty_npc_house'], 'Instanced': True, 'Objects': {'1169077360.47mike': {'Type': 'Townsperson', 'Category': 'Commoner', 'Aggro Radius': '12.0000', 'AnimSet': 'sweep', 'CustomModel': 'None', 'Hpr': VBase3(-171.324, 0.0, 0.0), 'Patrol Radius': '3.6506', 'Pos': Point3(-3.253, -4.268, 0.001), 'Private Status': 'All', 'Respawns': True, 'Scale': VBase3(1.0, 1.0, 1.0), 'Start State': 'Walk', 'Team': 'Villager'}}, 'Visual': {'Model': 'models/buildings/interior_shanty_npc_house'}}}, 'Node Links': [], 'Layers': {}, 'ObjectIds': {'1169077360.47mike': '["Objects"]["1231881958.14caoconno0"]["Objects"]["1169077360.47mike"]', '1231881958.14caoconno0': '["Objects"]["1231881958.14caoconno0"]'}}

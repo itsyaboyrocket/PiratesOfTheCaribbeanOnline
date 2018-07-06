@@ -1,0 +1,6 @@
+# uncompyle6 version 3.2.3
+# Python bytecode 2.4 (62061)
+# Decompiled from: Python 2.7.15 (v2.7.15:ca079a3ea3, Apr 30 2018, 16:30:26) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: C:\Cygwin\home\piratepub\player_pirates_1_0_33QA\pirates\src\leveleditor\worldData\ParlorWorld.py
+from pandac.PandaModules import Point3, VBase3
+objectStruct = {'Objects': {'1161805520.84Shochet': {'Type': 'Region', 'Name': 'default', 'Objects': {'1161805542.95Shochet': {'Type': 'Island', 'File': 'ParlorIsland', 'Hpr': Point3(0.0, 0.0, 0.0), 'Objects': {'1161805566.88Shochet': {'Type': 'LOD Sphere', 'Hpr': Point3(0.0, 0.0, 0.0), 'Pos': Point3(0.0, 0.0, 10.194), 'Radi': [159, 1159, 2159], 'Scale': VBase3(1.0, 1.0, 1.0)}}, 'Pos': Point3(0.0, 0.0, 0.0), 'Scale': VBase3(1.0, 1.0, 1.0), 'Visual': {'Model': 'models/islands/pir_m_are_isl_cutthroat'}}}, 'Visual': {}}}, 'Layers': {}, 'ObjectIds': {'1161805520.84Shochet': '["Objects"]["1161805520.84Shochet"]', '1161805542.95Shochet': '["Objects"]["1161805520.84Shochet"]["Objects"]["1161805542.95Shochet"]', '1161805566.88Shochet': '["Objects"]["1161805520.84Shochet"]["Objects"]["1161805542.95Shochet"]["Objects"]["1161805566.88Shochet"]'}}
