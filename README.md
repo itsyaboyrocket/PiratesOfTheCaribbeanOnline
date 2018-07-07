@@ -1,4 +1,4 @@
-Pirates of the Carribean Private Server
+Pirates of the Caribbean Private Server
 ========
 
-This repository can be used for private servers for the late game, _Disney's Pirates of the Carribean Online_.
+This repository can be used for private servers for the late game, _Disney's Pirates of the Caribbean Online_.
